@@ -1,0 +1,18 @@
+{
+  "scope": "Actual localhost browser runtime and rendered screenshots, 2026-09-18",
+  "page": "http://127.0.0.1:4178/sakura-season.html#coast",
+  "verified": [
+    "Toon shading, dark green outlines and multisample edge smoothing render successfully",
+    "Cottage porch, weather vane, solar panel, vines and small props are readable in the cottage camera",
+    "Two sightseeing launches move along the bay with curved foam, propeller churn and spray",
+    "Night lighthouse beams produce visible warm light on the ocean surface",
+    "Transparent shallow sea shows seagrass, fish, turtles and rays",
+    "390x844 responsive view has all eight camera buttons in two rows",
+    "Low quality reduces spray from 112 to 56 and fish from 80 to 52",
+    "Pause freezes cruises, moored boat and ropes, underwater creatures and lighthouse beams",
+    "Switching to sunny freezes coast time at 43.34190000000025 while running=false",
+    "Both worlds mounted within one document, one navigation entry and zero iframes",
+    "No new script exceptions or shader errors in final captured browser events"
+  ],
+  "limits": ["Responsive desktop browser is not physical mobile hardware", "Foam is a procedural visual effect, not fluid simulation"]
+}

@@ -1,0 +1,73 @@
+{
+  "scope": "Offline CPU glslang ES 3.00 compilation and linkage using current Three.js toon/point chunks, instancing and shadow on/off. Final GPU appearance requires browser review.",
+  "threeRevision": "160",
+  "passed": true,
+  "total": 8,
+  "sourceSha256": "3ec824b3d89e450769ec176ae3b04babb8f523de57d663323259cefa9ba6b352",
+  "checks": [
+    {
+      "name": "nightMummies-0-shadows",
+      "owner": "nightMummies",
+      "mesh": "四位圆头小木乃伊 · 绷带与星星眼合批",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "nightMummies-0-lightweight",
+      "owner": "nightMummies",
+      "mesh": "四位圆头小木乃伊 · 绷带与星星眼合批",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "nightMummies-1-shadows",
+      "owner": "nightMummies",
+      "mesh": "绷带边缘的呼吸月晕 · 四只共用一层",
+      "material": "ShaderMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "nightMummies-1-lightweight",
+      "owner": "nightMummies",
+      "mesh": "绷带边缘的呼吸月晕 · 四只共用一层",
+      "material": "ShaderMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "nightMummies-2-shadows",
+      "owner": "nightMummies",
+      "mesh": "贴着沙纹的暖金与薄荷小光池",
+      "material": "ShaderMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "nightMummies-2-lightweight",
+      "owner": "nightMummies",
+      "mesh": "贴着沙纹的暖金与薄荷小光池",
+      "material": "ShaderMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "nightMummies-3-shadows",
+      "owner": "nightMummies",
+      "mesh": "绷带边的十二粒月光",
+      "material": "PointsMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "nightMummies-3-lightweight",
+      "owner": "nightMummies",
+      "mesh": "绷带边的十二粒月光",
+      "material": "PointsMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    }
+  ]
+}

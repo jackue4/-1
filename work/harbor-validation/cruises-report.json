@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "seconds": 720,
+  "minClearance": 0.513102704685207,
+  "minSeparation": 0.5663825342014873,
+  "minReefClearance": 0.24067545096663717,
+  "tenSecondTravel": 0.8397942368287569,
+  "stats": {
+    "tourBoats": 2,
+    "wakeRibbons": 6,
+    "sprayParticles": 112,
+    "minimumRouteDepth": 0.5571120053581589,
+    "drawCalls": 4,
+    "triangles": 6302
+  }
+}

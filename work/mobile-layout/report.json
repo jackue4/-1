@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-18T10:53:44.335Z",
+  "changes": [
+    "Independent grid row for planet selector with safe-area top/left/right",
+    "44px minimum selector touch targets",
+    "World viewport below navigation; removed absolute host injection",
+    "Portrait two-row coast view menu and landscape swipeable row",
+    "Sunny landscape help/time layout and safe areas"
+  ],
+  "sourceTests": {
+    "switchChecks": 5,
+    "cssWarnings": 0,
+    "bundledSyntax": true
+  },
+  "staticReviewSizes": [
+    [
+      320,
+      568
+    ],
+    [
+      568,
+      320
+    ],
+    [
+      844,
+      390
+    ]
+  ],
+  "staticReviewOnly": true,
+  "browser": {
+    "verified": false,
+    "reason": "cua browser connection failed: unsupported Codex auth method: apikey"
+  },
+  "bytes": 983130,
+  "sha256": "30c94e00166ce5335df7a676ec36774b966b78be6a9620f410dfd11eb457c2a6"
+}

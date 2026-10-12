@@ -1,0 +1,56 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\work\promo-snow-desert\raw\01.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Duration: 00:00:06.40, start: 0.000000, bitrate: 15878 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuvj420p(pc, bt470bg/unknown/unknown, progressive), 1080x1920 [SAR 1:1 DAR 9:16], 15873 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        ICC Profile
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+[swscaler @ 0000023e293a5b00] deprecated pixel format used, make sure you did set range correctly
+[libx264 @ 0000023e2789b840] using SAR=1/1
+[libx264 @ 0000023e2789b840] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0000023e2789b840] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0000023e2789b840] 264 - core 164 r3192 c24e06c - H.264/MPEG-4 AVC codec - Copyleft 2003-2024 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=4 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=18.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\work\promo-snow-desert\edit-parts\01-body.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(pc, bt470bg/unknown/unknown, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 30 fps, 90k tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        ICC Profile
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A    frame=    2 fps=1.3 q=24.0 size=       0KiB time=00:00:00.00 bitrate=N/A speed=   0x    frame=    6 fps=2.9 q=24.0 size=     256KiB time=00:00:00.13 bitrate=15731.6kbits/s speed=0.0651x    frame=   11 fps=4.3 q=24.0 size=     256KiB time=00:00:00.30 bitrate=6991.8kbits/s speed=0.117x    frame=   20 fps=6.5 q=24.0 size=    1024KiB time=00:00:00.60 bitrate=13981.7kbits/s speed=0.195x    frame=   32 fps=8.9 q=24.0 size=    1536KiB time=00:00:01.00 bitrate=12583.3kbits/s speed=0.277x    frame=   43 fps= 10 q=24.0 size=    2048KiB time=00:00:01.36 bitrate=12276.3kbits/s speed=0.332x    frame=   51 fps= 11 q=24.0 size=    2560KiB time=00:00:01.63 bitrate=12839.9kbits/s speed=0.35x    frame=   59 fps= 11 q=24.0 size=    2816KiB time=00:00:01.90 bitrate=12141.6kbits/s speed=0.361x    frame=   67 fps= 12 q=24.0 size=    3328KiB time=00:00:02.16 bitrate=12583.1kbits/s speed=0.374x    frame=   76 fps= 12 q=24.0 size=    3584KiB time=00:00:02.46 bitrate=11902.9kbits/s speed=0.39x    frame=   87 fps= 13 q=24.0 size=    4352KiB time=00:00:02.83 bitrate=12583.0kbits/s speed=0.415x    frame=   96 fps= 13 q=24.0 size=    4608KiB time=00:00:03.13 bitrate=12047.6kbits/s speed=0.426x    frame=  107 fps= 14 q=24.0 size=    5120KiB time=00:00:03.50 bitrate=11983.8kbits/s speed=0.445x    frame=  114 fps= 14 q=24.0 size=    5632KiB time=00:00:03.73 bitrate=12358.3kbits/s speed=0.445x    frame=  124 fps= 14 q=24.0 size=    6144KiB time=N/A bitrate=N/A speed=N/A    frame=  136 fps= 14 q=24.0 size=    6656KiB time=N/A bitrate=N/A speed=N/A    frame=  144 fps= 14 q=24.0 size=    7168KiB time=N/A bitrate=N/A speed=N/A    frame=  152 fps= 15 q=24.0 size=    7424KiB time=N/A bitrate=N/A speed=N/A    frame=  161 fps= 15 q=24.0 size=    7936KiB time=N/A bitrate=N/A speed=N/A    frame=  169 fps= 15 q=24.0 size=    8448KiB time=N/A bitrate=N/A speed=N/A    frame=  176 fps= 15 q=24.0 size=    8704KiB time=N/A bitrate=N/A speed=N/A    [mp4 @ 0000023e2799ec80] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000023e276e7a80] video:9007KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.038683%
+frame=  180 fps= 14 q=-1.0 Lsize=    9011KiB time=00:00:05.93 bitrate=12441.2kbits/s speed=0.476x    
+[libx264 @ 0000023e2789b840] frame I:2     Avg QP: 9.30  size: 43156
+[libx264 @ 0000023e2789b840] frame P:46    Avg QP:14.96  size: 91364
+[libx264 @ 0000023e2789b840] frame B:132   Avg QP:22.08  size: 37378
+[libx264 @ 0000023e2789b840] consecutive B-frames:  2.2%  0.0%  0.0% 97.8%
+[libx264 @ 0000023e2789b840] mb I  I16..4: 77.9% 10.6% 11.5%
+[libx264 @ 0000023e2789b840] mb P  I16..4:  3.1%  1.7%  0.6%  P16..4: 12.8% 11.3% 11.4%  0.0%  0.0%    skip:59.1%
+[libx264 @ 0000023e2789b840] mb B  I16..4:  0.6%  0.2%  0.1%  B16..8: 11.6%  5.2%  4.8%  direct: 5.9%  skip:71.6%  L0:40.0% L1:37.1% BI:22.9%
+[libx264 @ 0000023e2789b840] 8x8 transform intra:22.8% inter:18.4%
+[libx264 @ 0000023e2789b840] coded y,uvDC,uvAC intra: 21.9% 16.3% 10.1% inter: 13.4% 7.6% 1.7%
+[libx264 @ 0000023e2789b840] i16 v,h,dc,p: 53% 43%  2%  2%
+[libx264 @ 0000023e2789b840] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 15% 46% 30%  1%  1%  1%  2%  1%  2%
+[libx264 @ 0000023e2789b840] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 29% 17%  4%  4%  5%  4%  4%  4%
+[libx264 @ 0000023e2789b840] i8c dc,h,v,p: 81% 14%  5%  1%
+[libx264 @ 0000023e2789b840] Weighted P-Frames: Y:8.7% UV:8.7%
+[libx264 @ 0000023e2789b840] ref P L0: 57.0%  8.5% 22.3% 12.1%
+[libx264 @ 0000023e2789b840] ref B L0: 75.2% 16.8%  8.0%
+[libx264 @ 0000023e2789b840] ref B L1: 92.0%  8.0%
+[libx264 @ 0000023e2789b840] kb/s:12297.28

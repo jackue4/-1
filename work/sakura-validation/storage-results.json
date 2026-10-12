@@ -1,0 +1,11 @@
+{
+  "passed": 4,
+  "checks": [
+    "Original planet save is ignored and unchanged",
+    "Sakura growth, travel and construction restore from its own save",
+    "Malformed JSON starts safely",
+    "Blocked storage returns a safe unsaved state"
+  ],
+  "key": "little-bloom.sakura.ecosystem.v1",
+  "note": "In-memory storage adapter exercises actual ecology restore/persist functions."
+}

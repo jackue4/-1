@@ -1,0 +1,20 @@
+const fs=require('fs'),p='work/planet-v2/';function edit(n,a,b){let s=fs.readFileSync(p+n,'utf8').replaceAll('\r\n','\n');if(!s.includes(a))throw Error(n+':'+a);fs.writeFileSync(p+n,s.replace(a,b));}
+edit('world.js','stats.trees++;\n    mesh(g,treeTrunkGeo','stats.trees++;solidObstacles.push(circleObstacle(normal,.052,\'tree\'));\n    mesh(g,treeTrunkGeo');
+edit('world.js','if (nn.distanceTo(direction(.32,.08))<.68','if (pondReserved(nn,.8)||nn.distanceTo(direction(.32,.08))<.68');
+edit('world.js','[[.79,-.49],[.82,.92],[-.25,-.68]]','[[.96,-.73],[1.03,.87],[-.25,-.68]]');
+edit('world.js','if (terrainHeight(nn) < R + .04 || farmReserved(nn,.02))','if (terrainHeight(nn) < R + .04 || farmReserved(nn,.02)||pondReserved(nn,.5))');
+edit('world.js','farmReserved(nn,.07))','farmReserved(nn,.07)||pondReserved(nn,.5))');
+edit('world.js','house.rotation.y = Math.atan2(facing.x,facing.z); g.add(house);','house.rotation.y = Math.atan2(facing.x,facing.z);house.scale.setScalar(site.scale||1); g.add(house);solidObstacles.push(boxObstacle(g,house,site.scale||1,\'house\'+index));');
+edit('world.js','  const construction=createBuildScene','  const yard=createCozyYard({planet,direction,height:terrainHeight,R,mesh,box,cyl,sphere,anchor,buildTargets,glowMaterials});\n  solidObstacles.push(circleObstacle(direction(POND_SITE.lat,POND_SITE.lon),.155,\'pond\'),circleObstacle(direction(MILL_SITE.lat,MILL_SITE.lon),.115,\'mill\'),circleObstacle(direction(.11,-.34),.084,\'well\'),circleObstacle(direction(.54,-.31),.097,\'shed\'),circleObstacle(direction(.16,.55),.115,\'market\'),circleObstacle(direction(.48,-.44),.092,\'bench\'),circleObstacle(direction(.61,.30),.085,\'planter\'));\n  const instanceMatrix=new THREE.Matrix4(),obPos=new THREE.Vector3(),obScale=new THREE.Vector3(),obQuat=new THREE.Quaternion();\n  for(const object of landscape.meshes.filter(m=>[\'shore boulders\',\'fence timber\',\'fence rails\'].includes(m.name))){for(let i=0;i<object.count;i++){object.getMatrixAt(i,instanceMatrix);instanceMatrix.decompose(obPos,obQuat,obScale);const radius=(Math.max(obScale.x,obScale.y,obScale.z)*(object.name===\'shore boulders\'?1:.52)+.075)/R;solidObstacles.push(circleObstacle(obPos.clone().normalize(),radius,object.name));}}\n  const navigation=createSurfaceNavigation({height:terrainHeight,R,obstacles:solidObstacles});\n  residents.forEach(p=>{p.normal.copy(navigation.safeGoal(p.normal));moveOnSurface(p.root,p.normal);});\n  const construction=createBuildScene');
+edit('world.js','const dynamic=new Set([farm.root,','const dynamic=new Set([yard.root,farm.root,');
+edit('world.js','farm.update(t);','farm.update(t);yard.update(t);');
+edit('world.js','const distance=p.normal.distanceTo(target),step=Math.min(1-Math.exp(-dt*(builder?3:1.6)),dt*.085/Math.max(distance,.00001));\n      p.normal.lerp(target,step).normalize();','const navMove=navigation.move(p,target,dt,t,residents),distance=p.normal.distanceTo(navMove.goal);');
+edit('world.js',"p.hammer.visible=builder?.mode==='build';","p.hammer.visible=builder?.mode==='build'&&distance<.055;");
+edit('world.js','return {planet,farm,construction','return {planet,farm,yard,navigation,construction');
+edit('cottages.js','addScaledVector(front,.15)','addScaledVector(front,.28*house.scale.x)');
+edit('build-scene.js',"if(target.kind!=='dock'){","if(target.kind!=='dock'&&target.kind!=='garden'){");
+edit('construction.js',"name:'狐狸的邮差小屋'","name:'池边的午后长椅'");edit('construction.js',"name:'猫咪的花店'","name:'菜园旁的花架'");edit('construction.js',"name:'大家的晚安小屋'","name:'暖灯与野餐角'");
+for(const n of ['nature.js','landscape.js'])edit(n,'{pathLat,farmReserved}','{pathLat,farmReserved,pondReserved}');
+edit('nature.js','!farmReserved(n,.016)&&','!farmReserved(n,.016)&&!pondReserved(n,.5)&&');edit('nature.js','n.distanceTo(h)<.115','n.distanceTo(h)<.20');
+edit('landscape.js','!farmReserved(n,.035)&&','!farmReserved(n,.035)&&!pondReserved(n,.5)&&');edit('landscape.js','h.distanceTo(n)<clearance','h.distanceTo(n)<Math.max(clearance,.19)');
+edit('page.html','依次铺路、建木屋、风车和码头','依次铺路、建两座小屋、风车、码头，再布置池边长椅、花架和野餐角');

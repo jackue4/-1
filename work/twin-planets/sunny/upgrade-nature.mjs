@@ -1,0 +1,27 @@
+import fs from 'node:fs';
+const file=new URL('./world.js',import.meta.url);
+let s=fs.readFileSync(file,'utf8');
+function replace(a,b){if(!s.includes(a))throw Error('Missing edit anchor: '+a.slice(0,80));s=s.replace(a,b);}
+replace("import { random, hash } from './ecology.js';","import { random, hash } from './ecology.js';\nimport { createNatureUniforms, enhanceWater, enhanceFoam, createMeadow, windAt, sampleWater } from './nature.js';");
+replace('export function createWorld(savedGrowth = 0) {','export function createWorld(savedGrowth = 0) {\n  const natureUniforms=createNatureUniforms();');
+const start=s.indexOf('  const waterUniforms ='),end=s.indexOf('  const waterGeo=',start);if(start<0||end<0)throw Error('Water block missing');s=s.slice(0,start)+'  enhanceWater(waterMat,natureUniforms);\n'+s.slice(end);
+replace('new THREE.SphereGeometry(R,160,100)','new THREE.SphereGeometry(R,256,160)');
+replace('const g=new THREE.BufferGeometry(),positions=new Float32Array(161*2*3),indices=[];', 'const g=new THREE.BufferGeometry(),positions=new Float32Array(161*2*3),uv=[],indices=[];for(let j=0;j<=160;j++)uv.push(j/160,0,j/160,1);');
+replace("g.setAttribute('position',new THREE.BufferAttribute(positions,3));g.setIndex(indices);", "g.setAttribute('position',new THREE.BufferAttribute(positions,3).setUsage(THREE.DynamicDrawUsage));g.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));g.setIndex(indices);");
+replace('const wave=mesh(planet,g,material,','enhanceFoam(material,natureUniforms);const wave=mesh(planet,g,material,');
+replace("instances(cone, '#71976b', grasses); ",'');
+replace('  for (let i = 0; i < 22; i++)', '  const meadow=createMeadow(planet,terrainHeight,R,houseSites,natureUniforms);\n  for (let i = 0; i < 22; i++)');
+replace("    waterUniforms.time.value=t;waterUniforms.daylight.value=1-env.night*.8;", "    natureUniforms.uNatureTime.value=t;natureUniforms.uWind.value=.25+wind*1.3;natureUniforms.uDaylight.value=1-env.night*.8;natureUniforms.uSnow.value=env.snow;residents.forEach((p,i)=>natureUniforms.uActors.value[i].copy(p.root.position));");
+const surfStart=s.indexOf('    surf.forEach(s=>'),surfEnd=s.indexOf('\n    const boatNormal=',surfStart);
+s=s.slice(0,surfStart)+`    surf.forEach(s=>{const phase=(t*(.10+wind*.035)+s.band/3)%1,advance=-.074+phase*.07;for(let j=0;j<s.samples.length;j++){const sample=s.samples[j],ripple=Math.sin(j/160*Math.PI*18-t*.9)*.002;for(let side=0;side<2;side++){const r=sample.r+advance+ripple+side*(.009+Math.sin(j*.31+t)*.0015),nn=s.center.clone().multiplyScalar(Math.cos(r)).addScaledVector(sample.tangent,Math.sin(r)),depth=Math.max(0,R-terrainHeight(nn)),height=R+.010+sampleWater(nn.clone().multiplyScalar(R),depth,t,natureUniforms.uWind.value),offset=(j*2+side)*3;s.positions[offset]=nn.x*height;s.positions[offset+1]=nn.y*height;s.positions[offset+2]=nn.z*height;}}s.wave.geometry.attributes.position.needsUpdate=true;s.wave.material.opacity=Math.sin(phase*Math.PI)*(.74-env.night*.22);});`+s.slice(surfEnd);
+const boatStart=s.indexOf('    const boatNormal='),boatEnd=s.indexOf('\n    airMat.',boatStart);
+s=s.slice(0,boatStart)+`    const boatNormal=direction(-.32+Math.sin(t*.045)*.06,.67+Math.cos(t*.04)*.08),boatPoint=boatNormal.clone().multiplyScalar(R),boatDepth=Math.max(0,R-terrainHeight(boatNormal));
+    const buoyancy=sampleWater(boatPoint,boatDepth,t,natureUniforms.uWind.value);boat.position.copy(boatNormal).multiplyScalar(R+.038+buoyancy);boat.quaternion.setFromUnitVectors(UP,boatNormal);
+    const bx=new THREE.Vector3(1,0,0).applyQuaternion(boat.quaternion),bz=new THREE.Vector3(0,0,1).applyQuaternion(boat.quaternion);
+    const slopeX=(sampleWater(boatPoint.clone().addScaledVector(bx,.06),boatDepth,t,natureUniforms.uWind.value)-sampleWater(boatPoint.clone().addScaledVector(bx,-.06),boatDepth,t,natureUniforms.uWind.value))/.12;
+    const slopeZ=(sampleWater(boatPoint.clone().addScaledVector(bz,.06),boatDepth,t,natureUniforms.uWind.value)-sampleWater(boatPoint.clone().addScaledVector(bz,-.06),boatDepth,t,natureUniforms.uWind.value))/.12;
+    boatBody.rotation.set(Math.atan(slopeZ)*.7,.6+Math.sin(t*.1)*.16,-Math.atan(slopeX)*.7);`+s.slice(boatEnd);
+replace('foliage.forEach(f=>{f.g.rotation.z=Math.sin(t*1.1+f.phase)*f.amount*wind;f.g.rotation.x=Math.cos(t*.85+f.phase)*f.amount*.4*wind;});','foliage.forEach(f=>{const gust=windAt(f.g.parent.parent.position,t,natureUniforms.uWind.value);f.g.rotation.z=(.45+Math.sin(t*1.1+f.phase))*f.amount*gust*1.7;f.g.rotation.x=Math.cos(t*.85+f.phase)*f.amount*.7*gust;});');
+replace('return {planet,land,ocean,boat,surf,','return {planet,land,ocean,boat,surf,meadow,natureUniforms,');
+replace('dispose(){const gs=new Set()', 'dispose(){meadow.dispose();const gs=new Set()');
+fs.writeFileSync(file,s);

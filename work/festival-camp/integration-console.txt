@@ -1,0 +1,317 @@
+{
+  "checkedAt": "2026-09-21T12:31:50.407Z",
+  "passed": true,
+  "method": "Real production festival app, campsite geometry, batching, material uniforms and absolute-time animation. DOM, WebGL, controls and background sky are boundaries; actual pixels and physical devices are not verified by this script.",
+  "checks": [
+    {
+      "name": "The real campsite is mounted before first render and available through public state and one view button",
+      "passed": true,
+      "camp": {
+        "location": {
+          "lat": -0.9,
+          "lon": -2.55,
+          "radius": 1.52,
+          "raise": 0.115,
+          "rx": 1.19,
+          "rz": 0.97
+        },
+        "stats": {
+          "terrace": true,
+          "stoneSteps": 7,
+          "retainingStones": 120,
+          "grassTufts": 252,
+          "wildflowers": 9,
+          "fireflies": 14,
+          "embers": 18,
+          "lanterns": 5,
+          "trees": 6
+        },
+        "batching": {
+          "before": 387,
+          "batched": 354,
+          "remainingStatic": 33,
+          "prunedGroups": 0,
+          "sourceVertices": 71528,
+          "mergedVertices": 71528
+        },
+        "time": 0.15000000000000058,
+        "night": 0,
+        "fireLit": false,
+        "fireIntensity": 0,
+        "camper": {
+          "campers": 1,
+          "openDoors": 1,
+          "interiorSeats": 3,
+          "roofLuggage": 2,
+          "wheels": 4,
+          "unbatchedMeshes": 273,
+          "drawCalls": 2,
+          "triangles": 19944,
+          "vertices": 14833,
+          "batching": {
+            "before": 273,
+            "batched": 271,
+            "remainingStatic": 2,
+            "prunedGroups": 0,
+            "sourceVertices": 14833,
+            "mergedVertices": 14833
+          },
+          "bodyDimensions": {
+            "width": 0.46,
+            "length": 1.03,
+            "height": 0.6
+          },
+          "door": {
+            "side": "+X",
+            "zMin": -0.128,
+            "zMax": 0.159,
+            "sillY": 0.162
+          },
+          "front": "-Z"
+        },
+        "guests": {
+          "time": 0.15000000000000058,
+          "night": 0,
+          "disposed": false,
+          "animals": 3,
+          "foldingChairs": 3,
+          "mealTables": 1,
+          "picnicBlankets": 1,
+          "coolers": 1,
+          "thermoses": 1,
+          "staticMeshes": 1,
+          "meshes": 26,
+          "triangles": 49428,
+          "guests": [
+            {
+              "name": "棉棉",
+              "species": "rabbit",
+              "activity": "慢慢转一转烤棉花糖",
+              "bite": 0.04635450040225772,
+              "position": [
+                -0.2,
+                0.089,
+                -0.38
+              ]
+            },
+            {
+              "name": "麦麦",
+              "species": "bear",
+              "activity": "捧着热汤喝一小口",
+              "bite": 0.9973195389174534,
+              "position": [
+                0.38,
+                0.089,
+                -0.19
+              ]
+            },
+            {
+              "name": "阿栗",
+              "species": "corgi",
+              "activity": "吃一口抹了黄油的吐司",
+              "bite": 0.018006059655403518,
+              "position": [
+                -0.38,
+                0.089,
+                0.29
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "The campsite camera is finite and fitted to desktop, narrow portrait and landscape viewports",
+      "passed": true,
+      "views": [
+        {
+          "width": 900,
+          "height": 680,
+          "aspect": 1.3235294117647058,
+          "finite": true,
+          "distance": 4.9053134456423875
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "aspect": 0.46208530805687204,
+          "finite": true,
+          "distance": 8.810949166516425
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "aspect": 2.164102564102564,
+          "finite": true,
+          "distance": 4.9053134456423875
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "aspect": 0.5633802816901409,
+          "finite": true,
+          "distance": 7.226753033792649
+        }
+      ],
+      "note": "Camera math only; GPU visuals and CSS are checked separately."
+    },
+    {
+      "name": "The campsite view hides animal-only controls and publishes its daytime caption",
+      "passed": true
+    },
+    {
+      "name": "Pause freezes all campsite geometry, uniforms, lights and simulation without scheduling WebGL renders",
+      "passed": true
+    },
+    {
+      "name": "A paused phase change updates campsite lighting while keeping animation time fixed",
+      "passed": true,
+      "camp": {
+        "location": {
+          "lat": -0.9,
+          "lon": -2.55,
+          "radius": 1.52,
+          "raise": 0.115,
+          "rx": 1.19,
+          "rz": 0.97
+        },
+        "stats": {
+          "terrace": true,
+          "stoneSteps": 7,
+          "retainingStones": 120,
+          "grassTufts": 252,
+          "wildflowers": 9,
+          "fireflies": 14,
+          "embers": 18,
+          "lanterns": 5,
+          "trees": 6
+        },
+        "batching": {
+          "before": 387,
+          "batched": 354,
+          "remainingStatic": 33,
+          "prunedGroups": 0,
+          "sourceVertices": 71528,
+          "mergedVertices": 71528
+        },
+        "time": 7.816666666666636,
+        "night": 1,
+        "fireLit": true,
+        "fireIntensity": 1.0127775640372843,
+        "camper": {
+          "campers": 1,
+          "openDoors": 1,
+          "interiorSeats": 3,
+          "roofLuggage": 2,
+          "wheels": 4,
+          "unbatchedMeshes": 273,
+          "drawCalls": 2,
+          "triangles": 19944,
+          "vertices": 14833,
+          "batching": {
+            "before": 273,
+            "batched": 271,
+            "remainingStatic": 2,
+            "prunedGroups": 0,
+            "sourceVertices": 14833,
+            "mergedVertices": 14833
+          },
+          "bodyDimensions": {
+            "width": 0.46,
+            "length": 1.03,
+            "height": 0.6
+          },
+          "door": {
+            "side": "+X",
+            "zMin": -0.128,
+            "zMax": 0.159,
+            "sillY": 0.162
+          },
+          "front": "-Z"
+        },
+        "guests": {
+          "time": 7.816666666666636,
+          "night": 1,
+          "disposed": false,
+          "animals": 3,
+          "foldingChairs": 3,
+          "mealTables": 1,
+          "picnicBlankets": 1,
+          "coolers": 1,
+          "thermoses": 1,
+          "staticMeshes": 1,
+          "meshes": 26,
+          "triangles": 49428,
+          "guests": [
+            {
+              "name": "棉棉",
+              "species": "rabbit",
+              "activity": "慢慢转一转烤棉花糖",
+              "bite": 0,
+              "position": [
+                -0.2,
+                0.089,
+                -0.38
+              ]
+            },
+            {
+              "name": "麦麦",
+              "species": "bear",
+              "activity": "捧着热汤喝一小口",
+              "bite": 0,
+              "position": [
+                0.38,
+                0.089,
+                -0.19
+              ]
+            },
+            {
+              "name": "阿栗",
+              "species": "corgi",
+              "activity": "吃一口抹了黄油的吐司",
+              "bite": 0.9912556034847764,
+              "position": [
+                -0.38,
+                0.089,
+                0.29
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Converged night returns to the existing zero-render paused schedule",
+      "passed": true
+    },
+    {
+      "name": "Selector preview has its own campsite animation and daylight while preserving paused game time",
+      "passed": true
+    },
+    {
+      "name": "Preview exit restores the campsite immediately, before another RAF, including night, camera and all dynamic transforms",
+      "passed": true
+    },
+    {
+      "name": "A hidden campsite queues no RAF and advances neither simulation nor rendering",
+      "passed": true
+    },
+    {
+      "name": "Reactivation resumes without adding the hidden interval to campsite time",
+      "passed": true
+    },
+    {
+      "name": "Context restoration retains the camp and resumes without a simulation jump",
+      "passed": true
+    },
+    {
+      "name": "Disposal frees all live campsite geometry exactly once, detaches its root, and keeps lifecycle disposal idempotent",
+      "passed": true,
+      "campGeometries": 36,
+      "campDisposeCounts": [
+        1
+      ],
+      "rendererDisposals": 1
+    }
+  ]
+}

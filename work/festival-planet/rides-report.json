@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "checks": [
+    "closed orbit",
+    "continuous tangent",
+    "uniform arc-length speed",
+    "finite orthonormal ride poses over 65 seconds",
+    "actual-curve look target remains ahead over 65 seconds",
+    "all 5 course interactions",
+    "5 train cars, 6 horses, 10 cabins",
+    "bounded speed controls",
+    "serializable snapshot restores pose, clocks, speed, pulses and event",
+    "preview droplets/ripples cleared and play-clock water emission resumes",
+    "finite scene matrices"
+  ],
+  "events": [
+    "环星慢游",
+    "跃入星光泻湖",
+    "摩天轮的光之回信",
+    "云端许愿坡",
+    "月石山的秘密隧道",
+    "木马为你点亮"
+  ],
+  "trackLength": 24.224018001273723,
+  "nominalLapSeconds": 31.459763638017822,
+  "arcStepRatio": 1.0017911269686421,
+  "maxOrthogonalityError": 1.6653345369377348e-16,
+  "rideCameraRadius": [
+    3.422654007459267,
+    4.325175256164145
+  ],
+  "meshCountBeforeHostStaticMerge": 248,
+  "triangles": 93228,
+  "dynamicGroups": 41
+}

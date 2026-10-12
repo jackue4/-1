@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-09-21T07:01:49.148Z",
+  "passed": true,
+  "method": "Real scoped-document.js with EventTarget-backed minimal DOM surfaces; does not test browser WebGL.",
+  "checks": [
+    {
+      "name": "Exactly one scoped world is visible across 100 world switches",
+      "passed": true
+    },
+    {
+      "name": "Switching cached worlds does not duplicate document or host listeners",
+      "passed": true,
+      "documentListeners": 4,
+      "perHostListeners": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Native hidden state suppresses every world even if selected",
+      "passed": true
+    },
+    {
+      "name": "Native foreground restores only the selected world",
+      "passed": true
+    },
+    {
+      "name": "Scoped cleanup removes both sides of visibility listeners",
+      "passed": true
+    }
+  ]
+}

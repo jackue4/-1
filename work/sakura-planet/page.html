@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN" data-experience="scenic" data-planet="sakura">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#e9e5ed">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23edf3dd'/%3E%3Ccircle cx='32' cy='32' r='15' fill='%23dfb86a'/%3E%3C/svg%3E">
+  <title>花信星 · 樱花季</title>
+  <style>/*__STYLE__*/</style>
+</head>
+<body>
+  <main id="app">
+    <div class="sky-art" aria-hidden="true"><div class="sky-cloud cloud-a"></div><div class="sky-cloud cloud-b"></div><div class="sky-sun"></div><div class="sky-moon"></div></div>
+    <div class="sun-wash" aria-hidden="true"></div>
+    <div class="paper" aria-hidden="true"></div>
+    <header class="header">
+      <a class="brand" href="#" aria-label="花信星首页"><span class="brand-mark">✿</span><span>花信星<span class="brand-sub">HANA NO HOSHI · SAKURA SEASON</span></span></a>
+      <div class="live"><i></i><span id="date-label">今天</span><span class="live-divider">/</span><span id="clock-label">自然时间</span></div>
+      <button class="icon-button" id="help-button" aria-label="使用说明" title="使用说明">?</button>
+    </header>
+    <nav class="planet-switch" aria-label="选择星球"><a href="little-bloom.html">晴日星球</a><a href="sakura-season.html" aria-current="page">樱花季</a></nav>
+    <section class="sakura-letter" aria-label="春日寄语"><span class="letter-kicker">A LITTLE LETTER FROM SPRING</span><h1>风起时，<br>花会替我想你。</h1><p>把日子放慢，等一场温柔的花开。</p><button id="sakura-wish" class="sakura-wish"><span aria-hidden="true">✿</span> 寄一阵花信 <span aria-hidden="true">↗</span></button></section>
+    <section class="intro">
+      <div class="eyebrow"><span></span> A LITTLE ISLAND IN THE SUN</div>
+      <h1>把晴天，<br>装进口袋。</h1>
+      <p>海风轻轻，浪花慢慢。<br>今天，就在小岛上虚度时光。</p>
+      <button id="sunny-view" class="sunny-button" title="预览早上八点半的晴日草原">☀ 晴日草原 <span>↗</span></button>
+      <div class="visit"><span class="tiny-leaf">❧</span> <span id="visit-label">和星球相遇的第 1 天</span></div>
+    </section>
+    <nav class="view-switch" aria-label="观景视角"><button id="meadow-view" aria-pressed="true">✿ 樱林</button><button id="coast-view" aria-pressed="false">≈ 花影湾</button><button id="fishing-view" aria-pressed="false">♧ 垂钓</button><button id="animal-view" aria-pressed="false">🐾 伙伴</button><button id="globe-view" aria-pressed="false">◉ 小星球</button></nav>
+    <div class="time-presets" role="group" aria-label="光照时段"><button data-time="8.5" aria-pressed="true">☀ 花朝</button><button data-time="17.5" aria-pressed="false">◒ 晚霞</button><button data-time="22" aria-pressed="false">☾ 月下樱</button><button id="natural-time" aria-pressed="false">◷ 随今日</button></div>
+    <nav class="island-nav" aria-label="小岛生活"><button data-pane="farm" aria-pressed="true">🌱 菜园</button><button data-pane="travel" aria-pressed="false">🎒 远方</button><button data-pane="build" aria-pressed="false">⌂ 建岛</button><button data-pane="weather" aria-pressed="false">☀ 天气</button></nav>
+    <aside id="farm-panel" class="farm-panel" aria-label="晴日菜园">
+      <div class="farm-heading"><div><span class="card-overline">SUNNY LITTLE GARDEN</span><h2>今天，种点小幸福。</h2></div><span class="leaf-wallet">❧ <b id="farm-coins">18</b></span></div>
+      <p id="farm-guide" class="farm-guide"></p>
+      <div class="farm-tabs" role="tablist" aria-label="菜园功能"><button data-farm-tab="garden" role="tab" aria-selected="true">我的田地</button><button data-farm-tab="pantry" role="tab" aria-selected="false">丰收厨房</button><button data-farm-tab="village" role="tab" aria-selected="false">邻居心愿</button></div>
+      <section data-farm-section="garden">
+        <div class="farm-subline"><strong id="farm-size">6 / 18 块田</strong><span>点击地图或场景中的田地</span></div>
+        <div id="plot-map" class="plot-map" aria-label="菜园田地地图"></div>
+        <h3 id="plot-title"></h3><p id="plot-state" class="plot-state"></p>
+        <div id="crop-progressbar" class="crop-progress" role="progressbar" aria-label="作物生长" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="crop-progress"></i></div>
+        <div id="seed-options" class="seed-options" role="group" aria-label="选择种子"></div>
+        <div id="plot-actions" class="plot-actions"></div>
+        <p class="farm-footnote">☂ 自然降雨会浇水 · 观景预览不影响农时<br>收获留下种子，成熟的果实会一直等你。</p>
+      </section>
+      <section data-farm-section="pantry" hidden><h3>收成小仓库</h3><div id="pantry"></div><h3>给远方的便当</h3><div id="recipes"></div><p class="farm-footnote">用收成准备行囊。在「远方」出发旅行，带回草莓种子与明信片。</p></section>
+      <section data-farm-section="village" hidden><div class="neighbor-letter"><span>💌 邻居的小小心愿</span><h3 id="order-name"></h3><p id="order-cost"></p><button id="farm-order">送给邻居</button></div><h3>把菜园慢慢变大</h3><button id="farm-expand" class="farm-wide"></button><button id="farm-hire" class="farm-wide"></button><button id="farm-helpers" class="farm-wide" aria-pressed="true"></button><p class="farm-footnote">棉棉会走到田边浇水，麦麦可以帮忙收获。雨雪和夜晚一起休息，其他邻居自由生活。</p><button id="farm-orchard" class="farm-wide"></button></section>
+      <div class="farm-save-line"><small id="farm-save">进度自动保存在当前浏览器</small><button id="farm-diary">小岛手记 ↗</button></div>
+    </aside>
+    <button id="farm-focus" class="farm-focus"><span>⌖ 回到菜园</span><small id="farm-summary">风吹菜叶，慢慢长大</small></button>
+    <div id="scene" aria-label="可拖拽旋转和缩放的三维生态星球"></div>
+    <div id="loading"><span class="loading-flower">✳</span><p>风正在把春天送来…</p></div>
+    <aside class="weather-card">
+      <div class="card-overline">小岛气象台 <span id="weather-mode">今日天气</span></div>
+      <div class="weather-main"><span id="weather-icon">☀</span><div><strong id="weather-temp">23<small>°</small></strong><span id="weather-name">晴日</span></div></div>
+      <p id="weather-note">阳光刚好，适合出门收集小美好。</p>
+      <div class="weather-line"><span id="phase-label">白日漫游</span><span id="next-weather">随日期自然变化</span></div>
+      <div class="forecast" id="forecast" aria-label="今日天气时间表"></div>
+      <button class="text-button" id="preview-toggle" aria-expanded="false">换个天气看看 <span>↗</span></button>
+      <div id="preview-panel" hidden>
+        <div class="weather-options" role="group" aria-label="天气预览">
+          <button data-weather="clear" title="预览晴天">☀ 晴</button><button data-weather="cloudy" title="预览多云">☁ 云</button><button data-weather="rain" title="预览细雨">☂ 雨</button><button data-weather="mist" title="预览薄雾">≋ 雾</button><button data-weather="snow" title="预览轻雪">❄ 雪</button>
+        </div>
+        <label class="time-label" for="time-range">光影时刻 <span id="time-value">12:00</span></label>
+        <input id="time-range" type="range" min="0" max="23.9" step="0.1" value="12" aria-label="预览一天中的光影">
+        <button class="return-button" id="return-live">回到今天的自然时间</button>
+      </div>
+    </aside>
+    <aside class="pet-card" aria-label="小动物旅行准备">
+      <div class="pet-card-top"><span class="pet-avatar">🦦</span><div><div class="card-overline">岛上小伙伴</div><strong id="pet-name">小海獭</strong><span class="pet-status" id="pet-status">正在沙滩散步</span></div></div>
+      <div class="pet-resources"><span>🍀 <b id="clover-count">12</b></span><span>🍙 <b id="snack-count">3</b></span><span>🧿 <b id="charm-count">1</b></span></div>
+      <div class="pet-trip" id="pet-trip">准备好行囊，它会自己出发。</div>
+      <button class="travel-button" id="travel-button">🎒 准备行囊</button>
+      <button class="text-button postcard-button" id="postcard-toggle">旅行相册 <span id="postcard-count">0</span> ↗</button>
+      <div id="postcard-panel" class="postcard-panel" hidden><div class="postcard-list" id="postcard-list"></div></div>
+    </aside>
+    <aside class="build-card" aria-label="小动物建岛计划">
+      <div class="card-overline">一起把小岛建起来 <span id="build-count">1 / 8</span></div>
+      <h2 id="build-title">铺一条通往家的小路</h2>
+      <p id="build-phase">小伙伴正在准备木料</p>
+      <div id="build-progress" class="build-progress" role="progressbar" aria-label="小岛建造进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="build-fill"></i></div>
+      <div class="build-meta"><span id="build-percent">0%</span><span id="build-remaining">约 6 分钟</span></div>
+      <p class="build-crew" id="build-crew">🐰 棉棉与伙伴们，一起开工啦</p>
+      <div class="build-actions"><button id="build-pause" aria-pressed="false">Ⅱ 暂停</button><button id="build-speed" aria-pressed="false">3× 加速</button><button id="build-focus" aria-pressed="true" title="跟随下一处工地，手动拖动会退出跟随">⌖ 看工地</button></div>
+      <div class="build-links"><button id="cottage-view">⌂ 逛逛小屋</button><button id="build-preview">看完整小岛</button><button id="build-replay">↻ 重新观看</button></div>
+      <small>建造进度自动保存 · 旅行记录独立保留</small>
+    </aside>
+    <div class="planet-caption"><span>✧</span> 拖动星球，收藏每一面的春天 <b>·</b> 滚轮 / 双指缩放</div>
+    <footer class="footer">
+      <section class="event-card" aria-live="polite" aria-atomic="true">
+        <div class="event-top"><span class="eyebrow">此 刻 的 小 美 好</span><button class="text-button" id="diary-toggle" aria-expanded="false">今日手记 ↗</button></div>
+        <div class="event-body"><span id="event-icon">🌱</span><div><h2 id="event-title">欢迎回到你的小星球</h2><p id="event-text">一场随机的相遇，正在来的路上。</p></div></div>
+      </section>
+      <div class="tools" role="group" aria-label="星球交互">
+        <button id="rotate-toggle" aria-pressed="true" title="暂停自动旋转"><span>↻</span>慢慢转</button><i></i>
+        <button id="encounter" title="触发一次符合当前天气的随机事件"><span>✧</span>遇见惊喜</button><i></i>
+        <button id="home-view" title="恢复初始视角"><span>⌂</span>回到这里</button>
+      </div>
+      <div class="ecosystem"><div class="resident-dots"><i></i><i></i><i></i></div><strong><span id="resident-count">3</span> 位动物邻居 · <span id="plant-count">0</span> 株绿意</strong><span id="eco-note">森林、花田和池塘，都在好好生活</span></div>
+    </footer>
+    <aside id="diary" class="diary" hidden><div class="diary-heading"><div><span class="eyebrow">LITTLE THINGS MATTER</span><h2>今天的小小手记</h2></div><button id="diary-close" class="icon-button" aria-label="关闭手记">×</button></div><p class="diary-sub">收好那些发生过的温柔瞬间。</p><ol id="diary-list"></ol><p class="storage-note" id="storage-note">记录保存在当前浏览器中，新的一天另起一页。</p></aside>
+    <dialog id="help-dialog"><form method="dialog"><button class="icon-button close-help" aria-label="关闭说明">×</button></form><div class="eyebrow">A QUIET LITTLE WORLD</div><h2>让生活，慢半拍。</h2><p>一根手指拖动，松手后星球会轻轻缓停，探索星球每一面；双指张合拉近或拉远。电脑也支持鼠标拖动和滚轮缩放。</p><p>底部选择樱林、花影湾、垂钓、伙伴或小星球。点「寄一阵花信」，让一阵樱花雨替你传递心意。阿栗白天会在另一片海湾换着钓点坐下钓鱼，偶尔抛竿、提竿，看鱼儿跃出水面，雨雪或夜晚会离开；小动物入夜后回家休息。</p><p>顶部切换早晨、黄昏、夜晚，或选择自然时间。自然天气依设备日期变化；首次打开是晴日上午。晴朗夜空偶尔有流星划过。</p><p>花信星拥有独立的春日生活与存档。左上方可返回晴日星球，两颗星球分别保存各自的进度。</p><button id="quality-toggle" type="button" class="return-button" aria-pressed="false">流畅模式：关闭</button></dialog>
+    <div class="toast" id="toast" role="status"></div>
+    <noscript><div class="fatal">请启用 JavaScript，才能唤醒这颗三维小星球。</div></noscript>
+  </main>
+  <script>/*__SCRIPT__*/</script>
+</body>
+</html>

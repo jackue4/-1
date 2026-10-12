@@ -1,0 +1,33 @@
+{
+  "completedAt": "2026-09-18T11:14:09.633Z",
+  "production": "https://little-bloom-island.vercel.app",
+  "changes": [
+    "Visual viewport sizing with resize and orientation updates",
+    "Compact floating landscape selector and collapsible world HUD",
+    "Native fullscreen with immersive fallback and reversible controls",
+    "Safari Home Screen metadata, manifest and icons",
+    "Portrait coast framing and bounded destination popover"
+  ],
+  "validation": {
+    "viewportMockChecks": 6,
+    "displayMockChecks": 11,
+    "cameraCpuChecks": 7,
+    "switchControllerChecks": 5,
+    "cssWarnings": 0,
+    "scriptSyntax": true,
+    "anonymousProductionPaths": 8,
+    "productionContentHashesMatch": true
+  },
+  "limits": {
+    "browserRenderingVerified": false,
+    "physicalPhoneVerified": false,
+    "reason": "Browser automation unavailable; source, mock state machine, CPU projection and HTTP checks only"
+  },
+  "reports": [
+    "build-report.json",
+    "camera-report.json",
+    "local-http-report.json",
+    "deploy-report.json",
+    "../twin-validation/switch-report.json"
+  ]
+}

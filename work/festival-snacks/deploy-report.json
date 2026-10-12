@@ -1,0 +1,106 @@
+{
+  "checkedAt": "2026-09-21T06:51:00.451Z",
+  "url": "https://little-bloom-island.vercel.app",
+  "checks": [
+    {
+      "url": "https://little-bloom-island.vercel.app/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 1501877,
+      "sha256": "d6b6fb63e393a34ffc50995d3007697dbbd41954659da8049db5b6698d3309be",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "https://little-bloom-island.vercel.app/sakura-season.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 1501877,
+      "sha256": "d6b6fb63e393a34ffc50995d3007697dbbd41954659da8049db5b6698d3309be",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "https://little-bloom-island.vercel.app/little-bloom.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 1501877,
+      "sha256": "d6b6fb63e393a34ffc50995d3007697dbbd41954659da8049db5b6698d3309be",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "https://little-bloom-island.vercel.app/?source=homescreen",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 1501877,
+      "sha256": "d6b6fb63e393a34ffc50995d3007697dbbd41954659da8049db5b6698d3309be",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "https://little-bloom-island.vercel.app/manifest.webmanifest",
+      "status": 200,
+      "contentType": "application/manifest+json; charset=utf-8",
+      "bytes": 819,
+      "sha256": "98d862941b07a16ac5cccca69ab99d5ea35e8feddfd39dee44ca232ce6662dab",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "https://little-bloom-island.vercel.app/icons/icon-192.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 15972,
+      "sha256": "11aeb0978b16aa90c1ea9fb27f19d0257a4ef9de122c72b1ae2a3a8793662841",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "https://little-bloom-island.vercel.app/icons/icon-512.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 53039,
+      "sha256": "5fc18eb9fe5ed38384d1e9b8014c071064c2369ba135b85a2e1ce5d1f42bcb24",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "https://little-bloom-island.vercel.app/icons/apple-touch-icon.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 14697,
+      "sha256": "32cd6fc964a6599f73465a902c0ed130a2fdea175f3ea110096b8f648e48dd62",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    }
+  ],
+  "passed": true,
+  "browserRenderingVerified": true,
+  "physicalPhoneVerified": false,
+  "deploymentId": "dpl_DAgNtsCXYeRFcC9fZeuGFSAFCqUb",
+  "browserChecks": {
+    "local": [
+      "reference-style green hot-dog truck and ice-cream cart",
+      "four guests queue, receive food and leave",
+      "chef visible in serving hatch",
+      "spiral lollipops and warm pumpkin faces at night",
+      "390x844 and 844x390 browser viewport controls and framing",
+      "no console errors/warnings"
+    ],
+    "production": [
+      "reloaded current public release",
+      "food court visuals and animals present",
+      "no console errors/warnings"
+    ]
+  },
+  "verifiedAt": "2026-09-21T06:52:04.694436+00:00"
+}

@@ -1,0 +1,82 @@
+{
+  "passed": 19,
+  "checks": [
+    {
+      "name": "water",
+      "passed": true
+    },
+    {
+      "name": "cottage-paint",
+      "passed": true
+    },
+    {
+      "name": "reef",
+      "passed": true
+    },
+    {
+      "name": "sea-grass",
+      "passed": true
+    },
+    {
+      "name": "boat-wake",
+      "passed": true
+    },
+    {
+      "name": "grass",
+      "passed": true
+    },
+    {
+      "name": "shore-foam",
+      "passed": true
+    },
+    {
+      "name": "ground",
+      "passed": true
+    },
+    {
+      "name": "plush-fur",
+      "passed": true
+    },
+    {
+      "name": "shrub",
+      "passed": true
+    },
+    {
+      "name": "canopy",
+      "passed": true
+    },
+    {
+      "name": "canopy-leaves",
+      "passed": true
+    },
+    {
+      "name": "farm-crop-leaves",
+      "passed": true
+    },
+    {
+      "name": "canopy-leaves-depth",
+      "passed": true
+    },
+    {
+      "name": "shrub-sprays",
+      "passed": true
+    },
+    {
+      "name": "canopy-depth",
+      "passed": true
+    },
+    {
+      "name": "wildflower-petals",
+      "passed": true
+    },
+    {
+      "name": "shrub-depth",
+      "passed": true
+    },
+    {
+      "name": "sunlit-meadow-pollen",
+      "passed": true
+    }
+  ],
+  "snippets": "water sky glints before opaque output; ground washes plus caustics; grass uniform declarations unique"
+}

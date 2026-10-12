@@ -1,0 +1,94 @@
+{
+  "checkedAt": "2026-09-21T07:09:05.288Z",
+  "passed": true,
+  "method": "Deterministic direct samples of the production adaptive resolution controller; these are threshold tests, not GPU benchmarks.",
+  "checks": [
+    {
+      "name": "Stable 60 Hz keeps the original resolution",
+      "passed": true
+    },
+    {
+      "name": "A brief 500 ms frame spike cannot downgrade the scene",
+      "passed": true,
+      "changes": []
+    },
+    {
+      "name": "Sustained slow frames gradually reduce resolution without crossing the minimum",
+      "passed": true,
+      "changes": [
+        {
+          "atMs": 3663,
+          "ratio": 1.35
+        },
+        {
+          "atMs": 9768,
+          "ratio": 1.2
+        },
+        {
+          "atMs": 15873,
+          "ratio": 1.05
+        },
+        {
+          "atMs": 21978,
+          "ratio": 0.9
+        },
+        {
+          "atMs": 28083,
+          "ratio": 0.8
+        }
+      ]
+    },
+    {
+      "name": "Recovery waits through short bursts of fast frames",
+      "passed": true,
+      "changes": []
+    },
+    {
+      "name": "Sustained fast frames recover in bounded steps and stop at the original maximum",
+      "passed": true,
+      "changes": [
+        {
+          "atMs": 2883,
+          "ratio": 0.9
+        },
+        {
+          "atMs": 17483,
+          "ratio": 1
+        },
+        {
+          "atMs": 32083,
+          "ratio": 1.1
+        },
+        {
+          "atMs": 46683,
+          "ratio": 1.2
+        },
+        {
+          "atMs": 61283,
+          "ratio": 1.3
+        },
+        {
+          "atMs": 75883,
+          "ratio": 1.4
+        },
+        {
+          "atMs": 90483,
+          "ratio": 1.5
+        }
+      ]
+    },
+    {
+      "name": "Background gaps and impossible short intervals do not alter the budget",
+      "passed": true
+    },
+    {
+      "name": "Reset applies the new viewport maximum and clears pressure history",
+      "passed": true
+    },
+    {
+      "name": "Neutral frame windows interrupt the sustained slow threshold",
+      "passed": true,
+      "changes": []
+    }
+  ]
+}

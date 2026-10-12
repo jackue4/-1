@@ -1,0 +1,216 @@
+{
+  "checkedAt": "2026-09-21T04:59:59.638Z",
+  "verification": "Real Three.js geometry and deterministic simulation in Node. GPU rendering and browser layout not tested.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Globe terrain is finite at every one-degree sample including poles and longitude seam",
+      "passed": true,
+      "samples": 65341,
+      "minHeight": -0.13,
+      "maxHeight": 0.10700000000000001,
+      "bad": 0
+    },
+    {
+      "name": "All generated geometry and custom attributes contain finite values",
+      "passed": true,
+      "meshes": 12178,
+      "uniqueGeometries": 4675,
+      "vertices": 372975,
+      "nonFinite": 0
+    },
+    {
+      "name": "Lake shader patches both actual Three Phong stages and binds animation uniforms",
+      "passed": true,
+      "vertexInjection": true,
+      "fragmentInjection": true,
+      "note": "Source injection check, not GPU shader compilation"
+    },
+    {
+      "name": "Canal stone bridges cross from one bank to the other",
+      "passed": true,
+      "bridges": [
+        {
+          "lat": -0.33,
+          "lon": 0.7800000000000001,
+          "length": 0.71,
+          "ends": [
+            {
+              "lat": -0.32796051734220427,
+              "lon": 0.664626003103445,
+              "land": 0.04893747639148732,
+              "height": 0.029829996222637968
+            },
+            {
+              "lat": -0.3279605173422042,
+              "lon": 0.8953739968965551,
+              "land": 0.061033954594858324,
+              "height": 0.03176543273517733
+            }
+          ],
+          "canal": true
+        },
+        {
+          "lat": 0.17,
+          "lon": 0.78,
+          "length": 0.71,
+          "ends": [
+            {
+              "lat": 0.1689776436165151,
+              "lon": 0.669216337448195,
+              "land": 0.04040727779868142,
+              "height": 0.028465164447789026
+            },
+            {
+              "lat": 0.1689776436165151,
+              "lon": 0.8907836625518051,
+              "land": 0.05072537066979665,
+              "height": 0.030116059307167462
+            }
+          ],
+          "canal": true
+        },
+        {
+          "lat": 0.57,
+          "lon": 0.78,
+          "length": 0.71,
+          "ends": [
+            {
+              "lat": 0.5661868258660603,
+              "lon": 0.6505048827119025,
+              "land": 0.031236503644578865,
+              "height": 0.026997840583132617
+            },
+            {
+              "lat": 0.5661868258660603,
+              "lon": 0.9094951172880975,
+              "land": 0.024327987460569734,
+              "height": 0.025892477993691158
+            }
+          ],
+          "canal": true
+        },
+        {
+          "lat": 0.11,
+          "lon": -0.5699999999999998,
+          "length": 0.94,
+          "ends": [
+            {
+              "lat": 0.13771102226378562,
+              "lon": -0.7141030159016322,
+              "land": -0.161096607545968,
+              "height": -0.12598955743309695
+            },
+            {
+              "lat": 0.080041066139117,
+              "lon": -0.42680903956574884,
+              "land": -0.20233136291017328,
+              "height": -0.13
+            }
+          ],
+          "canal": false
+        },
+        {
+          "lat": -0.26,
+          "lon": 2.54,
+          "length": 0.76,
+          "ends": [
+            {
+              "lat": -0.30413098054964555,
+              "lon": 2.4264777277446505,
+              "land": 0.147292639025382,
+              "height": 0.04556682224406112
+            },
+            {
+              "lat": -0.21274606815204813,
+              "lon": 2.650799419561668,
+              "land": 0.24979077964272847,
+              "height": 0.06196652474283656
+            }
+          ],
+          "canal": false
+        }
+      ]
+    },
+    {
+      "name": "Boat hull longitudinal axes follow the actual trajectories",
+      "passed": true,
+      "seconds": 240,
+      "samplesPerBoat": 961,
+      "boats": [
+        {
+          "minAxisAlignment": 0.999886911107249,
+          "maxYawChange": 0.5893878288441443,
+          "minimumWaterDepth": 0.06892640011719815,
+          "minHullClearance": 1
+        },
+        {
+          "minAxisAlignment": 0.9998874595815987,
+          "maxYawChange": 0.019998375902509264,
+          "minimumWaterDepth": 0.136,
+          "minHullClearance": 1
+        },
+        {
+          "minAxisAlignment": 0.9998874643685806,
+          "maxYawChange": 0.0241003132543204,
+          "minimumWaterDepth": 0.136,
+          "minHullClearance": 1
+        }
+      ]
+    },
+    {
+      "name": "All boat centerlines remain over lake or canal water",
+      "passed": true,
+      "minimumDepths": [
+        0.06892640011719815,
+        0.136,
+        0.136
+      ]
+    },
+    {
+      "name": "Absolute-time boat, lake and snow updates remain exact while paused",
+      "passed": true
+    },
+    {
+      "name": "Restoring play time restores boat, lake and snow state after preview exactly",
+      "passed": true
+    },
+    {
+      "name": "Static batching preserves triangle count and all moving transforms",
+      "passed": true,
+      "before": {
+        "triangles": 1033272,
+        "meshes": 12177
+      },
+      "after": {
+        "triangles": 1033272,
+        "meshes": 152
+      },
+      "batching": {
+        "before": 12073,
+        "batched": 12025,
+        "remainingStatic": 48
+      }
+    }
+  ],
+  "scenery": {
+    "houses": 23,
+    "pavilions": 5,
+    "bridges": 5,
+    "corridors": 4,
+    "trees": 26,
+    "boats": 3,
+    "fish": 14,
+    "landmarks": [
+      "临水雪廊",
+      "水巷人家",
+      "湖心亭",
+      "疏影梅园",
+      "长堤听雪"
+    ]
+  },
+  "explicitCleanupEvents": {
+    "geometries": 4337,
+    "materials": 52
+  }
+}

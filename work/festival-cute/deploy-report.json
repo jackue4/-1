@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-09-21T03:27:44.336Z",
+  "url": "https://little-bloom-island.vercel.app/#festival",
+  "deploymentId": "dpl_FKSf17b2Bkc6VE26d3hS4bGGDnbL",
+  "status": 200,
+  "bytes": 1382563,
+  "sha256": "2d03b481cf125d1a15e66b310d4d96a07ace8a1c5f7ab592f3bf4975c1b85cd1",
+  "exactMatch": true,
+  "browserRenderingVerified": true,
+  "publicChecks": {
+    "readyState": "complete",
+    "animalBalloons": 15,
+    "ordinaryBalloons": 10,
+    "parkAnimals": 22,
+    "allAnimalsHaveAnimatedEyes": true
+  },
+  "physicalPhoneVerified": false
+}

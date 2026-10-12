@@ -1,0 +1,71 @@
+{
+  "date": "2026-09-18",
+  "scope": "Independent post-crash CPU regression. Browser appearance, GPU shader compilation and reconstructed island-trails are outside this report.",
+  "passed": true,
+  "sceneSourceEdits": [],
+  "harnessCorrections": [],
+  "suites": [
+    {
+      "command": "node work/island-expansion/stream-test.mjs",
+      "passed": 5,
+      "total": 5,
+      "evidence": "Continuous 321-point downhill stream; 72 raycasts against actual terrain; minnows bounded for 300 seconds; bridge clearance; pause and cleanup.",
+      "minimumWaterTerrainGap": 0.022798670998507742,
+      "bridgeWaterClearance": 0.033506071519658676,
+      "report": "work/island-expansion/stream-report.json"
+    },
+    {
+      "command": "node work/island-expansion/shore-life-test.mjs",
+      "passed": 6,
+      "total": 6,
+      "evidence": "Finite props, dry footprints clear of town/rail/stream, beach roots clearance, moving laundry with fixed tops, explicit pause and idempotent disposal.",
+      "drawCalls": 3,
+      "triangles": 8254,
+      "minimumRailClearance": 0.23366422644678814
+    },
+    {
+      "command": "node work/kamakura-validation/run-integration.mjs",
+      "passed": 7,
+      "total": 7,
+      "evidence": "Train loop, station dwell and crossing protection, pause, falling/floating petals, ocean coverage, marine animation and unchanged 29-house town.",
+      "crossingViolations": 0,
+      "waterSurfaceFraction": 0.789125,
+      "report": "work/kamakura-validation/integration-report.json"
+    },
+    {
+      "command": "node work/harbor-validation/beacons-marine-test.mjs",
+      "passed": 5,
+      "total": 5,
+      "evidence": "All four beacons, including relocated west-cape, sweep actual sea smoothly for 900 seconds; underwater animal and bubble vertices remain valid for 600 seconds; quality, pause and cleanup.",
+      "minimumBeamTargetWaterDepth": 0.21528495751502863,
+      "report": "work/harbor-validation/beacons-marine-report.json"
+    },
+    {
+      "command": "node work/harbor-validation/cruises-test.mjs",
+      "passed": true,
+      "evidence": "720 seconds of boat route sampling, full hull seabed clearance, no overlapping tour boats or reef intersections, motion, pause, quality and disposal.",
+      "minimumBoatSeparation": 0.5663825342014873,
+      "minimumReefClearance": 0.24067545096663717,
+      "report": "work/harbor-validation/cruises-report.json"
+    },
+    {
+      "command": "node work/harbor-validation/landmarks-test.mjs",
+      "passed": 8,
+      "total": 8,
+      "evidence": "Existing cottage/tea room/shrine preserve houses and reservations; 507 footprint/entrance samples; grounded foundations; safe plant positions; warm lamps and disposal.",
+      "report": "work/harbor-validation/landmarks-report.json"
+    },
+    {
+      "command": "node work/island-expansion/nature-recovery-test.mjs",
+      "passed": 4,
+      "total": 4,
+      "evidence": "New nature builds with town, landmarks and garden reservations; all attributes finite; 117 exposed-root raycasts contact rendered land; breeze pause and resource cleanup.",
+      "rootCenterAboveRenderedTerrainRange": [0.001671647073946847, 0.006269417862674764],
+      "drawCalls": 3,
+      "triangles": 43840,
+      "report": "work/island-expansion/nature-recovery-report.json"
+    }
+  ],
+  "findings": [],
+  "remainingVerification": ["Reconstructed island-trails module", "Browser framing and visual inspection", "GPU shader console", "Responsive controls and two-world switching"]
+}

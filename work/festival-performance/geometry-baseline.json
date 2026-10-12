@@ -1,0 +1,111 @@
+{
+  "baseline": true,
+  "before": {
+    "nodes": 7399,
+    "groups": 1028,
+    "emptyGroups": 118,
+    "meshes": 6371,
+    "triangles": 1629476,
+    "vertices": 3992334,
+    "indexedMeshes": 5895,
+    "matrixAutoUpdates": 7399,
+    "geometryBytes": 137659944
+  },
+  "after": {
+    "nodes": 1576,
+    "groups": 1028,
+    "emptyGroups": 711,
+    "meshes": 548,
+    "triangles": 1629476,
+    "vertices": 4593043,
+    "indexedMeshes": 93,
+    "matrixAutoUpdates": 1576,
+    "geometryBytes": 161696766
+  },
+  "batching": {
+    "before": 6341,
+    "batched": 5823,
+    "remainingStatic": 518
+  },
+  "candy": {
+    "nodes": 37,
+    "groups": 10,
+    "emptyGroups": 0,
+    "meshes": 27,
+    "triangles": 190278,
+    "vertices": 558666,
+    "indexedMeshes": 9,
+    "matrixAutoUpdates": 37,
+    "geometryBytes": 19962576,
+    "clusters": 9,
+    "lollipops": 27,
+    "pumpkinLanterns": 27,
+    "pointLights": 0,
+    "drawCalls": 27,
+    "disposed": false,
+    "time": 0,
+    "night": 0,
+    "brightness": 0,
+    "faceEmissiveIntensity": 0,
+    "haloOpacity": 0,
+    "locations": [
+      {
+        "lat": 0.58,
+        "lon": -1.1,
+        "scale": 0.86,
+        "turn": 0.2
+      },
+      {
+        "lat": 0.62,
+        "lon": -0.84,
+        "scale": 0.79,
+        "turn": 0
+      },
+      {
+        "lat": 0.63,
+        "lon": -0.48,
+        "scale": 0.76,
+        "turn": -0.4
+      },
+      {
+        "lat": 0.15,
+        "lon": 0.95,
+        "scale": 0.78,
+        "turn": 0.1
+      },
+      {
+        "lat": -0.68,
+        "lon": 0.9,
+        "scale": 0.9,
+        "turn": 1.65
+      },
+      {
+        "lat": -0.7,
+        "lon": -0.34,
+        "scale": 1,
+        "turn": 0.3
+      },
+      {
+        "lat": 0.73,
+        "lon": 1.47,
+        "scale": 0.88,
+        "turn": 0.2
+      },
+      {
+        "lat": -0.16,
+        "lon": 2.54,
+        "scale": 1,
+        "turn": 0.5
+      },
+      {
+        "lat": 0.76,
+        "lon": -2.45,
+        "scale": 0.92,
+        "turn": -0.3
+      }
+    ],
+    "minGroundClearance": 0.0009999999999998899
+  },
+  "forcedWorldMatrixMsMedian": 0.33337000000000216,
+  "notes": "CPU source geometry inventory and forced matrix update microbenchmark; not GPU FPS or visible draw calls."
+}

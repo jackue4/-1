@@ -1,0 +1,13 @@
+<!doctype html><html lang="zh-CN" data-phase="day"><head><meta charset="utf-8"><title>星愿游乐园</title></head><body>
+<main id="app">
+ <div id="scene" role="img" aria-label="星愿游乐园三维星球，拖动旋转，双指缩放"></div>
+ <header class="park-heading park-tools"><span class="park-mark">✧</span><div><p>THE WISHING PARK</p><h1>星愿游乐园</h1><span>把今天，过成一个小小的节日。</span></div></header>
+ <nav class="park-light park-tools" aria-label="游乐园光照"><button data-phase="day" aria-pressed="true">☀ 晴昼</button><button data-phase="dusk" aria-pressed="false">◒ 落日</button><button data-phase="night" aria-pressed="false">☾ 星夜</button></nav>
+ <div class="park-ticket park-tools"><span class="ticket-star">✦</span><div><small>今晚，为你留一场烟花</small><button id="night-show">赴一场星愿烟花 ↗</button></div></div>
+ <div class="show-card" id="show-card" hidden><small>THE WISHES AFTER DARK</small><strong id="show-chapter">序曲 · 第一颗星</strong><div class="show-progress"><i id="show-progress"></i></div><span>让愿望，在这里开成花。</span></div>
+ <nav id="park-friends" class="park-friends park-tools" aria-label="选择一起散步的小动物" hidden><button data-animal="rabbit" aria-pressed="true">棉棉 · 小兔</button><button data-animal="bear" aria-pressed="false">麦麦 · 小熊</button><button data-animal="corgi" aria-pressed="false">阿栗 · 柯基</button></nav>
+ <nav class="park-views park-tools" aria-label="游乐园观景机位"><button data-view="globe" aria-pressed="true">◎ 整颗星球</button><button data-view="camp" aria-pressed="false">△ 林间露营</button><button data-view="animals" aria-pressed="false">♡ 小动物游园</button><button data-view="balloons" aria-pressed="false">☁ 动物气球</button><button data-view="snacks" aria-pressed="false">♧ 林间小餐车</button><button data-view="candy" aria-pressed="false">✧ 糖果南瓜灯</button><button data-view="garden" aria-pressed="false">❀ 花径散步</button><button data-view="village" aria-pressed="false">⌂ 糖果小街</button><button data-view="castle" aria-pressed="false">♜ 星愿城堡</button><button data-view="carousel" aria-pressed="false">♞ 旋转木马</button><button data-view="ferris" aria-pressed="false">◉ 摩天轮</button><button data-view="coaster" aria-pressed="false">⌁ 坐上过山车</button><button data-view="lagoon" aria-pressed="false">≈ 星光水湾</button><button data-view="teacups" aria-pressed="false">♧ 云朵茶杯</button><button data-view="swings" aria-pressed="false">✧ 追风飞椅</button></nav>
+ <div class="park-bottom park-tools"><span id="ride-caption">风筝向天空借一点自由，列车去追下一阵风。</span><button id="park-pause" aria-pressed="false" aria-label="暂停游乐园">Ⅱ</button><button id="park-quality" aria-pressed="false">画质 · 细腻</button></div>
+ <div id="park-toast" role="status"></div><div id="loading">正在点亮你的游乐园…</div>
+</main>
+</body></html>

@@ -1,0 +1,1461 @@
+{
+  "index": 6,
+  "name": "07.mp4",
+  "world": "festival",
+  "view": "fireworks",
+  "phase": "night",
+  "frames": 192,
+  "duration": 6.4,
+  "samples": [
+    {
+      "frame": 0,
+      "time": 69.5,
+      "camera": [
+        3.743073078503081,
+        6.990422312160291,
+        20.773405238507657
+      ],
+      "target": [
+        0.0337543246504758,
+        0.6681154482403896,
+        0.6745238271476652
+      ],
+      "night": 1,
+      "daylight": 0.14,
+      "dusk": 0,
+      "render": {
+        "calls": 647,
+        "triangles": 1715453,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      },
+      "show": {
+        "active": true,
+        "suspended": false,
+        "showTime": 69.53,
+        "duration": 84,
+        "progress": 0.8277777777777613,
+        "chapter": "终章 · 今夜为你盛放",
+        "cycle": 0,
+        "activeParticles": 1023,
+        "activeRockets": 0,
+        "particleBudget": 3600,
+        "bursts": 27,
+        "lightPulse": 0.11224473609156174,
+        "kites": 5,
+        "hotAirBalloons": 3,
+        "tetheredBalloons": 16,
+        "rigidDrawCallsSaved": 107,
+        "preview": false,
+        "reducedMotion": false,
+        "disposed": false
+      },
+      "rides": {
+        "event": "环星慢游",
+        "eventAge": 0.03333333333332848,
+        "progress": 0.4810595544746257,
+        "speed": 1,
+        "lapSeconds": 31.459763638017805,
+        "cars": 5,
+        "splash": 0,
+        "carouselPulse": 0.5776111801010394,
+        "ferrisPulse": 3.286902637396376e-7,
+        "longitude": -0.09774588824631036,
+        "tunnel": [
+          0.195,
+          0.265625
+        ],
+        "trackLength": 24.22401800127371,
+        "carouselAngle": 15.290000000000001,
+        "ferrisAngle": 5.004,
+        "elapsed": 69.5,
+        "rides": 4,
+        "horseCount": 6,
+        "gondolaCount": 10
+      },
+      "camp": {
+        "location": {
+          "lat": -0.9,
+          "lon": -2.55,
+          "radius": 1.52,
+          "raise": 0.115,
+          "rx": 1.19,
+          "rz": 0.97
+        },
+        "stats": {
+          "terrace": true,
+          "stoneSteps": 7,
+          "retainingStones": 120,
+          "grassTufts": 252,
+          "wildflowers": 9,
+          "fireflies": 14,
+          "embers": 18,
+          "lanterns": 5,
+          "trees": 6
+        },
+        "batching": {
+          "before": 387,
+          "batched": 354,
+          "remainingStatic": 33,
+          "prunedGroups": 0,
+          "sourceVertices": 71528,
+          "mergedVertices": 71528
+        },
+        "time": 69.5,
+        "night": 1,
+        "fireLit": true,
+        "fireIntensity": 1.0381507240416294,
+        "camper": {
+          "campers": 1,
+          "openDoors": 1,
+          "interiorSeats": 3,
+          "roofLuggage": 2,
+          "wheels": 4,
+          "unbatchedMeshes": 273,
+          "drawCalls": 2,
+          "triangles": 19944,
+          "vertices": 14833,
+          "batching": {
+            "before": 273,
+            "batched": 271,
+            "remainingStatic": 2,
+            "prunedGroups": 0,
+            "sourceVertices": 14833,
+            "mergedVertices": 14833
+          },
+          "bodyDimensions": {
+            "width": 0.46,
+            "length": 1.03,
+            "height": 0.6
+          },
+          "door": {
+            "side": "+X",
+            "zMin": -0.128,
+            "zMax": 0.159,
+            "sillY": 0.162
+          },
+          "front": "-Z"
+        },
+        "guests": {
+          "time": 69.5,
+          "night": 1,
+          "disposed": false,
+          "animals": 3,
+          "foldingChairs": 3,
+          "mealTables": 1,
+          "picnicBlankets": 1,
+          "coolers": 1,
+          "thermoses": 1,
+          "staticMeshes": 1,
+          "meshes": 26,
+          "triangles": 49428,
+          "guests": [
+            {
+              "name": "棉棉",
+              "species": "rabbit",
+              "activity": "慢慢转一转烤棉花糖",
+              "bite": 0,
+              "position": [
+                -0.2,
+                0.089,
+                -0.38
+              ]
+            },
+            {
+              "name": "麦麦",
+              "species": "bear",
+              "activity": "捧着热汤喝一小口",
+              "bite": 0.2588008337584471,
+              "position": [
+                0.38,
+                0.089,
+                -0.19
+              ]
+            },
+            {
+              "name": "阿栗",
+              "species": "corgi",
+              "activity": "吃一口抹了黄油的吐司",
+              "bite": 0.810094369876105,
+              "position": [
+                -0.38,
+                0.089,
+                0.29
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "frame": 30,
+      "time": 70.5,
+      "camera": [
+        3.8385086733544593,
+        6.965596499867412,
+        20.673869047279943
+      ],
+      "target": [
+        0.0337543246504758,
+        0.6681154482403896,
+        0.6745238271476652
+      ],
+      "night": 1,
+      "daylight": 0.14,
+      "dusk": 0,
+      "render": {
+        "calls": 650,
+        "triangles": 1718125,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      },
+      "show": {
+        "active": true,
+        "suspended": false,
+        "showTime": 70.53,
+        "duration": 84,
+        "progress": 0.8396825396825226,
+        "chapter": "终章 · 今夜为你盛放",
+        "cycle": 0,
+        "activeParticles": 716,
+        "activeRockets": 1,
+        "particleBudget": 3600,
+        "bursts": 27,
+        "lightPulse": 0.01855393008466541,
+        "kites": 5,
+        "hotAirBalloons": 3,
+        "tetheredBalloons": 16,
+        "rigidDrawCallsSaved": 107,
+        "preview": false,
+        "reducedMotion": false,
+        "disposed": false
+      },
+      "rides": {
+        "event": "跃入星光泻湖",
+        "eventAge": 0.03333333333332848,
+        "progress": 0.512846188713396,
+        "speed": 1,
+        "lapSeconds": 31.459763638017805,
+        "cars": 5,
+        "splash": 0.4122222222221701,
+        "carouselPulse": 0.10417148850687037,
+        "ferrisPulse": 0.0000572985779395679,
+        "longitude": 0.1311701595729987,
+        "tunnel": [
+          0.195,
+          0.265625
+        ],
+        "trackLength": 24.22401800127371,
+        "carouselAngle": 15.51,
+        "ferrisAngle": 5.076,
+        "elapsed": 70.5,
+        "rides": 4,
+        "horseCount": 6,
+        "gondolaCount": 10
+      },
+      "camp": {
+        "location": {
+          "lat": -0.9,
+          "lon": -2.55,
+          "radius": 1.52,
+          "raise": 0.115,
+          "rx": 1.19,
+          "rz": 0.97
+        },
+        "stats": {
+          "terrace": true,
+          "stoneSteps": 7,
+          "retainingStones": 120,
+          "grassTufts": 252,
+          "wildflowers": 9,
+          "fireflies": 14,
+          "embers": 18,
+          "lanterns": 5,
+          "trees": 6
+        },
+        "batching": {
+          "before": 387,
+          "batched": 354,
+          "remainingStatic": 33,
+          "prunedGroups": 0,
+          "sourceVertices": 71528,
+          "mergedVertices": 71528
+        },
+        "time": 70.5,
+        "night": 1,
+        "fireLit": true,
+        "fireIntensity": 0.9786859329460033,
+        "camper": {
+          "campers": 1,
+          "openDoors": 1,
+          "interiorSeats": 3,
+          "roofLuggage": 2,
+          "wheels": 4,
+          "unbatchedMeshes": 273,
+          "drawCalls": 2,
+          "triangles": 19944,
+          "vertices": 14833,
+          "batching": {
+            "before": 273,
+            "batched": 271,
+            "remainingStatic": 2,
+            "prunedGroups": 0,
+            "sourceVertices": 14833,
+            "mergedVertices": 14833
+          },
+          "bodyDimensions": {
+            "width": 0.46,
+            "length": 1.03,
+            "height": 0.6
+          },
+          "door": {
+            "side": "+X",
+            "zMin": -0.128,
+            "zMax": 0.159,
+            "sillY": 0.162
+          },
+          "front": "-Z"
+        },
+        "guests": {
+          "time": 70.5,
+          "night": 1,
+          "disposed": false,
+          "animals": 3,
+          "foldingChairs": 3,
+          "mealTables": 1,
+          "picnicBlankets": 1,
+          "coolers": 1,
+          "thermoses": 1,
+          "staticMeshes": 1,
+          "meshes": 26,
+          "triangles": 49428,
+          "guests": [
+            {
+              "name": "棉棉",
+              "species": "rabbit",
+              "activity": "慢慢转一转烤棉花糖",
+              "bite": 0,
+              "position": [
+                -0.2,
+                0.089,
+                -0.38
+              ]
+            },
+            {
+              "name": "麦麦",
+              "species": "bear",
+              "activity": "捧着热汤喝一小口",
+              "bite": 0.835890084420578,
+              "position": [
+                0.38,
+                0.089,
+                -0.19
+              ]
+            },
+            {
+              "name": "阿栗",
+              "species": "corgi",
+              "activity": "吃一口抹了黄油的吐司",
+              "bite": 0.22975612676220122,
+              "position": [
+                -0.38,
+                0.089,
+                0.29
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "frame": 60,
+      "time": 71.5,
+      "camera": [
+        3.9329624498567703,
+        6.940770687574533,
+        20.573893363129784
+      ],
+      "target": [
+        0.0337543246504758,
+        0.6681154482403896,
+        0.6745238271476652
+      ],
+      "night": 1,
+      "daylight": 0.14,
+      "dusk": 0,
+      "render": {
+        "calls": 658,
+        "triangles": 1718733,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      },
+      "show": {
+        "active": true,
+        "suspended": false,
+        "showTime": 71.53,
+        "duration": 84,
+        "progress": 0.8515873015872838,
+        "chapter": "终章 · 今夜为你盛放",
+        "cycle": 0,
+        "activeParticles": 767,
+        "activeRockets": 2,
+        "particleBudget": 3600,
+        "bursts": 28,
+        "lightPulse": 0.20452324387731105,
+        "kites": 5,
+        "hotAirBalloons": 3,
+        "tetheredBalloons": 16,
+        "rigidDrawCallsSaved": 107,
+        "preview": false,
+        "reducedMotion": false,
+        "disposed": false
+      },
+      "rides": {
+        "event": "跃入星光泻湖",
+        "eventAge": 1.0333333333331824,
+        "progress": 0.5446328229521663,
+        "speed": 1,
+        "lapSeconds": 31.459763638017805,
+        "cars": 5,
+        "splash": 0.9997970399311522,
+        "carouselPulse": 0.004927025486873118,
+        "ferrisPulse": 0.003995825418275071,
+        "longitude": 0.371499663071593,
+        "tunnel": [
+          0.195,
+          0.265625
+        ],
+        "trackLength": 24.22401800127371,
+        "carouselAngle": 15.73,
+        "ferrisAngle": 5.148,
+        "elapsed": 71.5,
+        "rides": 4,
+        "horseCount": 6,
+        "gondolaCount": 10
+      },
+      "camp": {
+        "location": {
+          "lat": -0.9,
+          "lon": -2.55,
+          "radius": 1.52,
+          "raise": 0.115,
+          "rx": 1.19,
+          "rz": 0.97
+        },
+        "stats": {
+          "terrace": true,
+          "stoneSteps": 7,
+          "retainingStones": 120,
+          "grassTufts": 252,
+          "wildflowers": 9,
+          "fireflies": 14,
+          "embers": 18,
+          "lanterns": 5,
+          "trees": 6
+        },
+        "batching": {
+          "before": 387,
+          "batched": 354,
+          "remainingStatic": 33,
+          "prunedGroups": 0,
+          "sourceVertices": 71528,
+          "mergedVertices": 71528
+        },
+        "time": 71.5,
+        "night": 1,
+        "fireLit": true,
+        "fireIntensity": 1.0171353059147772,
+        "camper": {
+          "campers": 1,
+          "openDoors": 1,
+          "interiorSeats": 3,
+          "roofLuggage": 2,
+          "wheels": 4,
+          "unbatchedMeshes": 273,
+          "drawCalls": 2,
+          "triangles": 19944,
+          "vertices": 14833,
+          "batching": {
+            "before": 273,
+            "batched": 271,
+            "remainingStatic": 2,
+            "prunedGroups": 0,
+            "sourceVertices": 14833,
+            "mergedVertices": 14833
+          },
+          "bodyDimensions": {
+            "width": 0.46,
+            "length": 1.03,
+            "height": 0.6
+          },
+          "door": {
+            "side": "+X",
+            "zMin": -0.128,
+            "zMax": 0.159,
+            "sillY": 0.162
+          },
+          "front": "-Z"
+        },
+        "guests": {
+          "time": 71.5,
+          "night": 1,
+          "disposed": false,
+          "animals": 3,
+          "foldingChairs": 3,
+          "mealTables": 1,
+          "picnicBlankets": 1,
+          "coolers": 1,
+          "thermoses": 1,
+          "staticMeshes": 1,
+          "meshes": 26,
+          "triangles": 49428,
+          "guests": [
+            {
+              "name": "棉棉",
+              "species": "rabbit",
+              "activity": "慢慢转一转烤棉花糖",
+              "bite": 0.2064828451348137,
+              "position": [
+                -0.2,
+                0.089,
+                -0.38
+              ]
+            },
+            {
+              "name": "麦麦",
+              "species": "bear",
+              "activity": "捧着热汤喝一小口",
+              "bite": 0.9593908690408146,
+              "position": [
+                0.38,
+                0.089,
+                -0.19
+              ]
+            },
+            {
+              "name": "阿栗",
+              "species": "corgi",
+              "activity": "吃一口抹了黄油的吐司",
+              "bite": 0,
+              "position": [
+                -0.38,
+                0.089,
+                0.29
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "frame": 90,
+      "time": 72.5,
+      "camera": [
+        4.026432473176714,
+        6.915944875281653,
+        20.47348597023967
+      ],
+      "target": [
+        0.0337543246504758,
+        0.6681154482403896,
+        0.6745238271476652
+      ],
+      "night": 1,
+      "daylight": 0.14,
+      "dusk": 0,
+      "render": {
+        "calls": 658,
+        "triangles": 1718733,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      },
+      "show": {
+        "active": true,
+        "suspended": false,
+        "showTime": 72.53,
+        "duration": 84,
+        "progress": 0.863492063492045,
+        "chapter": "终章 · 今夜为你盛放",
+        "cycle": 0,
+        "activeParticles": 2211,
+        "activeRockets": 1,
+        "particleBudget": 3600,
+        "bursts": 29,
+        "lightPulse": 0.10570811153256963,
+        "kites": 5,
+        "hotAirBalloons": 3,
+        "tetheredBalloons": 16,
+        "rigidDrawCallsSaved": 107,
+        "preview": false,
+        "reducedMotion": false,
+        "disposed": false
+      },
+      "rides": {
+        "event": "跃入星光泻湖",
+        "eventAge": 2.033333333333039,
+        "progress": 0.5764194571909366,
+        "speed": 1,
+        "lapSeconds": 31.459763638017805,
+        "cars": 5,
+        "splash": 0.9999999299177493,
+        "carouselPulse": 0.00006611197486340177,
+        "ferrisPulse": 0.08278907462374423,
+        "longitude": 0.6106849412240192,
+        "tunnel": [
+          0.195,
+          0.265625
+        ],
+        "trackLength": 24.22401800127371,
+        "carouselAngle": 15.95,
+        "ferrisAngle": 5.22,
+        "elapsed": 72.5,
+        "rides": 4,
+        "horseCount": 6,
+        "gondolaCount": 10
+      },
+      "camp": {
+        "location": {
+          "lat": -0.9,
+          "lon": -2.55,
+          "radius": 1.52,
+          "raise": 0.115,
+          "rx": 1.19,
+          "rz": 0.97
+        },
+        "stats": {
+          "terrace": true,
+          "stoneSteps": 7,
+          "retainingStones": 120,
+          "grassTufts": 252,
+          "wildflowers": 9,
+          "fireflies": 14,
+          "embers": 18,
+          "lanterns": 5,
+          "trees": 6
+        },
+        "batching": {
+          "before": 387,
+          "batched": 354,
+          "remainingStatic": 33,
+          "prunedGroups": 0,
+          "sourceVertices": 71528,
+          "mergedVertices": 71528
+        },
+        "time": 72.5,
+        "night": 1,
+        "fireLit": true,
+        "fireIntensity": 0.9661904789650859,
+        "camper": {
+          "campers": 1,
+          "openDoors": 1,
+          "interiorSeats": 3,
+          "roofLuggage": 2,
+          "wheels": 4,
+          "unbatchedMeshes": 273,
+          "drawCalls": 2,
+          "triangles": 19944,
+          "vertices": 14833,
+          "batching": {
+            "before": 273,
+            "batched": 271,
+            "remainingStatic": 2,
+            "prunedGroups": 0,
+            "sourceVertices": 14833,
+            "mergedVertices": 14833
+          },
+          "bodyDimensions": {
+            "width": 0.46,
+            "length": 1.03,
+            "height": 0.6
+          },
+          "door": {
+            "side": "+X",
+            "zMin": -0.128,
+            "zMax": 0.159,
+            "sillY": 0.162
+          },
+          "front": "-Z"
+        },
+        "guests": {
+          "time": 72.5,
+          "night": 1,
+          "disposed": false,
+          "animals": 3,
+          "foldingChairs": 3,
+          "mealTables": 1,
+          "picnicBlankets": 1,
+          "coolers": 1,
+          "thermoses": 1,
+          "staticMeshes": 1,
+          "meshes": 26,
+          "triangles": 49428,
+          "guests": [
+            {
+              "name": "棉棉",
+              "species": "rabbit",
+              "activity": "慢慢转一转烤棉花糖",
+              "bite": 0.7875021372755157,
+              "position": [
+                -0.2,
+                0.089,
+                -0.38
+              ]
+            },
+            {
+              "name": "麦麦",
+              "species": "bear",
+              "activity": "捧着热汤喝一小口",
+              "bite": 0.46252681031853515,
+              "position": [
+                0.38,
+                0.089,
+                -0.19
+              ]
+            },
+            {
+              "name": "阿栗",
+              "species": "corgi",
+              "activity": "吃一口抹了黄油的吐司",
+              "bite": 0,
+              "position": [
+                -0.38,
+                0.089,
+                0.29
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "frame": 120,
+      "time": 73.5,
+      "camera": [
+        4.118916864380053,
+        6.891119062988775,
+        20.37265466071114
+      ],
+      "target": [
+        0.0337543246504758,
+        0.6681154482403896,
+        0.6745238271476652
+      ],
+      "night": 1,
+      "daylight": 0.14,
+      "dusk": 0,
+      "render": {
+        "calls": 649,
+        "triangles": 1715605,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      },
+      "show": {
+        "active": true,
+        "suspended": false,
+        "showTime": 73.53,
+        "duration": 84,
+        "progress": 0.8753968253968063,
+        "chapter": "终章 · 今夜为你盛放",
+        "cycle": 0,
+        "activeParticles": 1556,
+        "activeRockets": 2,
+        "particleBudget": 3600,
+        "bursts": 30,
+        "lightPulse": 0.05463537851221125,
+        "kites": 5,
+        "hotAirBalloons": 3,
+        "tetheredBalloons": 16,
+        "rigidDrawCallsSaved": 107,
+        "preview": false,
+        "reducedMotion": false,
+        "disposed": false
+      },
+      "rides": {
+        "event": "环星慢游",
+        "eventAge": 0.7333333333332265,
+        "progress": 0.6082060914297069,
+        "speed": 1,
+        "lapSeconds": 31.459763638017805,
+        "cars": 5,
+        "splash": 0.0022179480268473177,
+        "carouselPulse": 3.965356630217253e-7,
+        "ferrisPulse": 0.47307571689615746,
+        "longitude": 0.8318007583697923,
+        "tunnel": [
+          0.195,
+          0.265625
+        ],
+        "trackLength": 24.22401800127371,
+        "carouselAngle": 16.17,
+        "ferrisAngle": 5.292,
+        "elapsed": 73.5,
+        "rides": 4,
+        "horseCount": 6,
+        "gondolaCount": 10
+      },
+      "camp": {
+        "location": {
+          "lat": -0.9,
+          "lon": -2.55,
+          "radius": 1.52,
+          "raise": 0.115,
+          "rx": 1.19,
+          "rz": 0.97
+        },
+        "stats": {
+          "terrace": true,
+          "stoneSteps": 7,
+          "retainingStones": 120,
+          "grassTufts": 252,
+          "wildflowers": 9,
+          "fireflies": 14,
+          "embers": 18,
+          "lanterns": 5,
+          "trees": 6
+        },
+        "batching": {
+          "before": 387,
+          "batched": 354,
+          "remainingStatic": 33,
+          "prunedGroups": 0,
+          "sourceVertices": 71528,
+          "mergedVertices": 71528
+        },
+        "time": 73.5,
+        "night": 1,
+        "fireLit": true,
+        "fireIntensity": 0.9672709665988011,
+        "camper": {
+          "campers": 1,
+          "openDoors": 1,
+          "interiorSeats": 3,
+          "roofLuggage": 2,
+          "wheels": 4,
+          "unbatchedMeshes": 273,
+          "drawCalls": 2,
+          "triangles": 19944,
+          "vertices": 14833,
+          "batching": {
+            "before": 273,
+            "batched": 271,
+            "remainingStatic": 2,
+            "prunedGroups": 0,
+            "sourceVertices": 14833,
+            "mergedVertices": 14833
+          },
+          "bodyDimensions": {
+            "width": 0.46,
+            "length": 1.03,
+            "height": 0.6
+          },
+          "door": {
+            "side": "+X",
+            "zMin": -0.128,
+            "zMax": 0.159,
+            "sillY": 0.162
+          },
+          "front": "-Z"
+        },
+        "guests": {
+          "time": 73.5,
+          "night": 1,
+          "disposed": false,
+          "animals": 3,
+          "foldingChairs": 3,
+          "mealTables": 1,
+          "picnicBlankets": 1,
+          "coolers": 1,
+          "thermoses": 1,
+          "staticMeshes": 1,
+          "meshes": 26,
+          "triangles": 49428,
+          "guests": [
+            {
+              "name": "棉棉",
+              "species": "rabbit",
+              "activity": "慢慢转一转烤棉花糖",
+              "bite": 0.9802764067757759,
+              "position": [
+                -0.2,
+                0.089,
+                -0.38
+              ]
+            },
+            {
+              "name": "麦麦",
+              "species": "bear",
+              "activity": "捧着热汤喝一小口",
+              "bite": 0.016266825409966525,
+              "position": [
+                0.38,
+                0.089,
+                -0.19
+              ]
+            },
+            {
+              "name": "阿栗",
+              "species": "corgi",
+              "activity": "吃一口抹了黄油的吐司",
+              "bite": 0,
+              "position": [
+                -0.38,
+                0.089,
+                0.29
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "frame": 150,
+      "time": 74.5,
+      "camera": [
+        4.210413800459813,
+        6.866293250695895,
+        20.271407234185478
+      ],
+      "target": [
+        0.0337543246504758,
+        0.6681154482403896,
+        0.6745238271476652
+      ],
+      "night": 1,
+      "daylight": 0.14,
+      "dusk": 0,
+      "render": {
+        "calls": 647,
+        "triangles": 1715453,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      },
+      "show": {
+        "active": true,
+        "suspended": false,
+        "showTime": 74.53,
+        "duration": 84,
+        "progress": 0.8873015873015675,
+        "chapter": "终章 · 今夜为你盛放",
+        "cycle": 0,
+        "activeParticles": 619,
+        "activeRockets": 1,
+        "particleBudget": 3600,
+        "bursts": 31,
+        "lightPulse": 0.13438134696785473,
+        "kites": 5,
+        "hotAirBalloons": 3,
+        "tetheredBalloons": 16,
+        "rigidDrawCallsSaved": 107,
+        "preview": false,
+        "reducedMotion": false,
+        "disposed": false
+      },
+      "rides": {
+        "event": "摩天轮的光之回信",
+        "eventAge": 0.699999999999898,
+        "progress": 0.6399927256684772,
+        "speed": 1,
+        "lapSeconds": 31.459763638017805,
+        "cars": 5,
+        "splash": 7.658589712793022e-7,
+        "carouselPulse": 6.990672425439545e-10,
+        "ferrisPulse": 0.9813196001528838,
+        "longitude": 1.0574304614791472,
+        "tunnel": [
+          0.195,
+          0.265625
+        ],
+        "trackLength": 24.22401800127371,
+        "carouselAngle": 16.39,
+        "ferrisAngle": 5.364,
+        "elapsed": 74.5,
+        "rides": 4,
+        "horseCount": 6,
+        "gondolaCount": 10
+      },
+      "camp": {
+        "location": {
+          "lat": -0.9,
+          "lon": -2.55,
+          "radius": 1.52,
+          "raise": 0.115,
+          "rx": 1.19,
+          "rz": 0.97
+        },
+        "stats": {
+          "terrace": true,
+          "stoneSteps": 7,
+          "retainingStones": 120,
+          "grassTufts": 252,
+          "wildflowers": 9,
+          "fireflies": 14,
+          "embers": 18,
+          "lanterns": 5,
+          "trees": 6
+        },
+        "batching": {
+          "before": 387,
+          "batched": 354,
+          "remainingStatic": 33,
+          "prunedGroups": 0,
+          "sourceVertices": 71528,
+          "mergedVertices": 71528
+        },
+        "time": 74.5,
+        "night": 1,
+        "fireLit": true,
+        "fireIntensity": 0.9439794580981009,
+        "camper": {
+          "campers": 1,
+          "openDoors": 1,
+          "interiorSeats": 3,
+          "roofLuggage": 2,
+          "wheels": 4,
+          "unbatchedMeshes": 273,
+          "drawCalls": 2,
+          "triangles": 19944,
+          "vertices": 14833,
+          "batching": {
+            "before": 273,
+            "batched": 271,
+            "remainingStatic": 2,
+            "prunedGroups": 0,
+            "sourceVertices": 14833,
+            "mergedVertices": 14833
+          },
+          "bodyDimensions": {
+            "width": 0.46,
+            "length": 1.03,
+            "height": 0.6
+          },
+          "door": {
+            "side": "+X",
+            "zMin": -0.128,
+            "zMax": 0.159,
+            "sillY": 0.162
+          },
+          "front": "-Z"
+        },
+        "guests": {
+          "time": 74.5,
+          "night": 1,
+          "disposed": false,
+          "animals": 3,
+          "foldingChairs": 3,
+          "mealTables": 1,
+          "picnicBlankets": 1,
+          "coolers": 1,
+          "thermoses": 1,
+          "staticMeshes": 1,
+          "meshes": 26,
+          "triangles": 49428,
+          "guests": [
+            {
+              "name": "棉棉",
+              "species": "rabbit",
+              "activity": "慢慢转一转烤棉花糖",
+              "bite": 0.52448184757324,
+              "position": [
+                -0.2,
+                0.089,
+                -0.38
+              ]
+            },
+            {
+              "name": "麦麦",
+              "species": "bear",
+              "activity": "捧着热汤喝一小口",
+              "bite": 0,
+              "position": [
+                0.38,
+                0.089,
+                -0.19
+              ]
+            },
+            {
+              "name": "阿栗",
+              "species": "corgi",
+              "activity": "吃一口抹了黄油的吐司",
+              "bite": 0,
+              "position": [
+                -0.38,
+                0.089,
+                0.29
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "frame": 180,
+      "time": 75.5,
+      "camera": [
+        4.300921514361997,
+        6.841467438403016,
+        20.169751497464382
+      ],
+      "target": [
+        0.0337543246504758,
+        0.6681154482403896,
+        0.6745238271476652
+      ],
+      "night": 1,
+      "daylight": 0.14,
+      "dusk": 0,
+      "render": {
+        "calls": 647,
+        "triangles": 1715453,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      },
+      "show": {
+        "active": true,
+        "suspended": false,
+        "showTime": 75.53,
+        "duration": 84,
+        "progress": 0.8992063492063287,
+        "chapter": "终章 · 今夜为你盛放",
+        "cycle": 0,
+        "activeParticles": 671,
+        "activeRockets": 0,
+        "particleBudget": 3600,
+        "bursts": 32,
+        "lightPulse": 0.051453661761751965,
+        "kites": 5,
+        "hotAirBalloons": 3,
+        "tetheredBalloons": 16,
+        "rigidDrawCallsSaved": 107,
+        "preview": false,
+        "reducedMotion": false,
+        "disposed": false
+      },
+      "rides": {
+        "event": "摩天轮的光之回信",
+        "eventAge": 1.6999999999997535,
+        "progress": 0.6717793599072476,
+        "speed": 1,
+        "lapSeconds": 31.459763638017805,
+        "cars": 5,
+        "splash": 2.644516268141427e-10,
+        "carouselPulse": 7.53786859904124e-13,
+        "ferrisPulse": 0.7532906989602163,
+        "longitude": 1.2650015795396747,
+        "tunnel": [
+          0.195,
+          0.265625
+        ],
+        "trackLength": 24.22401800127371,
+        "carouselAngle": 16.61,
+        "ferrisAngle": 5.436,
+        "elapsed": 75.5,
+        "rides": 4,
+        "horseCount": 6,
+        "gondolaCount": 10
+      },
+      "camp": {
+        "location": {
+          "lat": -0.9,
+          "lon": -2.55,
+          "radius": 1.52,
+          "raise": 0.115,
+          "rx": 1.19,
+          "rz": 0.97
+        },
+        "stats": {
+          "terrace": true,
+          "stoneSteps": 7,
+          "retainingStones": 120,
+          "grassTufts": 252,
+          "wildflowers": 9,
+          "fireflies": 14,
+          "embers": 18,
+          "lanterns": 5,
+          "trees": 6
+        },
+        "batching": {
+          "before": 387,
+          "batched": 354,
+          "remainingStatic": 33,
+          "prunedGroups": 0,
+          "sourceVertices": 71528,
+          "mergedVertices": 71528
+        },
+        "time": 75.5,
+        "night": 1,
+        "fireLit": true,
+        "fireIntensity": 0.9124064490583671,
+        "camper": {
+          "campers": 1,
+          "openDoors": 1,
+          "interiorSeats": 3,
+          "roofLuggage": 2,
+          "wheels": 4,
+          "unbatchedMeshes": 273,
+          "drawCalls": 2,
+          "triangles": 19944,
+          "vertices": 14833,
+          "batching": {
+            "before": 273,
+            "batched": 271,
+            "remainingStatic": 2,
+            "prunedGroups": 0,
+            "sourceVertices": 14833,
+            "mergedVertices": 14833
+          },
+          "bodyDimensions": {
+            "width": 0.46,
+            "length": 1.03,
+            "height": 0.6
+          },
+          "door": {
+            "side": "+X",
+            "zMin": -0.128,
+            "zMax": 0.159,
+            "sillY": 0.162
+          },
+          "front": "-Z"
+        },
+        "guests": {
+          "time": 75.5,
+          "night": 1,
+          "disposed": false,
+          "animals": 3,
+          "foldingChairs": 3,
+          "mealTables": 1,
+          "picnicBlankets": 1,
+          "coolers": 1,
+          "thermoses": 1,
+          "staticMeshes": 1,
+          "meshes": 26,
+          "triangles": 49428,
+          "guests": [
+            {
+              "name": "棉棉",
+              "species": "rabbit",
+              "activity": "慢慢转一转烤棉花糖",
+              "bite": 0.03562681948019125,
+              "position": [
+                -0.2,
+                0.089,
+                -0.38
+              ]
+            },
+            {
+              "name": "麦麦",
+              "species": "bear",
+              "activity": "捧着热汤喝一小口",
+              "bite": 0,
+              "position": [
+                0.38,
+                0.089,
+                -0.19
+              ]
+            },
+            {
+              "name": "阿栗",
+              "species": "corgi",
+              "activity": "吃一口抹了黄油的吐司",
+              "bite": 0,
+              "position": [
+                -0.38,
+                0.089,
+                0.29
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "frame": 191,
+      "time": 75.86666666666666,
+      "camera": [
+        4.333859481049086,
+        6.832364640562293,
+        20.132376967177855
+      ],
+      "target": [
+        0.0337543246504758,
+        0.6681154482403896,
+        0.6745238271476652
+      ],
+      "night": 1,
+      "daylight": 0.14,
+      "dusk": 0,
+      "render": {
+        "calls": 647,
+        "triangles": 1715453,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      },
+      "show": {
+        "active": true,
+        "suspended": false,
+        "showTime": 75.9,
+        "duration": 84,
+        "progress": 0.9035714285714078,
+        "chapter": "终章 · 今夜为你盛放",
+        "cycle": 0,
+        "activeParticles": 583,
+        "activeRockets": 0,
+        "particleBudget": 3600,
+        "bursts": 32,
+        "lightPulse": 0.026593893746048574,
+        "kites": 5,
+        "hotAirBalloons": 3,
+        "tetheredBalloons": 16,
+        "rigidDrawCallsSaved": 107,
+        "preview": false,
+        "reducedMotion": false,
+        "disposed": false
+      },
+      "rides": {
+        "event": "环星慢游",
+        "eventAge": 0.13333333333331393,
+        "progress": 0.68343445912813,
+        "speed": 1,
+        "lapSeconds": 31.459763638017805,
+        "cars": 5,
+        "splash": 1.4223898261040278e-11,
+        "carouselPulse": 9.58211093143404e-14,
+        "ferrisPulse": 0.5973582366317854,
+        "longitude": 1.3225183118556763,
+        "tunnel": [
+          0.195,
+          0.265625
+        ],
+        "trackLength": 24.22401800127371,
+        "carouselAngle": 16.690666666666665,
+        "ferrisAngle": 5.462399999999999,
+        "elapsed": 75.86666666666666,
+        "rides": 4,
+        "horseCount": 6,
+        "gondolaCount": 10
+      },
+      "camp": {
+        "location": {
+          "lat": -0.9,
+          "lon": -2.55,
+          "radius": 1.52,
+          "raise": 0.115,
+          "rx": 1.19,
+          "rz": 0.97
+        },
+        "stats": {
+          "terrace": true,
+          "stoneSteps": 7,
+          "retainingStones": 120,
+          "grassTufts": 252,
+          "wildflowers": 9,
+          "fireflies": 14,
+          "embers": 18,
+          "lanterns": 5,
+          "trees": 6
+        },
+        "batching": {
+          "before": 387,
+          "batched": 354,
+          "remainingStatic": 33,
+          "prunedGroups": 0,
+          "sourceVertices": 71528,
+          "mergedVertices": 71528
+        },
+        "time": 75.86666666666666,
+        "night": 1,
+        "fireLit": true,
+        "fireIntensity": 1.0299120090640468,
+        "camper": {
+          "campers": 1,
+          "openDoors": 1,
+          "interiorSeats": 3,
+          "roofLuggage": 2,
+          "wheels": 4,
+          "unbatchedMeshes": 273,
+          "drawCalls": 2,
+          "triangles": 19944,
+          "vertices": 14833,
+          "batching": {
+            "before": 273,
+            "batched": 271,
+            "remainingStatic": 2,
+            "prunedGroups": 0,
+            "sourceVertices": 14833,
+            "mergedVertices": 14833
+          },
+          "bodyDimensions": {
+            "width": 0.46,
+            "length": 1.03,
+            "height": 0.6
+          },
+          "door": {
+            "side": "+X",
+            "zMin": -0.128,
+            "zMax": 0.159,
+            "sillY": 0.162
+          },
+          "front": "-Z"
+        },
+        "guests": {
+          "time": 75.86666666666666,
+          "night": 1,
+          "disposed": false,
+          "animals": 3,
+          "foldingChairs": 3,
+          "mealTables": 1,
+          "picnicBlankets": 1,
+          "coolers": 1,
+          "thermoses": 1,
+          "staticMeshes": 1,
+          "meshes": 26,
+          "triangles": 49428,
+          "guests": [
+            {
+              "name": "棉棉",
+              "species": "rabbit",
+              "activity": "慢慢转一转烤棉花糖",
+              "bite": 0,
+              "position": [
+                -0.2,
+                0.089,
+                -0.38
+              ]
+            },
+            {
+              "name": "麦麦",
+              "species": "bear",
+              "activity": "捧着热汤喝一小口",
+              "bite": 0,
+              "position": [
+                0.38,
+                0.089,
+                -0.19
+              ]
+            },
+            {
+              "name": "阿栗",
+              "species": "corgi",
+              "activity": "吃一口抹了黄油的吐司",
+              "bite": 0,
+              "position": [
+                -0.38,
+                0.089,
+                0.29
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "bytes": 7906710,
+  "secondsToRender": 22.413
+}

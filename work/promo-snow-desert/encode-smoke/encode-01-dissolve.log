@@ -1,0 +1,59 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\work\promo-snow-desert\encode-smoke\raw\01.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Duration: 00:00:02.40, start: 0.000000, bitrate: 11 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 160x284 [SAR 1:1 DAR 40:71], 6 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+Input #1, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\work\promo-snow-desert\encode-smoke\raw\02.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Duration: 00:00:02.40, start: 0.000000, bitrate: 11 kb/s
+  Stream #1:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 160x284 [SAR 1:1 DAR 40:71], 6 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+Stream mapping:
+  Stream #0:0 (h264) -> trim:default
+  Stream #1:0 (h264) -> trim:default
+  format:default -> Stream #0:0 (libx264)
+[libx264 @ 000002510a9e0700] using SAR=1/1
+[libx264 @ 000002510a9e0700] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 000002510a9e0700] profile High, level 1.2, 4:2:0, 8-bit
+[libx264 @ 000002510a9e0700] 264 - core 164 r3192 c24e06c - H.264/MPEG-4 AVC codec - Copyleft 2003-2024 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=4 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=18.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\work\promo-snow-desert\encode-smoke\edit-parts\01-dissolve.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 160x284 [SAR 1:1 DAR 40:71], q=2-31, 30 fps, 90k tbn
+      Metadata:
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[mp4 @ 000002510a917c00] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000002510a9dee80] video:1KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 91.742287%
+frame=   12 fps=0.0 q=-1.0 Lsize=       2KiB time=00:00:00.33 bitrate=  50.7kbits/s speed=5.93x    
+[libx264 @ 000002510a9e0700] frame I:1     Avg QP: 9.00  size:    61
+[libx264 @ 000002510a9e0700] frame P:6     Avg QP: 7.67  size:    30
+[libx264 @ 000002510a9e0700] frame B:5     Avg QP: 8.80  size:    35
+[libx264 @ 000002510a9e0700] consecutive B-frames: 33.3% 33.3%  0.0% 33.3%
+[libx264 @ 000002510a9e0700] mb I  I16..4: 100.0%  0.0%  0.0%
+[libx264 @ 000002510a9e0700] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:100.0%
+[libx264 @ 000002510a9e0700] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.0%  0.0%  0.0%  direct:20.0%  skip:80.0%
+[libx264 @ 000002510a9e0700] 8x8 transform intra:0.0%
+[libx264 @ 000002510a9e0700] coded y,uvDC,uvAC intra: 0.0% 0.6% 0.0% inter: 0.0% 9.1% 0.0%
+[libx264 @ 000002510a9e0700] i16 v,h,dc,p: 94%  0%  6%  0%
+[libx264 @ 000002510a9e0700] i8c dc,h,v,p: 100%  0%  0%  0%
+[libx264 @ 000002510a9e0700] Weighted P-Frames: Y:100.0% UV:100.0%
+[libx264 @ 000002510a9e0700] kb/s:8.26

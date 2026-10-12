@@ -1,0 +1,234 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "label": "rabbit: camera stays above the actual terrain",
+      "passed": true,
+      "detail": 0.36807668848231456
+    },
+    {
+      "label": "rabbit: animated face remains comfortably inside all three viewports",
+      "passed": true,
+      "detail": 0.12026169874371807
+    },
+    {
+      "label": "rabbit: full actual body, ears and accessories stay inside the frustum",
+      "passed": true,
+      "detail": {
+        "time": 10,
+        "view": "desktop",
+        "maxNdc": 0.7131249076307566
+      }
+    },
+    {
+      "label": "rabbit: samples cover walking, idling, turning and both journey directions",
+      "passed": true,
+      "detail": {
+        "moving": 93,
+        "idle": 28,
+        "turning": 17,
+        "facings": [
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "label": "bear: camera stays above the actual terrain",
+      "passed": true,
+      "detail": 0.3510916878962318
+    },
+    {
+      "label": "bear: animated face remains comfortably inside all three viewports",
+      "passed": true,
+      "detail": 0.13097021549561808
+    },
+    {
+      "label": "bear: full actual body, ears and accessories stay inside the frustum",
+      "passed": true,
+      "detail": {
+        "time": 3,
+        "view": "desktop",
+        "maxNdc": 0.48183192603593067
+      }
+    },
+    {
+      "label": "bear: samples cover walking, idling, turning and both journey directions",
+      "passed": true,
+      "detail": {
+        "moving": 91,
+        "idle": 30,
+        "turning": 18,
+        "facings": [
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "label": "corgi: camera stays above the actual terrain",
+      "passed": true,
+      "detail": 0.3986197980466195
+    },
+    {
+      "label": "corgi: animated face remains comfortably inside all three viewports",
+      "passed": true,
+      "detail": 0.10089534261678897
+    },
+    {
+      "label": "corgi: full actual body, ears and accessories stay inside the frustum",
+      "passed": true,
+      "detail": {
+        "time": 45,
+        "view": "desktop",
+        "maxNdc": 0.4862408317662783
+      }
+    },
+    {
+      "label": "corgi: samples cover walking, idling, turning and both journey directions",
+      "passed": true,
+      "detail": {
+        "moving": 91,
+        "idle": 30,
+        "turning": 18,
+        "facings": [
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "label": "All camera positions, targets and up vectors remain finite",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "metrics": {
+    "rabbit": {
+      "id": "棉棉 · 湖边散步",
+      "minimumGroundClearance": 0.36807668848231456,
+      "maximumSubjectNdc": 0.7131249076307566,
+      "maximumFaceNdc": 0.12026169874371807,
+      "minimumNdcZ": 0.9719414167232322,
+      "maximumNdcZ": 0.9843261146893704,
+      "movingSamples": 93,
+      "idleSamples": 28,
+      "turningSamples": 17,
+      "facings": [
+        1,
+        -1
+      ],
+      "worstFraming": {
+        "time": 10,
+        "view": "desktop",
+        "maxNdc": 0.7131249076307566
+      }
+    },
+    "bear": {
+      "id": "麦麦 · 慢慢逛园",
+      "minimumGroundClearance": 0.3510916878962318,
+      "maximumSubjectNdc": 0.48183192603593067,
+      "maximumFaceNdc": 0.13097021549561808,
+      "minimumNdcZ": 0.9675939966908047,
+      "maximumNdcZ": 0.982266985493344,
+      "movingSamples": 91,
+      "idleSamples": 30,
+      "turningSamples": 18,
+      "facings": [
+        -1,
+        1
+      ],
+      "worstFraming": {
+        "time": 3,
+        "view": "desktop",
+        "maxNdc": 0.48183192603593067
+      }
+    },
+    "corgi": {
+      "id": "阿栗 · 追着风走",
+      "minimumGroundClearance": 0.3986197980466195,
+      "maximumSubjectNdc": 0.4862408317662783,
+      "maximumFaceNdc": 0.10089534261678897,
+      "minimumNdcZ": 0.9623984102115728,
+      "maximumNdcZ": 0.9799103404879466,
+      "movingSamples": 91,
+      "idleSamples": 30,
+      "turningSamples": 18,
+      "facings": [
+        1,
+        -1
+      ],
+      "worstFraming": {
+        "time": 45,
+        "view": "desktop",
+        "maxNdc": 0.4862408317662783
+      }
+    }
+  },
+  "clipped": [],
+  "occlusionSummary": {
+    "samplesPerSpecies": 75,
+    "blocked": {
+      "rabbit": 0,
+      "bear": 1,
+      "corgi": 0
+    },
+    "scope": "CPU raycasts against actual opaque world geometry at five-second intervals; animated water, other guests and rides excluded. Occlusions are diagnostics, not automatically failures."
+  },
+  "occlusions": [
+    {
+      "time": 65,
+      "species": "bear",
+      "view": "portrait",
+      "mesh": "Starwish gardens[0] / Group[51] / Animal balloon bouquet[4] / rabbit cloud balloon[0] / rabbit cloud balloon painted silhouette[0]",
+      "geometry": "BufferGeometry",
+      "material": "MeshToonMaterial",
+      "color": "ffffff",
+      "anchorLatitude": 0.32,
+      "anchorLongitude": 0.66,
+      "distance": 0.07395071636660831,
+      "faceDistance": 1.004466210884411,
+      "hit": [
+        2.1681874998590556,
+        1.068921170534921,
+        2.820157227822005
+      ],
+      "camera": [
+        2.2355983436923346,
+        1.0950889057979953,
+        2.804673810369082
+      ],
+      "face": [
+        1.3199626581358248,
+        0.739654811599073,
+        3.014983736014397
+      ]
+    }
+  ],
+  "views": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 810,
+      "fov": 38
+    },
+    {
+      "name": "portrait",
+      "width": 390,
+      "height": 784,
+      "fov": 48
+    },
+    {
+      "name": "landscape",
+      "width": 844,
+      "height": 390,
+      "fov": 38
+    }
+  ],
+  "sampling": {
+    "seconds": 120,
+    "stepSeconds": 1,
+    "samples": 121,
+    "scope": "Actual animated scene geometry; no rasterization or real-device performance claims"
+  }
+}

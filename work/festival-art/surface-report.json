@@ -1,0 +1,31 @@
+{
+  "paths": 7,
+  "minVertexClearance": 0.0059998471649218565,
+  "maxVertexClearance": 0.012000159631944118,
+  "minPathRadialNormal": 0.44512051436438854,
+  "minFaceRadialNormal": 0.21475249803601593,
+  "minRoadLagoonMask": 1.0199857294254215,
+  "minCentreLagoonMask": 1.1322075414489936,
+  "maxTangentRadialDot": 2.220446049250313e-16,
+  "lagoonDepression": 0.27,
+  "minWaterDepth": 0.026209354400634766,
+  "protectedMeshes": 379,
+  "animals": 22,
+  "triangles": 1330975,
+  "batching": {
+    "before": 6489,
+    "batched": 6058,
+    "remainingStatic": 431
+  },
+  "nature": {
+    "trees": 107,
+    "canopyLobes": 428,
+    "grassClumps": 4777,
+    "grassBlades": 26220,
+    "wildflowers": 833,
+    "meadowPatches": 485,
+    "drawCalls": 6
+  },
+  "lanterns": 34,
+  "staticBatchAttributesPreserved": true
+}

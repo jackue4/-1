@@ -1,0 +1,180 @@
+{
+  "verifiedAt": "2026-09-21T13:37:14.670Z",
+  "scope": "Source geometry against latest terrain height, including increased dune ridge .30 and current cove profile. Additional decorative rock meshes and rendered appearance are outside this clearance test.",
+  "sources": {
+    "work/desert-planet/terrain.js": {
+      "sha256": "1bd9f4e87d7b5adf45069ce34f7a589cf818464095f74027bbcfbb5b86eee153",
+      "modified": "2026-09-21T13:30:30.524Z"
+    },
+    "work/desert-planet/water.js": {
+      "sha256": "933d4535855ce6cec869c7558f2edddc1234a1aeece901f00a1909c4b4532dff",
+      "modified": "2026-09-21T13:24:35.508Z"
+    },
+    "work/desert-planet/world.js": {
+      "sha256": "62884da4f0027f99a488f56d99bb226b8ea1cc9f5fc187b8dccd28a6cf12f3b6",
+      "modified": "2026-09-21T13:36:50.662Z"
+    }
+  },
+  "durationSeconds": 480,
+  "centerStepSeconds": 0.5,
+  "vertexStepSeconds": 2,
+  "fishChecks": 1619520,
+  "plantChecks": 578984,
+  "stats": {
+    "waterRadius": 3.208,
+    "fish": 42,
+    "schools": 6,
+    "grassClusters": 28,
+    "coralClusters": 14,
+    "seabedStones": 28,
+    "drawCalls": 6,
+    "triangles": 73176,
+    "surfaceAlphaRange": [
+      0.355,
+      0.7
+    ],
+    "reflectionPasses": 0
+  },
+  "minCenterBed": 0.058650012069569296,
+  "minCenterSurface": 0.05665000011374252,
+  "minFishBed": 0.061055031976154694,
+  "minFishSurface": 0.053331433777616954,
+  "minPlantSurface": 0.040158612803512295,
+  "marineBed": {
+    "六队悠游的小鱼 · 42尾细摆尾鳍": {
+      "min": 0.061055031976154694,
+      "max": 0.16466848311694893,
+      "instances": 42
+    },
+    "海床上28丛柔软水草": {
+      "min": 0.0029001935251478095,
+      "max": 0.14202784429143778,
+      "instances": 28
+    },
+    "浅海的小枝珊瑚": {
+      "min": -0.004720135547102267,
+      "max": 0.1314855519920517,
+      "instances": 14
+    },
+    "青玉水底的圆润石贝": {
+      "min": -0.05745088540649679,
+      "max": 0.08622378936557507,
+      "instances": 28
+    }
+  },
+  "jetty": {
+    "latitude": -0.3,
+    "longitude": 0.82,
+    "centerWaterDepth": 0.00827292576417582,
+    "boards": [
+      {
+        "index": 0,
+        "minWaterDepth": -0.017713721825597606,
+        "minDeckGroundClearance": -0.008760621452513107,
+        "minDeckWaterClearance": 0.007000000000000117
+      },
+      {
+        "index": 1,
+        "minWaterDepth": 0.012511037733673458,
+        "minDeckGroundClearance": 0.02150983319505828,
+        "minDeckWaterClearance": 0.0071176106015156115
+      },
+      {
+        "index": 2,
+        "minWaterDepth": 0.04944798968837638,
+        "minDeckGroundClearance": 0.059238730243143856,
+        "minDeckWaterClearance": 0.007910018952644648
+      },
+      {
+        "index": 3,
+        "minWaterDepth": 0.09085967144828144,
+        "minDeckGroundClearance": 0.10218805637579598,
+        "minDeckWaterClearance": 0.009448562137396088
+      },
+      {
+        "index": 4,
+        "minWaterDepth": 0.1334561447559972,
+        "minDeckGroundClearance": 0.14706680559010854,
+        "minDeckWaterClearance": 0.011732170538412579
+      },
+      {
+        "index": 5,
+        "minWaterDepth": 0.17281278848859438,
+        "minDeckGroundClearance": 0.18944877569707286,
+        "minDeckWaterClearance": 0.014759260323364387
+      },
+      {
+        "index": 6,
+        "minWaterDepth": 0.19997935928730115,
+        "minDeckGroundClearance": 0.2203816344073024,
+        "minDeckWaterClearance": 0.01852773891686832
+      },
+      {
+        "index": 7,
+        "minWaterDepth": 0.2155660401070052,
+        "minDeckGroundClearance": 0.24047297504961174,
+        "minDeckWaterClearance": 0.023035012190365745
+      },
+      {
+        "index": 8,
+        "minWaterDepth": 0.21799999999999997,
+        "minDeckGroundClearance": 0.24627799331268774,
+        "minDeckWaterClearance": 0.028277993312687766
+      },
+      {
+        "index": 9,
+        "minWaterDepth": 0.21799999999999997,
+        "minDeckGroundClearance": 0.2522531131915038,
+        "minDeckWaterClearance": 0.034253113191503815
+      },
+      {
+        "index": 10,
+        "minWaterDepth": 0.21799999999999997,
+        "minDeckGroundClearance": 0.25895633242430627,
+        "minDeckWaterClearance": 0.040956332424306297
+      },
+      {
+        "index": 11,
+        "minWaterDepth": 0.21799999999999997,
+        "minDeckGroundClearance": 0.2663831546671531,
+        "minDeckWaterClearance": 0.04838315466715315
+      },
+      {
+        "index": 12,
+        "minWaterDepth": 0.21799999999999997,
+        "minDeckGroundClearance": 0.2745286413202135,
+        "minDeckWaterClearance": 0.05652864132021351
+      },
+      {
+        "index": 13,
+        "minWaterDepth": 0.21799999999999997,
+        "minDeckGroundClearance": 0.28338742742132483,
+        "minDeckWaterClearance": 0.06538742742132486
+      }
+    ],
+    "minDeckTerrainClearance": -0.008760621452513107,
+    "minDeckSurfaceClearance": 0.007000000000000117,
+    "interpretation": "First board overlaps the shore by about .0088; retained intentionally as shore attachment. Boards 1 through 13 lie over water."
+  },
+  "originalBoat": {
+    "latitude": -0.39,
+    "longitude": 0.94,
+    "baseRadius": 3.234,
+    "centerWaterDepth": 0.21173770855879637,
+    "minimumFootprintWaterDepth": 0.08880230617408147,
+    "minimumHullTerrainClearance": 0.12146710804436989,
+    "minimumBottomRelativeToSurface": -0.00499571136140764,
+    "maximumBottomRelativeToSurface": 0.007023126484575926
+  },
+  "loweredBoat": {
+    "latitude": -0.39,
+    "longitude": 0.94,
+    "baseRadius": 3.226,
+    "centerWaterDepth": 0.21173770855879637,
+    "minimumFootprintWaterDepth": 0.08844411587968004,
+    "minimumHullTerrainClearance": 0.11312694448536353,
+    "minimumBottomRelativeToSurface": -0.0129957112804866,
+    "maximumBottomRelativeToSurface": -0.0009768730212984522
+  },
+  "passed": true
+}

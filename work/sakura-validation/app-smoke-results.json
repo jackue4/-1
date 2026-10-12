@@ -1,0 +1,35 @@
+{
+  "passed": 7,
+  "checks": [
+    "Scenic sakura page boots, exposes three residents and opens the globe camera",
+    "Application reads and writes only its independent sakura storage key",
+    "Globe and close forest cameras switch",
+    "Wish button triggers 660 petals and restores 380 after the short flourish",
+    "All five weather buttons update the scene with finite pollen and reduced petals in rain/snow",
+    "Night dims the spring effects and morning restores them",
+    "Quality mode reduces and restores the grass population"
+  ],
+  "weatherCounts": {
+    "clear": 660,
+    "cloudy": 660,
+    "rain": 132,
+    "mist": 378,
+    "snow": 37
+  },
+  "storageKeys": [
+    "little-bloom.sakura.ecosystem.v1"
+  ],
+  "shadowResolution": 2048,
+  "residents": 3,
+  "garden": {
+    "decks": 1,
+    "lanterns": 4,
+    "groundPetals": 570,
+    "baseFlying": 380,
+    "maxFlying": 660,
+    "sourceClusters": 153,
+    "drawCalls": 5,
+    "triangles": 19646
+  },
+  "note": "Headless DOM and CPU scene integration. Renderer stub does not validate WebGL visual output or frame rate."
+}

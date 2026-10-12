@@ -1,0 +1,2 @@
+import {createSurfaceNavigation,circleObstacle} from './surface-navigation.js';import {direction,R} from './world.js';
+const nav=createSurfaceNavigation({height:()=>R+.15,R,obstacles:[circleObstacle(direction(.28,0),.2)]}),a={normal:direction(.28,-.4)},goal=direction(.28,.4);console.log('route',nav.route(a.normal,goal).map(x=>[Math.asin(x.y),Math.atan2(x.x,x.z)]));for(let i=0;i<700;i++){nav.move(a,goal,1/30,i/30);if(i%100===0)console.log(i,a.normal.distanceTo(goal),a.nav.path.length,a.normal.distanceTo(a.nav.path[0]),Math.asin(a.normal.y),Math.atan2(a.normal.x,a.normal.z));}

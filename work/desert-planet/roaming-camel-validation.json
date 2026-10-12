@@ -1,0 +1,179 @@
+{
+  "passed": true,
+  "stats": {
+    "animals": 1,
+    "species": "baby-dromedary",
+    "name": "小沙",
+    "drawCalls": 6,
+    "meshes": 6,
+    "triangles": 8984,
+    "speed": 0.105,
+    "cycleSeconds": 394.782868982763,
+    "route": {
+      "closed": true,
+      "routeType": "connected-mainland-tour",
+      "fullCircumnavigation": false,
+      "reason": "西侧大陆之间有海峡，沿东部陆桥往返连接正面和背面的景点。",
+      "length": 41.45220124319011,
+      "samples": 3074,
+      "gridNodes": 26624,
+      "connectedDryNodes": 3128,
+      "dryComponents": 72,
+      "checkpoints": [
+        {
+          "name": "商队远行",
+          "lat": 0.9738834951456312,
+          "lon": 0.8344855486097887,
+          "requested": [
+            0.98,
+            0.83
+          ]
+        },
+        {
+          "name": "北部沙丘",
+          "lat": 1.1602912621359225,
+          "lon": 0.5645049299419158,
+          "requested": [
+            1.16,
+            0.56
+          ]
+        },
+        {
+          "name": "临海沙坡",
+          "lat": -0.12126213592233004,
+          "lon": 0.7363107781851079,
+          "requested": [
+            -0.12,
+            0.74
+          ]
+        },
+        {
+          "name": "赤陶城外",
+          "lat": 0.15834951456310686,
+          "lon": 1.5217089415825562,
+          "requested": [
+            0.15,
+            1.51
+          ]
+        },
+        {
+          "name": "东部沙脊",
+          "lat": 0.4146601941747574,
+          "lon": 1.88986433067511,
+          "requested": [
+            0.41,
+            1.89
+          ]
+        },
+        {
+          "name": "月泉南岸",
+          "lat": 0.018543689320388523,
+          "lon": 2.6261751088602177,
+          "requested": [
+            -0.01,
+            2.6
+          ]
+        },
+        {
+          "name": "星球背面的海岸",
+          "lat": 0.4146601941747574,
+          "lon": -2.675262494072558,
+          "requested": [
+            0.42,
+            -2.68
+          ]
+        },
+        {
+          "name": "月泉北部沙丘",
+          "lat": 0.8573786407766992,
+          "lon": 2.8716120349219203,
+          "requested": [
+            0.86,
+            2.89
+          ]
+        },
+        {
+          "name": "背面的高地",
+          "lat": 0.9505825242718449,
+          "lon": 2.233476027161494,
+          "requested": [
+            0.96,
+            2.24
+          ]
+        },
+        {
+          "name": "东部归途",
+          "lat": 0.9272815533980585,
+          "lon": 1.4235341711578746,
+          "requested": [
+            0.95,
+            1.47
+          ]
+        }
+      ],
+      "omittedWaypoints": [
+        {
+          "name": "玫瑰石窟外",
+          "nearestConnectedLandDistance": 3.1800265151400864
+        },
+        {
+          "name": "风雕石桥外",
+          "nearestConnectedLandDistance": 3.440001671528758
+        },
+        {
+          "name": "西侧海岸",
+          "nearestConnectedLandDistance": 3.745283154576822
+        }
+      ],
+      "latitude": [
+        -0.24611077639342993,
+        1.157204816157683
+      ],
+      "longitudeOctants": [
+        0,
+        4,
+        5,
+        6,
+        7
+      ],
+      "waterRadius": 3.208,
+      "footprintRadius": 0.165,
+      "minCenterAboveWater": 0.05112339018779544,
+      "minFootprintAboveWater": 0.02980353024331306,
+      "minObstacleExtraClearance": 0.006648340073856396,
+      "maxFootprintSlope": 0.699426944189365,
+      "obstacleCounts": {
+        "site": 5,
+        "lamp": 2,
+        "cliff": 8,
+        "palm": 26
+      }
+    }
+  },
+  "initializationMs": 1667.6581999999999,
+  "simulation": {
+    "steps": 3947,
+    "simulationMs": 327.3834999999999,
+    "maxStep": 0.01073733115579885,
+    "maxTurnDegreesPer100ms": 10.335880121141628,
+    "maxTurnAt": 219.49999999999181
+  },
+  "safety": {
+    "largestRouteGap": 0.01398759017562931,
+    "minFootprintAboveWater": 0.023126972712785854,
+    "minVertexAboveTerrain": -0.00029301777370172033,
+    "minVisibleObstacleClearance": 0.10418603053694186
+  },
+  "checks": [
+    "actual terrain and dry connected closed route",
+    "no hidden teleport or ocean crossing",
+    "landmark, mesa and palm clearance",
+    "all vertex attributes finite and indexed",
+    "six draw calls",
+    "same absolute time restores exact state",
+    "transformed-parent follow camera",
+    "cyclic position and orientation",
+    "shared palette preserved",
+    "each owned resource released once"
+  ]
+}

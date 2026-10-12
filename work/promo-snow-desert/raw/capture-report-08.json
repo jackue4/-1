@@ -1,0 +1,205 @@
+{
+  "index": 7,
+  "name": "08.mp4",
+  "world": "desert",
+  "view": "globe",
+  "phase": "day",
+  "frames": 192,
+  "duration": 6.4,
+  "samples": [
+    {
+      "frame": 0,
+      "time": 4.999999999999996,
+      "camera": [
+        -4.838214176979306,
+        5.005321173655841,
+        16.213159739566315
+      ],
+      "target": [
+        0,
+        0.14,
+        0
+      ],
+      "night": 0,
+      "daylight": 1,
+      "dusk": 0,
+      "render": {
+        "calls": 64,
+        "triangles": 578264,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      }
+    },
+    {
+      "frame": 30,
+      "time": 5.999999999999996,
+      "camera": [
+        -3.744146650771983,
+        4.98621650936138,
+        16.432054441337602
+      ],
+      "target": [
+        0,
+        0.14,
+        0
+      ],
+      "night": 0,
+      "daylight": 1,
+      "dusk": 0,
+      "render": {
+        "calls": 64,
+        "triangles": 578264,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      }
+    },
+    {
+      "frame": 60,
+      "time": 6.999999999999996,
+      "camera": [
+        -2.642331498583236,
+        4.9671118450669205,
+        16.57751917011558
+      ],
+      "target": [
+        0,
+        0.14,
+        0
+      ],
+      "night": 0,
+      "daylight": 1,
+      "dusk": 0,
+      "render": {
+        "calls": 64,
+        "triangles": 578264,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      }
+    },
+    {
+      "frame": 90,
+      "time": 7.999999999999996,
+      "camera": [
+        -1.5376716256203387,
+        4.948007180772461,
+        16.649488339583723
+      ],
+      "target": [
+        0,
+        0.14,
+        0
+      ],
+      "night": 0,
+      "daylight": 1,
+      "dusk": 0,
+      "render": {
+        "calls": 64,
+        "triangles": 578264,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      }
+    },
+    {
+      "frame": 120,
+      "time": 8.999999999999995,
+      "camera": [
+        -0.43504468186193157,
+        4.928902516478001,
+        16.648222087448435
+      ],
+      "target": [
+        0,
+        0.14,
+        0
+      ],
+      "night": 0,
+      "daylight": 1,
+      "dusk": 0,
+      "render": {
+        "calls": 64,
+        "triangles": 578264,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      }
+    },
+    {
+      "frame": 150,
+      "time": 9.999999999999995,
+      "camera": [
+        0.6607184706102736,
+        4.90979785218354,
+        16.574302650087553
+      ],
+      "target": [
+        0,
+        0.14,
+        0
+      ],
+      "night": 0,
+      "daylight": 1,
+      "dusk": 0,
+      "render": {
+        "calls": 64,
+        "triangles": 578264,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      }
+    },
+    {
+      "frame": 180,
+      "time": 10.999999999999995,
+      "camera": [
+        1.7448549216722116,
+        4.89069318788908,
+        16.428629320735684
+      ],
+      "target": [
+        0,
+        0.14,
+        0
+      ],
+      "night": 0,
+      "daylight": 1,
+      "dusk": 0,
+      "render": {
+        "calls": 64,
+        "triangles": 578264,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      }
+    },
+    {
+      "frame": 191,
+      "time": 11.366666666666662,
+      "camera": [
+        2.1385313674439552,
+        4.883688144314444,
+        16.357467019256127
+      ],
+      "target": [
+        0,
+        0.14,
+        0
+      ],
+      "night": 0,
+      "daylight": 1,
+      "dusk": 0,
+      "render": {
+        "calls": 64,
+        "triangles": 578264,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      }
+    }
+  ],
+  "bytes": 9387668,
+  "secondsToRender": 16.424
+}

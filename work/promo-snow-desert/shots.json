@@ -1,0 +1,172 @@
+[
+  {
+    "world": "snow",
+    "view": "globe",
+    "phase": "day",
+    "duration": 6,
+    "time": 18,
+    "zoom": 0.91,
+    "orbit": 0.42,
+    "heading": -0.15,
+    "label": "把日子，过成一颗小星球",
+    "sub": "雪落江南 · 风过沙海",
+    "headline": [
+      "给自己一分钟",
+      "去两个小世界旅行"
+    ]
+  },
+  {
+    "world": "snow",
+    "view": "garden",
+    "phase": "day",
+    "duration": 4,
+    "time": 28,
+    "zoom": 0.92,
+    "orbit": 0.1,
+    "label": "雪落在白墙黛瓦之间",
+    "sub": "亭台 · 曲廊 · 一池冬水"
+  },
+  {
+    "world": "snow",
+    "view": "canal",
+    "phase": "day",
+    "duration": 4,
+    "time": 48,
+    "zoom": 0.98,
+    "orbit": -0.1,
+    "label": "小桥流水，也有冬日来信",
+    "sub": "江南听雪 / 水巷人家"
+  },
+  {
+    "world": "snow",
+    "view": "animals",
+    "phase": "day",
+    "duration": 5,
+    "time": 24,
+    "zoom": 0.94,
+    "orbit": 0.1,
+    "label": "撑一把伞，陪你慢慢走",
+    "sub": "雪地里，留下小小的脚印"
+  },
+  {
+    "world": "snow",
+    "view": "plum",
+    "phase": "dusk",
+    "duration": 4,
+    "time": 35,
+    "zoom": 0.97,
+    "orbit": -0.1,
+    "label": "梅花，把暮色染成了粉色",
+    "sub": "疏影横斜 · 冬日也有花开"
+  },
+  {
+    "world": "snow",
+    "view": "bridge",
+    "phase": "night",
+    "duration": 4,
+    "time": 62,
+    "zoom": 1.06,
+    "orbit": 0.13,
+    "label": "天冷了，灯火依然温柔",
+    "sub": "湖心听雪 · 等一场星光"
+  },
+  {
+    "world": "snow",
+    "view": "globe",
+    "phase": "night",
+    "duration": 3,
+    "time": 80,
+    "zoom": 0.93,
+    "orbit": 0.24,
+    "heading": 0.22,
+    "label": "把一整个冬天，装进口袋",
+    "sub": "江南听雪 / SNOW OVER JIANGNAN"
+  },
+  {
+    "world": "desert",
+    "view": "globe",
+    "phase": "day",
+    "duration": 6,
+    "time": 5,
+    "zoom": 0.91,
+    "orbit": 0.42,
+    "heading": -0.16,
+    "label": "转身，是沙与海的交界",
+    "sub": "沙海拾光 / WHERE DUNES MEET THE SEA",
+    "headline": [
+      "下一站",
+      "去暖暖的海边"
+    ]
+  },
+  {
+    "world": "desert",
+    "view": "cove",
+    "phase": "day",
+    "duration": 4,
+    "time": 14,
+    "zoom": 0.89,
+    "orbit": 0.12,
+    "label": "海水透明，连心情也变轻了",
+    "sub": "浅湾 · 海草 · 游动的小鱼"
+  },
+  {
+    "world": "desert",
+    "view": "camel",
+    "phase": "day",
+    "duration": 5,
+    "time": 25,
+    "zoom": 1.0,
+    "orbit": -0.12,
+    "label": "跟着小骆驼，去散个步",
+    "sub": "不赶路，慢慢收集沿途风景"
+  },
+  {
+    "world": "desert",
+    "view": "treasury",
+    "phase": "dusk",
+    "duration": 4,
+    "time": 55,
+    "zoom": 0.91,
+    "orbit": 0.12,
+    "label": "风把古老的城，染成玫瑰色",
+    "sub": "砂岩门廊 · 日落时分"
+  },
+  {
+    "world": "desert",
+    "view": "oasis",
+    "phase": "dusk",
+    "duration": 3,
+    "time": 68,
+    "zoom": 0.77,
+    "orbit": -0.09,
+    "label": "在绿洲，等晚风经过",
+    "sub": "棕榈摇曳 · 水光轻轻"
+  },
+  {
+    "world": "desert",
+    "view": "moon",
+    "phase": "night",
+    "duration": 5,
+    "time": 6,
+    "zoom": 0.94,
+    "orbit": 0.1,
+    "label": "夜晚，会遇见发光的小可爱",
+    "sub": "月光木乃伊 · 偷偷说晚安"
+  },
+  {
+    "world": "desert",
+    "view": "globe",
+    "phase": "night",
+    "duration": 3,
+    "time": 46,
+    "zoom": 0.9,
+    "orbit": 0.23,
+    "heading": 0.26,
+    "label": "你想住进哪颗星球？",
+    "sub": "关注我，一起把想象做成世界",
+    "headline": [
+      "LITTLE BLOOM",
+      "给生活一点小小的治愈"
+    ]
+  }
+]

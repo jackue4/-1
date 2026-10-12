@@ -1,0 +1,65 @@
+{
+  "verifiedAt": "2026-09-21T06:36:24.197Z",
+  "passed": true,
+  "cycleSeconds": 64,
+  "samples": 2561,
+  "minCenterDistance": 0.20703142652851064,
+  "maxStepPer50ms": 0.006320687842397282,
+  "maxRotationPer50ms": 0.09901182789270342,
+  "footSurfaceRange": [
+    0.013999829254766519,
+    0.014008677867406349
+  ],
+  "floor": 0.014,
+  "routeBounds": {
+    "x": [
+      -0.41117439206976,
+      0.7611743920697599
+    ],
+    "z": [
+      0.32,
+      0.8767759617971179
+    ]
+  },
+  "species": [
+    "rabbit",
+    "bear",
+    "corgi",
+    "cat"
+  ],
+  "activities": [
+    "挥手点单",
+    "排队等候",
+    "接过点心",
+    "带着点心走到一旁",
+    "开心地尝一口",
+    "收好包装",
+    "沿外圈回到队尾",
+    "往前挪一步"
+  ],
+  "allGuestsAcquireFood": true,
+  "exactRestore": true,
+  "paused": true,
+  "foodPawParents": [
+    {
+      "name": "爪心里的芝士热狗",
+      "parent": "Right sleeve and paw"
+    },
+    {
+      "name": "爪心里的芝士热狗",
+      "parent": "Right sleeve and paw"
+    },
+    {
+      "name": "爪心里的双球冰淇淋",
+      "parent": "Right sleeve and paw"
+    },
+    {
+      "name": "爪心里的双球冰淇淋",
+      "parent": "Right sleeve and paw"
+    }
+  ],
+  "meshes": 32,
+  "triangles": 59236,
+  "allDisposedOnce": true,
+  "limits": "Source simulation and real geometries; browser appearance is verified by the parent task."
+}

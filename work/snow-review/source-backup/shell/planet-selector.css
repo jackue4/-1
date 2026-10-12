@@ -1,0 +1,186 @@
+/* The travel lobby is independent of the worlds' shadow-root interfaces. */
+#planet-selector{--ps-cream:#fff5d6;--ps-gold:#edcf79;--ps-soft:#c8e0ca;--ps-ink:#143f42;position:absolute;inset:0;z-index:60;isolation:isolate;display:flex;flex-direction:column;gap:0;overflow:auto;overscroll-behavior:contain;color:var(--ps-cream);padding:clamp(22px,3.3vw,48px) max(clamp(24px,5vw,76px),env(safe-area-inset-right,0px)) max(26px,env(safe-area-inset-bottom,0px)) max(clamp(24px,5vw,76px),env(safe-area-inset-left,0px));background:radial-gradient(ellipse at 66% 43%,#4e9a8b55 0,transparent 48%),radial-gradient(ellipse at 0 0,#326b6244,transparent 65%),linear-gradient(135deg,#153d42 0%,#216168 50%,#173f4c 100%);font-family:"Segoe UI","Microsoft YaHei",sans-serif;scrollbar-width:thin;scrollbar-color:#c9dab744 transparent;-webkit-tap-highlight-color:transparent}
+#planet-selector[hidden]{display:none!important}
+#planet-selector[data-planet=coast]{background:radial-gradient(ellipse at 64% 40%,#6eb7ac55 0,transparent 49%),radial-gradient(ellipse at 0 0,#38776a33,transparent 65%),linear-gradient(135deg,#174750 0%,#236874 53%,#173e54 100%)}
+#planet-selector button,#planet-selector a{touch-action:manipulation}
+#planet-selector button{font-family:inherit}
+#planet-selector button:focus-visible,#planet-selector a:focus-visible{outline:3px solid #fff1b5;outline-offset:6px}
+.ps-stars,.ps-grain{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.ps-stars{opacity:.66;background-image:radial-gradient(circle,#ecdd9c 1px,transparent 1.4px),radial-gradient(circle,#bbd2b7 .7px,transparent 1.1px),radial-gradient(circle,#cddfc7 .6px,transparent 1px);background-size:211px 193px,123px 139px,83px 111px;background-position:43px 21px,94px 83px,13px 29px;mask-image:linear-gradient(90deg,#0005,#000)}
+.ps-grain{opacity:.17;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.62' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23fff' opacity='.35' filter='url(%23n)' d='M0 0h180v180H0z'/%3E%3C/svg%3E");mix-blend-mode:soft-light}
+.ps-header{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:20px;flex:none;min-height:44px}
+.ps-brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--ps-cream);font:italic 25px Georgia,serif;letter-spacing:.1px}
+.ps-brand-mark{width:31px;height:31px;color:var(--ps-gold);transform:rotate(12deg)}
+.ps-brand svg,.ps-footer-note svg{display:block;width:100%;height:100%}
+.ps-brand small{display:block;margin-top:5px;font:9px "Microsoft YaHei",sans-serif;letter-spacing:3.5px;color:#c2d9be}
+.ps-header-note{display:flex;align-items:center;gap:9px;font-size:11px;letter-spacing:2px;color:#d2e5d0aa}
+.ps-header-note i{width:5px;height:5px;background:var(--ps-gold);border-radius:50%;box-shadow:0 0 11px #eed47b66}
+.ps-layout{flex:1;min-height:420px;display:grid;grid-template-columns:minmax(260px,.82fr) minmax(0,1.65fr);gap:clamp(20px,3vw,52px);position:relative;align-items:stretch}
+.ps-story{align-self:center;position:relative;z-index:2;padding:24px 0 32px}
+.ps-eyebrow{margin:0 0 30px;display:flex;align-items:center;gap:11px;font-size:12px;letter-spacing:3px;color:#e4e9cc}
+.ps-tiny-star{color:var(--ps-gold);font-size:17px}
+.ps-rule{display:block;flex:1;max-width:70px;height:1px;background:linear-gradient(90deg,#e5ce7a77,transparent)}
+.ps-world-index{display:flex;gap:12px;align-items:center;margin:0 0 10px;font:10px "Segoe UI",sans-serif;letter-spacing:2.8px;color:#cbdcc49c}
+.ps-world-index>span:first-child{font:italic 22px Georgia,serif;letter-spacing:0;color:var(--ps-gold)}
+.ps-world-index>span:nth-child(2){opacity:.5}
+#ps-planet-name{margin:0;font-family:"STKaiti","KaiTi","Kaiti SC","SimSun",serif;font-size:clamp(42px,4.6vw,66px);font-weight:500;line-height:1.24;letter-spacing:5px;text-shadow:0 3px 24px #183c403d;outline:0}
+.ps-invitation{margin:19px 0 15px;color:#f3dfa1;font-size:clamp(15px,1.55vw,19px);letter-spacing:1px;line-height:1.7}
+.ps-description{max-width:330px;margin:0;color:#d5e5d3d9;font-size:13px;line-height:2.15;letter-spacing:.8px;text-wrap:pretty}
+.ps-features{margin-top:26px;padding-top:22px;border-top:1px solid #c9dbbd25;display:grid;grid-template-columns:1fr 1fr;gap:17px 14px;max-width:340px}
+.ps-feature{display:flex;align-items:center;gap:10px;color:#e1e9cfe8;font-size:11px;letter-spacing:.35px;white-space:nowrap}
+.ps-feature svg{width:21px;height:21px;flex:none;color:#d7c680}
+.ps-mood{display:flex;gap:9px;align-items:center;margin:24px 0 0;font-size:10px;letter-spacing:1px;color:#bbd1bed0;line-height:1.7}
+.ps-mood>span:first-child{font:24px Georgia,serif;color:#c5d49e}
+.ps-stage{position:relative;min-width:0;min-height:440px;isolation:isolate}
+.ps-halo{position:absolute;left:3%;right:0;top:1%;bottom:17%;border-radius:50%;background:radial-gradient(ellipse,#90c4a918 10%,#9dcaad0e 38%,transparent 66%);filter:blur(12px);pointer-events:none}
+.ps-preview{position:absolute;inset:-2% -4% 13% -4%;min-width:0;min-height:0;z-index:2;pointer-events:none}
+.ps-preview>.world-host{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;display:block;min-height:0;grid-area:auto!important;background:transparent}
+.ps-preview>.world-host[hidden]{display:none!important}
+.ps-orbit{position:absolute;border:1px solid #e3ce8455;border-radius:50%;pointer-events:none;z-index:1}
+.ps-orbit-one{left:5%;top:8%;width:87%;height:64%;transform:rotate(-32deg)}
+.ps-orbit-one:before,.ps-orbit-one:after{content:"";position:absolute;border-radius:50%;width:5px;height:5px;background:#e5d28d;box-shadow:0 0 13px #f9dc7866}
+.ps-orbit-one:before{left:13%;top:13%}.ps-orbit-one:after{right:12%;bottom:13%;width:3px;height:3px}
+.ps-orbit-one>span{position:absolute;right:11%;top:11%;width:9px;height:9px;background:var(--ps-gold);transform:rotate(24deg);border-radius:3px 0 3px 0;box-shadow:0 0 15px #eed28744}
+.ps-orbit-two{left:2%;top:5%;width:94%;height:69%;transform:rotate(-32deg);border-style:dashed;border-color:#bad7c51b}
+.ps-stage-star{position:absolute;color:var(--ps-gold);z-index:3;font:32px Georgia,serif;pointer-events:none;text-shadow:0 0 20px #f5da9170}
+.ps-stage-star-one{left:3%;top:26%;transform:rotate(-12deg)}
+.ps-stage-star-two{right:1%;top:15%;font-size:20px;transform:rotate(10deg)}
+.ps-coordinate{position:absolute;left:0;right:0;bottom:132px;display:flex;justify-content:center;align-items:center;gap:12px;text-align:center;z-index:4;pointer-events:none;color:#dce9cb9c;font-size:9px;letter-spacing:1.4px}
+.ps-coordinate>span:first-child{font-size:8px;letter-spacing:2px;color:#d9d29d9c}.ps-coordinate i{width:18px;height:1px;background:#e4d39166}
+.ps-choices{position:absolute;left:0;right:0;bottom:4px;z-index:5;display:flex;justify-content:center;align-items:center;gap:16px}
+.ps-choice{appearance:none;position:relative;min-height:108px;min-width:142px;display:flex;flex-direction:row;align-items:center;gap:13px;padding:13px 17px 13px 11px;border:1px solid #bdd1ae26;border-radius:20px;color:#dce6c9;background:linear-gradient(145deg,#18444a66,#204e5266);cursor:pointer;transition:background .2s,border-color .2s,transform .2s,box-shadow .2s;text-align:left}
+.ps-choice:hover{background:#47796c55;border-color:#dac78377;transform:translateY(-3px)}
+.ps-choice[aria-pressed=true]{border-color:#e4cf8a9e;background:linear-gradient(140deg,#7b966645,#315d5766);box-shadow:0 6px 26px #10344026,inset 0 0 0 1px #f7e1a40d;color:#fff2c0}
+.ps-choice-orbit{position:relative;display:block;flex:none;width:62px;height:62px;padding:5px;border:1px solid #d3d2a42b;border-radius:50%;transform:rotate(-18deg)}
+.ps-choice[aria-pressed=true] .ps-choice-orbit{border-color:#ead384;box-shadow:0 0 0 3px #e8d3890a}
+.ps-choice-dot{position:absolute;top:7px;right:6px;width:5px;height:5px;border-radius:50%;background:#e9d289;opacity:0;box-shadow:0 0 8px #e9d289aa}
+.ps-choice[aria-pressed=true] .ps-choice-dot{opacity:1}
+.ps-mini-planet{position:relative;display:block;width:50px;height:50px;overflow:hidden;border-radius:50%;transform:rotate(18deg);box-shadow:inset -8px -7px 9px #142c414d,inset 2px 2px 4px #ffffb733,0 4px 8px #14313d4d}
+.ps-mini-sunny{background:linear-gradient(155deg,#dfdb81 6%,#85b86d 34%,#5e8861 60%,#73aaa5 62%,#3b737e 86%)}
+.ps-mini-planet i,.ps-mini-planet b,.ps-mini-planet em{position:absolute;display:block}
+.ps-mini-sunny i{width:45px;height:15px;left:-8px;top:16px;transform:rotate(-20deg);border-radius:40% 30% 50% 20%;background:#b8cc77;box-shadow:0 3px 0 #7a9b62}
+.ps-mini-sunny b{width:13px;height:20px;top:3px;left:24px;border-radius:60% 65% 48% 48%;background:#387e58;transform:rotate(-15deg);box-shadow:9px 6px 0 -2px #609349,-15px 11px 0 -3px #397254}
+.ps-mini-sunny em{width:11px;height:6px;left:26px;bottom:9px;background:#bdd79a;border-radius:60%;transform:rotate(-24deg)}
+.ps-mini-coast{background:linear-gradient(145deg,#8bddcd,#54b8bf 42%,#367f99 74%,#2e5e81)}
+.ps-mini-coast i{width:38px;height:17px;left:12px;top:8px;transform:rotate(28deg);border-radius:60% 45% 50% 30%;background:#e4d798;box-shadow:0 3px 0 #b3d6af}
+.ps-mini-coast b{width:27px;height:15px;left:18px;top:6px;transform:rotate(25deg);border-radius:50%;background:#8fb783;box-shadow:-13px 24px 0 -4px #a5c297}
+.ps-mini-coast em{width:13px;height:11px;left:29px;top:7px;transform:rotate(20deg);background:#e3b2a3;border-radius:50%;box-shadow:-9px 1px 0 -2px #e9c0b5}
+.ps-choice-caption{display:flex;flex-direction:column;gap:7px;padding-right:2px}
+.ps-choice-caption small{font-size:8px;letter-spacing:1.7px;color:#c1d8b98f;white-space:nowrap}
+.ps-choice-caption strong{font-family:"STKaiti","KaiTi","Kaiti SC","SimSun",serif;font-weight:400;font-size:20px;letter-spacing:1px;white-space:nowrap}
+.ps-choice-check{position:absolute;top:7px;right:10px;font-size:10px;opacity:0;color:var(--ps-gold)}
+.ps-choice[aria-pressed=true] .ps-choice-check{opacity:1}
+.ps-choice-path{width:28px;border-top:1px dashed #d3d09a55;flex-shrink:1}
+.ps-preview-status{position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);display:none;align-items:center;gap:10px;z-index:6;padding:12px 18px;border:1px solid #d6debc33;border-radius:30px;background:#1c5054d9;backdrop-filter:blur(12px);font-size:12px;letter-spacing:1px;white-space:nowrap;color:#f2e7bd}
+.ps-preview-status>span{width:9px;height:9px;border:1px solid #e8d48a;border-top-color:transparent;border-radius:50%;animation:ps-loading .8s linear infinite}
+#planet-selector[data-busy=true] .ps-preview-status{display:flex}
+.ps-footer{position:relative;z-index:5;flex:none;display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:20px;margin-top:16px;border-top:1px solid #cee0bd28;min-height:91px}
+.ps-footer-note{display:flex;align-items:center;gap:14px}.ps-footer-note>span{width:20px;height:20px;flex:none;color:#d1c683;opacity:.75}
+.ps-footer-note p{font-size:12px;letter-spacing:1px;color:#e6e8c8;margin:0 0 8px}
+.ps-footer-note small{font-size:10px;letter-spacing:1px;color:#bdd1bfab}
+.ps-enter{appearance:none;min-height:58px;min-width:268px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px 14px 12px 27px;flex:none;border:1px solid #f5dfa7;border-radius:40px;background:linear-gradient(115deg,#efe0ac,#e7c77c);box-shadow:0 7px 30px #0e333638,inset 0 1px 0 #fff3c9;color:#244b44;cursor:pointer;font-size:14px;letter-spacing:1px;font-weight:600;transition:box-shadow .2s,transform .2s,filter .2s}
+.ps-enter-arrow{display:grid;place-items:center;width:34px;height:34px;flex:none;border-radius:50%;background:#2d55461a;font:24px Georgia,serif}
+.ps-enter:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 10px 34px #122e3d55,0 0 26px #f3d28b22;filter:brightness(1.05)}
+.ps-enter:active:not(:disabled){transform:translateY(0)}
+.ps-enter:disabled{cursor:wait;opacity:.63}
+@keyframes ps-loading{to{transform:rotate(360deg)}}
+@media(min-width:1450px){#planet-selector{padding-inline:max(calc((100vw - 1300px)/2),60px)}.ps-layout{grid-template-columns:390px minmax(0,1fr)}.ps-description{font-size:14px;max-width:350px}.ps-feature{font-size:12px}.ps-stage{max-height:740px;align-self:center;width:100%;height:100%}}
+@media(max-width:1000px) and (min-width:701px){#planet-selector{padding-inline:32px}.ps-layout{grid-template-columns:270px minmax(0,1fr);gap:10px}.ps-description{font-size:12px}.ps-features{gap:15px 8px}.ps-feature{font-size:10px;gap:7px}.ps-choice{min-width:0;padding:10px;gap:7px;min-height:90px}.ps-choice-orbit{width:53px;height:53px;padding:4px}.ps-mini-planet{width:43px;height:43px}.ps-choice-caption strong{font-size:17px}.ps-choices{gap:10px}.ps-choice-path{width:12px}.ps-coordinate{flex-direction:column;gap:7px;bottom:113px}.ps-coordinate i{display:none}.ps-stage-star-two{right:-2%}}
+@media(max-width:700px) and (orientation:portrait){
+ #planet-selector{padding:calc(18px + env(safe-area-inset-top,0px)) max(22px,env(safe-area-inset-right,0px)) max(20px,calc(12px + env(safe-area-inset-bottom,0px))) max(22px,env(safe-area-inset-left,0px));min-height:0}
+ .ps-header{min-height:37px}.ps-brand{font-size:21px;gap:9px}.ps-brand-mark{width:25px;height:25px}.ps-brand small{font-size:7px;letter-spacing:3px;margin-top:3px}.ps-header-note{font-size:8px;letter-spacing:.6px;gap:6px}.ps-header-note i{width:4px;height:4px}
+ .ps-layout{display:flex;flex-direction:column;gap:0;min-height:0;flex:1}
+ .ps-story{align-self:stretch;padding:24px 0 0;z-index:3}
+ .ps-eyebrow{font-size:10px;letter-spacing:2px;margin:0 0 10px;gap:8px}.ps-tiny-star{font-size:13px}.ps-rule{max-width:40px}
+ .ps-world-index{position:absolute;right:0;top:25px;font-size:7px;gap:6px;letter-spacing:1px}.ps-world-index>span:first-child{font-size:15px}
+ #ps-planet-name{font-size:37px;letter-spacing:4px}.ps-invitation{font-size:13px;margin:9px 0 8px;letter-spacing:.6px;line-height:1.6}
+ .ps-description{font-size:11px;line-height:1.85;letter-spacing:.5px;max-width:100%}
+ .ps-features{display:flex;flex-wrap:wrap;gap:8px 13px;margin-top:13px;padding-top:12px;max-width:100%}.ps-feature{font-size:9px;gap:5px}.ps-feature svg{width:16px;height:16px}
+ .ps-mood{display:none}
+ .ps-stage{flex:1;min-height:330px;margin:0 -14px}
+ .ps-preview{inset:-6% -8% 20% -8%}.ps-orbit-one{top:8%;height:58%;left:9%;width:83%}.ps-orbit-two{top:5%;height:64%;left:5%;width:91%}.ps-stage-star-one{top:25%;left:7%;font-size:24px}.ps-stage-star-two{top:10%;right:5%;font-size:15px}.ps-halo{bottom:20%}
+ .ps-coordinate{bottom:102px;font-size:8px;letter-spacing:.5px;gap:7px}.ps-coordinate>span:first-child{font-size:6px;letter-spacing:1px}.ps-coordinate i{width:10px}
+ .ps-choices{bottom:0;gap:10px}.ps-choice{min-width:0;min-height:84px;flex:1;max-width:175px;padding:9px 10px;gap:8px;border-radius:16px}.ps-choice-orbit{width:51px;height:51px;padding:4px}.ps-mini-planet{width:41px;height:41px}.ps-choice-caption strong{font-size:17px;letter-spacing:0}.ps-choice-caption small{font-size:6px;letter-spacing:1.2px}.ps-choice-caption{gap:5px}.ps-choice-path{display:none}.ps-choice-check{top:5px;right:7px;font-size:8px}
+ .ps-footer{min-height:0;flex-direction:column-reverse;align-items:stretch;gap:12px;padding-top:15px;margin-top:14px;border-top:0}
+ .ps-enter{min-height:54px;width:100%;min-width:0;padding:9px 12px 9px 24px;font-size:13px}.ps-enter-arrow{width:34px;height:34px;font-size:23px}
+ .ps-footer-note{justify-content:center;gap:7px;text-align:center}.ps-footer-note>span{width:12px;height:12px}.ps-footer-note p{margin:0;font-size:9px;letter-spacing:.5px;color:#c8d9bdc9}.ps-footer-note small{display:none}
+}
+@media(max-width:700px) and (max-height:740px) and (orientation:portrait){#planet-selector{padding-top:calc(14px + env(safe-area-inset-top,0px));padding-inline:max(18px,env(safe-area-inset-left,0px))}.ps-story{padding-top:19px}.ps-world-index{top:20px}.ps-description{font-size:10px;line-height:1.75}.ps-features{gap:7px 12px;padding-top:10px;margin-top:10px}.ps-feature{font-size:8px}.ps-stage{min-height:275px}.ps-coordinate{bottom:92px;font-size:7px}.ps-choice{min-height:76px}.ps-footer{padding-top:10px;margin-top:8px;gap:10px}.ps-invitation{font-size:12px;margin:7px 0}#ps-planet-name{font-size:33px}.ps-enter{min-height:50px}.ps-brand{font-size:19px}}
+@media(max-height:560px) and (orientation:landscape){
+ #planet-selector{padding:calc(14px + env(safe-area-inset-top,0px)) max(28px,env(safe-area-inset-right,0px)) max(13px,env(safe-area-inset-bottom,0px)) max(28px,env(safe-area-inset-left,0px))}
+ .ps-header{min-height:32px}.ps-brand{font-size:19px;gap:8px}.ps-brand-mark{width:24px;height:24px}.ps-brand small{font-size:6px;letter-spacing:2px;margin-top:2px}.ps-header-note{font-size:9px;letter-spacing:1px}
+ .ps-layout{min-height:235px;grid-template-columns:minmax(250px,.85fr) minmax(0,1.35fr);gap:15px}.ps-story{padding:12px 0 2px}.ps-eyebrow{font-size:9px;letter-spacing:2px;margin-bottom:8px;gap:7px}.ps-tiny-star{font-size:12px}.ps-world-index{font-size:7px;gap:8px;letter-spacing:1.5px;margin-bottom:4px}.ps-world-index>span:first-child{font-size:15px}
+ #ps-planet-name{font-size:35px;letter-spacing:4px}.ps-invitation{font-size:12px;margin:8px 0 6px;line-height:1.5}.ps-description{font-size:10px;line-height:1.8;max-width:300px;letter-spacing:.3px}.ps-features{gap:9px 10px;margin-top:12px;padding-top:11px;max-width:285px}.ps-feature{font-size:9px;gap:7px}.ps-feature svg{width:16px;height:16px}.ps-mood{display:none}
+ .ps-stage{min-height:235px}.ps-preview{inset:-17% -7% 17% -7%}.ps-orbit-one{top:2%;height:67%;left:15%;width:70%}.ps-orbit-two{top:0;height:71%;left:11%;width:78%}.ps-stage-star-one{left:12%;top:20%;font-size:22px}.ps-stage-star-two{right:6%;top:8%;font-size:16px}
+ .ps-coordinate{display:none}.ps-choices{bottom:0;gap:10px}.ps-choice{min-height:61px;min-width:0;padding:5px 10px 5px 6px;border-radius:14px;gap:8px}.ps-choice-orbit{width:44px;height:44px;padding:4px}.ps-mini-planet{width:34px;height:34px}.ps-choice-caption strong{font-size:16px}.ps-choice-caption small{font-size:6px;letter-spacing:1px}.ps-choice-caption{gap:4px}.ps-choice-path{width:14px}.ps-choice-check{font-size:8px;top:3px;right:5px}
+ .ps-footer{min-height:58px;margin-top:8px;padding-top:9px;gap:15px}.ps-footer-note{gap:9px}.ps-footer-note>span{width:15px;height:15px}.ps-footer-note p{font-size:9px;margin-bottom:4px;letter-spacing:.5px}.ps-footer-note small{font-size:8px;letter-spacing:.4px}.ps-enter{min-height:44px;min-width:240px;font-size:11px;padding:6px 9px 6px 21px}.ps-enter-arrow{width:29px;height:29px;font-size:20px}
+}
+@media(max-height:400px) and (orientation:landscape){#planet-selector{padding-top:11px;padding-bottom:10px}.ps-header{min-height:28px}.ps-layout{min-height:225px}.ps-story{padding-top:8px}.ps-eyebrow{margin-bottom:4px}.ps-features{margin-top:9px;padding-top:9px}.ps-footer{min-height:53px;margin-top:5px;padding-top:8px}.ps-stage{min-height:225px}}
+@media(prefers-reduced-motion:reduce){#planet-selector *,#planet-selector *:before,#planet-selector *:after{animation:none!important;transition:none!important}.ps-choice:hover,.ps-enter:hover:not(:disabled){transform:none}}
+
+#planet-selector{overflow-x:hidden}
+
+@media(max-width:900px){.ps-layout{overflow-x:clip;overflow-y:visible}}
+@media(max-width:700px) and (orientation:landscape){
+ #planet-selector{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+ .ps-layout{grid-template-columns:minmax(210px,1fr) minmax(0,1.05fr);gap:14px}
+ .ps-choices{gap:7px}.ps-choice-path{display:none}.ps-choice{flex:1;gap:5px;padding:5px;min-width:0}
+ .ps-choice-orbit{width:36px;height:36px;padding:3px}.ps-mini-planet{width:28px;height:28px}
+ .ps-choice-caption strong{font-size:14px;letter-spacing:0}.ps-choice-caption small{font-size:6px;letter-spacing:.5px}
+}
+@media(max-height:350px) and (orientation:landscape){
+ .ps-layout,.ps-stage{min-height:205px}.ps-story{padding-top:3px}
+ #ps-planet-name{font-size:30px}.ps-invitation{margin:6px 0 4px}
+ .ps-features{margin-top:7px;padding-top:7px;row-gap:6px}.ps-eyebrow{margin-bottom:2px}
+ .ps-footer-note small{display:none}.ps-footer{min-height:48px;padding-top:5px;margin-top:3px}
+}
+
+/* A storybook sky stays continuous while each destination drifts into view. */
+#planet-selector{background:radial-gradient(ellipse at 66% 43%,#5e829855,transparent 57%),linear-gradient(140deg,#222b4b,#244453 52%,#344361)}
+#planet-selector[data-planet=coast]{background:radial-gradient(ellipse at 66% 43%,#5e829855,transparent 57%),linear-gradient(140deg,#222b4b,#244453 52%,#344361)}
+.ps-stars{display:none}.ps-layout{z-index:1}.ps-grain{z-index:0}.ps-story{text-shadow:0 2px 14px #172d3c66}
+.ps-preview,.ps-story{will-change:transform,opacity}
+.ps-preview-status{animation:ps-status-appear .2s .65s both}
+@keyframes ps-status-appear{from{opacity:0}to{opacity:1}}
+#planet-selector[data-transition=leaving] .ps-orbit{border-color:#f6dd8b8c;transition:border-color .4s}
+#planet-selector[data-transition=entering] .ps-orbit{border-color:#e3ce8455;transition:border-color .8s}
+
+/* Three destinations stay visible together, including on narrow phones. */
+.ps-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;width:min(660px,100%);margin-inline:auto}
+.ps-choice-path{display:none}
+.ps-choice{min-width:0;max-width:none;min-height:102px;gap:10px;padding:11px 12px}
+.ps-choice-orbit{width:52px;height:52px;padding:4px}
+.ps-mini-planet{width:42px;height:42px}
+.ps-choice-caption strong{font-size:18px;letter-spacing:.3px}
+.ps-choice-caption small{font-size:7px;letter-spacing:1px}
+.ps-mini-festival{background:linear-gradient(145deg,#f8c9b7,#cfb0d0 40%,#8bd0c2 63%,#62a797)}
+.ps-mini-festival i{width:15px;height:20px;background:#ffefd1;left:14px;top:14px;border-radius:3px 3px 0 0;box-shadow:inset 0 -5px 0 #e6a2ac}
+.ps-mini-festival b{width:7px;height:19px;left:6px;top:15px;background:#f3bdc6;box-shadow:23px 0 0 #f3bdc6;border-radius:4px 4px 0 0}
+.ps-mini-festival em{width:0;height:0;left:12px;top:4px;border-left:9px solid transparent;border-right:9px solid transparent;border-bottom:15px solid #977eb7;filter:drop-shadow(0 -1px 0 #f9db8d)}
+#planet-selector[data-planet=festival]{--ps-gold:#f0cf90;background:radial-gradient(ellipse at 66% 43%,#a589af44,transparent 57%),linear-gradient(140deg,#2e2e51,#354657 52%,#4e4369)}
+@media(max-width:1100px){
+ .ps-choices{gap:8px}.ps-choice{flex-direction:column;justify-content:center;min-height:112px;gap:5px;padding:8px 5px;text-align:center}
+ .ps-choice-caption{align-items:center;gap:4px;padding:0}.ps-choice-caption strong{font-size:16px}.ps-choice-caption small{font-size:6px;letter-spacing:.7px}
+ .ps-choice-orbit{width:43px;height:43px;padding:3px}.ps-mini-planet{width:35px;height:35px}
+ .ps-coordinate{bottom:128px}.ps-preview{bottom:22%}
+}
+@media(max-width:700px) and (orientation:portrait){
+ .ps-choices{gap:8px;padding-inline:8px}.ps-choice{min-height:105px;padding:8px 3px;gap:5px;border-radius:16px}
+ .ps-choice-caption strong{font-size:16px;letter-spacing:0}.ps-choice-caption small{font-size:6px;letter-spacing:.5px}
+ .ps-coordinate{bottom:120px;font-size:7px}.ps-preview{bottom:27%}
+ #planet-selector[data-planet=festival] #ps-planet-name{font-size:35px;letter-spacing:3px}
+}
+@media(max-width:360px) and (orientation:portrait){
+ .ps-choice-caption strong{font-size:14px}.ps-choice-caption small{font-size:5.5px}.ps-choices{gap:6px;padding-inline:4px}
+ #planet-selector[data-planet=festival] #ps-planet-name{font-size:30px;letter-spacing:2px}
+}
+@media(max-height:560px) and (orientation:landscape){
+ .ps-choices{gap:7px}.ps-choice{min-height:77px;padding:5px 2px;gap:3px;border-radius:13px;flex-direction:column;justify-content:center;text-align:center}
+ .ps-choice-orbit{width:32px;height:32px;padding:2px}.ps-mini-planet{width:26px;height:26px}
+ .ps-choice-caption{gap:2px;align-items:center}.ps-choice-caption strong{font-size:13px;letter-spacing:0}.ps-choice-caption small{font-size:5.5px;letter-spacing:.4px}
+ .ps-preview{bottom:25%}#planet-selector[data-planet=festival] #ps-planet-name{font-size:32px;letter-spacing:2px}
+}
+@media(max-width:650px) and (orientation:landscape){
+ .ps-choice-caption strong{font-size:11px}.ps-choice-caption small{font-size:5px;letter-spacing:0}.ps-choices{gap:5px}
+ .ps-choice{min-height:73px}.ps-choice-check{right:3px;top:3px;font-size:7px}
+}

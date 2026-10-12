@@ -1,0 +1,17 @@
+[
+ {"world":"sunny","view":"sunny-view","hour":8.5,"label":"把一天，装进小小宇宙","headline":["我用 AI","做了两个治愈小世界"],"sub":"从一束晨光，到满天星星。","duration":4},
+ {"world":"sunny","view":"meadow-view","hour":8.5,"dayNight":true,"label":"晴日小岛 · 一天的光","sub":"晨光、晚霞、星夜，在同一座岛上流动。","duration":10},
+ {"world":"sunny","view":"globe-view","hour":22,"meteor":true,"label":"等一颗流星经过","sub":"路灯亮起，小屋睡去，星星还醒着。","duration":7},
+ {"world":"sunny","view":"coast-view","hour":17.5,"label":"晴日小岛 · 珊瑚海湾","sub":"晚霞落在水面，帆船慢慢靠岸。","duration":4},
+ {"world":"coast","view":"coast","phase":"day","label":"海风来信 · 湘南的午后","sub":"一座可以环游的日式海岛。","duration":4},
+ {"world":"coast","view":"train","phase":"day","label":"陪电车，越过一片海","sub":"樱花落下的时候，江之电刚好经过。","duration":4},
+ {"world":"coast","view":"town","phase":"day","label":"在镰仓的道口，停一下","sub":"斑马线、站台，还有熟悉的海风。","duration":3},
+ {"world":"coast","view":"stream","phase":"day","label":"走过溪桥与小泻湖","sub":"溪鱼、睡莲、木桥，藏在山坡之间。","duration":4},
+ {"world":"coast","view":"cottage","phase":"dusk","label":"借一间木屋，发一会儿呆","sub":"花藤、风铃和小庭院，都在等你。","duration":4},
+ {"world":"coast","view":"telephone","phase":"dusk","label":"海风经过旧电话亭","sub":"自行车、旧信箱，留下一点生活的痕迹。","duration":3},
+ {"world":"coast","view":"sea","phase":"day","label":"海面之下，还有一个世界","sub":"鱼群游过珊瑚，花瓣漂在水上。","duration":4},
+ {"world":"coast","view":"cruise","phase":"day","label":"追一场海上的风","sub":"游船驶过，身后留下一串细碎水花。","duration":4},
+ {"world":"coast","view":"voyage","phase":"dusk","label":"给海，寄一封信","sub":"帆船、栈桥与晚霞，慢慢连成一幅画。","duration":4},
+ {"world":"coast","view":"beacon","phase":"night","label":"灯塔替你，留一束光","sub":"沿着石阶向上，看海面被温柔照亮。","duration":5},
+ {"world":"coast","view":"globe","phase":"night","label":"你想装进哪座城市的天气？","sub":"下一步，想做一个治愈系天气 App。","duration":6}
+]

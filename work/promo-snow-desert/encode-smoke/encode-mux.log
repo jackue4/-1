@@ -1,0 +1,34 @@
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001f358fed640] Auto-inserting h264_mp4toannexb bitstream filter
+Input #0, concat, from 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\work\promo-snow-desert\encode-smoke\edit-concat.txt':
+  Duration: 00:00:04.00, start: 0.000000, bitrate: 0 kb/s
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 160x284 [SAR 1:1 DAR 40:71], 9 kb/s, 30 fps, 30 tbr, 90k tbn
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+[aist#1:0/pcm_s16le @ 000001f359558e00] Guessed Channel Layout: stereo
+Input #1, wav, from 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\work\promo-snow-desert\encode-smoke\music.wav':
+  Duration: 00:00:04.00, bitrate: 1536 kb/s
+  Stream #1:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #1:0 -> #0:1 (pcm_s16le (native) -> aac (native))
+Output #0, mp4, to 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\work\promo-snow-desert\encode-smoke\smoke.mp4':
+  Metadata:
+    title           : Little Bloom - Snow Over Jiangnan and Dunes by the Sea
+    comment         : Deterministic capture of actual interactive Three.js scenes; original instrumental score
+    encoder         : Lavf61.7.100
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 160x284 [SAR 1:1 DAR 40:71], q=2-31, 9 kb/s, 30 fps, 30 tbr, 90k tbn
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s
+      Metadata:
+        encoder         : Lavc61.19.100 aac
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001f359000540] Auto-inserting h264_mp4toannexb bitstream filter
+    Last message repeated 1 times
+[mp4 @ 000001f3590aeb80] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001f3590aea80] video:5KiB audio:94KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 5.778441%
+frame=  120 fps=0.0 q=-1.0 Lsize=     105KiB time=00:00:03.93 bitrate= 219.2kbits/s speed=9.42x    
+[aac @ 000001f3590a6f80] Qavg: 366.867

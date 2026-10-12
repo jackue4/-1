@@ -1,0 +1,1 @@
+const fs=require('fs');const f='work/planet-v2/integrate-cozy-yard.cjs';let s=fs.readFileSync(f,'utf8');s=s.replace("fs.readFileSync(p+n,'utf8')","fs.readFileSync(p+n,'utf8').replaceAll('\\r\\n','\\n')");const lines=s.split('\n');fs.writeFileSync('work/planet-v2/continue-cozy-yard.cjs',[lines[0],...lines.slice(5)].join('\n'));

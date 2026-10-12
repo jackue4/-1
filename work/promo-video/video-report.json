@@ -1,0 +1,49 @@
+{
+  "file": "C:\\Users\\chenyahan\\Documents\\Codex\\2026-09-18\\file-c-users-chenyahan-documents-codex\\outputs\\promo\\little-bloom-xiaohongshu.mp4",
+  "bytes": 9325611,
+  "duration": 24.0,
+  "size": [
+    1080,
+    1920
+  ],
+  "fps": 30.0,
+  "decodedFrames": 720,
+  "codec": "h264",
+  "audio_codec": "aac",
+  "frameChecks": [
+    {
+      "frame": 45,
+      "time": 1.5,
+      "mean_luma": 156.34,
+      "stddev": 65.84
+    },
+    {
+      "frame": 195,
+      "time": 6.5,
+      "mean_luma": 134.81,
+      "stddev": 78.72
+    },
+    {
+      "frame": 345,
+      "time": 11.5,
+      "mean_luma": 134.52,
+      "stddev": 76.02
+    },
+    {
+      "frame": 495,
+      "time": 16.5,
+      "mean_luma": 147.66,
+      "stddev": 64.76
+    },
+    {
+      "frame": 660,
+      "time": 22.0,
+      "mean_luma": 72.53,
+      "stddev": 38.55
+    }
+  ],
+  "source": "Five live canvas recordings from the existing interactive Three.js scenes",
+  "music": "Original synthesized instrumental, 24s stereo; no third-party recording",
+  "weatherDisclosure": "Weather App concept, simulated scene weather; no real city data",
+  "passed": true
+}

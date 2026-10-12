@@ -1,0 +1,124 @@
+{
+  "passed": 10,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Equal-area spherical ocean coverage",
+      "passed": true,
+      "samples": 50000,
+      "oceanFraction": 0.84076,
+      "landFraction": 0.15924,
+      "shoreFraction": 0.0073,
+      "sampling": "Fibonacci points evenly distributed by spherical area, not latitude/mesh-vertex counts"
+    },
+    {
+      "name": "Closed rail curve and consistent arc-length carriage positions",
+      "passed": true,
+      "trackLength": 20.79933530953116,
+      "waterSamples": 1514,
+      "landSamples": 486,
+      "minRadius": 3.254967861328484,
+      "maxRadius": 3.3159142935272774,
+      "maxAdjacentTangentAngle": 0.06240256716649443
+    },
+    {
+      "name": "Rail dwell, acceleration, lap arrival and pause",
+      "passed": true,
+      "simulatedSeconds": 259.96666666666664,
+      "stationArrivals": 3,
+      "minimumDwellSeconds": 5,
+      "maxSpeed": 0.34,
+      "maxCarTrackError": 4.106418417681871e-15,
+      "pauseFrames": 120
+    },
+    {
+      "name": "Rail land/water diagnostics agree with actual sea level",
+      "passed": true,
+      "samples": 5400
+    },
+    {
+      "name": "Air blossoms land on water and increment only water landings",
+      "passed": true,
+      "before": 0,
+      "afterWater": 1,
+      "afterLand": 2,
+      "otherNaturalWaterTransitions": 1
+    },
+    {
+      "name": "Floating blossoms drift and stay on the live ocean wave",
+      "passed": true,
+      "normalDisplacement": 0.011199941428904155,
+      "maxWaveError": 1.1910717301333307e-7,
+      "trackedSeconds": 4
+    },
+    {
+      "name": "Old floating and ground blossoms respawn in the air",
+      "passed": true,
+      "states": [
+        "water",
+        "land"
+      ]
+    },
+    {
+      "name": "Petal diagnostics reflect post-transition particle states",
+      "passed": true,
+      "counts": {
+        "air": 619,
+        "water": 565,
+        "land": 316
+      },
+      "reported": {
+        "total": 1500,
+        "airborne": 619,
+        "floating": 565,
+        "landed": 316,
+        "waterLandings": 254,
+        "totalLandings": 571,
+        "time": 4.049999999999995
+      }
+    },
+    {
+      "name": "Long petal lifecycle remains finite and pause freezes positions",
+      "passed": true,
+      "simulatedSeconds": 94.04999999999893,
+      "transitions": 6644,
+      "pauseFrames": 90,
+      "pauseNormalDrift": 3.8459253727671276e-16,
+      "pauseMatrixDrift": 0,
+      "reported": {
+        "total": 1500,
+        "airborne": 345,
+        "floating": 692,
+        "landed": 463,
+        "waterLandings": 2307,
+        "totalLandings": 4030,
+        "time": 94.04999999999893
+      }
+    },
+    {
+      "name": "Quality toggles keep valid geometry and restore particle capacity",
+      "passed": true,
+      "objects": 18
+    }
+  ],
+  "failures": [],
+  "railway": {
+    "trackLength": 20.79933530953116,
+    "trackSegments": 768,
+    "sleepers": 267,
+    "piers": 104,
+    "carriages": 3,
+    "trainLength": 0.672,
+    "drawCalls": 12,
+    "triangles": 32704,
+    "stationLongitude": -0.3
+  },
+  "sourceHashes": {
+    "surface.js": "c55813aed04304a33304be784c7249456116edddf68d3d857366328a115d18ba",
+    "railway.js": "bd1159204ac0d9ac652b42e82deb77650747cd8b842f315d97ea627b2df0ee88",
+    "petals.js": "260aa9731729f4bb414a7715220fa675172e069d27b5a0ad3a6ea447e51d2b5d",
+    "ocean.js": "35fd15cfef408c1a46f310a96a77033a3d43d944d781fcc38777fbb4c6ce3731",
+    "app.js": "7d5a228a7547f5fd31b4d318ba26b33e1228e6ed6900cec6a2d2e817844be5cd"
+  },
+  "note": "Offline CPU behavior and geometry checks. Pause follows the app contract: dt=0 and simulation time frozen. No browser/GPU/visual claim."
+}

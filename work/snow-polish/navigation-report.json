@@ -1,0 +1,125 @@
+{
+  "checkedAt": "2026-09-21T06:17:51.760Z",
+  "seconds": 240,
+  "samples": 961,
+  "verification": "Every actual deduplicated boat vertex versus analytic terrain and actual arched bridge section; no browser rendering claim.",
+  "passed": true,
+  "boats": [
+    {
+      "boat": 0,
+      "vertices": 775,
+      "minTerrainClearance": 0.046231960567044705,
+      "minWaterDepth": 0.003576252782728462,
+      "minForwardAlignment": 0.999886911107249,
+      "worstTime": 121,
+      "shallowestPoint": {
+        "time": 121,
+        "lat": 0.46473502031663694,
+        "lon": 0.884900753413187,
+        "local": [
+          0.277792751789093,
+          0.01652914471924305,
+          0.12571881711483002
+        ]
+      }
+    },
+    {
+      "boat": 1,
+      "vertices": 774,
+      "minTerrainClearance": 0.12032117991049152,
+      "minWaterDepth": 0.136,
+      "minForwardAlignment": 0.9998874595815987,
+      "worstTime": 134.75,
+      "shallowestPoint": {
+        "time": 0,
+        "lat": -0.06569113595822625,
+        "lon": -0.1332037342996949,
+        "local": [
+          -0.08579999953508362,
+          0.07900000363588333,
+          0.07649999856948853
+        ]
+      }
+    },
+    {
+      "boat": 2,
+      "vertices": 774,
+      "minTerrainClearance": 0.12032117992287938,
+      "minWaterDepth": 0.12895201172986331,
+      "minForwardAlignment": 0.9998874643685806,
+      "worstTime": 185.25,
+      "shallowestPoint": {
+        "time": 100.5,
+        "lat": 0.10620056110309244,
+        "lon": -0.2691901199562239,
+        "local": [
+          0.2960240244865417,
+          0.025484181940555573,
+          0.10027901083230982
+        ]
+      }
+    }
+  ],
+  "bridges": [
+    {
+      "bridge": 0,
+      "center": [
+        2.154345371842079,
+        -1.0492513259425837,
+        2.177730854313807
+      ],
+      "rise": 0.27,
+      "collisionSamples": 0,
+      "minClearance": 0.023165767285916572,
+      "firstCollision": null
+    },
+    {
+      "bridge": 1,
+      "center": [
+        2.244392120156675,
+        0.5478124462789331,
+        2.2687550627338586
+      ],
+      "rise": 0.27,
+      "collisionSamples": 0,
+      "minClearance": 0.021560367158696442,
+      "firstCollision": null
+    },
+    {
+      "bridge": 2,
+      "center": [
+        1.9171926941721962,
+        1.7473285738005921,
+        1.9380038773420303
+      ],
+      "rise": 0.27,
+      "collisionSamples": 0,
+      "minClearance": 0.10544187994201802,
+      "firstCollision": null
+    },
+    {
+      "bridge": 3,
+      "center": [
+        -1.718531291836349,
+        0.35172967588230813,
+        2.6811475964748785
+      ],
+      "rise": 0.21999999999999997,
+      "collisionSamples": 0,
+      "minClearance": null,
+      "firstCollision": null
+    },
+    {
+      "bridge": 4,
+      "center": [
+        1.7589411242056177,
+        -0.8267710548851709,
+        -2.562270817923496
+      ],
+      "rise": 0.18,
+      "collisionSamples": 0,
+      "minClearance": null,
+      "firstCollision": null
+    }
+  ]
+}

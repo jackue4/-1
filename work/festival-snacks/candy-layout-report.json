@@ -1,0 +1,257 @@
+{
+  "passed": true,
+  "notes": "Conservative circle footprint, swept rail/train width .15, authored attraction bounds. Hero center ray checks actual triangles at initial time, not complete camera frustum.",
+  "spots": [
+    {
+      "index": 0,
+      "lat": 0.58,
+      "lon": -1.1,
+      "scale": 0.86,
+      "turn": 0.2,
+      "minPath": 0.23124145993430592,
+      "minWater": 3.222241917308757,
+      "minStream": 3.22598626545108,
+      "trackClearance": 99,
+      "nearestAttraction": {
+        "name": "flower-shop",
+        "clearance": 1.7515622926453573
+      },
+      "foodLocal": {
+        "x": -0.21483936349818497,
+        "z": -0.8907373304367745
+      },
+      "checks": {
+        "clearRoad": true,
+        "clearWater": true,
+        "clearStream": true,
+        "clearTrack": true,
+        "clearAttraction": true
+      }
+    },
+    {
+      "index": 1,
+      "lat": 0.62,
+      "lon": -0.84,
+      "scale": 0.79,
+      "turn": 0,
+      "minPath": 0.20295238796347626,
+      "minWater": 2.954957671732055,
+      "minStream": 2.656023521014218,
+      "trackClearance": 99,
+      "nearestAttraction": {
+        "name": "castle",
+        "clearance": 1.126345378150916
+      },
+      "foodLocal": {
+        "x": 0.46851852714570075,
+        "z": -1.0239694850686698
+      },
+      "checks": {
+        "clearRoad": true,
+        "clearWater": true,
+        "clearStream": true,
+        "clearTrack": true,
+        "clearAttraction": true
+      }
+    },
+    {
+      "index": 2,
+      "lat": 0.63,
+      "lon": -0.48,
+      "scale": 0.76,
+      "turn": -0.4,
+      "minPath": 0.23405563352102554,
+      "minWater": 2.56682868210534,
+      "minStream": 1.8555313392754664,
+      "trackClearance": 99,
+      "nearestAttraction": {
+        "name": "castle",
+        "clearance": 0.301130286503558
+      },
+      "foodLocal": {
+        "x": 1.3346151358902412,
+        "z": -1.1501642146848106
+      },
+      "checks": {
+        "clearRoad": true,
+        "clearWater": true,
+        "clearStream": true,
+        "clearTrack": true,
+        "clearAttraction": true
+      }
+    },
+    {
+      "index": 3,
+      "lat": 0.15,
+      "lon": 0.95,
+      "scale": 0.78,
+      "turn": 0.1,
+      "minPath": 0.2712700303510479,
+      "minWater": 1.2807771242781767,
+      "minStream": 0.8691168304591224,
+      "trackClearance": 1.2444143203242284,
+      "nearestAttraction": {
+        "name": "teacups",
+        "clearance": 0.301795171080386
+      },
+      "foodLocal": {
+        "x": 2.9301543489810213,
+        "z": -0.8244673353732896
+      },
+      "checks": {
+        "clearRoad": true,
+        "clearWater": true,
+        "clearStream": true,
+        "clearTrack": true,
+        "clearAttraction": true
+      }
+    },
+    {
+      "index": 4,
+      "lat": -0.68,
+      "lon": 0.9,
+      "scale": 0.9,
+      "turn": 1.65,
+      "minPath": 0.22685473745765006,
+      "minWater": 1.444483448624891,
+      "minStream": 2.421904329322409,
+      "trackClearance": 0.8597592036209575,
+      "nearestAttraction": {
+        "name": "gate",
+        "clearance": 0.2520866138392127
+      },
+      "foodLocal": {
+        "x": 2.34753656621366,
+        "z": 1.6774520155641677
+      },
+      "checks": {
+        "clearRoad": true,
+        "clearWater": true,
+        "clearStream": true,
+        "clearTrack": true,
+        "clearAttraction": true
+      }
+    },
+    {
+      "index": 5,
+      "lat": -0.7,
+      "lon": -0.34,
+      "scale": 1,
+      "turn": 0.3,
+      "minPath": 0.3521307266940861,
+      "minWater": 1.6773049917173268,
+      "minStream": 3.3124700007377883,
+      "trackClearance": 1.2542446386719444,
+      "nearestAttraction": {
+        "name": "tea-shop",
+        "clearance": 0.4974074220402154
+      },
+      "foodLocal": {
+        "x": 1.548010253386161,
+        "z": 2.546705206409927
+      },
+      "checks": {
+        "clearRoad": true,
+        "clearWater": true,
+        "clearStream": true,
+        "clearTrack": true,
+        "clearAttraction": true
+      }
+    },
+    {
+      "index": 6,
+      "lat": 0.73,
+      "lon": 1.47,
+      "scale": 0.88,
+      "turn": 0.2,
+      "minPath": 0.2065157099039443,
+      "minWater": 3.0257614546406524,
+      "minStream": 2.372389395000385,
+      "trackClearance": 99,
+      "nearestAttraction": {
+        "name": "wish-tree",
+        "clearance": 0.12555325162985753
+      },
+      "foodLocal": {
+        "x": 1.455042838397818,
+        "z": -2.61500973305884
+      },
+      "checks": {
+        "clearRoad": true,
+        "clearWater": true,
+        "clearStream": true,
+        "clearTrack": true,
+        "clearAttraction": true
+      }
+    },
+    {
+      "index": 7,
+      "lat": -0.16,
+      "lon": 2.54,
+      "scale": 1,
+      "turn": 0.5,
+      "minPath": 0.4567994049128292,
+      "minWater": 3.752799580986832,
+      "minStream": 5.129451686087682,
+      "trackClearance": 1.4574694097392509,
+      "nearestAttraction": {
+        "name": "picnic",
+        "clearance": 0.44764548928440995
+      },
+      "foodLocal": {
+        "x": -1.2883470766103695,
+        "z": -0.36736598156877787
+      },
+      "checks": {
+        "clearRoad": true,
+        "clearWater": true,
+        "clearStream": true,
+        "clearTrack": true,
+        "clearAttraction": true
+      }
+    },
+    {
+      "index": 8,
+      "lat": 0.76,
+      "lon": -2.45,
+      "scale": 0.92,
+      "turn": -0.3,
+      "minPath": 0.84345574361806,
+      "minWater": 5.502188504077771,
+      "minStream": 4.534940366594869,
+      "trackClearance": 1.0832632866874763,
+      "nearestAttraction": {
+        "name": "west-post-shop",
+        "clearance": 0.31446547248118095
+      },
+      "foodLocal": {
+        "x": -2.3061982574831625,
+        "z": -2.0183628784765175
+      },
+      "checks": {
+        "clearRoad": true,
+        "clearWater": true,
+        "clearStream": true,
+        "clearTrack": true,
+        "clearAttraction": true
+      }
+    }
+  ],
+  "hero": {
+    "pose": {
+      "position": [
+        2.661366494068982,
+        -3.23281750778643,
+        0.27878183834186787
+      ],
+      "target": [
+        2.039230164677791,
+        -2.105183224185108,
+        1.618233437894738
+      ]
+    },
+    "lakeBehind": true,
+    "angleDot": -0.999999963398521,
+    "cameraOccluders": []
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-09-20T12:20:30Z",
+  "passed": true,
+  "publicUrl": "https://little-bloom-island.vercel.app/#select/coast",
+  "publicRenderingVerified": true,
+  "physicalPhoneVerified": false,
+  "viewports": ["1280x720", "390x844", "568x320"],
+  "checks": {
+    "lobbyStarsMoonCloudsVisuallyVerified": true,
+    "bothWorldNightSkiesVisuallyVerified": true,
+    "sunnyAndCoastDayVisibilityZero": true,
+    "inactiveWorldSkiesPaused": true,
+    "portraitAndShortLandscapeMoonClearOfToolbar": true,
+    "mobileSelectionAndEnterButtonsUsable": true,
+    "shortLandscapeHorizontalOverflow": false,
+    "cachedTransitionPhases": ["idle", "leaving", "entering", "idle"],
+    "sampledTransitionSettledByMs": 1239,
+    "arrivalTextHiddenDuringDelay": true,
+    "finalPreviewOpacity": 1,
+    "finalPreviewTransform": "none",
+    "rapidAlternatingClicks": 4,
+    "rapidSwitchFinalWorld": "coast",
+    "rapidSwitchBusyAtEnd": false,
+    "browserConsoleErrorsOrWarnings": []
+  },
+  "automatedChecks": {
+    "routeTests": "11/11 passed",
+    "transitionTests": "5/5 passed",
+    "finalBuildValidation": "passed; 0 CSS warnings; both HTML entries identical",
+    "publicHttpValidation": "8/8 paths exact byte match and correct MIME"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "baseTerrainTrackClearance": 0.01808323812727176,
+  "minimumTrackHeight": 0.017656177706417697,
+  "maxTerrainHeightOnRoute": 0.013097300170835111,
+  "nearbyScenery": [],
+  "checksNote": "960 samples of train-body centre at rail + .108, radius .085 against transformed scenery and ride triangles; base terrain uses actual authored displacement. Water/ripples/flat ground excluded from solid-obstacle list."
+}

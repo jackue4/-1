@@ -1,0 +1,118 @@
+{
+  "scope": "Offline structural, terrain, reservation and lifecycle validation; browser appearance and GPU compilation are verified separately by integration owner.",
+  "passed": 8,
+  "total": 8,
+  "results": [
+    {
+      "name": "Three detailed destinations and ten tropical plants",
+      "passed": true,
+      "detail": {
+        "focalGroups": 3,
+        "palms": 8,
+        "bananaPlants": 2,
+        "foundationSupports": 27,
+        "drawCalls": 12,
+        "triangles": 38137,
+        "landmarks": [
+          {
+            "name": "Sea-glass tea room",
+            "lat": 0.315,
+            "lon": 0.7,
+            "features": [
+              "glasshouse tea room with cedar veranda",
+              "tea cups, chairs, planters, wind chime and garden lamps"
+            ]
+          },
+          {
+            "name": "Tidekeeper hillside cottage",
+            "lat": 0.3,
+            "lon": -1.13,
+            "features": [
+              "timber cottage with cream plaster and tiled roof",
+              "solar roof, fish weather vane, fishing net, crates, barrel, lifebuoy, rope, lounger and tea table"
+            ]
+          },
+          {
+            "name": "Enoshima sea-breeze shrine",
+            "lat": -0.27,
+            "lon": 1.16,
+            "features": [
+              "vermilion torii, lanterns and small island shrine",
+              "purification basin, shimenawa rope, stone approach and tropical garden"
+            ]
+          }
+        ],
+        "features": 6
+      }
+    },
+    {
+      "name": "Original houses and placement reservations remain unchanged",
+      "passed": true,
+      "detail": {
+        "houses": 29,
+        "placements": 125
+      }
+    },
+    {
+      "name": "All merged positions, normals, colors and bounds are finite",
+      "passed": true,
+      "detail": {
+        "vertices": 114411
+      }
+    },
+    {
+      "name": "Every foundation has nine dry ground samples and continuous load-bearing supports",
+      "passed": true,
+      "detail": [
+        {
+          "name": "Sea-glass tea room",
+          "maxSupportSpan": 0.08217198584997898
+        },
+        {
+          "name": "Tidekeeper hillside cottage",
+          "maxSupportSpan": 0.10459357347506004
+        },
+        {
+          "name": "Enoshima sea-breeze shrine",
+          "maxSupportSpan": 0.1386317597923712
+        }
+      ]
+    },
+    {
+      "name": "Dense footprint and entrance approach remain dry and outside railway/roads/town",
+      "passed": true,
+      "detail": {
+        "samples": 507,
+        "minDryElevation": 0.010138668576455068,
+        "minRailClearance": 0.22620029036234654,
+        "minTownClearance": 0.11497163842719782
+      }
+    },
+    {
+      "name": "Tropical trunks are grounded and canopy allowance clears original town",
+      "passed": true,
+      "detail": {
+        "plants": 10,
+        "minCanopyClearance": 0.015522149757334347
+      }
+    },
+    {
+      "name": "New destinations leave front sea route and lighthouse clear",
+      "passed": true,
+      "detail": {
+        "shoreStructures": 2,
+        "islandShrine": 1
+      }
+    },
+    {
+      "name": "Geometry budget, time updates and resource cleanup",
+      "passed": true,
+      "detail": {
+        "triangles": 38137,
+        "drawCalls": 12,
+        "geometryDisposed": 12,
+        "materialDisposed": 4
+      }
+    }
+  ]
+}

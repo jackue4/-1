@@ -1,0 +1,12 @@
+{
+  "passed": 6,
+  "checks": [
+    "indexed merge preserves world geometry, parent rotation and input ownership",
+    "vertex colours, shader attributes and normals remain intact",
+    "dynamic shaders, animation joints, transparent surfaces and callbacks keep ownership",
+    "attribute layouts, render layers, render order and hidden branches never cross batches",
+    "compact only removes anonymous emptied construction groups",
+    "candy retains all details, contact, day/night response and reversible clock"
+  ],
+  "notes": "Source contract and geometry tests. Visual smoothness and browser GPU performance require browser verification."
+}

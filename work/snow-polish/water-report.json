@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-09-21T06:19:18.099Z",
+  "verification": "Actual Three.js geometry, shader uniforms and reflection-camera code against a state-tracking renderer mock. GPU shader compilation and visual quality are not asserted.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Water samples the current spherical terrain with finite depth and visible shallow/deep variation",
+      "passed": true,
+      "vertices": 21809,
+      "minimum": 0,
+      "maximum": 0.13600000739097595,
+      "depthMismatch": 0,
+      "nonFinite": 0
+    },
+    {
+      "name": "Transparent water allows the underwater scene to remain depth-visible",
+      "passed": true,
+      "opacitySource": "Custom shader alpha varies by depth, Fresnel and reflection; actual appearance requires GPU review"
+    },
+    {
+      "name": "Paused water clock is deterministic",
+      "passed": true
+    },
+    {
+      "name": "Water time and night color restore exactly after preview",
+      "passed": true
+    },
+    {
+      "name": "Reflection uses a reflected camera, hides recursive surfaces and restores every renderer state",
+      "passed": true,
+      "captures": 1,
+      "hiddenInCapture": true,
+      "reflectedBehindPlane": true,
+      "restored": true
+    },
+    {
+      "name": "Selection preview skips reflection work",
+      "passed": true
+    },
+    {
+      "name": "Light quality skips reflection work",
+      "passed": true
+    },
+    {
+      "name": "Failed reflection pass restores main scene, visibility, target and clipping state",
+      "passed": true,
+      "caught": true,
+      "restored": true
+    },
+    {
+      "name": "Reflection render target and water resources dispose exactly once",
+      "passed": true,
+      "targetDisposals": 1,
+      "geometryDisposals": 1,
+      "materialDisposals": 1
+    },
+    {
+      "name": "Mobile reflection has a smaller render target and geometry budget",
+      "passed": true,
+      "desktop": {
+        "resolution": 512,
+        "vertices": 21809
+      },
+      "mobile": {
+        "resolution": 256,
+        "vertices": 10449
+      }
+    }
+  ]
+}

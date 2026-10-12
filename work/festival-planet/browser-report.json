@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-09-20T12:59:47.801184+00:00",
+  "sourceSha256": "cbdd7abfd2f267fa723d5c6d250b3459dadd40f2a21e6edf5a77355cb7c25585",
+  "browser": "Chromium in-app browser with WebGL",
+  "viewports": [
+    [
+      1280,
+      720
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      568,
+      320
+    ],
+    [
+      844,
+      390
+    ]
+  ],
+  "checks": {
+    "dayGlobeAndCastleComposition": true,
+    "carouselDetailView": true,
+    "realCoasterTunnelInterior": true,
+    "nightSkyAndColoredHeartFireworks": true,
+    "ringAndSpiralFireworks": true,
+    "threeWorldSelectionAndGameEntry": true,
+    "portraitLightTabsSingleRow": true,
+    "landscapePlanetNamesFit": true,
+    "pausedReturnPreservesClockTrainParticlesCamera": true,
+    "hiddenWorldClockStops": true,
+    "consoleWarningsAndErrors": 0
+  },
+  "automatedReports": [
+    "effects-report.json",
+    "rides-report.json",
+    "rides-clearance-report.json",
+    "../planet-selection/route-report.json",
+    "../planet-selection/transition-report.json"
+  ],
+  "physicalPhoneVerified": false,
+  "notes": "Responsive browser checks are not physical iPhone/Android or real-device FPS measurements."
+}

@@ -1,0 +1,216 @@
+{
+  "checkedAt": "2026-09-21T12:31:52.938Z",
+  "passed": true,
+  "checks": [
+    {
+      "name": "The campsite reservation clears every authored attraction footprint and the coaster corridor",
+      "passed": true,
+      "campRadius": 1.52,
+      "minimumFixtureClearance": {
+        "name": "flower shop",
+        "edgeDistanceFromCampCenter": 1.6114339704873601
+      },
+      "railDistance": 3.6548743029067463,
+      "fixtures": [
+        {
+          "name": "flower shop",
+          "edgeDistanceFromCampCenter": 1.6114339704873601
+        },
+        {
+          "name": "picnic",
+          "edgeDistanceFromCampCenter": 2.0785845844665545
+        },
+        {
+          "name": "candy 8",
+          "edgeDistanceFromCampCenter": 3.6387023062142365
+        },
+        {
+          "name": "tea shop",
+          "edgeDistanceFromCampCenter": 3.9554671177944027
+        },
+        {
+          "name": "candy 6",
+          "edgeDistanceFromCampCenter": 4.073428122152419
+        },
+        {
+          "name": "post office",
+          "edgeDistanceFromCampCenter": 4.132351726852284
+        },
+        {
+          "name": "sweet shop south",
+          "edgeDistanceFromCampCenter": 4.236806656825611
+        },
+        {
+          "name": "swings",
+          "edgeDistanceFromCampCenter": 4.5276242504637425
+        },
+        {
+          "name": "ticket gate",
+          "edgeDistanceFromCampCenter": 4.58688046503787
+        },
+        {
+          "name": "food court",
+          "edgeDistanceFromCampCenter": 4.66465189739361
+        },
+        {
+          "name": "candy 5",
+          "edgeDistanceFromCampCenter": 4.70810285757844
+        },
+        {
+          "name": "post office east",
+          "edgeDistanceFromCampCenter": 4.7349641951842525
+        },
+        {
+          "name": "tea shop east",
+          "edgeDistanceFromCampCenter": 4.796537332096783
+        },
+        {
+          "name": "candy 9",
+          "edgeDistanceFromCampCenter": 5.098432529971169
+        },
+        {
+          "name": "observatory",
+          "edgeDistanceFromCampCenter": 5.312262463898211
+        },
+        {
+          "name": "flower shop east",
+          "edgeDistanceFromCampCenter": 5.363629788278774
+        },
+        {
+          "name": "teacups",
+          "edgeDistanceFromCampCenter": 5.772951622364522
+        },
+        {
+          "name": "sweet shop",
+          "edgeDistanceFromCampCenter": 6.002106729969287
+        },
+        {
+          "name": "candy 1",
+          "edgeDistanceFromCampCenter": 6.021364115126406
+        },
+        {
+          "name": "carousel",
+          "edgeDistanceFromCampCenter": 6.309631724302328
+        },
+        {
+          "name": "candy 2",
+          "edgeDistanceFromCampCenter": 6.606909360798465
+        },
+        {
+          "name": "sweet shop north",
+          "edgeDistanceFromCampCenter": 6.7532912593789
+        },
+        {
+          "name": "candy 4",
+          "edgeDistanceFromCampCenter": 7.287775216338263
+        },
+        {
+          "name": "candy 3",
+          "edgeDistanceFromCampCenter": 7.334155033342697
+        },
+        {
+          "name": "ferris",
+          "edgeDistanceFromCampCenter": 7.510284386143549
+        },
+        {
+          "name": "fountain",
+          "edgeDistanceFromCampCenter": 7.702949951924824
+        },
+        {
+          "name": "castle",
+          "edgeDistanceFromCampCenter": 7.824898362347312
+        },
+        {
+          "name": "candy 7",
+          "edgeDistanceFromCampCenter": 7.881146683962319
+        },
+        {
+          "name": "balloon cart",
+          "edgeDistanceFromCampCenter": 7.989053516983348
+        },
+        {
+          "name": "rose garden",
+          "edgeDistanceFromCampCenter": 8.210070466461007
+        },
+        {
+          "name": "ribbon garden",
+          "edgeDistanceFromCampCenter": 8.415115998386238
+        },
+        {
+          "name": "pergola",
+          "edgeDistanceFromCampCenter": 8.843556936266246
+        }
+      ]
+    },
+    {
+      "name": "All campsite geometry attributes and transforms are finite, including the spherical shoreline of the terrace",
+      "passed": true,
+      "attributes": 127,
+      "vertices": 220493,
+      "groundVertices": 1168,
+      "terraceLocalY": [
+        -0.3420009911060333,
+        0
+      ]
+    },
+    {
+      "name": "The camp terrace, camper, dinner companions and lanterns fit the actual desktop and mobile camera frusta",
+      "passed": true,
+      "views": [
+        {
+          "width": 900,
+          "height": 680,
+          "minX": -0.7047921101236516,
+          "maxX": 0.6261429296069857,
+          "minY": -0.7521316888129199,
+          "maxY": 0.5297845278404335,
+          "minZ": 0.9697527791199122,
+          "maxZ": 0.9818322116278193,
+          "inside": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "minX": -0.8345963925174745,
+          "maxX": 0.7933310704291721,
+          "minY": -0.303734695353254,
+          "maxY": 0.24001255327990137,
+          "minZ": 0.985654911765942,
+          "maxZ": 0.9893182575287839,
+          "inside": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "minX": -0.4310392226327742,
+          "maxX": 0.3829386818581894,
+          "minY": -0.7521316888129199,
+          "maxY": 0.5297845278404335,
+          "minZ": 0.9697527791199122,
+          "maxZ": 0.9818322116278193,
+          "inside": true
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "minX": -0.8438381068487296,
+          "maxX": 0.787392557483375,
+          "minY": -0.3767562799240422,
+          "maxY": 0.28847968877462615,
+          "minZ": 0.9816436132603402,
+          "maxZ": 0.9871090531492588,
+          "inside": true
+        }
+      ],
+      "note": "Projects every geometry vertex in the campsite. Added woodland trees are part of world.js and require the browser composition review."
+    },
+    {
+      "name": "Standalone camp disposal and palette disposal release every retained resource exactly once",
+      "passed": true,
+      "retainedResources": 51,
+      "disposeCounts": [
+        1
+      ]
+    }
+  ]
+}

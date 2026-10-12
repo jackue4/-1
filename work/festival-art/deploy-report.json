@@ -1,0 +1,110 @@
+{
+  "checkedAt": "2026-09-21T02:46:12.531Z",
+  "url": "https://little-bloom-island.vercel.app",
+  "checks": [
+    {
+      "url": "https://little-bloom-island.vercel.app/",
+      "status": 200,
+      "bytes": 1370147,
+      "sha256": "14b8244f959d8b65ee6447844ddf5df295911d292a145592e54f3e6ed36e396a",
+      "exactMatch": true,
+      "anonymousRequest": true,
+      "verification": "curl --compressed, decompressed bytes SHA256 comparison; browser loaded root successfully"
+    },
+    {
+      "url": "https://little-bloom-island.vercel.app/sakura-season.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 1370147,
+      "sha256": "14b8244f959d8b65ee6447844ddf5df295911d292a145592e54f3e6ed36e396a",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "https://little-bloom-island.vercel.app/little-bloom.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 1370147,
+      "sha256": "14b8244f959d8b65ee6447844ddf5df295911d292a145592e54f3e6ed36e396a",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "https://little-bloom-island.vercel.app/?source=homescreen",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 1370147,
+      "sha256": "14b8244f959d8b65ee6447844ddf5df295911d292a145592e54f3e6ed36e396a",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "https://little-bloom-island.vercel.app/manifest.webmanifest",
+      "status": 200,
+      "contentType": "application/manifest+json; charset=utf-8",
+      "bytes": 781,
+      "sha256": "a2d50e43c2714b52e16beaf944f1c2c04e1ae1941c9cc66be8f4dc2f46f89dbd",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "https://little-bloom-island.vercel.app/icons/icon-192.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 15972,
+      "sha256": "11aeb0978b16aa90c1ea9fb27f19d0257a4ef9de122c72b1ae2a3a8793662841",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "https://little-bloom-island.vercel.app/icons/icon-512.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 53039,
+      "sha256": "5fc18eb9fe5ed38384d1e9b8014c071064c2369ba135b85a2e1ce5d1f42bcb24",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "https://little-bloom-island.vercel.app/icons/apple-touch-icon.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 14697,
+      "sha256": "32cd6fc964a6599f73465a902c0ed130a2fdea175f3ea110096b8f648e48dd62",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    }
+  ],
+  "passed": true,
+  "browserRenderingVerified": true,
+  "physicalPhoneVerified": false,
+  "firstAttempt": [
+    {
+      "url": "https://little-bloom-island.vercel.app/",
+      "error": "The operation was aborted due to timeout",
+      "exactMatch": false
+    }
+  ],
+  "deploymentId": "dpl_FnV5Rd2jsX3dRdSXCvkc2eGVhp1D",
+  "publicBrowser": {
+    "url": "https://little-bloom-island.vercel.app/#festival",
+    "readyState": "complete",
+    "waterTransparent": true,
+    "fish": 48,
+    "natureTrees": 107,
+    "paths": 7,
+    "shopDetails": 9,
+    "consoleWarningsOrErrors": [],
+    "checkedViews": [
+      "globe",
+      "lagoon"
+    ]
+  }
+}

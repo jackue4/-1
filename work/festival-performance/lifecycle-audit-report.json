@@ -1,0 +1,421 @@
+{
+  "checkedAt": "2026-09-21T12:11:22.427Z",
+  "passed": true,
+  "method": "Real mountFestival app, all generated Three.js geometry, food/candy modules, scene batching and absolute-time animation. DOM, controls and WebGL are deterministic boundaries; this report does not claim actual GPU or CSS rendering.",
+  "checks": [
+    {
+      "name": "The real festival app mounts the new food court and candy clusters, then marks ready after rendering",
+      "passed": true,
+      "foodCourt": {
+        "location": {
+          "lat": 0.3,
+          "lon": -1.02,
+          "radius": 1.03
+        },
+        "stalls": {
+          "hotdogTrucks": 1,
+          "icecreamCarts": 1,
+          "picnicTables": 1,
+          "menus": 3,
+          "chefs": 1,
+          "meshes": 349,
+          "triangles": 53834
+        },
+        "guests": {
+          "time": 0.15000000000000058,
+          "total": 4,
+          "period": 64,
+          "queues": {
+            "hotdog": 2,
+            "icecream": 2
+          },
+          "guests": [
+            {
+              "id": "food-rabbit",
+              "name": "棉棉",
+              "species": "rabbit",
+              "queue": "hotdog",
+              "phase": 11.150000000000006,
+              "activity": "挥手点单",
+              "holdingFood": false,
+              "walking": false,
+              "position": [
+                -0.12,
+                0.014,
+                0.35
+              ],
+              "yaw": 3.141592653589793
+            },
+            {
+              "id": "food-bear",
+              "name": "麦麦",
+              "species": "bear",
+              "queue": "hotdog",
+              "phase": 43.150000000000006,
+              "activity": "排队等候",
+              "holdingFood": false,
+              "walking": false,
+              "position": [
+                -0.12,
+                0.014,
+                0.69
+              ],
+              "yaw": 3.141592653589793
+            },
+            {
+              "id": "food-corgi",
+              "name": "阿栗",
+              "species": "corgi",
+              "queue": "icecream",
+              "phase": 13.150000000000006,
+              "activity": "挥手点单",
+              "holdingFood": false,
+              "walking": false,
+              "position": [
+                0.47,
+                0.014,
+                0.32
+              ],
+              "yaw": 3.141592653589793
+            },
+            {
+              "id": "food-cat",
+              "name": "露露",
+              "species": "cat",
+              "queue": "icecream",
+              "phase": 45.150000000000006,
+              "activity": "排队等候",
+              "holdingFood": false,
+              "walking": false,
+              "position": [
+                0.47,
+                0.014,
+                0.69
+              ],
+              "yaw": 3.141592653589793
+            }
+          ]
+        },
+        "batching": {
+          "before": 597,
+          "batched": 529,
+          "remainingStatic": 68,
+          "prunedGroups": 0,
+          "sourceVertices": 35727,
+          "mergedVertices": 35727
+        }
+      },
+      "candy": {
+        "clusters": 9,
+        "lollipops": 27,
+        "pumpkinLanterns": 27,
+        "pointLights": 0,
+        "drawCalls": 27,
+        "triangles": 147906,
+        "disposed": false,
+        "time": 0.15000000000000058,
+        "night": 0,
+        "brightness": 0,
+        "faceEmissiveIntensity": 0,
+        "haloOpacity": 0,
+        "locations": [
+          {
+            "lat": 0.58,
+            "lon": -1.1,
+            "scale": 0.86,
+            "turn": 0.2
+          },
+          {
+            "lat": 0.62,
+            "lon": -0.84,
+            "scale": 0.79,
+            "turn": 0
+          },
+          {
+            "lat": 0.63,
+            "lon": -0.48,
+            "scale": 0.76,
+            "turn": -0.4
+          },
+          {
+            "lat": 0.15,
+            "lon": 0.95,
+            "scale": 0.78,
+            "turn": 0.1
+          },
+          {
+            "lat": -0.68,
+            "lon": 0.9,
+            "scale": 0.9,
+            "turn": 1.65
+          },
+          {
+            "lat": -0.7,
+            "lon": -0.34,
+            "scale": 1,
+            "turn": 0.3
+          },
+          {
+            "lat": 0.73,
+            "lon": 1.47,
+            "scale": 0.88,
+            "turn": 0.2
+          },
+          {
+            "lat": -0.16,
+            "lon": 2.54,
+            "scale": 1,
+            "turn": 0.5
+          },
+          {
+            "lat": 0.76,
+            "lon": -2.45,
+            "scale": 0.92,
+            "turn": -0.3
+          }
+        ],
+        "minGroundClearance": 0.0009999999999998899
+      }
+    },
+    {
+      "name": "The snack camera enters its new viewport and hides animal-only controls",
+      "passed": true
+    },
+    {
+      "name": "Pause freezes all guest joints, food acquisition, bell movement and candy transforms",
+      "passed": true
+    },
+    {
+      "name": "A stable paused scene performs zero scene simulation and zero WebGL renders",
+      "passed": true,
+      "simulationDelta": 0,
+      "renderDelta": 0
+    },
+    {
+      "name": "Dragging a paused scene wakes rendering while its animation time stays fixed",
+      "passed": true
+    },
+    {
+      "name": "A paused scene returns to zero simulation and render work after the drag settles",
+      "passed": true
+    },
+    {
+      "name": "Phase changes wake paused scene simulation and rendering",
+      "passed": true
+    },
+    {
+      "name": "Pumpkins become emissive after the real app enters night",
+      "passed": true,
+      "env": {
+        "night": 1,
+        "daylight": 0.14,
+        "dusk": 0,
+        "preview": false
+      },
+      "candy": {
+        "clusters": 9,
+        "lollipops": 27,
+        "pumpkinLanterns": 27,
+        "pointLights": 0,
+        "drawCalls": 27,
+        "triangles": 147906,
+        "disposed": false,
+        "time": 1.9833333333333338,
+        "night": 1,
+        "brightness": 0.9995459386936045,
+        "faceEmissiveIntensity": 1.6492507988444474,
+        "haloOpacity": 0.2598819440603372,
+        "locations": [
+          {
+            "lat": 0.58,
+            "lon": -1.1,
+            "scale": 0.86,
+            "turn": 0.2
+          },
+          {
+            "lat": 0.62,
+            "lon": -0.84,
+            "scale": 0.79,
+            "turn": 0
+          },
+          {
+            "lat": 0.63,
+            "lon": -0.48,
+            "scale": 0.76,
+            "turn": -0.4
+          },
+          {
+            "lat": 0.15,
+            "lon": 0.95,
+            "scale": 0.78,
+            "turn": 0.1
+          },
+          {
+            "lat": -0.68,
+            "lon": 0.9,
+            "scale": 0.9,
+            "turn": 1.65
+          },
+          {
+            "lat": -0.7,
+            "lon": -0.34,
+            "scale": 1,
+            "turn": 0.3
+          },
+          {
+            "lat": 0.73,
+            "lon": 1.47,
+            "scale": 0.88,
+            "turn": 0.2
+          },
+          {
+            "lat": -0.16,
+            "lon": 2.54,
+            "scale": 1,
+            "turn": 0.5
+          },
+          {
+            "lat": 0.76,
+            "lon": -2.45,
+            "scale": 0.92,
+            "turn": -0.3
+          }
+        ],
+        "minGroundClearance": 0.0009999999999998899
+      }
+    },
+    {
+      "name": "Night lighting convergence returns a paused scene to zero scene simulation and render work",
+      "passed": true
+    },
+    {
+      "name": "Resizing a paused world renders its new viewport and keeps simulation time fixed",
+      "passed": true
+    },
+    {
+      "name": "Selector preview animates the new scene without advancing paused game time",
+      "passed": true
+    },
+    {
+      "name": "Returning from preview exactly restores snack camera, night, pause and all guest transforms",
+      "passed": true,
+      "time": 1.9833333333333338,
+      "phase": "night",
+      "mode": "snacks"
+    },
+    {
+      "name": "Hidden planet cancels all RAF callbacks, scene simulation and render work",
+      "passed": true,
+      "hiddenRafCallbacks": 0,
+      "hiddenRenderCalls": 0,
+      "hiddenSimulationSeconds": 0,
+      "queuedFrames": 0
+    },
+    {
+      "name": "Repeated visibility restoration queues one RAF and resets delta without a time jump",
+      "passed": true,
+      "queuedResume": 1,
+      "callbackDelta": 3
+    },
+    {
+      "name": "Light quality keeps new subjects active and disables shadows",
+      "passed": true
+    },
+    {
+      "name": "Detailed quality restores manually updated shadows",
+      "passed": true
+    },
+    {
+      "name": "Snack, candy and globe cameras resize coherently in portrait and landscape",
+      "passed": true,
+      "views": [
+        {
+          "width": 390,
+          "height": 844,
+          "view": "snacks",
+          "aspect": 0.46208530805687204,
+          "finite": true,
+          "distance": 4.591709184907967
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "view": "candy",
+          "aspect": 0.46208530805687204,
+          "finite": true,
+          "distance": 1.8581558808254368
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "view": "globe",
+          "aspect": 0.46208530805687204,
+          "finite": true,
+          "distance": 25.812208168809985
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "view": "snacks",
+          "aspect": 2.164102564102564,
+          "finite": true,
+          "distance": 2.46716436420438
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "view": "candy",
+          "aspect": 2.164102564102564,
+          "finite": true,
+          "distance": 0.9869270489757588
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "view": "globe",
+          "aspect": 2.164102564102564,
+          "finite": true,
+          "distance": 15.4388564458366
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "view": "snacks",
+          "aspect": 0.5633802816901409,
+          "finite": true,
+          "distance": 3.7661264019579863
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "view": "candy",
+          "aspect": 0.5633802816901409,
+          "finite": true,
+          "distance": 1.5240620953808155
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "view": "globe",
+          "aspect": 0.5633802816901409,
+          "finite": true,
+          "distance": 21.379303144843867
+        }
+      ],
+      "note": "Camera math and controls only; device rendering is separately checked in the browser."
+    },
+    {
+      "name": "Context loss freezes added simulation; restoring resumes it",
+      "passed": true
+    },
+    {
+      "name": "App disposal is idempotent, releases every live added mesh once and removes RAF and lifecycle handlers",
+      "passed": true,
+      "addedGeometries": 94,
+      "counts": [
+        1
+      ],
+      "rendererDisposals": 1
+    }
+  ]
+}

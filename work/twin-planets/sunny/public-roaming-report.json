@@ -1,0 +1,34 @@
+{
+  "checks": [
+    "meadow smooth drag and inertia",
+    "coast smooth drag and inertia",
+    "fishing smooth drag and inertia",
+    "animal smooth drag and inertia",
+    "globe smooth drag and inertia",
+    "Meadow-to-globe retains orientation, exposure, foliage quality and cloud treatment"
+  ],
+  "final": {
+    "residents": 3,
+    "fishing": {
+      "resident": 2,
+      "bay": 1,
+      "seated": true,
+      "available": true,
+      "bite": true,
+      "normal": [
+        -0.9613055949207641,
+        -0.2718314036077362,
+        -0.04471287495435633
+      ],
+      "waterDepth": 0.15939821717428115,
+      "spot": 0,
+      "spotCount": 3,
+      "changes": 0,
+      "animation": "bite",
+      "activity": "浮漂动啦，盯紧一点",
+      "seatedSeconds": 14.234099999999978
+    }
+  },
+  "errors": [],
+  "note": "Real Chromium WebGL and touch simulation, not physical Safari."
+}

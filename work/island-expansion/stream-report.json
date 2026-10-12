@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Creek is continuous, downhill, transparent and connects to the sea",
+      "passed": true,
+      "details": {
+        "rows": 321,
+        "minDepth": 0.030718094850397115,
+        "mouth": {
+          "lat": -0.19,
+          "lon": -0.2,
+          "water": 3.151,
+          "bed": 3.0126987849711035,
+          "width": 0.10498088920941127
+        }
+      }
+    },
+    {
+      "name": "Rendered terrain triangles stay below the creek surface",
+      "passed": true,
+      "details": {
+        "samples": 72,
+        "minimumGap": 0.022798670998507742
+      }
+    },
+    {
+      "name": "Minnows remain below stream water and above carved bed for 300 seconds",
+      "passed": true,
+      "details": {
+        "minBed": 0.015999999999999126,
+        "minWater": 0.021999999999999797
+      }
+    },
+    {
+      "name": "Bridge clears the water, pause is stable, old town remains populated",
+      "passed": true,
+      "details": {
+        "bridgeClearance": 0.033506071519658676,
+        "houses": 29
+      }
+    },
+    {
+      "name": "All geometry is finite and resources detach",
+      "passed": true,
+      "details": {
+        "vertices": 38573
+      }
+    }
+  ]
+}

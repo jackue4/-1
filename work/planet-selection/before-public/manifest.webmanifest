@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "Little Bloom · 双星漫游",
+  "short_name": "双星漫游",
+  "description": "在晴日小岛与海风来信之间，慢慢走过一个温柔的午后。",
+  "lang": "zh-CN",
+  "start_url": "/?source=homescreen#coast",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["fullscreen", "standalone"],
+  "background_color": "#edf0dc",
+  "theme_color": "#edf0dc",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

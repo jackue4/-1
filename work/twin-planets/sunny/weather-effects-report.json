@@ -1,0 +1,62 @@
+{
+  "tests": [
+    {
+      "name": "Day suppresses all meteors even when meteor weather is requested",
+      "passed": true
+    },
+    {
+      "name": "Tornado and seven colour rainbow grow softly and use actual radial anchors",
+      "passed": true
+    },
+    {
+      "name": "Both initial garden and globe cameras include a readable rainbow crown",
+      "passed": true
+    },
+    {
+      "name": "Heavy storm has finite streaks and impacts only below the real waterline",
+      "passed": true
+    },
+    {
+      "name": "Night shower contains several concurrent streaks and remains bounded for 80 seconds",
+      "passed": true
+    },
+    {
+      "name": "A paused frame cannot advance simulation, append meteors or mutate particle data",
+      "passed": true
+    },
+    {
+      "name": "Planet selection suspends all effect timing and restores the exact meteor frame",
+      "passed": true
+    },
+    {
+      "name": "Weather exit fades continuously instead of disappearing immediately",
+      "passed": true
+    },
+    {
+      "name": "Phone and reduced motion profiles use lower bounded particle pools",
+      "passed": true
+    },
+    {
+      "name": "Dispose owns its resources only, detaches both roots and is idempotent",
+      "passed": true
+    }
+  ],
+  "projection": [
+    {
+      "view": "garden",
+      "visible": 80,
+      "total": 80,
+      "minY": 0.517309908727939,
+      "maxY": 0.7112175259244321
+    },
+    {
+      "view": "globe",
+      "visible": 80,
+      "total": 80,
+      "minY": 0.8793399281670317,
+      "maxY": 0.9872681807690592
+    }
+  ],
+  "peakMeteors": 7,
+  "physicalDeviceVerified": false
+}

@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-09-21T11:48:18.365Z",
+  "worlds": [
+    "sunny",
+    "coast",
+    "festival",
+    "snow"
+  ],
+  "visualReview": {
+    "nightAllWorlds": true,
+    "duskAllWorlds": true,
+    "planetSelection": true,
+    "portrait390x844": true,
+    "landscape844x390": true,
+    "physicalPhone": false,
+    "consoleErrors": 0
+  },
+  "runtimeReadback": {
+    "world": "festival",
+    "phase": "night",
+    "viewport": [
+      1030,
+      920
+    ],
+    "skyCanvas": [
+      1030,
+      859
+    ],
+    "nightVisibility": 1,
+    "duskVisibility": 0,
+    "stars": 34,
+    "bakedStarDust": 1650,
+    "cloudBanks": 14,
+    "sharedCloudSprites": 6,
+    "pixelRatio": 1,
+    "rollingFrameMs": 16.90422535211274,
+    "note": "Short live rolling average on this computer, not a physical-phone benchmark or measured FPS improvement."
+  },
+  "tests": {
+    "skyLifecycle": 26,
+    "festivalLifecycle": 19,
+    "snowLifecycle": 14,
+    "sunnyClimate": 10,
+    "standaloneBuild": true
+  },
+  "deployment": "dpl_DXcvYJHtYTQDnEfPDHAosrrF6LoN",
+  "sourceFiles": [
+    "work/twin-planets/storybook-sky.js",
+    "work/twin-planets/sky-clouds.js",
+    "work/twin-planets/sunny/app.js",
+    "work/twin-planets/sunny/style.css",
+    "work/kamakura-planet/app.js",
+    "work/kamakura-planet/style.css",
+    "work/festival-planet/app.js",
+    "work/festival-planet/style.css",
+    "work/snow-planet/app.js",
+    "work/snow-planet/style.css"
+  ]
+}

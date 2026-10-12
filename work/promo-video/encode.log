@@ -1,0 +1,86 @@
+Input #0, matroska,webm, from 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\work\promo-video\raw\01.webm':
+  Metadata:
+    encoder         : Chrome
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0(eng): Video: vp9 (Profile 0), yuv420p(tv, bt709), 1080x1920, SAR 1:1 DAR 9:16, 1k tbr, 1k tbn (default)
+      Metadata:
+        alpha_mode      : 1
+Input #1, matroska,webm, from 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\work\promo-video\raw\02.webm':
+  Metadata:
+    encoder         : Chrome
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #1:0(eng): Video: vp9 (Profile 0), yuv420p(tv, bt709), 1080x1920, SAR 1:1 DAR 9:16, 1k tbr, 1k tbn (default)
+      Metadata:
+        alpha_mode      : 1
+Input #2, matroska,webm, from 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\work\promo-video\raw\03.webm':
+  Metadata:
+    encoder         : Chrome
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #2:0(eng): Video: vp9 (Profile 0), yuv420p(tv, bt709), 1080x1920, SAR 1:1 DAR 9:16, 29.97 fps, 29.97 tbr, 1k tbn (default)
+      Metadata:
+        alpha_mode      : 1
+Input #3, matroska,webm, from 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\work\promo-video\raw\04.webm':
+  Metadata:
+    encoder         : Chrome
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #3:0(eng): Video: vp9 (Profile 0), yuv420p(tv, bt709), 1080x1920, SAR 1:1 DAR 9:16, 1k tbr, 1k tbn (default)
+      Metadata:
+        alpha_mode      : 1
+Input #4, matroska,webm, from 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\work\promo-video\raw\05.webm':
+  Metadata:
+    encoder         : Chrome
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #4:0(eng): Video: vp9 (Profile 0), yuv420p(tv, bt709), 1080x1920, SAR 1:1 DAR 9:16, 60 tbr, 1k tbn (default)
+      Metadata:
+        alpha_mode      : 1
+[aist#5:0/pcm_s16le @ 0000016b6c9c8240] Guessed Channel Layout: stereo
+Input #5, wav, from 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\work\promo-video\music.wav':
+  Duration: 00:00:24.00, bitrate: 1536 kb/s
+  Stream #5:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 (vp9) -> trim:default
+  Stream #1:0 (vp9) -> trim:default
+  Stream #2:0 (vp9) -> trim:default
+  Stream #3:0 (vp9) -> trim:default
+  Stream #4:0 (vp9) -> trim:default
+  concat:out:v0 -> Stream #0:0 (libx264)
+  Stream #5:0 -> #0:1 (pcm_s16le (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 0000016b6d5b0880] using SAR=1/1
+[libx264 @ 0000016b6d5b0880] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0000016b6d5b0880] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0000016b6d5b0880] 264 - core 164 r3192 c24e06c - H.264/MPEG-4 AVC codec - Copyleft 2003-2024 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=18 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=20.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\outputs\promo\little-bloom-xiaohongshu.mp4':
+  Metadata:
+    title           : Little Bloom - AI Creative Journal
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 30 fps, 15360 tbn
+      Metadata:
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 160 kb/s
+      Metadata:
+        encoder         : Lavc61.19.100 aac
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A    frame=   10 fps=6.5 q=26.0 size=       0KiB time=00:00:00.26 bitrate=   1.4kbits/s speed=0.173x    frame=   34 fps= 16 q=26.0 size=     512KiB time=00:00:01.06 bitrate=3932.5kbits/s speed=0.517x    frame=   58 fps= 22 q=26.0 size=     512KiB time=00:00:01.86 bitrate=2247.2kbits/s speed=0.708x    frame=   88 fps= 27 q=26.0 size=     768KiB time=00:00:02.86 bitrate=2194.8kbits/s speed=0.881x    frame=  107 fps= 28 q=26.0 size=     768KiB time=00:00:03.50 bitrate=1797.7kbits/s speed=0.92x    frame=  125 fps= 29 q=26.0 size=    1024KiB time=00:00:04.10 bitrate=2046.1kbits/s speed=0.949x    frame=  143 fps= 29 q=26.0 size=    1280KiB time=00:00:04.70 bitrate=2231.1kbits/s speed=0.968x    frame=  160 fps= 29 q=26.0 size=    1792KiB time=00:00:05.26 bitrate=2787.4kbits/s speed=0.964x    frame=  173 fps= 29 q=26.0 size=    2048KiB time=00:00:05.70 bitrate=2943.4kbits/s speed=0.95x    frame=  191 fps= 29 q=26.0 size=    2304KiB time=00:00:06.30 bitrate=2996.0kbits/s speed=0.969x    frame=  208 fps= 30 q=26.0 size=    2560KiB time=00:00:06.86 bitrate=3054.2kbits/s speed=0.977x    frame=  223 fps= 29 q=26.0 size=    3072KiB time=00:00:07.36 bitrate=3416.2kbits/s speed=0.97x    frame=  238 fps= 29 q=26.0 size=    3328KiB time=00:00:07.86 bitrate=3465.7kbits/s speed=0.969x    frame=  254 fps= 29 q=26.0 size=    3584KiB time=00:00:08.40 bitrate=3495.3kbits/s speed=0.97x    frame=  270 fps= 29 q=26.0 size=    3840KiB time=00:00:08.93 bitrate=3521.4kbits/s speed=0.972x    frame=  287 fps= 30 q=26.0 size=    4352KiB time=00:00:09.50 bitrate=3752.8kbits/s speed=0.98x    frame=  305 fps= 30 q=26.0 size=    4608KiB time=00:00:10.10 bitrate=3737.5kbits/s speed=0.989x    frame=  325 fps= 30 q=26.0 size=    4864KiB time=00:00:10.76 bitrate=3700.9kbits/s speed=   1x    frame=  338 fps= 30 q=26.0 size=    5120KiB time=00:00:11.20 bitrate=3744.9kbits/s speed=0.994x    frame=  361 fps= 30 q=26.0 size=    5376KiB time=00:00:11.96 bitrate=3680.3kbits/s speed=   1x    frame=  373 fps= 30 q=26.0 size=    5632KiB time=00:00:12.36 bitrate=3730.8kbits/s speed=0.99x    frame=  393 fps= 30 q=26.0 size=    5888KiB time=00:00:13.03 bitrate=3700.9kbits/s speed=0.997x    frame=  413 fps= 30 q=26.0 size=    6144KiB time=00:00:13.70 bitrate=3673.9kbits/s speed=1.01x    frame=  428 fps= 30 q=26.0 size=    6400KiB time=00:00:14.20 bitrate=3692.2kbits/s speed=   1x    frame=  452 fps= 31 q=26.0 size=    6656KiB time=00:00:15.00 bitrate=3635.1kbits/s speed=1.02x    frame=  476 fps= 31 q=26.0 size=    6912KiB time=00:00:15.80 bitrate=3583.8kbits/s speed=1.04x    frame=  499 fps= 32 q=26.0 size=    6912KiB time=00:00:16.56 bitrate=3417.9kbits/s speed=1.05x    frame=  526 fps= 32 q=26.0 size=    7168KiB time=00:00:17.46 bitrate=3361.9kbits/s speed=1.07x    frame=  551 fps= 33 q=26.0 size=    7424KiB time=00:00:18.30 bitrate=3323.4kbits/s speed=1.08x    frame=  574 fps= 33 q=26.0 size=    7424KiB time=00:00:19.06 bitrate=3189.7kbits/s speed=1.09x    frame=  594 fps= 33 q=26.0 size=    7936KiB time=00:00:19.73 bitrate=3294.5kbits/s speed= 1.1x    frame=  614 fps= 33 q=26.0 size=    8192KiB time=00:00:20.40 bitrate=3289.7kbits/s speed= 1.1x    frame=  644 fps= 34 q=26.0 size=    8448KiB time=00:00:21.40 bitrate=3233.9kbits/s speed=1.13x    frame=  662 fps= 34 q=26.0 size=    8448KiB time=N/A bitrate=N/A speed=N/A    frame=  687 fps= 34 q=26.0 size=    8704KiB time=N/A bitrate=N/A speed=N/A    [mp4 @ 0000016b6d85eb40] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000016b6ca21ac0] video:8598KiB audio:482KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.299880%
+frame=  720 fps= 35 q=-1.0 Lsize=    9107KiB time=00:00:23.93 bitrate=3117.2kbits/s speed=1.17x    
+[libx264 @ 0000016b6d5b0880] frame I:6     Avg QP:11.15  size: 72802
+[libx264 @ 0000016b6d5b0880] frame P:192   Avg QP:16.81  size: 28969
+[libx264 @ 0000016b6d5b0880] frame B:522   Avg QP:20.83  size:  5373
+[libx264 @ 0000016b6d5b0880] consecutive B-frames:  1.7%  3.9%  3.3% 91.1%
+[libx264 @ 0000016b6d5b0880] mb I  I16..4: 41.9% 44.1% 14.0%
+[libx264 @ 0000016b6d5b0880] mb P  I16..4:  5.4%  6.0%  0.8%  P16..4: 21.1%  8.8%  5.5%  0.0%  0.0%    skip:52.5%
+[libx264 @ 0000016b6d5b0880] mb B  I16..4:  1.0%  0.7%  0.0%  B16..8: 18.8%  2.0%  0.4%  direct: 2.1%  skip:75.0%  L0:38.1% L1:56.8% BI: 5.1%
+[libx264 @ 0000016b6d5b0880] 8x8 transform intra:46.3% inter:69.4%
+[libx264 @ 0000016b6d5b0880] coded y,uvDC,uvAC intra: 21.5% 36.9% 19.6% inter: 5.6% 8.7% 1.8%
+[libx264 @ 0000016b6d5b0880] i16 v,h,dc,p: 35% 53%  4%  8%
+[libx264 @ 0000016b6d5b0880] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 21% 25% 31%  4%  4%  4%  4%  3%  4%
+[libx264 @ 0000016b6d5b0880] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 25% 23% 18%  5%  8%  6%  6%  4%  4%
+[libx264 @ 0000016b6d5b0880] i8c dc,h,v,p: 60% 27% 10%  3%
+[libx264 @ 0000016b6d5b0880] Weighted P-Frames: Y:8.9% UV:8.9%
+[libx264 @ 0000016b6d5b0880] ref P L0: 67.4%  9.3% 18.1%  5.2%
+[libx264 @ 0000016b6d5b0880] ref B L0: 87.1% 10.9%  2.0%
+[libx264 @ 0000016b6d5b0880] ref B L1: 96.2%  3.8%
+[libx264 @ 0000016b6d5b0880] kb/s:2934.61
+[aac @ 0000016b6d6c7680] Qavg: 1315.570

@@ -1,0 +1,11 @@
+import { build } from 'esbuild';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const dir=path.dirname(fileURLToPath(import.meta.url));
+const result=await build({entryPoints:[path.join(dir,'app.js')],bundle:true,minify:true,format:'iife',target:'es2020',write:false,legalComments:'inline'});
+const [template,css]=await Promise.all([fs.readFile(path.join(dir,'page.html'),'utf8'),fs.readFile(path.join(dir,'style.css'),'utf8')]);
+const script=result.outputFiles[0].text.replace(/<\/script/gi,'<\\/script');
+const output=template.replace('/*__STYLE__*/',()=>css).replace('/*__SCRIPT__*/',()=>script);
+const destination=path.resolve(dir,'../../outputs/little-bloom.html');await fs.writeFile(destination,output,'utf8');
+console.log(JSON.stringify({destination,bytes:Buffer.byteLength(output),standalone:!output.includes('https://unpkg.com')},null,2));

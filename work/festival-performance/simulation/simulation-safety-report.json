@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Partial buffer uploads exactly reproduce every live buffer across a full firework score, including three updates between renders",
+      "passed": true
+    },
+    {
+      "name": "Paused rides, particles and cloth request no redundant buffer uploads",
+      "passed": true
+    },
+    {
+      "name": "Optional reused telemetry and ride pose objects preserve existing snapshot values",
+      "passed": true
+    },
+    {
+      "name": "Preview does not alter the paused show or its particle buffers and restores its rendered state",
+      "passed": true
+    },
+    {
+      "name": "Coaster restore places every train carriage back on its saved track frame",
+      "passed": true
+    }
+  ]
+}

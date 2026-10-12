@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "meshes": 710,
+  "instanced": 27,
+  "instances": 38739,
+  "attributes": 2162,
+  "leafInstances": 1404,
+  "leavesPerCrown": 12,
+  "checks": [
+    "All scene geometry attributes and object/instance transforms finite",
+    "Leaf cutout/shadow mask and sides match",
+    "Leaf count agrees with current crown layout"
+  ],
+  "note": "CPU geometry validation, not GPU frame timing or visual review."
+}

@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-09-21T12:36:17.9205925Z",
+  "url": "https://little-bloom-island.vercel.app/#festival",
+  "passed": true,
+  "publicNightRenderingVerified": true,
+  "browserConsoleErrors": 0,
+  "browserConsoleWarnings": 0,
+  "physicalPhoneVerified": false,
+  "checkedViews": [
+    "camp day desktop",
+    "camp night desktop",
+    "camp dusk 390x844",
+    "camp night 390x844",
+    "camp night 844x390"
+  ],
+  "visibleFeatures": [
+    "cream teal camper with luggage and open side door",
+    "three seated animal diners",
+    "grass terrace stone steps fence",
+    "warm campfire fireflies lantern string",
+    "forest frame"
+  ],
+  "viewportOverrideReset": true,
+  "screenshot": "work/festival-camp/night-preview.png",
+  "drawBatching": "Campsite potential calls 80 to 42; whole planet geometry buffers +9.29%, no device FPS claim"
+}

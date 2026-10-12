@@ -1,0 +1,148 @@
+{
+  "scope": "CPU geometry, occupancy, trail continuity and time state",
+  "beacons": {
+    "newLighthouses": 3,
+    "totalBeacons": 4,
+    "visibleCones": 4,
+    "drawCalls": 6,
+    "triangles": 2668,
+    "sites": [
+      {
+        "id": "old-reef",
+        "lat": -0.56,
+        "lon": -0.69,
+        "existing": true,
+        "baseRadius": 3.132,
+        "lampRadius": 3.5780000000000003,
+        "terrainRadius": 2.5771100875830912,
+        "railClearance": 0.6459894509250532
+      },
+      {
+        "id": "east-bay",
+        "lat": -0.22,
+        "lon": 0.7,
+        "existing": false,
+        "baseRadius": 3.134,
+        "lampRadius": 3.484,
+        "terrainRadius": 2.8373038104687756,
+        "railClearance": 0.358208278146953
+      },
+      {
+        "id": "west-cape",
+        "lat": 0.52,
+        "lon": -1.2,
+        "existing": false,
+        "baseRadius": 3.1941465592457976,
+        "lampRadius": 3.6141465592457975,
+        "terrainRadius": 3.1861465592457976,
+        "railClearance": 0.46283775532243426
+      },
+      {
+        "id": "far-coast",
+        "lat": 0.04,
+        "lon": -2.27,
+        "existing": false,
+        "baseRadius": 3.134,
+        "lampRadius": 3.419,
+        "terrainRadius": 2.5562136350553826,
+        "railClearance": 0.10721667116338524
+      }
+    ]
+  },
+  "trails": {
+    "loops": 1,
+    "connectors": 3,
+    "stoneSlabs": 241,
+    "woodPlanks": 11,
+    "sharedSurfaceSamples": 115,
+    "mossPatches": 41,
+    "drawCalls": 3,
+    "triangles": 7736,
+    "routeLength": 16.54252477106469,
+    "lighthouse": {
+      "lat": 0.52,
+      "lon": -1.2
+    },
+    "routes": [
+      {
+        "name": "lighthouse approach → west hillside",
+        "kind": "loop",
+        "length": 1.0068827388391237
+      },
+      {
+        "name": "west hillside → northwest ridge",
+        "kind": "loop",
+        "length": 1.0840045199332673
+      },
+      {
+        "name": "northwest ridge → north ridge",
+        "kind": "loop",
+        "length": 0.9250840608382896
+      },
+      {
+        "name": "north ridge → northeast overlook",
+        "kind": "loop",
+        "length": 1.164975897353909
+      },
+      {
+        "name": "northeast overlook → east headland",
+        "kind": "loop",
+        "length": 1.158696094516334
+      },
+      {
+        "name": "east headland → tea-room junction",
+        "kind": "loop",
+        "length": 0.8458448618250334
+      },
+      {
+        "name": "tea-room junction → east village lane",
+        "kind": "loop",
+        "length": 1.5191554678120582
+      },
+      {
+        "name": "east village lane → wooden bridge west",
+        "kind": "loop",
+        "length": 1.5482561380773163
+      },
+      {
+        "name": "wooden bridge west → cottage junction",
+        "kind": "loop",
+        "length": 2.1751432281857346
+      },
+      {
+        "name": "cottage junction → lighthouse approach",
+        "kind": "loop",
+        "length": 1.1098057275096056
+      },
+      {
+        "name": "Cottage side gate",
+        "kind": "connector",
+        "length": 0.15220543063089786
+      },
+      {
+        "name": "Tea-room front steps",
+        "kind": "connector",
+        "length": 1.0020752398151425
+      },
+      {
+        "name": "Village to seaside jetty",
+        "kind": "connector",
+        "length": 2.850395365727978
+      }
+    ],
+    "props": 48
+  },
+  "checks": [
+    "All geometry attributes finite; 4 beams retained; trail geometry below requested budget.",
+    "All placed slabs on dry ground, away from buildings and stream center; navigation routes continuous.",
+    "Relocated tower remains clear of every reserved building/tree/landmark footprint; day/night and pause states preserved."
+  ],
+  "metrics": {
+    "minHouse": 0.008333518143394891,
+    "minLand": 0.009258246200705589,
+    "minRail": 0.13827237729508263,
+    "maxGap": 0.05568355693484122,
+    "streamSamples": 0,
+    "towerClearance": 0.168087625600097
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "scope": "Offline GLSL ES 3.00 compilation/linkage with current Three.js ACES and sRGB chunks; GPU validation belongs to the app browser pass.",
+  "passed": true,
+  "status": 0,
+  "output": "C:/Users/chenyahan/Documents/Codex/2026-09-18/file-c-users-chenyahan-documents-codex/work/snow-polish/jiangnan-water.vert\r\nC:/Users/chenyahan/Documents/Codex/2026-09-18/file-c-users-chenyahan-documents-codex/work/snow-polish/jiangnan-water.frag\r\n",
+  "threeRevision": "160"
+}

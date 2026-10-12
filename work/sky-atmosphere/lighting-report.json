@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-09-21T11:11:39.425Z",
+  "changes": [
+    {
+      "world": "festival-planet",
+      "fullSkyEnvironment": true,
+      "styles": "--storybook-atmosphere fades old decorative skies; #scene remains z-index:1",
+      "sourceLightConstructorSitesBefore": 4,
+      "sourceLightConstructorSitesAfter": 4
+    },
+    {
+      "world": "snow-planet",
+      "fullSkyEnvironment": true,
+      "styles": "--storybook-atmosphere fades old decorative skies; #scene remains z-index:1",
+      "sourceLightConstructorSitesBefore": 4,
+      "sourceLightConstructorSitesAfter": 4
+    },
+    {
+      "world": "kamakura-planet",
+      "fullSkyEnvironment": true,
+      "styles": "--storybook-atmosphere fades old decorative skies; #scene remains z-index:1",
+      "sourceLightConstructorSitesBefore": 3,
+      "sourceLightConstructorSitesAfter": 3
+    },
+    {
+      "world": "twin-planets/sunny",
+      "fullSkyEnvironment": true,
+      "styles": "--storybook-atmosphere fades old decorative skies; #scene remains z-index:1",
+      "sourceLightConstructorSitesBefore": 3,
+      "sourceLightConstructorSitesAfter": 3
+    }
+  ],
+  "checks": {
+    "festivalLifecycle": {
+      "passed": true,
+      "checks": 19,
+      "report": "work/festival-performance/lifecycle-audit-report.json"
+    },
+    "snowLifecycle": {
+      "passed": true,
+      "checks": 14,
+      "report": "work/snow-polish/lifecycle-report.json"
+    },
+    "sunnyClimate": {
+      "passed": true,
+      "checks": 10
+    },
+    "syntax": {
+      "passed": true,
+      "apps": 4
+    }
+  },
+  "validationBoundary": "Scene lighting/CSS implementation and existing lifecycle checks complete. Real rendering, shared sky appearance, and day/dusk/night mobile visual review remain with root."
+}

@@ -1,0 +1,128 @@
+{
+  "scope": "VM execution of actual twin-planets/app.js with mock mounts/DOM and deterministic RAF; no browser layout or GPU proof",
+  "checks": [
+    {
+      "name": "Initial visit mounts only the selected coast world",
+      "passed": true,
+      "state": {
+        "active": "coast",
+        "loaded": [
+          "coast"
+        ],
+        "singleDocument": true,
+        "display": {
+          "immersive": false,
+          "toolsOpen": false
+        },
+        "viewport": {
+          "width": 852,
+          "height": 300
+        },
+        "worlds": [
+          {
+            "id": "coast",
+            "visible": true,
+            "ready": true
+          }
+        ]
+      },
+      "mounts": {
+        "coast": 1,
+        "sunny": 0
+      }
+    },
+    {
+      "name": "Quick click back to the current world cancels a pending first mount",
+      "passed": true,
+      "clicks": [
+        "sunny",
+        "coast"
+      ],
+      "active": "coast",
+      "sunnyMounts": 0,
+      "transitHidden": true
+    },
+    {
+      "name": "Twenty repeated switches reuse both existing world instances",
+      "passed": true,
+      "switches": 20,
+      "mounts": {
+        "coast": 1,
+        "sunny": 1
+      },
+      "disposals": {
+        "coast": 0,
+        "sunny": 0
+      },
+      "loaded": [
+        "coast",
+        "sunny"
+      ]
+    },
+    {
+      "name": "Quick cancellation also works after both worlds are cached",
+      "passed": true,
+      "clicks": [
+        "coast",
+        "sunny"
+      ],
+      "active": "sunny",
+      "mounts": {
+        "coast": 1,
+        "sunny": 1
+      },
+      "transitHidden": true
+    },
+    {
+      "name": "Only the latest of three queued choices becomes active",
+      "passed": true,
+      "clicks": [
+        "coast",
+        "sunny",
+        "coast"
+      ],
+      "active": "coast",
+      "mounts": {
+        "coast": 1,
+        "sunny": 1
+      },
+      "visible": [
+        "coast"
+      ]
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "finalState": {
+    "active": "coast",
+    "loaded": [
+      "coast",
+      "sunny"
+    ],
+    "singleDocument": true,
+    "display": {
+      "immersive": false,
+      "toolsOpen": false
+    },
+    "viewport": {
+      "width": 852,
+      "height": 300
+    },
+    "worlds": [
+      {
+        "id": "coast",
+        "visible": true,
+        "ready": true
+      },
+      {
+        "id": "sunny",
+        "visible": false,
+        "ready": true
+      }
+    ]
+  },
+  "mounts": {
+    "coast": 1,
+    "sunny": 1
+  }
+}

@@ -1,0 +1,677 @@
+{
+  "file": "C:\\Users\\chenyahan\\Documents\\Codex\\2026-09-18\\file-c-users-chenyahan-documents-codex\\outputs\\promo\\little-bloom-xiaohongshu-extended.mp4",
+  "bytes": 27335673,
+  "sha256": "cb2bca7d5fa2f4098ccd2118bbe581dc1d2efcd99e96906fd1a058fb463529ee",
+  "duration": 70.0,
+  "size": [
+    1080,
+    1920
+  ],
+  "fps": 30.0,
+  "decodedFrames": 2100,
+  "codec": "h264",
+  "audio_codec": "aac",
+  "audio": {
+    "codec": "aac",
+    "channels": 2,
+    "sampleRate": 48000,
+    "decodedSampleFrames": 3360768,
+    "decodedDuration": 70.016,
+    "rms": 0.044753,
+    "peak": 0.211243,
+    "fullDecodePassed": true
+  },
+  "pixelFormat": "yuv420p",
+  "crf": 19,
+  "preset": "medium",
+  "faststart": true,
+  "mp4Boxes": [
+    "ftyp",
+    "moov",
+    "free",
+    "mdat"
+  ],
+  "shotCount": 15,
+  "shots": [
+    {
+      "index": 0,
+      "name": "01.webm",
+      "world": "sunny",
+      "view": "sunny-view",
+      "label": "把一天，装进小小宇宙",
+      "start": 0.0,
+      "duration": 4.0,
+      "frames": 120,
+      "rawDuration": 4.948,
+      "rawBytes": 5999115,
+      "rawTimingSource": "full source decode and media timestamps",
+      "rawDecodedFrames": 148,
+      "trimStart": 0.25,
+      "fadeIn": 0.16,
+      "fadeOut": 0.16,
+      "continuousDayNight": false
+    },
+    {
+      "index": 1,
+      "name": "02.webm",
+      "world": "sunny",
+      "view": "meadow-view",
+      "label": "晴日小岛 · 一天的光",
+      "start": 4.0,
+      "duration": 10.0,
+      "frames": 300,
+      "rawDuration": 10.931,
+      "rawBytes": 13946266,
+      "rawTimingSource": "full source decode and media timestamps",
+      "rawDecodedFrames": 328,
+      "trimStart": 0.25,
+      "fadeIn": 0.16,
+      "fadeOut": 0.16,
+      "continuousDayNight": true
+    },
+    {
+      "index": 2,
+      "name": "03.webm",
+      "world": "sunny",
+      "view": "globe-view",
+      "label": "等一颗流星经过",
+      "start": 14.0,
+      "duration": 7.0,
+      "frames": 210,
+      "rawDuration": 7.966667,
+      "rawBytes": 9741957,
+      "rawTimingSource": "full source decode and media timestamps",
+      "rawDecodedFrames": 237,
+      "trimStart": 0.25,
+      "fadeIn": 0.16,
+      "fadeOut": 0.16,
+      "continuousDayNight": false
+    },
+    {
+      "index": 3,
+      "name": "04.webm",
+      "world": "sunny",
+      "view": "coast-view",
+      "label": "晴日小岛 · 珊瑚海湾",
+      "start": 21.0,
+      "duration": 4.0,
+      "frames": 120,
+      "rawDuration": 4.932,
+      "rawBytes": 6316038,
+      "rawTimingSource": "full source decode and media timestamps",
+      "rawDecodedFrames": 148,
+      "trimStart": 0.25,
+      "fadeIn": 0.16,
+      "fadeOut": 0.16,
+      "continuousDayNight": false
+    },
+    {
+      "index": 4,
+      "name": "05.webm",
+      "world": "coast",
+      "view": "coast",
+      "label": "海风来信 · 湘南的午后",
+      "start": 25.0,
+      "duration": 4.0,
+      "frames": 120,
+      "rawDuration": 4.938,
+      "rawBytes": 7064342,
+      "rawTimingSource": "full source decode and media timestamps",
+      "rawDecodedFrames": 148,
+      "trimStart": 0.25,
+      "fadeIn": 0.16,
+      "fadeOut": 0.16,
+      "continuousDayNight": false
+    },
+    {
+      "index": 5,
+      "name": "06.webm",
+      "world": "coast",
+      "view": "train",
+      "label": "陪电车，越过一片海",
+      "start": 29.0,
+      "duration": 4.0,
+      "frames": 120,
+      "rawDuration": 4.95,
+      "rawBytes": 6467673,
+      "rawTimingSource": "full source decode and media timestamps",
+      "rawDecodedFrames": 148,
+      "trimStart": 0.25,
+      "fadeIn": 0.16,
+      "fadeOut": 0.16,
+      "continuousDayNight": false
+    },
+    {
+      "index": 6,
+      "name": "07.webm",
+      "world": "coast",
+      "view": "town",
+      "label": "在镰仓的道口，停一下",
+      "start": 33.0,
+      "duration": 3.0,
+      "frames": 90,
+      "rawDuration": 3.933,
+      "rawBytes": 5033717,
+      "rawTimingSource": "full source decode and media timestamps",
+      "rawDecodedFrames": 119,
+      "trimStart": 0.25,
+      "fadeIn": 0.16,
+      "fadeOut": 0.16,
+      "continuousDayNight": false
+    },
+    {
+      "index": 7,
+      "name": "08.webm",
+      "world": "coast",
+      "view": "stream",
+      "label": "走过溪桥与小泻湖",
+      "start": 36.0,
+      "duration": 4.0,
+      "frames": 120,
+      "rawDuration": 4.966667,
+      "rawBytes": 4143954,
+      "rawTimingSource": "full source decode and media timestamps",
+      "rawDecodedFrames": 149,
+      "trimStart": 0.25,
+      "fadeIn": 0.16,
+      "fadeOut": 0.16,
+      "continuousDayNight": false
+    },
+    {
+      "index": 8,
+      "name": "09.webm",
+      "world": "coast",
+      "view": "cottage",
+      "label": "借一间木屋，发一会儿呆",
+      "start": 40.0,
+      "duration": 4.0,
+      "frames": 120,
+      "rawDuration": 4.980501,
+      "rawBytes": 4618304,
+      "rawTimingSource": "full source decode and media timestamps",
+      "rawDecodedFrames": 149,
+      "trimStart": 0.25,
+      "fadeIn": 0.16,
+      "fadeOut": 0.16,
+      "continuousDayNight": false
+    },
+    {
+      "index": 9,
+      "name": "10.webm",
+      "world": "coast",
+      "view": "telephone",
+      "label": "海风经过旧电话亭",
+      "start": 44.0,
+      "duration": 3.0,
+      "frames": 90,
+      "rawDuration": 3.93,
+      "rawBytes": 4300776,
+      "rawTimingSource": "full source decode and media timestamps",
+      "rawDecodedFrames": 119,
+      "trimStart": 0.25,
+      "fadeIn": 0.16,
+      "fadeOut": 0.16,
+      "continuousDayNight": false
+    },
+    {
+      "index": 10,
+      "name": "11.webm",
+      "world": "coast",
+      "view": "sea",
+      "label": "海面之下，还有一个世界",
+      "start": 47.0,
+      "duration": 4.0,
+      "frames": 120,
+      "rawDuration": 4.95,
+      "rawBytes": 7392576,
+      "rawTimingSource": "full source decode and media timestamps",
+      "rawDecodedFrames": 149,
+      "trimStart": 0.25,
+      "fadeIn": 0.16,
+      "fadeOut": 0.16,
+      "continuousDayNight": false
+    },
+    {
+      "index": 11,
+      "name": "12.webm",
+      "world": "coast",
+      "view": "cruise",
+      "label": "追一场海上的风",
+      "start": 51.0,
+      "duration": 4.0,
+      "frames": 120,
+      "rawDuration": 4.963,
+      "rawBytes": 6433574,
+      "rawTimingSource": "full source decode and media timestamps",
+      "rawDecodedFrames": 149,
+      "trimStart": 0.25,
+      "fadeIn": 0.16,
+      "fadeOut": 0.16,
+      "continuousDayNight": false
+    },
+    {
+      "index": 12,
+      "name": "13.webm",
+      "world": "coast",
+      "view": "voyage",
+      "label": "给海，寄一封信",
+      "start": 55.0,
+      "duration": 4.0,
+      "frames": 120,
+      "rawDuration": 4.966667,
+      "rawBytes": 7199548,
+      "rawTimingSource": "full source decode and media timestamps",
+      "rawDecodedFrames": 148,
+      "trimStart": 0.25,
+      "fadeIn": 0.16,
+      "fadeOut": 0.16,
+      "continuousDayNight": false
+    },
+    {
+      "index": 13,
+      "name": "14.webm",
+      "world": "coast",
+      "view": "beacon",
+      "label": "灯塔替你，留一束光",
+      "start": 59.0,
+      "duration": 5.0,
+      "frames": 150,
+      "rawDuration": 5.983333,
+      "rawBytes": 6301366,
+      "rawTimingSource": "full source decode and media timestamps",
+      "rawDecodedFrames": 180,
+      "trimStart": 0.25,
+      "fadeIn": 0.16,
+      "fadeOut": 0.16,
+      "continuousDayNight": false
+    },
+    {
+      "index": 14,
+      "name": "15.webm",
+      "world": "coast",
+      "view": "globe",
+      "label": "你想装进哪座城市的天气？",
+      "start": 64.0,
+      "duration": 6.0,
+      "frames": 180,
+      "rawDuration": 6.983333,
+      "rawBytes": 8700102,
+      "rawTimingSource": "full source decode and media timestamps",
+      "rawDecodedFrames": 210,
+      "trimStart": 0.25,
+      "fadeIn": 0.16,
+      "fadeOut": 0.16,
+      "continuousDayNight": false
+    }
+  ],
+  "meteorEvidence": [
+    {
+      "shot": 3,
+      "retainedActiveSamples": 8,
+      "firstOutputTime": 15.559300000000366,
+      "lastOutputTime": 16.95940000000037,
+      "selectedSample": {
+        "at": 2.6094000000003725,
+        "timeHour": 22,
+        "night": 0.9999999999999971,
+        "sunset": 9.893530589655518e-20,
+        "nightSky": {
+          "stars": 1100,
+          "visibility": 0.8752,
+          "meteorActive": true,
+          "meteorsSeen": 2,
+          "nextMeteorIn": 0
+        },
+        "streetLights": {
+          "count": 15,
+          "brightness": 0.9999999999999984,
+          "on": true
+        },
+        "homes": {
+          "bedtime": true,
+          "inside": 3,
+          "returning": 0
+        }
+      }
+    }
+  ],
+  "dayNightEvidence": [
+    {
+      "shot": 2,
+      "duration": 10.0,
+      "uninterrupted": true,
+      "phases": [
+        {
+          "label": "清晨 · 08:30",
+          "frame": 143,
+          "sample": {
+            "at": 1.0060999999996274,
+            "timeHour": 8.5,
+            "night": 0,
+            "sunset": 0,
+            "nightSky": {
+              "stars": 1100,
+              "visibility": 0,
+              "meteorActive": false,
+              "meteorsSeen": 0,
+              "nextMeteorIn": 13.448114454746246
+            },
+            "streetLights": {
+              "count": 15,
+              "brightness": 0,
+              "on": false
+            },
+            "homes": {
+              "bedtime": false,
+              "inside": 0,
+              "returning": 0
+            }
+          }
+        },
+        {
+          "label": "黄昏 · 17:30",
+          "frame": 281,
+          "sample": {
+            "at": 5.606199999999626,
+            "timeHour": 17.5,
+            "night": 0.6427647248862042,
+            "sunset": 0.8248835674010654,
+            "nightSky": {
+              "stars": 1100,
+              "visibility": 0.43262641862796025,
+              "meteorActive": false,
+              "meteorsSeen": 0,
+              "nextMeteorIn": 10.692112237215042
+            },
+            "streetLights": {
+              "count": 15,
+              "brightness": 0.8753710404525425,
+              "on": true
+            },
+            "homes": {
+              "bedtime": true,
+              "inside": 0,
+              "returning": 3
+            }
+          }
+        },
+        {
+          "label": "星夜 · 22:00",
+          "frame": 413,
+          "sample": {
+            "at": 10.006599999999628,
+            "timeHour": 22,
+            "night": 0.9967651432252431,
+            "sunset": 0.011728721848055873,
+            "nightSky": {
+              "stars": 1100,
+              "visibility": 0.8752,
+              "meteorActive": false,
+              "meteorsSeen": 0,
+              "nextMeteorIn": 6.625112237215046
+            },
+            "streetLights": {
+              "count": 15,
+              "brightness": 0.9999812293162367,
+              "on": true
+            },
+            "homes": {
+              "bedtime": true,
+              "inside": 1,
+              "returning": 2
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "frameChecks": [
+    {
+      "frame": 60,
+      "time": 2.0,
+      "sceneMean": 151.188,
+      "sceneStddev": 54.535
+    },
+    {
+      "frame": 143,
+      "time": 4.7667,
+      "sceneMean": 151.142,
+      "sceneStddev": 54.514
+    },
+    {
+      "frame": 270,
+      "time": 9.0,
+      "sceneMean": 116.335,
+      "sceneStddev": 61.524
+    },
+    {
+      "frame": 281,
+      "time": 9.3667,
+      "sceneMean": 112.844,
+      "sceneStddev": 62.69
+    },
+    {
+      "frame": 413,
+      "time": 13.7667,
+      "sceneMean": 48.393,
+      "sceneStddev": 25.791
+    },
+    {
+      "frame": 491,
+      "time": 16.3667,
+      "sceneMean": 44.54,
+      "sceneStddev": 22.69
+    },
+    {
+      "frame": 690,
+      "time": 23.0,
+      "sceneMean": 90.378,
+      "sceneStddev": 38.723
+    },
+    {
+      "frame": 810,
+      "time": 27.0,
+      "sceneMean": 113.832,
+      "sceneStddev": 52.652
+    },
+    {
+      "frame": 930,
+      "time": 31.0,
+      "sceneMean": 135.348,
+      "sceneStddev": 64.805
+    },
+    {
+      "frame": 1035,
+      "time": 34.5,
+      "sceneMean": 148.995,
+      "sceneStddev": 50.132
+    },
+    {
+      "frame": 1140,
+      "time": 38.0,
+      "sceneMean": 115.705,
+      "sceneStddev": 57.089
+    },
+    {
+      "frame": 1260,
+      "time": 42.0,
+      "sceneMean": 136.932,
+      "sceneStddev": 65.209
+    },
+    {
+      "frame": 1365,
+      "time": 45.5,
+      "sceneMean": 129.658,
+      "sceneStddev": 56.976
+    },
+    {
+      "frame": 1470,
+      "time": 49.0,
+      "sceneMean": 116.041,
+      "sceneStddev": 50.565
+    },
+    {
+      "frame": 1590,
+      "time": 53.0,
+      "sceneMean": 120.296,
+      "sceneStddev": 70.377
+    },
+    {
+      "frame": 1710,
+      "time": 57.0,
+      "sceneMean": 100.509,
+      "sceneStddev": 54.063
+    },
+    {
+      "frame": 1845,
+      "time": 61.5,
+      "sceneMean": 70.403,
+      "sceneStddev": 32.173
+    },
+    {
+      "frame": 2010,
+      "time": 67.0,
+      "sceneMean": 66.191,
+      "sceneStddev": 27.848
+    }
+  ],
+  "contactSheetSelections": [
+    {
+      "shot": 1,
+      "kind": "shot",
+      "label": "把一天，装进小小宇宙",
+      "frame": 60
+    },
+    {
+      "shot": 2,
+      "kind": "shot",
+      "label": "晴日小岛 · 一天的光",
+      "frame": 270
+    },
+    {
+      "shot": 2,
+      "kind": "day-night-detail",
+      "label": "清晨 · 08:30",
+      "frame": 143
+    },
+    {
+      "shot": 2,
+      "kind": "day-night-detail",
+      "label": "黄昏 · 17:30",
+      "frame": 281
+    },
+    {
+      "shot": 2,
+      "kind": "day-night-detail",
+      "label": "星夜 · 22:00",
+      "frame": 413
+    },
+    {
+      "shot": 3,
+      "kind": "meteor",
+      "label": "等一颗流星经过",
+      "frame": 491
+    },
+    {
+      "shot": 4,
+      "kind": "shot",
+      "label": "晴日小岛 · 珊瑚海湾",
+      "frame": 690
+    },
+    {
+      "shot": 5,
+      "kind": "shot",
+      "label": "海风来信 · 湘南的午后",
+      "frame": 810
+    },
+    {
+      "shot": 6,
+      "kind": "shot",
+      "label": "陪电车，越过一片海",
+      "frame": 930
+    },
+    {
+      "shot": 7,
+      "kind": "shot",
+      "label": "在镰仓的道口，停一下",
+      "frame": 1035
+    },
+    {
+      "shot": 8,
+      "kind": "shot",
+      "label": "走过溪桥与小泻湖",
+      "frame": 1140
+    },
+    {
+      "shot": 9,
+      "kind": "shot",
+      "label": "借一间木屋，发一会儿呆",
+      "frame": 1260
+    },
+    {
+      "shot": 10,
+      "kind": "shot",
+      "label": "海风经过旧电话亭",
+      "frame": 1365
+    },
+    {
+      "shot": 11,
+      "kind": "shot",
+      "label": "海面之下，还有一个世界",
+      "frame": 1470
+    },
+    {
+      "shot": 12,
+      "kind": "shot",
+      "label": "追一场海上的风",
+      "frame": 1590
+    },
+    {
+      "shot": 13,
+      "kind": "shot",
+      "label": "给海，寄一封信",
+      "frame": 1710
+    },
+    {
+      "shot": 14,
+      "kind": "shot",
+      "label": "灯塔替你，留一束光",
+      "frame": 1845
+    },
+    {
+      "shot": 15,
+      "kind": "shot",
+      "label": "你想装进哪座城市的天气？",
+      "frame": 2010
+    }
+  ],
+  "contactSheet": "C:\\Users\\chenyahan\\Documents\\Codex\\2026-09-18\\file-c-users-chenyahan-documents-codex\\work\\promo-video-v2\\contact-sheet.jpg",
+  "poster": "C:\\Users\\chenyahan\\Documents\\Codex\\2026-09-18\\file-c-users-chenyahan-documents-codex\\outputs\\promo\\little-bloom-poster-extended.jpg",
+  "transition": "0.16s edge fades, without overlapping time; uninterrupted day/night shot; meteor frames retained",
+  "source": "15 live recordings of the existing interactive Three.js scenes",
+  "music": {
+    "source": "Original synthesized instrumental; no third-party recording",
+    "sampleRate": 48000,
+    "channels": 2,
+    "samples": 3360000,
+    "duration": 70.0
+  },
+  "weatherDisclosure": "Weather App concept and simulated scene weather; no real city weather data",
+  "validationScope": "Full video/audio decode, runtime-state evidence, nonblank frame checks and completed visual review.",
+  "passed": true,
+  "visualReview": {
+    "passed": true,
+    "scope": "All 15 shots and three day/night checkpoints inspected in contact sheet; dusk text and actual meteor inspected at full resolution.",
+    "dusk": {
+      "frame": 281,
+      "time": 9.3667,
+      "textReadable": true
+    },
+    "meteor": {
+      "frame": 474,
+      "time": 15.8,
+      "visible": true,
+      "note": "Fine streak in left sky, briefly visible around 15.5-15.9s before tree canopy occlusion. Runtime active interval is not the visible interval."
+    }
+  }
+}

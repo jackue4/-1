@@ -1,0 +1,408 @@
+{
+  "passed": 9,
+  "portrait": {
+    "size": [
+      440,
+      956
+    ],
+    "overflow": false,
+    "hidden": true,
+    "buttons": [
+      {
+        "id": "help-button",
+        "w": 44,
+        "h": 44,
+        "x": 380,
+        "y": 10
+      },
+      {
+        "id": "meadow-view",
+        "w": 78.390625,
+        "h": 48,
+        "x": 20,
+        "y": 882
+      },
+      {
+        "id": "coast-view",
+        "w": 78.40625,
+        "h": 48,
+        "x": 100.390625,
+        "y": 882
+      },
+      {
+        "id": "fishing-view",
+        "w": 78.390625,
+        "h": 48,
+        "x": 180.796875,
+        "y": 882
+      },
+      {
+        "id": "animal-view",
+        "w": 78.40625,
+        "h": 48,
+        "x": 261.1875,
+        "y": 882
+      },
+      {
+        "id": "globe-view",
+        "w": 78.40625,
+        "h": 48,
+        "x": 341.59375,
+        "y": 882
+      },
+      {
+        "id": "☀ 早晨",
+        "w": 62,
+        "h": 44,
+        "x": 90.3984375,
+        "y": 78
+      },
+      {
+        "id": "◒ 黄昏",
+        "w": 62,
+        "h": 44,
+        "x": 154.3984375,
+        "y": 78
+      },
+      {
+        "id": "☾ 夜晚",
+        "w": 62,
+        "h": 44,
+        "x": 218.3984375,
+        "y": 78
+      },
+      {
+        "id": "natural-time",
+        "w": 67.203125,
+        "h": 44,
+        "x": 282.3984375,
+        "y": 78
+      }
+    ],
+    "state": {
+      "scenic": true,
+      "fishing": {
+        "resident": 2,
+        "bay": 1,
+        "seated": true,
+        "available": true,
+        "bite": false,
+        "normal": [
+          -0.9410705389060225,
+          0.01729480832111208,
+          -0.3377678646767105
+        ],
+        "waterDepth": 0.196468212736312
+      },
+      "cameraAspect": 0.4602510460251046,
+      "cameraFov": 73.60252868614911,
+      "nightSky": {
+        "stars": 1100,
+        "visibility": 0,
+        "meteorActive": false,
+        "meteorsSeen": 0,
+        "nextMeteorIn": 12.284684088081121
+      },
+      "streetLights": {
+        "count": 15,
+        "brightness": 0,
+        "on": false
+      },
+      "homes": {
+        "bedtime": false,
+        "inside": 0,
+        "returning": 0
+      },
+      "cottages": 2,
+      "focusedAnimal": null,
+      "farm": {
+        "version": 1,
+        "updatedAt": 1789713594520,
+        "coins": 18,
+        "unlocked": 6,
+        "seeds": {
+          "radish": 6,
+          "wheat": 4,
+          "tomato": 2,
+          "strawberry": 0
+        },
+        "produce": {
+          "radish": 0,
+          "wheat": 0,
+          "tomato": 0,
+          "strawberry": 0
+        },
+        "plots": [
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          },
+          {
+            "crop": null,
+            "growth": 0,
+            "water": 0
+          }
+        ],
+        "strawberry": false,
+        "helpers": true,
+        "harvester": false,
+        "harvests": 0,
+        "orders": 0,
+        "meals": 0,
+        "orchardAt": 0,
+        "lastReward": 0
+      },
+      "viewMode": "meadow",
+      "cameraDistance": 3.9475815381065913,
+      "style": "painted-animation",
+      "orientation": [
+        -0.5598292420892073,
+        0,
+        0.03363012035857932,
+        0.8279252591306121
+      ],
+      "cameraPosition": [
+        0.45,
+        5.95,
+        2.15
+      ],
+      "timeHour": 8.5,
+      "sunset": 0,
+      "trees": 17,
+      "grassBlades": 14967,
+      "shadowResolution": 1024,
+      "shadowEveryFrame": true,
+      "construction": {
+        "elapsed": 1.400100000000001,
+        "paused": false,
+        "speed": 1,
+        "preview": false,
+        "complete": false,
+        "project": "path",
+        "workers": [
+          {
+            "name": "棉棉",
+            "species": "垂耳兔",
+            "activity": "正在搬木料"
+          },
+          {
+            "name": "麦麦",
+            "species": "小熊",
+            "activity": "在岛上慢慢散步"
+          },
+          {
+            "name": "阿栗",
+            "species": "柯基",
+            "activity": "坐在小凳子上，等鱼儿咬钩"
+          },
+          {
+            "name": "桃桃",
+            "species": "奶油猫",
+            "activity": "正在敲敲打打"
+          }
+        ]
+      },
+      "date": "2026-09-18",
+      "weather": "clear",
+      "naturalWeather": "snow",
+      "preview": true,
+      "night": 0,
+      "growth": 0,
+      "residents": 4,
+      "plants": 1807,
+      "nextEventAt": 1789713606108,
+      "history": [],
+      "travel": {
+        "name": "小海獭",
+        "clovers": 12,
+        "snacks": 3,
+        "charms": 1,
+        "postcards": [],
+        "souvenirs": [],
+        "trips": 0,
+        "awayUntil": 0,
+        "destination": "",
+        "startedAt": 0,
+        "away": false
+      },
+      "drawCalls": 412,
+      "triangles": 595567,
+      "storageAvailable": true
+    },
+    "scene": {
+      "width": 440,
+      "height": 956
+    }
+  },
+  "landscape": {
+    "size": [
+      956,
+      440
+    ],
+    "buttons": [
+      {
+        "id": "help-button",
+        "w": 44,
+        "h": 44,
+        "x": 176.25,
+        "y": 4
+      },
+      {
+        "id": "meadow-view",
+        "w": 71.328125,
+        "h": 44,
+        "x": 291.890625,
+        "y": 384
+      },
+      {
+        "id": "coast-view",
+        "w": 68.71875,
+        "h": 44,
+        "x": 367.21875,
+        "y": 384
+      },
+      {
+        "id": "fishing-view",
+        "w": 68.703125,
+        "h": 44,
+        "x": 439.9375,
+        "y": 384
+      },
+      {
+        "id": "animal-view",
+        "w": 76.96875,
+        "h": 44,
+        "x": 512.640625,
+        "y": 384
+      },
+      {
+        "id": "globe-view",
+        "w": 70.5,
+        "h": 44,
+        "x": 593.609375,
+        "y": 384
+      },
+      {
+        "id": "☀ 早晨",
+        "w": 62,
+        "h": 44,
+        "x": 348.3984375,
+        "y": 10
+      },
+      {
+        "id": "◒ 黄昏",
+        "w": 62,
+        "h": 44,
+        "x": 412.3984375,
+        "y": 10
+      },
+      {
+        "id": "☾ 夜晚",
+        "w": 62,
+        "h": 44,
+        "x": 476.3984375,
+        "y": 10
+      },
+      {
+        "id": "natural-time",
+        "w": 67.203125,
+        "h": 44,
+        "x": 540.3984375,
+        "y": 10
+      }
+    ]
+  },
+  "desktop": {
+    "size": [
+      1440,
+      900
+    ],
+    "scene": {
+      "width": 1440,
+      "height": 900
+    }
+  },
+  "errors": [],
+  "note": "Actual headless Chromium WebGL; emulated mobile viewport and touch input, not physical iPhone Safari."
+}

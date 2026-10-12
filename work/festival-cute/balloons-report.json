@@ -1,0 +1,36 @@
+{
+  "animals": 15,
+  "ordinary": 10,
+  "skyGroups": 4,
+  "groundGroups": 2,
+  "bySpecies": {
+    "rabbit": 7,
+    "bear": 4,
+    "corgi": 4
+  },
+  "drawCalls": 50,
+  "triangles": 118130,
+  "uniqueGeometry": 31,
+  "uniqueTriangles": 31706,
+  "backwardsTriangles": 0,
+  "minSkyHeight": 0.6455890652325689,
+  "maxSkyHeight": 1.6384869845242482,
+  "hero": {
+    "lat": 0.84,
+    "lon": -0.62,
+    "anchorHeight": 0.64,
+    "localTarget": [
+      0,
+      0.63,
+      0
+    ],
+    "worldBounds": [
+      1.189646097615941,
+      1.022642337594402,
+      0.6771382330251741
+    ]
+  },
+  "pauseAndRestoreVerified": true,
+  "batchingVerified": true,
+  "disposalVerified": true
+}

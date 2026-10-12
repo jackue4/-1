@@ -1,0 +1,46 @@
+{
+  "file": "C:\\Users\\chenyahan\\Documents\\Codex\\2026-09-18\\file-c-users-chenyahan-documents-codex\\work\\promo-snow-desert\\music.wav",
+  "seconds": 60,
+  "frames": 2880000,
+  "sample_rate": 48000,
+  "channels": 2,
+  "bits_per_sample": 16,
+  "peak_dbfs": -8.5,
+  "rms_dbfs": -21.375,
+  "clipped_samples": 0,
+  "first_samples": [
+    0,
+    0
+  ],
+  "last_samples": [
+    0,
+    0
+  ],
+  "chapter_boundaries_seconds": [
+    0,
+    30,
+    55,
+    60
+  ],
+  "phrases": 12,
+  "events": 191,
+  "method": "original instrument synthesis; no samples, external music or API",
+  "segment_rms_dbfs": [
+    -20.624,
+    -20.14,
+    -21.428,
+    -21.609,
+    -20.978,
+    -21.329,
+    -22.1,
+    -21.319,
+    -22.048,
+    -22.596,
+    -20.617,
+    -22.458
+  ],
+  "ffmpeg_full_decode": "passed",
+  "integrated_loudness_lufs": -19.2,
+  "loudness_range_lu": 2.8,
+  "true_peak_dbfs": -8.5
+}

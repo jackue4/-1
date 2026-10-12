@@ -1,0 +1,344 @@
+{
+  "passed": true,
+  "failures": [],
+  "checks": [
+    {
+      "label": "22 animals: 15 ride passengers and 7 garden visitors",
+      "passed": true,
+      "detail": {
+        "total": 22,
+        "riders": 15,
+        "roaming": 7,
+        "time": 0,
+        "night": 0,
+        "showActive": false,
+        "byRide": {
+          "carousel": 3,
+          "ferris": 3,
+          "teacups": 3,
+          "swings": 2,
+          "coaster": 4
+        },
+        "guests": [
+          {
+            "id": "棉棉 · 湖边散步",
+            "activity": "沿湖散步",
+            "position": [
+              0.20050696201798035,
+              0.8781566814251478,
+              3.1003947872075965
+            ]
+          },
+          {
+            "id": "麦麦 · 慢慢逛园",
+            "activity": "沿湖散步",
+            "position": [
+              1.2750907952937083,
+              0.7100460629235796,
+              2.8802431649384834
+            ]
+          },
+          {
+            "id": "阿栗 · 追着风走",
+            "activity": "沿湖散步",
+            "position": [
+              2.0569898753146805,
+              0.7784650351872321,
+              2.365035376014473
+            ]
+          },
+          {
+            "id": "棉棉 · 玫瑰花园",
+            "activity": "停下来挥手",
+            "position": [
+              1.3158885726708514,
+              1.3814935481287165,
+              2.7600845713117197
+            ]
+          },
+          {
+            "id": "麦麦 · 玫瑰花园",
+            "activity": "停下来挥手",
+            "position": [
+              1.6686906252689018,
+              1.182897498782098,
+              2.659770498466877
+            ]
+          },
+          {
+            "id": "棉棉 · 等下一趟飞椅",
+            "activity": "停下来挥手",
+            "position": [
+              0.6484843309817999,
+              -0.10614736413986445,
+              -0.09976682015104646
+            ]
+          },
+          {
+            "id": "阿栗 · 给朋友挥手",
+            "activity": "停下来挥手",
+            "position": [
+              0.6483707950365946,
+              -0.10669866190180596,
+              0.09974935308255276
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Every ride type has visible passengers",
+      "passed": true,
+      "detail": {
+        "carousel": 3,
+        "ferris": 3,
+        "teacups": 3,
+        "swings": 2,
+        "coaster": 4
+      }
+    },
+    {
+      "label": "Front coaster carriage remains empty for the onboard camera",
+      "passed": true
+    },
+    {
+      "label": "Garden apron triangle winding points outwards (+Y)",
+      "passed": true,
+      "detail": 0.9999999999999999
+    },
+    {
+      "label": "Static batching preserves every animal root and animated joint",
+      "passed": true,
+      "detail": 176
+    },
+    {
+      "label": "Mirrored corgi ears retain outward winding and matching normals",
+      "passed": true,
+      "detail": {
+        "normalTriangles": 4820,
+        "backwardsTriangles": 0
+      }
+    },
+    {
+      "label": "All animal joint matrices stay finite and unmirrored across 120 seconds",
+      "passed": true,
+      "detail": {
+        "samples": 481,
+        "minimumDeterminant": 0.00012504268799999336
+      }
+    },
+    {
+      "label": "Animated ears stay clear of the actual gondola roof",
+      "passed": true,
+      "detail": 0.018807578422343776
+    },
+    {
+      "label": "Animated heads and raised paws fit the circular mountain tunnel",
+      "passed": true,
+      "detail": 0.06769237048072863
+    },
+    {
+      "label": "All full visitor meshes remain spatially separated on their shared paths",
+      "passed": true,
+      "detail": {
+        "promenadeSeparation": 0.03637812103396654,
+        "gardenSeparation": 0.018343209745698807
+      }
+    },
+    {
+      "label": "Promenade feet follow the actual curved walkway",
+      "passed": true,
+      "detail": {
+        "promenadeRadialError": 8.881784197001252e-16,
+        "missingPathHits": 0,
+        "pathGapMin": 0.0009999820930690004,
+        "pathGapMax": 0.0011181894320935748,
+        "minWalkingSole": 0.0005966159170056606
+      }
+    },
+    {
+      "label": "Garden visitors stay grounded on the raised apron",
+      "passed": true,
+      "detail": {
+        "gardenRootError": 5.967448757360216e-16,
+        "minGardenSole": 0.0020037619503888576
+      }
+    },
+    {
+      "label": "Flying-chair spectators are grounded on the sphere",
+      "passed": true,
+      "detail": 8.881784197001252e-16
+    },
+    {
+      "label": "Roof clearance includes the whole head rig, ears, bows and blinking eyes",
+      "passed": true,
+      "detail": [
+        {
+          "id": "carousel-0",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "carousel-2",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "carousel-4",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "ferris-1",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "ferris-4",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "ferris-7",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "teacups-0",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "teacups-1",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "teacups-2",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "swings-1",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "swings-4",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "coaster-1",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "coaster-2",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "coaster-3",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "coaster-4",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "棉棉 · 湖边散步",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "麦麦 · 慢慢逛园",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "阿栗 · 追着风走",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "棉棉 · 玫瑰花园",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "麦麦 · 玫瑰花园",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "棉棉 · 等下一趟飞椅",
+          "meshes": 2,
+          "allTested": true
+        },
+        {
+          "id": "阿栗 · 给朋友挥手",
+          "meshes": 2,
+          "allTested": true
+        }
+      ]
+    },
+    {
+      "label": "Brief deterministic blinks close and reopen both eyes",
+      "passed": true,
+      "detail": {
+        "blinkClosed": 0.08000000000000318,
+        "blinkOpen": 1
+      }
+    },
+    {
+      "label": "Repeated paused time freezes every animal joint",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "label": "Preview and play restore every passenger, visitor and animated joint exactly",
+      "passed": true,
+      "detail": {
+        "previewChanged": true,
+        "restoreError": 0
+      }
+    },
+    {
+      "label": "Animal cleanup is idempotent and retains the scene-owned toon gradient",
+      "passed": true,
+      "detail": {
+        "geometries": 154,
+        "geometryDisposals": 154,
+        "materials": 1,
+        "materialDisposals": 1,
+        "gradientDisposals": 0
+      }
+    },
+    {
+      "label": "Cleanup detaches all passengers and park visitors",
+      "passed": true
+    },
+    {
+      "label": "A new visitor after cleanup acquires a live material",
+      "passed": true
+    },
+    {
+      "label": "Palette cleanup releases its gradient once after all animals",
+      "passed": true
+    }
+  ],
+  "sampling": {
+    "durationSeconds": 120,
+    "stepSeconds": 0.25,
+    "samples": 481,
+    "scope": "Actual animated geometry; Node scene validation without rasterization or device performance claims"
+  },
+  "batching": {
+    "before": 6489,
+    "batched": 6058,
+    "remainingStatic": 431
+  }
+}

@@ -1,0 +1,473 @@
+{
+  "checkedAt": "2026-09-22T02:24:56.622Z",
+  "scope": "Actual twin-planets/app.js in a VM with selector/world/DOM mocks and controlled RAF. No browser layout, GPU, actual game persistence or device proof.",
+  "sourceSha256": "afad4c3f96c3de01eade9403cf52ca86d8ada3d65572370a7dc7230e42627429",
+  "passed": true,
+  "total": 21,
+  "checks": [
+    {
+      "name": "An unqualified URL starts the sunny preview, with no game entry",
+      "passed": true,
+      "state": {
+        "active": "sunny",
+        "selected": "sunny",
+        "screen": "select",
+        "navigating": false,
+        "loaded": [
+          "sunny"
+        ],
+        "singleDocument": true,
+        "display": {
+          "immersive": false,
+          "toolsOpen": false
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "worlds": [
+          {
+            "id": "sunny",
+            "visible": true,
+            "preview": true,
+            "ready": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Selecting another planet changes its preview without starting play",
+      "passed": true,
+      "mounts": {
+        "sunny": 1,
+        "coast": 1,
+        "festival": 0,
+        "snow": 0,
+        "desert": 0
+      }
+    },
+    {
+      "name": "Enter and return-home move the same world between play and preview",
+      "passed": true,
+      "history": [
+        {
+          "type": "replace",
+          "hash": "#select/sunny"
+        },
+        {
+          "type": "push",
+          "hash": "#sunny"
+        },
+        {
+          "type": "push",
+          "hash": "#select/sunny"
+        }
+      ],
+      "previewCalls": [
+        {
+          "id": "sunny",
+          "preview": true
+        },
+        {
+          "id": "sunny",
+          "preview": false
+        },
+        {
+          "id": "sunny",
+          "preview": true
+        }
+      ]
+    },
+    {
+      "name": "A full sunny-home-coast-home journey reuses both mounted worlds",
+      "passed": true,
+      "mounts": {
+        "sunny": 1,
+        "coast": 1,
+        "festival": 0,
+        "snow": 0,
+        "desert": 0
+      },
+      "disposalCalls": {
+        "sunny": 0,
+        "coast": 0,
+        "festival": 0,
+        "snow": 0,
+        "desert": 0
+      }
+    },
+    {
+      "name": "Existing coast and sunny deep links still enter their games directly",
+      "passed": true,
+      "links": [
+        "#coast",
+        "#sunny"
+      ]
+    },
+    {
+      "name": "Back and forward restore screen/planet without adding history or remounting",
+      "passed": true,
+      "navigations": 6,
+      "historyWrites": 5,
+      "mounts": {
+        "sunny": 1,
+        "coast": 1,
+        "festival": 0,
+        "snow": 0,
+        "desert": 0
+      }
+    },
+    {
+      "name": "Hash changes and old top-nav buttons open the correct selector or game",
+      "passed": true,
+      "fallback": "#select/sunny"
+    },
+    {
+      "name": "Rapid preview cancellation never mounts the abandoned planet",
+      "passed": true,
+      "mounts": {
+        "sunny": 1,
+        "coast": 0,
+        "festival": 0,
+        "snow": 0,
+        "desert": 0
+      },
+      "finalState": {
+        "active": "sunny",
+        "selected": "sunny",
+        "screen": "play",
+        "navigating": false,
+        "loaded": [
+          "sunny"
+        ],
+        "singleDocument": true,
+        "display": {
+          "immersive": false,
+          "toolsOpen": false
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "worlds": [
+          {
+            "id": "sunny",
+            "visible": true,
+            "preview": false,
+            "ready": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "A newer request wins after an older mount but before its final RAF",
+      "passed": true,
+      "mounts": {
+        "sunny": 1,
+        "coast": 1,
+        "festival": 0,
+        "snow": 0,
+        "desert": 0
+      },
+      "finalState": {
+        "active": "coast",
+        "selected": "coast",
+        "screen": "play",
+        "navigating": false,
+        "loaded": [
+          "sunny",
+          "coast"
+        ],
+        "singleDocument": true,
+        "display": {
+          "immersive": false,
+          "toolsOpen": false
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "worlds": [
+          {
+            "id": "sunny",
+            "visible": false,
+            "preview": true,
+            "ready": true
+          },
+          {
+            "id": "coast",
+            "visible": true,
+            "preview": false,
+            "ready": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "A departing preview remains mounted until leave resolves, and busy lasts through arrival",
+      "passed": true,
+      "transitions": [
+        {
+          "phase": "leaving",
+          "result": true
+        },
+        {
+          "phase": "entering",
+          "result": true
+        }
+      ]
+    },
+    {
+      "name": "Rapid selections cancel older leave or enter completions and keep the final request",
+      "passed": true,
+      "transitionCount": 8,
+      "finalState": {
+        "active": "sunny",
+        "selected": "sunny",
+        "screen": "select",
+        "navigating": false,
+        "loaded": [
+          "sunny",
+          "coast"
+        ],
+        "singleDocument": true,
+        "display": {
+          "immersive": false,
+          "toolsOpen": false
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "worlds": [
+          {
+            "id": "sunny",
+            "visible": true,
+            "preview": true,
+            "ready": true
+          },
+          {
+            "id": "coast",
+            "visible": false,
+            "preview": true,
+            "ready": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Festival has independent preview and play deep links without loading other worlds",
+      "passed": true,
+      "links": [
+        "#select/festival",
+        "#festival"
+      ]
+    },
+    {
+      "name": "All three planets support enter and return while reusing their live instances",
+      "passed": true,
+      "mounts": {
+        "sunny": 1,
+        "coast": 1,
+        "festival": 1,
+        "snow": 0,
+        "desert": 0
+      },
+      "finalState": {
+        "active": "festival",
+        "selected": "festival",
+        "screen": "select",
+        "navigating": false,
+        "loaded": [
+          "sunny",
+          "festival",
+          "coast"
+        ],
+        "singleDocument": true,
+        "display": {
+          "immersive": false,
+          "toolsOpen": false
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "worlds": [
+          {
+            "id": "sunny",
+            "visible": false,
+            "preview": true,
+            "ready": true
+          },
+          {
+            "id": "festival",
+            "visible": true,
+            "preview": true,
+            "ready": true
+          },
+          {
+            "id": "coast",
+            "visible": false,
+            "preview": true,
+            "ready": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Transition directions follow the visible order of all three destination cards",
+      "passed": true,
+      "transitions": [
+        {
+          "phase": "leaving",
+          "direction": 1
+        },
+        {
+          "phase": "entering",
+          "direction": 1
+        },
+        {
+          "phase": "leaving",
+          "direction": 1
+        },
+        {
+          "phase": "entering",
+          "direction": 1
+        },
+        {
+          "phase": "leaving",
+          "direction": -1
+        },
+        {
+          "phase": "entering",
+          "direction": -1
+        },
+        {
+          "phase": "leaving",
+          "direction": 1
+        },
+        {
+          "phase": "entering",
+          "direction": 1
+        },
+        {
+          "phase": "leaving",
+          "direction": -1
+        },
+        {
+          "phase": "entering",
+          "direction": -1
+        }
+      ]
+    },
+    {
+      "name": "Rapid three-planet choices keep only the final destination and cannot strand busy state",
+      "passed": true,
+      "mounts": {
+        "sunny": 1,
+        "coast": 1,
+        "festival": 1,
+        "snow": 0,
+        "desert": 0
+      },
+      "finalState": {
+        "active": "festival",
+        "selected": "festival",
+        "screen": "play",
+        "navigating": false,
+        "loaded": [
+          "sunny",
+          "festival",
+          "coast"
+        ],
+        "singleDocument": true,
+        "display": {
+          "immersive": false,
+          "toolsOpen": false
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "worlds": [
+          {
+            "id": "sunny",
+            "visible": false,
+            "preview": true,
+            "ready": true
+          },
+          {
+            "id": "festival",
+            "visible": true,
+            "preview": false,
+            "ready": true
+          },
+          {
+            "id": "coast",
+            "visible": false,
+            "preview": true,
+            "ready": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Festival back and forward links preserve each screen without adding history",
+      "passed": true,
+      "historyWrites": 4,
+      "finalState": {
+        "active": "coast",
+        "selected": "coast",
+        "screen": "play",
+        "navigating": false,
+        "loaded": [
+          "festival",
+          "coast"
+        ],
+        "singleDocument": true,
+        "display": {
+          "immersive": false,
+          "toolsOpen": false
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "worlds": [
+          {
+            "id": "festival",
+            "visible": false,
+            "preview": false,
+            "ready": true
+          },
+          {
+            "id": "coast",
+            "visible": true,
+            "preview": false,
+            "ready": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Snow and desert preview/play deep links mount only the requested world",
+      "passed": true
+    },
+    {
+      "name": "All five worlds can be entered and revisited while each mounts exactly once",
+      "passed": true
+    },
+    {
+      "name": "Desert history returns to its original screen without remounting or extra writes",
+      "passed": true
+    },
+    {
+      "name": "Rapid fifth-world choices cancel abandoned worlds and release the busy state",
+      "passed": true
+    },
+    {
+      "name": "Transition directions include the fifth card in the visible order",
+      "passed": true
+    }
+  ]
+}

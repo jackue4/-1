@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-09-21",
+  "target": "http://127.0.0.1:4186/sakura-season.html#festival",
+  "bundleBytes": 1370147,
+  "visualChecks": {
+    "garden": "Rounded painted tree crowns, fine curved grass, pink and cream flowers, continuous winding dirt path",
+    "village": "Visible scalloped roof tiles, chimneys, readable signs, flower boxes and window details",
+    "castle": "Visible tower cornices, windows, masonry accents and climbing flowers",
+    "lagoonDay": "Turquoise transparent water reveals fish schools, plants, shells, stones and caustics",
+    "lagoonNight": "Underwater detail remains visible with the night sky and lit rides"
+  },
+  "pauseAndPreview": {
+    "pausedTimeBefore": 128.13880000001473,
+    "pausedTimeAfter": 128.13880000001473,
+    "waterTimeAfter": 128.13880000001473,
+    "selectorReturn": "Restored lagoon camera, night phase and paused simulation time"
+  },
+  "responsive": [
+    {"viewport": [390,844], "scene": [390,784], "pageScrollWidth":390, "newViewButtonsClickable":true},
+    {"viewport": [844,390], "scene": [844,390], "pageScrollWidth":844, "toolsExpandAndNewViewButtonsClickable":true}
+  ],
+  "browserConsoleWarningsOrErrors": [],
+  "physicalPhoneVerified": false,
+  "notes": "Browser rendering and responsive viewport checks; no claim of physical phone performance. Automated geometry, water and animal regressions are recorded in their separate reports."
+}

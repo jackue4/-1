@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-09-20T11:56:49.228196+00:00",
+  "scope": "Actual Chromium WebGL browser at localhost; responsive viewport emulation, not physical phone testing.",
+  "viewports": [
+    {
+      "size": [
+        390,
+        844
+      ],
+      "horizontalOverflow": 0,
+      "verticalOverflow": 0,
+      "enterVisible": true,
+      "enterClickable": true
+    },
+    {
+      "size": [
+        360,
+        640
+      ],
+      "horizontalOverflow": 0,
+      "verticalOverflow": 0,
+      "enterVisible": true,
+      "enterClickable": true
+    },
+    {
+      "size": [
+        844,
+        390
+      ],
+      "horizontalOverflow": 0,
+      "verticalOverflow": 0,
+      "enterVisible": true,
+      "enterClickable": true
+    },
+    {
+      "size": [
+        568,
+        320
+      ],
+      "horizontalOverflow": 0,
+      "verticalOverflow": 0,
+      "enterVisible": true,
+      "enterClickable": true
+    },
+    {
+      "size": [
+        1280,
+        720
+      ],
+      "horizontalOverflow": 0,
+      "verticalOverflow": 0,
+      "enterVisible": true,
+      "enterClickable": true
+    }
+  ],
+  "flows": {
+    "coastEnter": true,
+    "coastNightGlobeRestoredAfterReturn": true,
+    "sunnyEnter": true,
+    "sunnyNightGlobeRestoredAfterReturn": true,
+    "sunnyPreviewDoesNotWriteInitialStorage": true,
+    "sunnyPreviewElapsedAndConstructionRemainZero": true,
+    "gameEntryCreatesStorage": true
+  },
+  "consoleErrors": [],
+  "passed": true
+}

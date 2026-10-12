@@ -1,0 +1,2 @@
+const http=require('node:http'),fs=require('node:fs'),path=require('node:path');
+http.createServer((req,res)=>{const name=new URL(req.url,'http://localhost').pathname.slice(1);if(!['snow.html','desert.html','compositor.js'].includes(name)){res.writeHead(404).end();return;}res.writeHead(200,{'Content-Type':name.endsWith('.js')?'text/javascript; charset=utf-8':'text/html; charset=utf-8','Cache-Control':'no-store'});fs.createReadStream(path.join(__dirname,name)).pipe(res);}).listen(4190,'127.0.0.1',()=>console.log('Capture studio ready: 4190'));

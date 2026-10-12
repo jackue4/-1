@@ -1,0 +1,31 @@
+{
+  "scope": "CSS parse/compatibility and bundled JS syntax; no browser layout proof",
+  "checks": [
+    {
+      "file": "work/twin-planets/style.css",
+      "bytes": 3229,
+      "warnings": []
+    },
+    {
+      "file": "work/twin-planets/sunny/style.css",
+      "bytes": 36222,
+      "warnings": []
+    },
+    {
+      "file": "work/kamakura-planet/style.css",
+      "bytes": 15388,
+      "warnings": []
+    },
+    {
+      "world": "coast",
+      "generatedWarnings": [],
+      "legacyAbsoluteHost": false
+    },
+    {
+      "world": "sunny",
+      "generatedWarnings": [],
+      "legacyAbsoluteHost": false
+    }
+  ],
+  "jsSyntax": true
+}

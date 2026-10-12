@@ -1,0 +1,13 @@
+import {build} from 'file:///C:/Users/chenyahan/Documents/Codex/2026-09-15/neng/work/node_modules/esbuild/lib/main.js';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+const dir=path.resolve('work/sakura-planet'),bundle=await build({entryPoints:[path.join(dir,'ecology.js')],bundle:true,platform:'node',format:'esm',write:false});
+const {STORAGE_KEY,restore,persist}=await import('data:text/javascript;base64,'+Buffer.from(bundle.outputFiles[0].text).toString('base64'));
+assert.equal(STORAGE_KEY,'little-bloom.sakura.ecosystem.v1');
+const now=new Date(2026,8,18,12,0,0),oldKey='little-bloom.ecosystem.v2',oldRaw=JSON.stringify({version:2,day:'2026-09-18',growth:12,visits:93,travel:{name:'original-star',clovers:321}}),store=new Map([[oldKey,oldRaw]]),reads=[],writes=[];
+const storage={getItem:k=>(reads.push(k),store.get(k)||null),setItem:(k,v)=>{writes.push(k);store.set(k,v);}};
+const initial=restore(storage,now);assert.equal(initial.growth,0);assert.equal(initial.visits,1);assert.notEqual(initial.travel.name,'original-star');assert.equal(initial.travel.clovers,12);initial.growth=7;initial.travel.clovers=23;initial.construction.elapsed=143;
+assert.equal(persist(storage,initial),true);assert.equal(store.get(oldKey),oldRaw);const reloaded=restore(storage,now);assert.equal(reloaded.growth,7);assert.equal(reloaded.travel.clovers,23);assert.equal(reloaded.construction.elapsed,143);assert.deepEqual([...new Set(reads)],[STORAGE_KEY]);assert.deepEqual([...new Set(writes)],[STORAGE_KEY]);
+const bad=restore({getItem:()=>'{malformed'},now);assert.equal(bad.growth,0);assert.equal(bad.visits,1);const blocked={getItem(){throw Error('denied');},setItem(){throw Error('denied');}};assert.equal(restore(blocked,now).growth,0);assert.equal(persist(blocked,initial),false);
+const report={passed:4,checks:['Original planet save is ignored and unchanged','Sakura growth, travel and construction restore from its own save','Malformed JSON starts safely','Blocked storage returns a safe unsaved state'],key:STORAGE_KEY,note:'In-memory storage adapter exercises actual ecology restore/persist functions.'};await fs.writeFile(new URL('./storage-results.json',import.meta.url),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));

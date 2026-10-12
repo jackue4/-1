@@ -1,0 +1,7 @@
+ffconcat version 1.0
+file 'edit-parts/01-body.mp4'
+duration 2.000000000
+file 'edit-parts/01-dissolve.mp4'
+duration 0.400000000
+file 'edit-parts/02-body.mp4'
+duration 1.600000000

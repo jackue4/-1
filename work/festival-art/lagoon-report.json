@@ -1,0 +1,19 @@
+{
+  "transparent": true,
+  "waterRadius": 3.246,
+  "shallowOpacity": 0.24,
+  "deepOpacity": 0.36,
+  "seagrass": 56,
+  "pondweed": 28,
+  "underwaterStones": 28,
+  "coral": 8,
+  "shells": 31,
+  "fish": 48,
+  "schools": 4,
+  "drawCalls": 9,
+  "minFishBedClearance": 0.11279389826383364,
+  "minFishSurfaceClearance": 0.07499393100737457,
+  "maxSchoolQ": 0.5770183363722524,
+  "plantSubmersionVerified": true,
+  "pausePreviewDeterminismVerified": true
+}

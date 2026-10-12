@@ -1,0 +1,71 @@
+{
+  "checkedAt": "2026-09-21T07:13:02.204Z",
+  "scope": "Festival planet, shared static batching and shared anime renderer",
+  "browser": "Codex in-app Chromium",
+  "viewport": [
+    1280,
+    720
+  ],
+  "devicePixelRatio": 1,
+  "method": "180 requestAnimationFrame intervals per view after 45 warm-up frames. Single active WebGL tab, same viewport and detailed quality. Shadow render counts depend on the sampled frame. Baseline and optimized scenes ran at different animation times, so this is a frame-pacing smoke check, not a deterministic GPU benchmark.",
+  "baseline": {
+    "day": {
+      "meanMs": 16.66778,
+      "p95Ms": 16.8,
+      "over33ms": 0
+    },
+    "fireworks": {
+      "meanMs": 16.66722,
+      "p95Ms": 16.8,
+      "over33ms": 0
+    },
+    "foodCourt": {
+      "meanMs": 16.66778,
+      "p95Ms": 16.8,
+      "over33ms": 0
+    }
+  },
+  "optimized": {
+    "day": {
+      "meanMs": 16.66722,
+      "p95Ms": 16.8,
+      "over33ms": 0
+    },
+    "fireworks": {
+      "meanMs": 16.76056,
+      "p95Ms": 16.8,
+      "over33ms": 0
+    },
+    "foodCourt": {
+      "meanMs": 16.66778,
+      "p95Ms": 16.8,
+      "over33ms": 0
+    }
+  },
+  "interpretation": "Both versions were already near the 60 Hz ceiling on this computer; no measured overall FPS increase is claimed. Geometry and simulated upload reductions are separately quantified.",
+  "visualChecks": {
+    "desktopDay": true,
+    "nightFireworks": true,
+    "foodCourt": true,
+    "candyCloseup": true,
+    "portrait390x844": true,
+    "landscape844x390": true,
+    "sharedSnowRenderer": true,
+    "sharedCoastRenderer": true,
+    "publicRelease": true,
+    "consoleErrors": 0,
+    "physicalPhone": false
+  },
+  "pauseReadback": {
+    "before": {
+      "simulationFrames": 923,
+      "renderFrames": 923,
+      "time": 15.433999999999934
+    },
+    "after": {
+      "simulationFrames": 923,
+      "renderFrames": 923,
+      "time": 15.433999999999934
+    }
+  }
+}

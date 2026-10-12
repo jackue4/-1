@@ -1,0 +1,289 @@
+{
+  "date": "2026-09-18",
+  "files": [
+    {
+      "path": "C:\\Users\\chenyahan\\Documents\\Codex\\2026-09-18\\file-c-users-chenyahan-documents-codex\\outputs\\sakura-season.html",
+      "bytes": 977719,
+      "sha256": "ee0ffe70a8276842f8fcd47352ab3eee078f3bbb929784f53c1ee73aac64bc24"
+    },
+    {
+      "path": "C:\\Users\\chenyahan\\Documents\\Codex\\2026-09-15\\neng\\outputs\\sakura-season.html",
+      "bytes": 977719,
+      "sha256": "ee0ffe70a8276842f8fcd47352ab3eee078f3bbb929784f53c1ee73aac64bc24"
+    },
+    {
+      "path": "C:\\Users\\chenyahan\\Documents\\Codex\\2026-09-18\\file-c-users-chenyahan-documents-codex\\outputs\\little-bloom.html",
+      "bytes": 977719,
+      "sha256": "ee0ffe70a8276842f8fcd47352ab3eee078f3bbb929784f53c1ee73aac64bc24"
+    },
+    {
+      "path": "C:\\Users\\chenyahan\\Documents\\Codex\\2026-09-15\\neng\\outputs\\little-bloom.html",
+      "bytes": 977719,
+      "sha256": "ee0ffe70a8276842f8fcd47352ab3eee078f3bbb929784f53c1ee73aac64bc24"
+    }
+  ],
+  "sourceIntegrity": {
+    "scanned": 274,
+    "bad": []
+  },
+  "build": {
+    "sameDocument": true,
+    "bytes": 977719,
+    "nullBytes": false,
+    "title": "Little Bloom · 双星漫游",
+    "externalScripts": 0,
+    "iframe": false,
+    "menu": true,
+    "trails": true,
+    "stream": true,
+    "phone": true,
+    "savedSunnyProgress": true,
+    "sha256": "ee0ffe70a8276842f8fcd47352ab3eee078f3bbb929784f53c1ee73aac64bc24"
+  },
+  "regressions": {
+    "date": "2026-09-18",
+    "scope": "Independent post-crash CPU regression. Browser appearance, GPU shader compilation and reconstructed island-trails are outside this report.",
+    "passed": true,
+    "sceneSourceEdits": [],
+    "harnessCorrections": [],
+    "suites": [
+      {
+        "command": "node work/island-expansion/stream-test.mjs",
+        "passed": 5,
+        "total": 5,
+        "evidence": "Continuous 321-point downhill stream; 72 raycasts against actual terrain; minnows bounded for 300 seconds; bridge clearance; pause and cleanup.",
+        "minimumWaterTerrainGap": 0.022798670998507742,
+        "bridgeWaterClearance": 0.033506071519658676,
+        "report": "work/island-expansion/stream-report.json"
+      },
+      {
+        "command": "node work/island-expansion/shore-life-test.mjs",
+        "passed": 6,
+        "total": 6,
+        "evidence": "Finite props, dry footprints clear of town/rail/stream, beach roots clearance, moving laundry with fixed tops, explicit pause and idempotent disposal.",
+        "drawCalls": 3,
+        "triangles": 8254,
+        "minimumRailClearance": 0.23366422644678814
+      },
+      {
+        "command": "node work/kamakura-validation/run-integration.mjs",
+        "passed": 7,
+        "total": 7,
+        "evidence": "Train loop, station dwell and crossing protection, pause, falling/floating petals, ocean coverage, marine animation and unchanged 29-house town.",
+        "crossingViolations": 0,
+        "waterSurfaceFraction": 0.789125,
+        "report": "work/kamakura-validation/integration-report.json"
+      },
+      {
+        "command": "node work/harbor-validation/beacons-marine-test.mjs",
+        "passed": 5,
+        "total": 5,
+        "evidence": "All four beacons, including relocated west-cape, sweep actual sea smoothly for 900 seconds; underwater animal and bubble vertices remain valid for 600 seconds; quality, pause and cleanup.",
+        "minimumBeamTargetWaterDepth": 0.21528495751502863,
+        "report": "work/harbor-validation/beacons-marine-report.json"
+      },
+      {
+        "command": "node work/harbor-validation/cruises-test.mjs",
+        "passed": true,
+        "evidence": "720 seconds of boat route sampling, full hull seabed clearance, no overlapping tour boats or reef intersections, motion, pause, quality and disposal.",
+        "minimumBoatSeparation": 0.5663825342014873,
+        "minimumReefClearance": 0.24067545096663717,
+        "report": "work/harbor-validation/cruises-report.json"
+      },
+      {
+        "command": "node work/harbor-validation/landmarks-test.mjs",
+        "passed": 8,
+        "total": 8,
+        "evidence": "Existing cottage/tea room/shrine preserve houses and reservations; 507 footprint/entrance samples; grounded foundations; safe plant positions; warm lamps and disposal.",
+        "report": "work/harbor-validation/landmarks-report.json"
+      },
+      {
+        "command": "node work/island-expansion/nature-recovery-test.mjs",
+        "passed": 4,
+        "total": 4,
+        "evidence": "New nature builds with town, landmarks and garden reservations; all attributes finite; 117 exposed-root raycasts contact rendered land; breeze pause and resource cleanup.",
+        "rootCenterAboveRenderedTerrainRange": [
+          0.001671647073946847,
+          0.006269417862674764
+        ],
+        "drawCalls": 3,
+        "triangles": 43840,
+        "report": "work/island-expansion/nature-recovery-report.json"
+      }
+    ],
+    "findings": [],
+    "remainingVerification": [
+      "Reconstructed island-trails module",
+      "Browser framing and visual inspection",
+      "GPU shader console",
+      "Responsive controls and two-world switching"
+    ]
+  },
+  "trails": {
+    "scope": "CPU geometry, occupancy, trail continuity and time state",
+    "beacons": {
+      "newLighthouses": 3,
+      "totalBeacons": 4,
+      "visibleCones": 4,
+      "drawCalls": 6,
+      "triangles": 2668,
+      "sites": [
+        {
+          "id": "old-reef",
+          "lat": -0.56,
+          "lon": -0.69,
+          "existing": true,
+          "baseRadius": 3.132,
+          "lampRadius": 3.5780000000000003,
+          "terrainRadius": 2.5771100875830912,
+          "railClearance": 0.6459894509250532
+        },
+        {
+          "id": "east-bay",
+          "lat": -0.22,
+          "lon": 0.7,
+          "existing": false,
+          "baseRadius": 3.134,
+          "lampRadius": 3.484,
+          "terrainRadius": 2.8373038104687756,
+          "railClearance": 0.358208278146953
+        },
+        {
+          "id": "west-cape",
+          "lat": 0.52,
+          "lon": -1.2,
+          "existing": false,
+          "baseRadius": 3.1941465592457976,
+          "lampRadius": 3.6141465592457975,
+          "terrainRadius": 3.1861465592457976,
+          "railClearance": 0.46283775532243426
+        },
+        {
+          "id": "far-coast",
+          "lat": 0.04,
+          "lon": -2.27,
+          "existing": false,
+          "baseRadius": 3.134,
+          "lampRadius": 3.419,
+          "terrainRadius": 2.5562136350553826,
+          "railClearance": 0.10721667116338524
+        }
+      ]
+    },
+    "trails": {
+      "loops": 1,
+      "connectors": 3,
+      "stoneSlabs": 241,
+      "woodPlanks": 11,
+      "sharedSurfaceSamples": 115,
+      "mossPatches": 41,
+      "drawCalls": 3,
+      "triangles": 7736,
+      "routeLength": 16.54252477106469,
+      "lighthouse": {
+        "lat": 0.52,
+        "lon": -1.2
+      },
+      "routes": [
+        {
+          "name": "lighthouse approach → west hillside",
+          "kind": "loop",
+          "length": 1.0068827388391237
+        },
+        {
+          "name": "west hillside → northwest ridge",
+          "kind": "loop",
+          "length": 1.0840045199332673
+        },
+        {
+          "name": "northwest ridge → north ridge",
+          "kind": "loop",
+          "length": 0.9250840608382896
+        },
+        {
+          "name": "north ridge → northeast overlook",
+          "kind": "loop",
+          "length": 1.164975897353909
+        },
+        {
+          "name": "northeast overlook → east headland",
+          "kind": "loop",
+          "length": 1.158696094516334
+        },
+        {
+          "name": "east headland → tea-room junction",
+          "kind": "loop",
+          "length": 0.8458448618250334
+        },
+        {
+          "name": "tea-room junction → east village lane",
+          "kind": "loop",
+          "length": 1.5191554678120582
+        },
+        {
+          "name": "east village lane → wooden bridge west",
+          "kind": "loop",
+          "length": 1.5482561380773163
+        },
+        {
+          "name": "wooden bridge west → cottage junction",
+          "kind": "loop",
+          "length": 2.1751432281857346
+        },
+        {
+          "name": "cottage junction → lighthouse approach",
+          "kind": "loop",
+          "length": 1.1098057275096056
+        },
+        {
+          "name": "Cottage side gate",
+          "kind": "connector",
+          "length": 0.15220543063089786
+        },
+        {
+          "name": "Tea-room front steps",
+          "kind": "connector",
+          "length": 1.0020752398151425
+        },
+        {
+          "name": "Village to seaside jetty",
+          "kind": "connector",
+          "length": 2.850395365727978
+        }
+      ],
+      "props": 48
+    },
+    "checks": [
+      "All geometry attributes finite; 4 beams retained; trail geometry below requested budget.",
+      "All placed slabs on dry ground, away from buildings and stream center; navigation routes continuous.",
+      "Relocated tower remains clear of every reserved building/tree/landmark footprint; day/night and pause states preserved."
+    ],
+    "metrics": {
+      "minHouse": 0.008333518143394891,
+      "minLand": 0.009258246200705589,
+      "minRail": 0.13827237729508263,
+      "maxGap": 0.05568355693484122,
+      "streamSamples": 0,
+      "towerClearance": 0.168087625600097
+    }
+  },
+  "shaders": {
+    "passed": 46,
+    "total": 46,
+    "hashesMatch": true
+  },
+  "switchController": {
+    "passed": 5,
+    "total": 5,
+    "scope": "VM controller only"
+  },
+  "browser": {
+    "verified": false,
+    "reason": "Browser control reports unsupported Codex auth method: apikey after reset; current screenshots, new camera views and responsive layout not verified"
+  },
+  "preview": {
+    "status": 200,
+    "bytes": 977719,
+    "sha256": "ee0ffe70a8276842f8fcd47352ab3eee078f3bbb929784f53c1ee73aac64bc24"
+  }
+}

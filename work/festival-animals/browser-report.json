@@ -1,0 +1,38 @@
+{
+  "testedAt": "2026-09-21T10:09:48.218092",
+  "localUrl": "http://127.0.0.1:4186/sakura-season.html#festival",
+  "passed": true,
+  "browserRenderingVerified": true,
+  "physicalPhoneVerified": false,
+  "animals": 22,
+  "riders": 15,
+  "roamingAndSpectators": 7,
+  "viewsReviewed": [
+    "animals",
+    "carousel",
+    "ferris",
+    "teacups",
+    "swings",
+    "coaster"
+  ],
+  "viewports": [
+    [
+      1280,
+      720
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      844,
+      390
+    ]
+  ],
+  "pauseMatricesUnchanged": true,
+  "selectorReturnRestoresAllMatrices": true,
+  "consoleErrors": 0,
+  "consoleWarnings": 0,
+  "releaseBackup": "C:\\Users\\chenyahan\\Documents\\Codex\\2026-09-18\\file-c-users-chenyahan-documents-codex\\work\\festival-animals\\release-backup-20260921-100948",
+  "sha256": "15d4f64d7e65cf610297b8f9480fbff63d4bd51341cf28619076490e40c1ad13"
+}

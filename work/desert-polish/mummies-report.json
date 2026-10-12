@@ -1,0 +1,1218 @@
+{
+  "checkedAt": "2026-09-22T02:24:19.395Z",
+  "passed": true,
+  "scope": "Actual mummy geometry and animation with current desert terrain and world. CPU math/collision sampling only; final WebGL appearance needs browser review.",
+  "checks": [
+    {
+      "name": "Four visitors share one valid model plus one halo draw, with four total draws and no point lights",
+      "passed": true,
+      "stats": {
+        "capacity": 4,
+        "minNightVisitors": 2,
+        "maxNightVisitors": 4,
+        "safeSpots": 8,
+        "zones": 4,
+        "drawCalls": 4,
+        "pointLights": 0,
+        "sharedModels": 1,
+        "haloDrawCalls": 1,
+        "bandageEmission": 0.235,
+        "modelTriangles": 11952,
+        "maxBodyTriangles": 47808,
+        "groundTriangles": 2560,
+        "sparkles": 12,
+        "reference": "Round head, layered cream bandages, dark face opening and gentle bright eyes",
+        "rejectedSpots": []
+      },
+      "vertices": 9912,
+      "triangles": 50376,
+      "draws": 4
+    },
+    {
+      "name": "All predefined encounter positions have dry footprints and building clearance",
+      "passed": true,
+      "spots": [
+        {
+          "id": "cove-0",
+          "label": "海湾月光沙地",
+          "lat": 0.05825901726837387,
+          "lon": -0.11316702120538377,
+          "position": [
+            -0.37,
+            0.1911015075546593,
+            3.255534551162119
+          ],
+          "up": [
+            -6.857964408273585e-15,
+            0.11971220728893227,
+            0.9928086358538648
+          ],
+          "minDry": 0.06750907350717616,
+          "minField": 0.5165070684295605,
+          "maxRipple": 2.2204460492503135e-15,
+          "buildingDistance": 2.395132345203145,
+          "lift": 0.007000000000002221
+        },
+        {
+          "id": "cove-1",
+          "label": "海湾月光沙地",
+          "lat": 0.03415374152096649,
+          "lon": -0.045907959614776055,
+          "position": [
+            -0.15,
+            0.11167681668634999,
+            3.265111527745232
+          ],
+          "up": [
+            1.9159897452971436e-15,
+            0.11971220728890837,
+            0.9928086358538675
+          ],
+          "minDry": 0.06012773877140987,
+          "minField": 0.4785034179831206,
+          "maxRipple": 2.220446049250313e-15,
+          "buildingDistance": 2.5794360999233406,
+          "lift": 0.007000000000002221
+        },
+        {
+          "id": "treasury-0",
+          "label": "玫瑰石城前",
+          "lat": 0.35959416141431355,
+          "lon": -0.5382043604383577,
+          "position": [
+            -1.581816181224615,
+            1.1601113670420782,
+            2.6496464969636593
+          ],
+          "up": [
+            -0.33277642866834983,
+            0.3752734166279671,
+            0.8651183221358285
+          ],
+          "minDry": 0.08607293185598675,
+          "minField": 0.6684828145637637,
+          "maxRipple": 0.014755097969211487,
+          "buildingDistance": 0.9764466382873764,
+          "lift": 0.021755097969211486
+        },
+        {
+          "id": "treasury-1",
+          "label": "玫瑰石城前",
+          "lat": 0.3538858843524378,
+          "lon": -0.6707682885467854,
+          "position": [
+            -2.053256259059879,
+            1.2203449421887458,
+            2.587576743187904
+          ],
+          "up": [
+            -0.062326359781834255,
+            0.39187372415501687,
+            0.9179054467608432
+          ],
+          "minDry": 0.24073967093231596,
+          "minField": 0.5991115734535596,
+          "maxRipple": 0.016641982269506975,
+          "buildingDistance": 0.9990731337538764,
+          "lift": 0.007758159196087682
+        },
+        {
+          "id": "kasbah-0",
+          "label": "沙色小巷外",
+          "lat": 0.16458415337949728,
+          "lon": 1.1419307205908389,
+          "position": [
+            2.9869711489447477,
+            0.5454968875087277,
+            1.3657888011816879
+          ],
+          "up": [
+            0.7886537837392944,
+            -0.1351649529721703,
+            0.5997963361689743
+          ],
+          "minDry": 0.09034945041046916,
+          "minField": 0.25450330321702325,
+          "maxRipple": 0.006995340058977284,
+          "buildingDistance": 0.9840898563387928,
+          "lift": 0.013995340058977283
+        },
+        {
+          "id": "kasbah-1",
+          "label": "沙色小巷外",
+          "lat": 0.16408012128408114,
+          "lon": 1.2676693493211113,
+          "position": [
+            3.192449261197003,
+            0.553819306553889,
+            0.9984888599161693
+          ],
+          "up": [
+            0.9717411799457515,
+            0.0892913179400748,
+            0.21850890082136962
+          ],
+          "minDry": 0.1629056742568986,
+          "minField": 0.2358058920675305,
+          "maxRipple": 0.026390053179716315,
+          "buildingDistance": 1.0142214185512846,
+          "lift": 0.007
+        },
+        {
+          "id": "caravan-0",
+          "label": "驼铃驿站旁",
+          "lat": 0.6118926203977131,
+          "lon": 0.2879242781444133,
+          "position": [
+            0.7658454238859828,
+            1.892588102752771,
+            2.585973558444563
+          ],
+          "up": [
+            0.08667540855498423,
+            0.5248283373385317,
+            0.8467836736016461
+          ],
+          "minDry": 0.08542518611284011,
+          "minField": 0.7268078643031433,
+          "maxRipple": 0.025329401418253468,
+          "buildingDistance": 0.9919340631111228,
+          "lift": 0.03232940141825347
+        },
+        {
+          "id": "caravan-1",
+          "label": "驼铃驿站旁",
+          "lat": 0.6341536082186834,
+          "lon": 0.42162303988700106,
+          "position": [
+            1.1643795395577603,
+            2.0926407126824875,
+            2.596044278078063
+          ],
+          "up": [
+            -0.18092962142959526,
+            0.3149481690726474,
+            0.9317038815455964
+          ],
+          "minDry": 0.23923723345830483,
+          "minField": 0.6813618626414542,
+          "maxRipple": 0.02357070794814442,
+          "buildingDistance": 1.0017872211443448,
+          "lift": 0.007546802250903866
+        }
+      ]
+    },
+    {
+      "name": "Daytime is completely hidden",
+      "passed": true
+    },
+    {
+      "name": "At first night entry at least two gentle visitors are already visible",
+      "passed": true,
+      "actors": [
+        {
+          "id": 0,
+          "spot": "cove-0",
+          "label": "海湾月光沙地",
+          "visible": true,
+          "alpha": 1,
+          "opacity": 1,
+          "cycle": 0,
+          "phase": 0.18,
+          "mint": false,
+          "position": [
+            -0.3700527033474056,
+            0.18417676458589133,
+            3.264931101442605
+          ],
+          "up": [
+            -6.857964408273585e-15,
+            0.11971220728893227,
+            0.9928086358538648
+          ],
+          "quaternion": [
+            0.6632771325840884,
+            0.016239933370463668,
+            0.01439936618618322,
+            0.7480590673259626
+          ],
+          "size": 0.87
+        },
+        {
+          "id": 1,
+          "spot": "treasury-1",
+          "label": "玫瑰石城前",
+          "visible": true,
+          "alpha": 1,
+          "opacity": 1,
+          "cycle": 0,
+          "phase": 0.43,
+          "mint": true,
+          "position": [
+            -2.0433672553017717,
+            1.218482230703924,
+            2.600660944162614
+          ],
+          "up": [
+            -0.062326359781834255,
+            0.39187372415501687,
+            0.9179054467608432
+          ],
+          "quaternion": [
+            0.557344820068327,
+            -0.11696328247843842,
+            -0.021122327362824038,
+            0.8217299978591817
+          ],
+          "size": 0.94
+        },
+        {
+          "id": 2,
+          "spot": "kasbah-1",
+          "label": "沙色小巷外",
+          "visible": true,
+          "alpha": 1,
+          "opacity": 1,
+          "cycle": 0,
+          "phase": 0.6799999999999999,
+          "mint": false,
+          "position": [
+            3.2029355514380997,
+            0.5576784622277362,
+            0.9877361731763448
+          ],
+          "up": [
+            0.9717411799457515,
+            0.0892913179400748,
+            0.21850890082136962
+          ],
+          "quaternion": [
+            0.5895007008828068,
+            0.5126005343062702,
+            -0.3507283256719752,
+            0.5164486977996352
+          ],
+          "size": 0.86
+        },
+        {
+          "id": 3,
+          "spot": "caravan-1",
+          "label": "驼铃驿站旁",
+          "visible": false,
+          "alpha": 0,
+          "opacity": 0,
+          "cycle": 0,
+          "phase": 0.9299999999999999,
+          "mint": true,
+          "position": [
+            1.1626036825282013,
+            2.1027108502183016,
+            2.6003904195182894
+          ],
+          "up": [
+            -0.18092962142959526,
+            0.3149481690726474,
+            0.9317038815455964
+          ],
+          "quaternion": [
+            0.5707413794248387,
+            0.03352383747069771,
+            0.13781709044221246,
+            0.8087872895363238
+          ],
+          "size": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Twenty minutes of deterministic nighttime provide two to four visitors with changing locations",
+      "passed": true,
+      "minCount": 2,
+      "maxCount": 4,
+      "samples": [
+        {
+          "time": 0,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "treasury-1",
+            "kasbah-1"
+          ]
+        },
+        {
+          "time": 20,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "treasury-1",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 40,
+          "count": 4,
+          "spots": [
+            "cove-0",
+            "treasury-0",
+            "kasbah-1",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 60,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "treasury-0",
+            "kasbah-1"
+          ]
+        },
+        {
+          "time": 80,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "treasury-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 100,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "kasbah-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 120,
+          "count": 3,
+          "spots": [
+            "treasury-0",
+            "kasbah-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 140,
+          "count": 2,
+          "spots": [
+            "cove-0",
+            "treasury-0"
+          ]
+        },
+        {
+          "time": 160,
+          "count": 4,
+          "spots": [
+            "cove-0",
+            "treasury-0",
+            "kasbah-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 180,
+          "count": 4,
+          "spots": [
+            "cove-0",
+            "treasury-1",
+            "kasbah-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 200,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "treasury-1",
+            "kasbah-0"
+          ]
+        },
+        {
+          "time": 220,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "treasury-1",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 240,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "kasbah-1",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 260,
+          "count": 3,
+          "spots": [
+            "treasury-0",
+            "kasbah-1",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 280,
+          "count": 4,
+          "spots": [
+            "cove-0",
+            "treasury-0",
+            "kasbah-1",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 300,
+          "count": 4,
+          "spots": [
+            "cove-0",
+            "treasury-0",
+            "kasbah-1",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 320,
+          "count": 3,
+          "spots": [
+            "treasury-0",
+            "kasbah-1",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 340,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "treasury-0",
+            "kasbah-1"
+          ]
+        },
+        {
+          "time": 360,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "treasury-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 380,
+          "count": 4,
+          "spots": [
+            "cove-0",
+            "treasury-1",
+            "kasbah-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 400,
+          "count": 4,
+          "spots": [
+            "cove-0",
+            "treasury-1",
+            "kasbah-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 420,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "treasury-1",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 440,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "kasbah-0",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 460,
+          "count": 3,
+          "spots": [
+            "treasury-0",
+            "kasbah-0",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 480,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "treasury-0",
+            "kasbah-0"
+          ]
+        },
+        {
+          "time": 500,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "kasbah-1",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 520,
+          "count": 3,
+          "spots": [
+            "treasury-0",
+            "kasbah-1",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 540,
+          "count": 3,
+          "spots": [
+            "cove-1",
+            "treasury-0",
+            "kasbah-1"
+          ]
+        },
+        {
+          "time": 560,
+          "count": 3,
+          "spots": [
+            "cove-1",
+            "treasury-0",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 580,
+          "count": 3,
+          "spots": [
+            "cove-1",
+            "kasbah-0",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 600,
+          "count": 3,
+          "spots": [
+            "treasury-0",
+            "kasbah-0",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 620,
+          "count": 3,
+          "spots": [
+            "cove-1",
+            "treasury-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 640,
+          "count": 3,
+          "spots": [
+            "cove-1",
+            "kasbah-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 660,
+          "count": 4,
+          "spots": [
+            "cove-1",
+            "treasury-1",
+            "kasbah-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 680,
+          "count": 3,
+          "spots": [
+            "cove-1",
+            "treasury-1",
+            "kasbah-0"
+          ]
+        },
+        {
+          "time": 700,
+          "count": 3,
+          "spots": [
+            "cove-1",
+            "treasury-1",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 720,
+          "count": 3,
+          "spots": [
+            "treasury-1",
+            "kasbah-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 740,
+          "count": 4,
+          "spots": [
+            "cove-0",
+            "treasury-1",
+            "kasbah-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 760,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "treasury-1",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 780,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "kasbah-0",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 800,
+          "count": 3,
+          "spots": [
+            "treasury-1",
+            "kasbah-0",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 820,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "treasury-1",
+            "kasbah-0"
+          ]
+        },
+        {
+          "time": 840,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "kasbah-1",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 860,
+          "count": 3,
+          "spots": [
+            "treasury-0",
+            "kasbah-1",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 880,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "treasury-0",
+            "kasbah-1"
+          ]
+        },
+        {
+          "time": 900,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "treasury-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 920,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "kasbah-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 940,
+          "count": 2,
+          "spots": [
+            "treasury-1",
+            "kasbah-0"
+          ]
+        },
+        {
+          "time": 960,
+          "count": 3,
+          "spots": [
+            "cove-1",
+            "treasury-1",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 980,
+          "count": 3,
+          "spots": [
+            "cove-1",
+            "kasbah-1",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 1000,
+          "count": 3,
+          "spots": [
+            "treasury-1",
+            "kasbah-1",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 1020,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "treasury-1",
+            "kasbah-1"
+          ]
+        },
+        {
+          "time": 1040,
+          "count": 2,
+          "spots": [
+            "cove-0",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 1060,
+          "count": 4,
+          "spots": [
+            "cove-0",
+            "treasury-1",
+            "kasbah-0",
+            "caravan-1"
+          ]
+        },
+        {
+          "time": 1080,
+          "count": 3,
+          "spots": [
+            "cove-1",
+            "treasury-1",
+            "kasbah-0"
+          ]
+        },
+        {
+          "time": 1100,
+          "count": 4,
+          "spots": [
+            "cove-1",
+            "treasury-1",
+            "kasbah-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 1120,
+          "count": 3,
+          "spots": [
+            "cove-1",
+            "kasbah-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 1140,
+          "count": 3,
+          "spots": [
+            "treasury-0",
+            "kasbah-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 1160,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "treasury-0",
+            "kasbah-0"
+          ]
+        },
+        {
+          "time": 1180,
+          "count": 3,
+          "spots": [
+            "cove-0",
+            "kasbah-0",
+            "caravan-0"
+          ]
+        },
+        {
+          "time": 1200,
+          "count": 4,
+          "spots": [
+            "cove-0",
+            "treasury-0",
+            "kasbah-0",
+            "caravan-0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Moving feet stay above the actual sand over all sampled poses",
+      "passed": true,
+      "minGround": 0.004682633681574178,
+      "footVertices": 597
+    },
+    {
+      "name": "Time reversal and leaving selector preview restore exact matrices, glows and appearance",
+      "passed": true
+    },
+    {
+      "name": "Repeated paused updates upload no dynamic buffers",
+      "passed": true
+    },
+    {
+      "name": "A daytime camera request anticipates a visible visitor through the night transition on all viewport shapes",
+      "passed": true,
+      "poseChecks": [
+        {
+          "time": 0,
+          "aspect": 0.46,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 1.4009448607406145,
+          "finite": true
+        },
+        {
+          "time": 0,
+          "aspect": 0.56,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 1.1507761356083615,
+          "finite": true
+        },
+        {
+          "time": 0,
+          "aspect": 1.6,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 0.8055432949258532,
+          "finite": true
+        },
+        {
+          "time": 0,
+          "aspect": 2.16,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 0.8055432949258532,
+          "finite": true
+        },
+        {
+          "time": 30,
+          "aspect": 0.46,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 1.4009448607406145,
+          "finite": true
+        },
+        {
+          "time": 30,
+          "aspect": 0.56,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 1.1507761356083617,
+          "finite": true
+        },
+        {
+          "time": 30,
+          "aspect": 1.6,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 0.8055432949258531,
+          "finite": true
+        },
+        {
+          "time": 30,
+          "aspect": 2.16,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 0.8055432949258531,
+          "finite": true
+        },
+        {
+          "time": 60,
+          "aspect": 0.46,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 1.4009448607406145,
+          "finite": true
+        },
+        {
+          "time": 60,
+          "aspect": 0.56,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 1.1507761356083615,
+          "finite": true
+        },
+        {
+          "time": 60,
+          "aspect": 1.6,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 0.8055432949258532,
+          "finite": true
+        },
+        {
+          "time": 60,
+          "aspect": 2.16,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 0.8055432949258532,
+          "finite": true
+        },
+        {
+          "time": 90,
+          "aspect": 0.46,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 1.4009448607406148,
+          "finite": true
+        },
+        {
+          "time": 90,
+          "aspect": 0.56,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 1.1507761356083617,
+          "finite": true
+        },
+        {
+          "time": 90,
+          "aspect": 1.6,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 0.8055432949258531,
+          "finite": true
+        },
+        {
+          "time": 90,
+          "aspect": 2.16,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 0.8055432949258531,
+          "finite": true
+        },
+        {
+          "time": 140,
+          "aspect": 0.46,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 1.4009448607406148,
+          "finite": true
+        },
+        {
+          "time": 140,
+          "aspect": 0.56,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 1.1507761356083617,
+          "finite": true
+        },
+        {
+          "time": 140,
+          "aspect": 1.6,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 0.8055432949258531,
+          "finite": true
+        },
+        {
+          "time": 140,
+          "aspect": 2.16,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 0.8055432949258531,
+          "finite": true
+        },
+        {
+          "time": 280,
+          "aspect": 0.46,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 1.4009448607406145,
+          "finite": true
+        },
+        {
+          "time": 280,
+          "aspect": 0.56,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 1.1507761356083617,
+          "finite": true
+        },
+        {
+          "time": 280,
+          "aspect": 1.6,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 0.8055432949258531,
+          "finite": true
+        },
+        {
+          "time": 280,
+          "aspect": 2.16,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 0.8055432949258531,
+          "finite": true
+        },
+        {
+          "time": 507,
+          "aspect": 0.46,
+          "id": 2,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 1.400944860740614,
+          "finite": true
+        },
+        {
+          "time": 507,
+          "aspect": 0.56,
+          "id": 2,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 1.1507761356083617,
+          "finite": true
+        },
+        {
+          "time": 507,
+          "aspect": 1.6,
+          "id": 2,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 0.8055432949258532,
+          "finite": true
+        },
+        {
+          "time": 507,
+          "aspect": 2.16,
+          "id": 2,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 0.8055432949258532,
+          "finite": true
+        },
+        {
+          "time": 881,
+          "aspect": 0.46,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 1.4009448607406148,
+          "finite": true
+        },
+        {
+          "time": 881,
+          "aspect": 0.56,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 1.1507761356083617,
+          "finite": true
+        },
+        {
+          "time": 881,
+          "aspect": 1.6,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 0.8055432949258531,
+          "finite": true
+        },
+        {
+          "time": 881,
+          "aspect": 2.16,
+          "id": 0,
+          "visible": true,
+          "sameSpot": true,
+          "distance": 0.8055432949258531,
+          "finite": true
+        }
+      ]
+    },
+    {
+      "name": "Body-sized ray samples at every encounter avoid the real buildings, camp props, trees and cliffs",
+      "passed": true,
+      "collisions": [],
+      "minSolid": null,
+      "scope": "Radial rays from three body heights at each candidate center; not a general physics solver."
+    },
+    {
+      "name": "Owned geometry/materials dispose once while the shared palette stays alive",
+      "passed": true,
+      "resources": 8,
+      "counts": [
+        1
+      ],
+      "sharedDisposals": 0
+    }
+  ]
+}

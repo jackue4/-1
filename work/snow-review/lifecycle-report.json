@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-09-21T04:49:58.954Z",
+  "verification": "Real snow app, geometry, simulation and batching; mock DOM, RAF, WebGL boundary, controls and background sky. GPU rendering and physical devices not tested.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Mount completes with one renderer and marks ready only after a render",
+      "passed": true,
+      "time": 0.4833333333333351,
+      "renders": 30
+    },
+    {
+      "name": "Pause freezes the actual simulation clock, boat transforms and snow buffers",
+      "passed": true,
+      "pausedTime": 0.4833333333333351
+    },
+    {
+      "name": "Preview advances its own visible simulation without advancing paused play time",
+      "passed": true,
+      "playTime": 0.4833333333333351,
+      "previewSnowTime": 1.9666666666666202
+    },
+    {
+      "name": "Leaving preview restores play view, phase, camera, simulation and paused state",
+      "passed": true,
+      "mode": "canal",
+      "phase": "night"
+    },
+    {
+      "name": "Inactive worlds advance neither simulation nor render calls",
+      "passed": true,
+      "inactiveFrames": 180,
+      "renderDelta": 0
+    },
+    {
+      "name": "Reactivation resets the delta clock without jumping across hidden time",
+      "passed": true,
+      "resumedDelta": 0.033333333333332105
+    },
+    {
+      "name": "Context loss stops rendering and restoration resumes with a fresh shadow",
+      "passed": true,
+      "stoppedRenderCalls": 3,
+      "resumed": true
+    },
+    {
+      "name": "Light quality disables shadow rendering while preserving the live world",
+      "passed": true
+    },
+    {
+      "name": "Detailed quality restores manual shadow rendering",
+      "passed": true
+    },
+    {
+      "name": "Dispose is idempotent and clears frame, observer and page lifecycle resources",
+      "passed": true,
+      "queuedFrames": 0,
+      "rendererDisposals": 1,
+      "skyDisposals": 1
+    }
+  ]
+}

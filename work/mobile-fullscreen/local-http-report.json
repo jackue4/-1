@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-09-18T11:13:16.806Z",
+  "url": "http://127.0.0.1:4178",
+  "checks": [
+    {
+      "url": "http://127.0.0.1:4178/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 996239,
+      "sha256": "d2c5c96835d3cd55f2afec7550d155cdbd87a30bf65f36924fca0edce7a2a6ed",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "http://127.0.0.1:4178/sakura-season.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 996239,
+      "sha256": "d2c5c96835d3cd55f2afec7550d155cdbd87a30bf65f36924fca0edce7a2a6ed",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "http://127.0.0.1:4178/little-bloom.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 996239,
+      "sha256": "d2c5c96835d3cd55f2afec7550d155cdbd87a30bf65f36924fca0edce7a2a6ed",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "http://127.0.0.1:4178/?source=homescreen",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 996239,
+      "sha256": "d2c5c96835d3cd55f2afec7550d155cdbd87a30bf65f36924fca0edce7a2a6ed",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "http://127.0.0.1:4178/manifest.webmanifest",
+      "status": 200,
+      "contentType": "application/manifest+json",
+      "bytes": 690,
+      "sha256": "9a578fc67a305f705d2f575ca9e09fb0ea961e9bb86f54f11caa27f94460b68a",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "http://127.0.0.1:4178/icons/icon-192.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 15972,
+      "sha256": "11aeb0978b16aa90c1ea9fb27f19d0257a4ef9de122c72b1ae2a3a8793662841",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "http://127.0.0.1:4178/icons/icon-512.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 53039,
+      "sha256": "5fc18eb9fe5ed38384d1e9b8014c071064c2369ba135b85a2e1ce5d1f42bcb24",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    },
+    {
+      "url": "http://127.0.0.1:4178/icons/apple-touch-icon.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 14697,
+      "sha256": "32cd6fc964a6599f73465a902c0ed130a2fdea175f3ea110096b8f648e48dd62",
+      "exactMatch": true,
+      "mimeMatch": true,
+      "anonymousRequest": true
+    }
+  ],
+  "passed": true,
+  "browserRenderingVerified": false,
+  "physicalPhoneVerified": false
+}

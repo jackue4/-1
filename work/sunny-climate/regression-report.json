@@ -1,0 +1,39 @@
+{
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Existing local natural weather and offline farm segmentation stay deterministic",
+      "passed": true
+    },
+    {
+      "name": "Wet and dry farm growth, harvest inventory and save round trip still work",
+      "passed": true
+    },
+    {
+      "name": "Visual climate clock and manual presets cannot accelerate or mutate farm/construction save",
+      "passed": true
+    },
+    {
+      "name": "Actual resident-home state machine admits severe-weather shelter, restores daylight and retains night behavior",
+      "passed": true
+    },
+    {
+      "name": "Actual farm UI clears queued work during severe weather before any delayed watering or harvest can occur",
+      "passed": true
+    },
+    {
+      "name": "Real world still supports sunny activity and rain umbrellas; precipitation never assigns outdoor work",
+      "passed": true
+    },
+    {
+      "name": "Real world tornado and storm shelter take priority over farm jobs and fishing without teleporting residents",
+      "passed": true
+    },
+    {
+      "name": "Real world meteor night turns on path lamps and returns residents home; clear noon resumes the day",
+      "passed": true
+    }
+  ],
+  "scope": "Fresh actual ecology, farming, construction, resident homes and Three world modules; GPU and DOM rendering are not tested."
+}

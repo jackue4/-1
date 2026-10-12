@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-09-21",
+  "bundleBytes": 1382563,
+  "localUrl": "http://127.0.0.1:4187/sakura-season.html#festival",
+  "visualChecks": [
+    "rabbit, bear and corgi faces and full-body closeups",
+    "hero animal balloons with ears, paws, bows and star tassels",
+    "night balloon faces remain readable",
+    "390x844 portrait: all three friend buttons and balloon view accessible",
+    "844x390 landscape: friend buttons moved left clear of animal body"
+  ],
+  "interactionChecks": {
+    "friendSelection": true,
+    "followCamera": true,
+    "dragDisablesFollow": true,
+    "pauseTimeBefore": 317.01400000005316,
+    "pauseTimeAfter": 317.01400000005316,
+    "previewReturn": {
+      "selectedAnimal": "bear",
+      "phase": "night",
+      "paused": true,
+      "portraitFollow": true
+    }
+  },
+  "consoleWarningsOrErrors": [],
+  "physicalPhoneVerified": false
+}

@@ -1,0 +1,1459 @@
+{
+  "url": "https://little-bloom-island.vercel.app/#desert",
+  "view": "moon",
+  "phase": "night",
+  "viewport": {
+    "width": 1030,
+    "height": 920
+  },
+  "errors": [],
+  "state": {
+    "world": "desert-shores",
+    "mode": "moon",
+    "following": false,
+    "phase": "night",
+    "running": true,
+    "paused": false,
+    "previewing": false,
+    "time": 4.8002000000000065,
+    "env": {
+      "night": 0.9972495754571481,
+      "daylight": 0.18225534812513852,
+      "dusk": 0,
+      "preview": false
+    },
+    "scenery": {
+      "terrain": {
+        "cliffs": 19,
+        "seaStacks": 4,
+        "sandRipples": 54,
+        "paths": 6
+      },
+      "nature": {
+        "palms": 41,
+        "shrubs": 34,
+        "grasses": 113,
+        "shells": 26,
+        "corals": 0
+      },
+      "water": {
+        "waterRadius": 3.208,
+        "fish": 42,
+        "schools": 6,
+        "grassClusters": 64,
+        "gardenZones": {
+          "cove": 30,
+          "oasis": 18,
+          "sea": 16
+        },
+        "coralClusters": 14,
+        "seabedStones": 18,
+        "drawCalls": 6,
+        "triangles": 74768,
+        "surfaceAlphaRange": [
+          0.18,
+          0.66
+        ],
+        "reflectionPasses": 0
+      },
+      "landmarks": {
+        "landmarks": 3,
+        "treasury": {
+          "lowerColumns": 6,
+          "upperColumns": 10,
+          "corniceDentils": 31
+        },
+        "kasbah": {
+          "cornerTowers": 4,
+          "courtyards": 1,
+          "fountains": 1,
+          "pottery": 9,
+          "awnings": 2
+        },
+        "arch": {
+          "stoneBridges": 1,
+          "actualOpening": true,
+          "viewingPlatforms": 1
+        },
+        "drawCalls": 6,
+        "triangles": 53264,
+        "vertices": 59847,
+        "siteBudgets": {
+          "treasury": {
+            "triangles": 18992,
+            "vertices": 22766,
+            "drawCalls": 2,
+            "batching": {
+              "before": 480,
+              "batched": 478,
+              "remainingStatic": 2,
+              "prunedGroups": 0,
+              "sourceVertices": 22766,
+              "mergedVertices": 22766
+            }
+          },
+          "kasbah": {
+            "triangles": 26004,
+            "vertices": 25375,
+            "drawCalls": 2,
+            "batching": {
+              "before": 710,
+              "batched": 708,
+              "remainingStatic": 2,
+              "prunedGroups": 0,
+              "sourceVertices": 25375,
+              "mergedVertices": 25375
+            }
+          },
+          "arch": {
+            "triangles": 8268,
+            "vertices": 11706,
+            "drawCalls": 2,
+            "batching": {
+              "before": 57,
+              "batched": 55,
+              "remainingStatic": 2,
+              "prunedGroups": 0,
+              "sourceVertices": 11650,
+              "mergedVertices": 11650
+            }
+          }
+        }
+      },
+      "beach": {
+        "tents": 1,
+        "canoes": 1,
+        "paddles": 1,
+        "animals": 2,
+        "chairs": 2,
+        "stools": 1,
+        "fireLights": 1,
+        "embers": 12,
+        "staticMeshes": 1,
+        "meshes": 19,
+        "triangles": 35735,
+        "drawCalls": 20
+      },
+      "caravan": {
+        "camels": 3,
+        "canopies": 1,
+        "wells": 1,
+        "pillarFragments": 3,
+        "hayTroughs": 2,
+        "lanterns": 1,
+        "meshes": 8,
+        "triangles": 31992,
+        "drawCalls": 8
+      },
+      "cacti": {
+        "clusters": 26,
+        "cacti": 45,
+        "flowers": 30,
+        "drawCalls": 1,
+        "triangles": 56144
+      },
+      "roaming": {
+        "animals": 1,
+        "species": "baby-dromedary",
+        "name": "小沙",
+        "drawCalls": 6,
+        "meshes": 6,
+        "triangles": 8984,
+        "speed": 0.105,
+        "cycleSeconds": 394.782868982763,
+        "route": {
+          "closed": true,
+          "routeType": "connected-mainland-tour",
+          "fullCircumnavigation": false,
+          "reason": "西侧大陆之间有海峡，沿东部陆桥往返连接正面和背面的景点。",
+          "length": 41.45220124319011,
+          "samples": 3074,
+          "gridNodes": 26624,
+          "connectedDryNodes": 3128,
+          "dryComponents": 72,
+          "checkpoints": [
+            {
+              "name": "商队远行",
+              "lat": 0.9738834951456312,
+              "lon": 0.8344855486097886,
+              "requested": [
+                0.98,
+                0.83
+              ]
+            },
+            {
+              "name": "北部沙丘",
+              "lat": 1.1602912621359225,
+              "lon": 0.5645049299419158,
+              "requested": [
+                1.16,
+                0.56
+              ]
+            },
+            {
+              "name": "临海沙坡",
+              "lat": -0.12126213592233004,
+              "lon": 0.7363107781851079,
+              "requested": [
+                -0.12,
+                0.74
+              ]
+            },
+            {
+              "name": "赤陶城外",
+              "lat": 0.15834951456310686,
+              "lon": 1.5217089415825562,
+              "requested": [
+                0.15,
+                1.51
+              ]
+            },
+            {
+              "name": "东部沙脊",
+              "lat": 0.4146601941747574,
+              "lon": 1.8898643306751097,
+              "requested": [
+                0.41,
+                1.89
+              ]
+            },
+            {
+              "name": "月泉南岸",
+              "lat": 0.018543689320388523,
+              "lon": 2.6261751088602177,
+              "requested": [
+                -0.01,
+                2.6
+              ]
+            },
+            {
+              "name": "星球背面的海岸",
+              "lat": 0.4146601941747574,
+              "lon": -2.675262494072558,
+              "requested": [
+                0.42,
+                -2.68
+              ]
+            },
+            {
+              "name": "月泉北部沙丘",
+              "lat": 0.8573786407766992,
+              "lon": 2.8716120349219203,
+              "requested": [
+                0.86,
+                2.89
+              ]
+            },
+            {
+              "name": "背面的高地",
+              "lat": 0.9505825242718449,
+              "lon": 2.233476027161494,
+              "requested": [
+                0.96,
+                2.24
+              ]
+            },
+            {
+              "name": "东部归途",
+              "lat": 0.9272815533980585,
+              "lon": 1.4235341711578746,
+              "requested": [
+                0.95,
+                1.47
+              ]
+            }
+          ],
+          "omittedWaypoints": [
+            {
+              "name": "玫瑰石窟外",
+              "nearestConnectedLandDistance": 3.1800265151400864
+            },
+            {
+              "name": "风雕石桥外",
+              "nearestConnectedLandDistance": 3.440001671528758
+            },
+            {
+              "name": "西侧海岸",
+              "nearestConnectedLandDistance": 3.745283154576822
+            }
+          ],
+          "latitude": [
+            -0.24611077639342993,
+            1.1572048161576831
+          ],
+          "longitudeOctants": [
+            0,
+            4,
+            5,
+            6,
+            7
+          ],
+          "waterRadius": 3.208,
+          "footprintRadius": 0.165,
+          "minCenterAboveWater": 0.05112339018779588,
+          "minFootprintAboveWater": 0.02980353024331306,
+          "minObstacleExtraClearance": 0.006648340073856396,
+          "maxFootprintSlope": 0.699426944189365,
+          "obstacleCounts": {
+            "site": 5,
+            "lamp": 2,
+            "cliff": 8,
+            "palm": 26
+          }
+        }
+      },
+      "mummies": {
+        "capacity": 4,
+        "minNightVisitors": 2,
+        "maxNightVisitors": 4,
+        "safeSpots": 8,
+        "zones": 4,
+        "drawCalls": 4,
+        "pointLights": 0,
+        "sharedModels": 1,
+        "haloDrawCalls": 1,
+        "bandageEmission": 0.235,
+        "modelTriangles": 11952,
+        "maxBodyTriangles": 47808,
+        "groundTriangles": 2560,
+        "sparkles": 12,
+        "reference": "Round head, layered cream bandages, dark face opening and gentle bright eyes",
+        "rejectedSpots": []
+      },
+      "oasis": true,
+      "boats": 1,
+      "gulls": 5,
+      "worlds": 5
+    },
+    "worldState": {
+      "time": 4.8002000000000065,
+      "night": 0.9972495754571481,
+      "water": {
+        "waterRadius": 3.208,
+        "fish": 42,
+        "schools": 6,
+        "grassClusters": 64,
+        "gardenZones": {
+          "cove": 30,
+          "oasis": 18,
+          "sea": 16
+        },
+        "coralClusters": 14,
+        "seabedStones": 18,
+        "drawCalls": 6,
+        "triangles": 74768,
+        "surfaceAlphaRange": [
+          0.18,
+          0.66
+        ],
+        "reflectionPasses": 0,
+        "time": 4.8002000000000065,
+        "night": 0.9972495754571481,
+        "daylight": 0.18225534812513852,
+        "dusk": 0,
+        "disposed": false,
+        "minFishBedClearance": 0.060750210339364105,
+        "minFishSurfaceClearance": 0.05699525645799883,
+        "minPlantSurfaceClearance": 0.03793953488372093,
+        "schoolCenters": [
+          {
+            "normal": [
+              0,
+              -0.24740395925452294,
+              0.9689124217106447
+            ],
+            "minRouteDepth": 0.2059349818855516
+          },
+          {
+            "normal": [
+              0.2607471887205536,
+              -0.470625888171158,
+              0.8429247753847531
+            ],
+            "minRouteDepth": 0.16359337343768043
+          },
+          {
+            "normal": [
+              -0.3936780709255353,
+              -0.5226872289306592,
+              0.7561849226116174
+            ],
+            "minRouteDepth": 0.21799999999999997
+          },
+          {
+            "normal": [
+              0.3110916483869829,
+              0.3709204694129827,
+              -0.8750085666291059
+            ],
+            "minRouteDepth": 0.15799999999999992
+          },
+          {
+            "normal": [
+              0.8948224111172209,
+              -0.3709204694129827,
+              0.24841670220179576
+            ],
+            "minRouteDepth": 0.21799999999999997
+          },
+          {
+            "normal": [
+              -0.6698177797492975,
+              -0.5396320487339692,
+              0.5100405806510897
+            ],
+            "minRouteDepth": 0.21799999999999997
+          }
+        ],
+        "fishPositions": [
+          [
+            0.15264278815964633,
+            -0.7279112259160772,
+            3.0434640320267845
+          ],
+          [
+            0.03309068704010088,
+            -0.6770055190769179,
+            3.0616121571385864
+          ],
+          [
+            -0.11120376506938913,
+            -0.6963675466085267,
+            3.044526084441242
+          ],
+          [
+            -0.17157724401689262,
+            -0.7752894869396245,
+            3.0232841821591716
+          ],
+          [
+            -0.1031927501405002,
+            -0.855463397547165,
+            3.015522940902248
+          ],
+          [
+            0.04353132074616356,
+            -0.8712797678433937,
+            3.008242281827935
+          ],
+          [
+            0.15679806987490807,
+            -0.8120622118639146,
+            3.0115813632068438
+          ],
+          [
+            0.884034540434292,
+            -1.388852693158877,
+            2.6699143608673723
+          ],
+          [
+            0.7382007880964163,
+            -1.3937852404694808,
+            2.700002183663196
+          ],
+          [
+            0.6518736129683765,
+            -1.4587792727178401,
+            2.6848175948329245
+          ],
+          [
+            0.6909905962107007,
+            -1.5389047754630796,
+            2.6423545634910464
+          ],
+          [
+            0.8223233097884274,
+            -1.5647156706733636,
+            2.5880812886142843
+          ],
+          [
+            0.945532912963879,
+            -1.5159556336354407,
+            2.5623574181037703
+          ],
+          [
+            0.9737359864035612,
+            -1.439229212304266,
+            2.6007972211790653
+          ],
+          [
+            -1.3177811639626043,
+            -1.5545369060371523,
+            2.3743412177157825
+          ],
+          [
+            -1.3815065794742882,
+            -1.6094279411694385,
+            2.292668964838314
+          ],
+          [
+            -1.337453124756363,
+            -1.689706501413729,
+            2.2743659142341257
+          ],
+          [
+            -1.2109460806502765,
+            -1.7262389794851818,
+            2.3207953795486036
+          ],
+          [
+            -1.0953824120567426,
+            -1.6872890116138204,
+            2.391441620578118
+          ],
+          [
+            -1.085085183936301,
+            -1.6131476998251437,
+            2.447820345447444
+          ],
+          [
+            -1.1878573487589703,
+            -1.5591903792968713,
+            2.4482990733897365
+          ],
+          [
+            1.116030085082817,
+            1.1916283693129608,
+            -2.6622601286159635
+          ],
+          [
+            1.1195113078983294,
+            1.1119213160116421,
+            -2.704429738808791
+          ],
+          [
+            1.012026782888618,
+            1.0677815379525042,
+            -2.7702431947589794
+          ],
+          [
+            0.8709317463587019,
+            1.0885194832273164,
+            -2.7988206459794553
+          ],
+          [
+            0.8083336012919634,
+            1.1643777226779262,
+            -2.7843430694378
+          ],
+          [
+            0.8725025947369363,
+            1.2412145724388832,
+            -2.743444548786021
+          ],
+          [
+            1.010051906411765,
+            1.2534323399171914,
+            -2.6889943869408084
+          ],
+          [
+            2.7394423291067467,
+            -1.1953528649628407,
+            0.925496762676755
+          ],
+          [
+            2.756914626360175,
+            -1.255096324271012,
+            0.8154286177340171
+          ],
+          [
+            2.7937148835236862,
+            -1.2378569083747086,
+            0.6727664795164899
+          ],
+          [
+            2.8342791625120083,
+            -1.1624277693335512,
+            0.6091379889079576
+          ],
+          [
+            2.859235314383937,
+            -1.0897301363105116,
+            0.674302662735768
+          ],
+          [
+            2.833059446754288,
+            -1.0676570951035937,
+            0.8159243642278522
+          ],
+          [
+            2.7704591653428987,
+            -1.111094361595255,
+            0.9247728560164203
+          ],
+          [
+            -2.1013671385067534,
+            -1.7710277244489372,
+            1.5120798596769613
+          ],
+          [
+            -2.0082507522880624,
+            -1.7654739226745362,
+            1.6289368810757152
+          ],
+          [
+            -1.978286642397141,
+            -1.6994872656636928,
+            1.7179224273264633
+          ],
+          [
+            -2.044229875618705,
+            -1.6316126051394526,
+            1.7214701848724607
+          ],
+          [
+            -2.1473854604522886,
+            -1.6046367090456657,
+            1.6285557461494038
+          ],
+          [
+            -2.201673709002646,
+            -1.6332764593424822,
+            1.5036779287439117
+          ],
+          [
+            -2.1792484206921126,
+            -1.7054718068599086,
+            1.4506981603153948
+          ]
+        ]
+      },
+      "roaming": {
+        "name": "小沙",
+        "time": 4.8002000000000065,
+        "night": 0.9972495754571481,
+        "disposed": false,
+        "location": "商队远行",
+        "progress": 0.012159088899598635,
+        "distance": 0.5040210000000016,
+        "speed": 0.105,
+        "lat": 1.1140398245627274,
+        "lon": 0.6885463165213892,
+        "position": [
+          0.9336969326604235,
+          2.990663715717395,
+          1.1341003371638765
+        ],
+        "quaternion": [
+          -0.05687016519892444,
+          -0.7556093284497493,
+          -0.12895588045501766,
+          0.6396801606787859
+        ],
+        "route": {
+          "closed": true,
+          "routeType": "connected-mainland-tour",
+          "fullCircumnavigation": false,
+          "reason": "西侧大陆之间有海峡，沿东部陆桥往返连接正面和背面的景点。",
+          "length": 41.45220124319011,
+          "samples": 3074,
+          "gridNodes": 26624,
+          "connectedDryNodes": 3128,
+          "dryComponents": 72,
+          "checkpoints": [
+            {
+              "name": "商队远行",
+              "lat": 0.9738834951456312,
+              "lon": 0.8344855486097886,
+              "requested": [
+                0.98,
+                0.83
+              ]
+            },
+            {
+              "name": "北部沙丘",
+              "lat": 1.1602912621359225,
+              "lon": 0.5645049299419158,
+              "requested": [
+                1.16,
+                0.56
+              ]
+            },
+            {
+              "name": "临海沙坡",
+              "lat": -0.12126213592233004,
+              "lon": 0.7363107781851079,
+              "requested": [
+                -0.12,
+                0.74
+              ]
+            },
+            {
+              "name": "赤陶城外",
+              "lat": 0.15834951456310686,
+              "lon": 1.5217089415825562,
+              "requested": [
+                0.15,
+                1.51
+              ]
+            },
+            {
+              "name": "东部沙脊",
+              "lat": 0.4146601941747574,
+              "lon": 1.8898643306751097,
+              "requested": [
+                0.41,
+                1.89
+              ]
+            },
+            {
+              "name": "月泉南岸",
+              "lat": 0.018543689320388523,
+              "lon": 2.6261751088602177,
+              "requested": [
+                -0.01,
+                2.6
+              ]
+            },
+            {
+              "name": "星球背面的海岸",
+              "lat": 0.4146601941747574,
+              "lon": -2.675262494072558,
+              "requested": [
+                0.42,
+                -2.68
+              ]
+            },
+            {
+              "name": "月泉北部沙丘",
+              "lat": 0.8573786407766992,
+              "lon": 2.8716120349219203,
+              "requested": [
+                0.86,
+                2.89
+              ]
+            },
+            {
+              "name": "背面的高地",
+              "lat": 0.9505825242718449,
+              "lon": 2.233476027161494,
+              "requested": [
+                0.96,
+                2.24
+              ]
+            },
+            {
+              "name": "东部归途",
+              "lat": 0.9272815533980585,
+              "lon": 1.4235341711578746,
+              "requested": [
+                0.95,
+                1.47
+              ]
+            }
+          ],
+          "omittedWaypoints": [
+            {
+              "name": "玫瑰石窟外",
+              "nearestConnectedLandDistance": 3.1800265151400864
+            },
+            {
+              "name": "风雕石桥外",
+              "nearestConnectedLandDistance": 3.440001671528758
+            },
+            {
+              "name": "西侧海岸",
+              "nearestConnectedLandDistance": 3.745283154576822
+            }
+          ],
+          "latitude": [
+            -0.24611077639342993,
+            1.1572048161576831
+          ],
+          "longitudeOctants": [
+            0,
+            4,
+            5,
+            6,
+            7
+          ],
+          "waterRadius": 3.208,
+          "footprintRadius": 0.165,
+          "minCenterAboveWater": 0.05112339018779588,
+          "minFootprintAboveWater": 0.02980353024331306,
+          "minObstacleExtraClearance": 0.006648340073856396,
+          "maxFootprintSlope": 0.699426944189365,
+          "obstacleCounts": {
+            "site": 5,
+            "lamp": 2,
+            "cliff": 8,
+            "palm": 26
+          }
+        }
+      },
+      "mummies": {
+        "time": 4.8002000000000065,
+        "night": 0.9972495754571481,
+        "preview": false,
+        "visible": true,
+        "visibleCount": 3,
+        "stats": {
+          "capacity": 4,
+          "minNightVisitors": 2,
+          "maxNightVisitors": 4,
+          "safeSpots": 8,
+          "zones": 4,
+          "drawCalls": 4,
+          "pointLights": 0,
+          "sharedModels": 1,
+          "haloDrawCalls": 1,
+          "bandageEmission": 0.235,
+          "modelTriangles": 11952,
+          "maxBodyTriangles": 47808,
+          "groundTriangles": 2560,
+          "sparkles": 12,
+          "reference": "Round head, layered cream bandages, dark face opening and gentle bright eyes",
+          "rejectedSpots": []
+        },
+        "actors": [
+          {
+            "id": 0,
+            "spot": "cove-0",
+            "label": "海湾月光沙地",
+            "visible": true,
+            "alpha": 1,
+            "opacity": 1,
+            "cycle": 0,
+            "phase": 0.2505911764705883,
+            "mint": false,
+            "position": [
+              -0.35958300772809637,
+              0.1944616813833978,
+              3.2641437877931487
+            ],
+            "up": [
+              -6.857964408273585e-15,
+              0.11971220728893227,
+              0.9928086358538648
+            ],
+            "quaternion": [
+              0.6532075154458825,
+              0.07672277501558976,
+              0.05751769809136798,
+              0.7510827331028151
+            ],
+            "size": 0.87
+          },
+          {
+            "id": 1,
+            "spot": "treasury-1",
+            "label": "玫瑰石城前",
+            "visible": true,
+            "alpha": 1,
+            "opacity": 1,
+            "cycle": 0,
+            "phase": 0.5005911764705884,
+            "mint": true,
+            "position": [
+              -2.054227699747742,
+              1.2307748395053917,
+              2.5915747353119096
+            ],
+            "up": [
+              -0.062326359781850305,
+              0.39187372415500626,
+              0.9179054467608466
+            ],
+            "quaternion": [
+              0.5410135790686874,
+              -0.12598432026655668,
+              -0.06791338491296921,
+              0.8287460590916409
+            ],
+            "size": 0.94
+          },
+          {
+            "id": 2,
+            "spot": "kasbah-1",
+            "label": "沙色小巷外",
+            "visible": true,
+            "alpha": 0.7411144572503134,
+            "opacity": 0.7411144572503134,
+            "cycle": 0,
+            "phase": 0.7505911764705884,
+            "mint": false,
+            "position": [
+              3.196946295155366,
+              0.5606389677844933,
+              1.0125803679948255
+            ],
+            "up": [
+              0.9717411799457502,
+              0.0892913179400897,
+              0.2185089008213691
+            ],
+            "quaternion": [
+              0.5238090309663473,
+              0.4758206335916413,
+              -0.4201018902302735,
+              0.5680961411165332
+            ],
+            "size": 0.86
+          },
+          {
+            "id": 3,
+            "spot": "caravan-1",
+            "label": "驼铃驿站旁",
+            "visible": false,
+            "alpha": 0.0005132277480006294,
+            "opacity": 0.0005132277480006294,
+            "cycle": 1,
+            "phase": 0.0005911764705883726,
+            "mint": true,
+            "position": [
+              1.1518465509685747,
+              2.090866514941312,
+              2.6053317335967496
+            ],
+            "up": [
+              -0.18092962142959526,
+              0.3149481690726474,
+              0.9317038815455964
+            ],
+            "quaternion": [
+              0.5846279979465008,
+              -0.035743562603390275,
+              0.08932066197501612,
+              0.8055770112744215
+            ],
+            "size": 0.9
+          }
+        ],
+        "spots": [
+          {
+            "id": "cove-0",
+            "label": "海湾月光沙地",
+            "lat": 0.05825901726837387,
+            "lon": -0.11316702120538377,
+            "position": [
+              -0.37,
+              0.1911015075546593,
+              3.255534551162119
+            ],
+            "up": [
+              -6.857964408273585e-15,
+              0.11971220728893227,
+              0.9928086358538648
+            ],
+            "minDry": 0.06750907350717616,
+            "minField": 0.5165070684295605,
+            "maxRipple": 2.2204460492503135e-15,
+            "buildingDistance": 2.395132345203145,
+            "lift": 0.007000000000002221
+          },
+          {
+            "id": "cove-1",
+            "label": "海湾月光沙地",
+            "lat": 0.03415374152096649,
+            "lon": -0.04590795961477605,
+            "position": [
+              -0.15,
+              0.11167681668634999,
+              3.265111527745232
+            ],
+            "up": [
+              1.9159897452971436e-15,
+              0.11971220728890837,
+              0.9928086358538675
+            ],
+            "minDry": 0.06012773877140987,
+            "minField": 0.4785034179831206,
+            "maxRipple": 2.220446049250313e-15,
+            "buildingDistance": 2.5794360999233406,
+            "lift": 0.007000000000002221
+          },
+          {
+            "id": "treasury-0",
+            "label": "玫瑰石城前",
+            "lat": 0.35959416141431355,
+            "lon": -0.5382043604383577,
+            "position": [
+              -1.581816181224615,
+              1.1601113670420782,
+              2.6496464969636593
+            ],
+            "up": [
+              -0.33277642866834983,
+              0.3752734166279671,
+              0.8651183221358285
+            ],
+            "minDry": 0.08607293185598675,
+            "minField": 0.6684828145637638,
+            "maxRipple": 0.014755097969211487,
+            "buildingDistance": 0.9764466382873764,
+            "lift": 0.021755097969211486
+          },
+          {
+            "id": "treasury-1",
+            "label": "玫瑰石城前",
+            "lat": 0.3538858843524378,
+            "lon": -0.6707682885467854,
+            "position": [
+              -2.053256259059879,
+              1.2203449421887458,
+              2.587576743187904
+            ],
+            "up": [
+              -0.062326359781850305,
+              0.39187372415500626,
+              0.9179054467608466
+            ],
+            "minDry": 0.24073967093231552,
+            "minField": 0.5991115734535593,
+            "maxRipple": 0.016641982269503863,
+            "buildingDistance": 0.9990731337538764,
+            "lift": 0.007758159196090347
+          },
+          {
+            "id": "kasbah-0",
+            "label": "沙色小巷外",
+            "lat": 0.16458415337949728,
+            "lon": 1.1419307205908389,
+            "position": [
+              2.9869711489447477,
+              0.5454968875087277,
+              1.3657888011816879
+            ],
+            "up": [
+              0.7886537837392944,
+              -0.1351649529721703,
+              0.5997963361689743
+            ],
+            "minDry": 0.09034945041046916,
+            "minField": 0.25450330321702325,
+            "maxRipple": 0.006995340058977284,
+            "buildingDistance": 0.9840898563387928,
+            "lift": 0.013995340058977283
+          },
+          {
+            "id": "kasbah-1",
+            "label": "沙色小巷外",
+            "lat": 0.16408012128408114,
+            "lon": 1.2676693493211113,
+            "position": [
+              3.192449261197003,
+              0.553819306553889,
+              0.9984888599161693
+            ],
+            "up": [
+              0.9717411799457502,
+              0.0892913179400897,
+              0.2185089008213691
+            ],
+            "minDry": 0.1629056742568986,
+            "minField": 0.23580589206753055,
+            "maxRipple": 0.02639005317971721,
+            "buildingDistance": 1.0142214185512846,
+            "lift": 0.007
+          },
+          {
+            "id": "caravan-0",
+            "label": "驼铃驿站旁",
+            "lat": 0.6118926203977131,
+            "lon": 0.2879242781444133,
+            "position": [
+              0.7658454238859828,
+              1.892588102752771,
+              2.585973558444563
+            ],
+            "up": [
+              0.08667540855498423,
+              0.5248283373385317,
+              0.8467836736016461
+            ],
+            "minDry": 0.08542518611284011,
+            "minField": 0.7268078643031433,
+            "maxRipple": 0.025329401418253468,
+            "buildingDistance": 0.9919340631111228,
+            "lift": 0.03232940141825347
+          },
+          {
+            "id": "caravan-1",
+            "label": "驼铃驿站旁",
+            "lat": 0.6341536082186834,
+            "lon": 0.421623039887001,
+            "position": [
+              1.1643795395577603,
+              2.0926407126824875,
+              2.596044278078063
+            ],
+            "up": [
+              -0.18092962142959526,
+              0.3149481690726474,
+              0.9317038815455964
+            ],
+            "minDry": 0.23923723345830483,
+            "minField": 0.6813618626414542,
+            "maxRipple": 0.02357070794814442,
+            "buildingDistance": 1.0017872211443448,
+            "lift": 0.007546802250903866
+          }
+        ]
+      },
+      "stats": {
+        "terrain": {
+          "cliffs": 19,
+          "seaStacks": 4,
+          "sandRipples": 54,
+          "paths": 6
+        },
+        "nature": {
+          "palms": 41,
+          "shrubs": 34,
+          "grasses": 113,
+          "shells": 26,
+          "corals": 0
+        },
+        "water": {
+          "waterRadius": 3.208,
+          "fish": 42,
+          "schools": 6,
+          "grassClusters": 64,
+          "gardenZones": {
+            "cove": 30,
+            "oasis": 18,
+            "sea": 16
+          },
+          "coralClusters": 14,
+          "seabedStones": 18,
+          "drawCalls": 6,
+          "triangles": 74768,
+          "surfaceAlphaRange": [
+            0.18,
+            0.66
+          ],
+          "reflectionPasses": 0
+        },
+        "landmarks": {
+          "landmarks": 3,
+          "treasury": {
+            "lowerColumns": 6,
+            "upperColumns": 10,
+            "corniceDentils": 31
+          },
+          "kasbah": {
+            "cornerTowers": 4,
+            "courtyards": 1,
+            "fountains": 1,
+            "pottery": 9,
+            "awnings": 2
+          },
+          "arch": {
+            "stoneBridges": 1,
+            "actualOpening": true,
+            "viewingPlatforms": 1
+          },
+          "drawCalls": 6,
+          "triangles": 53264,
+          "vertices": 59847,
+          "siteBudgets": {
+            "treasury": {
+              "triangles": 18992,
+              "vertices": 22766,
+              "drawCalls": 2,
+              "batching": {
+                "before": 480,
+                "batched": 478,
+                "remainingStatic": 2,
+                "prunedGroups": 0,
+                "sourceVertices": 22766,
+                "mergedVertices": 22766
+              }
+            },
+            "kasbah": {
+              "triangles": 26004,
+              "vertices": 25375,
+              "drawCalls": 2,
+              "batching": {
+                "before": 710,
+                "batched": 708,
+                "remainingStatic": 2,
+                "prunedGroups": 0,
+                "sourceVertices": 25375,
+                "mergedVertices": 25375
+              }
+            },
+            "arch": {
+              "triangles": 8268,
+              "vertices": 11706,
+              "drawCalls": 2,
+              "batching": {
+                "before": 57,
+                "batched": 55,
+                "remainingStatic": 2,
+                "prunedGroups": 0,
+                "sourceVertices": 11650,
+                "mergedVertices": 11650
+              }
+            }
+          }
+        },
+        "beach": {
+          "tents": 1,
+          "canoes": 1,
+          "paddles": 1,
+          "animals": 2,
+          "chairs": 2,
+          "stools": 1,
+          "fireLights": 1,
+          "embers": 12,
+          "staticMeshes": 1,
+          "meshes": 19,
+          "triangles": 35735,
+          "drawCalls": 20
+        },
+        "caravan": {
+          "camels": 3,
+          "canopies": 1,
+          "wells": 1,
+          "pillarFragments": 3,
+          "hayTroughs": 2,
+          "lanterns": 1,
+          "meshes": 8,
+          "triangles": 31992,
+          "drawCalls": 8
+        },
+        "cacti": {
+          "clusters": 26,
+          "cacti": 45,
+          "flowers": 30,
+          "drawCalls": 1,
+          "triangles": 56144
+        },
+        "roaming": {
+          "animals": 1,
+          "species": "baby-dromedary",
+          "name": "小沙",
+          "drawCalls": 6,
+          "meshes": 6,
+          "triangles": 8984,
+          "speed": 0.105,
+          "cycleSeconds": 394.782868982763,
+          "route": {
+            "closed": true,
+            "routeType": "connected-mainland-tour",
+            "fullCircumnavigation": false,
+            "reason": "西侧大陆之间有海峡，沿东部陆桥往返连接正面和背面的景点。",
+            "length": 41.45220124319011,
+            "samples": 3074,
+            "gridNodes": 26624,
+            "connectedDryNodes": 3128,
+            "dryComponents": 72,
+            "checkpoints": [
+              {
+                "name": "商队远行",
+                "lat": 0.9738834951456312,
+                "lon": 0.8344855486097886,
+                "requested": [
+                  0.98,
+                  0.83
+                ]
+              },
+              {
+                "name": "北部沙丘",
+                "lat": 1.1602912621359225,
+                "lon": 0.5645049299419158,
+                "requested": [
+                  1.16,
+                  0.56
+                ]
+              },
+              {
+                "name": "临海沙坡",
+                "lat": -0.12126213592233004,
+                "lon": 0.7363107781851079,
+                "requested": [
+                  -0.12,
+                  0.74
+                ]
+              },
+              {
+                "name": "赤陶城外",
+                "lat": 0.15834951456310686,
+                "lon": 1.5217089415825562,
+                "requested": [
+                  0.15,
+                  1.51
+                ]
+              },
+              {
+                "name": "东部沙脊",
+                "lat": 0.4146601941747574,
+                "lon": 1.8898643306751097,
+                "requested": [
+                  0.41,
+                  1.89
+                ]
+              },
+              {
+                "name": "月泉南岸",
+                "lat": 0.018543689320388523,
+                "lon": 2.6261751088602177,
+                "requested": [
+                  -0.01,
+                  2.6
+                ]
+              },
+              {
+                "name": "星球背面的海岸",
+                "lat": 0.4146601941747574,
+                "lon": -2.675262494072558,
+                "requested": [
+                  0.42,
+                  -2.68
+                ]
+              },
+              {
+                "name": "月泉北部沙丘",
+                "lat": 0.8573786407766992,
+                "lon": 2.8716120349219203,
+                "requested": [
+                  0.86,
+                  2.89
+                ]
+              },
+              {
+                "name": "背面的高地",
+                "lat": 0.9505825242718449,
+                "lon": 2.233476027161494,
+                "requested": [
+                  0.96,
+                  2.24
+                ]
+              },
+              {
+                "name": "东部归途",
+                "lat": 0.9272815533980585,
+                "lon": 1.4235341711578746,
+                "requested": [
+                  0.95,
+                  1.47
+                ]
+              }
+            ],
+            "omittedWaypoints": [
+              {
+                "name": "玫瑰石窟外",
+                "nearestConnectedLandDistance": 3.1800265151400864
+              },
+              {
+                "name": "风雕石桥外",
+                "nearestConnectedLandDistance": 3.440001671528758
+              },
+              {
+                "name": "西侧海岸",
+                "nearestConnectedLandDistance": 3.745283154576822
+              }
+            ],
+            "latitude": [
+              -0.24611077639342993,
+              1.1572048161576831
+            ],
+            "longitudeOctants": [
+              0,
+              4,
+              5,
+              6,
+              7
+            ],
+            "waterRadius": 3.208,
+            "footprintRadius": 0.165,
+            "minCenterAboveWater": 0.05112339018779588,
+            "minFootprintAboveWater": 0.02980353024331306,
+            "minObstacleExtraClearance": 0.006648340073856396,
+            "maxFootprintSlope": 0.699426944189365,
+            "obstacleCounts": {
+              "site": 5,
+              "lamp": 2,
+              "cliff": 8,
+              "palm": 26
+            }
+          }
+        },
+        "mummies": {
+          "capacity": 4,
+          "minNightVisitors": 2,
+          "maxNightVisitors": 4,
+          "safeSpots": 8,
+          "zones": 4,
+          "drawCalls": 4,
+          "pointLights": 0,
+          "sharedModels": 1,
+          "haloDrawCalls": 1,
+          "bandageEmission": 0.235,
+          "modelTriangles": 11952,
+          "maxBodyTriangles": 47808,
+          "groundTriangles": 2560,
+          "sparkles": 12,
+          "reference": "Round head, layered cream bandages, dark face opening and gentle bright eyes",
+          "rejectedSpots": []
+        },
+        "oasis": true,
+        "boats": 1,
+        "gulls": 5,
+        "worlds": 5
+      }
+    },
+    "render": {
+      "calls": 44,
+      "triangles": 559095,
+      "width": 1030,
+      "height": 859,
+      "samples": 2
+    },
+    "performance": {
+      "pixelRatio": 1,
+      "maxPixelRatio": 1,
+      "meanFrameMs": 16.665753424657563,
+      "simulationFrames": 282,
+      "renderFrames": 282,
+      "shadowRefreshes": 38
+    },
+    "fairySky": {
+      "variant": "night",
+      "active": true,
+      "reducedMotion": false,
+      "width": 1030,
+      "height": 859,
+      "dpr": 1,
+      "stars": 34,
+      "dust": 1650,
+      "moon": true,
+      "clouds": 14,
+      "visibility": 1,
+      "nightVisibility": 1,
+      "duskVisibility": 0,
+      "weatherDim": 1,
+      "meteors": 0,
+      "renderedFrames": 104,
+      "elapsed": 4.8002000000000065,
+      "cachedCloudSprites": 6
+    },
+    "camera": [
+      -0.1543063438863469,
+      -0.4904916105871191,
+      3.779635263411273
+    ],
+    "cameraTarget": [
+      -0.369492389310176,
+      0.20455671150350865,
+      3.4339434992428783
+    ],
+    "cameraUp": [
+      -6.857964408273585e-15,
+      0.11971220728893227,
+      0.9928086358538648
+    ],
+    "cameraAspect": 1.19906868451688,
+    "planetRotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "lowQuality": false
+  },
+  "screenshot": "C:\\Users\\chenyahan\\Documents\\Codex\\2026-09-18\\file-c-users-chenyahan-documents-codex\\work\\desert-polish\\moon-night-1030x920.png",
+  "physicalPhoneVerified": false,
+  "method": "Isolated headless Chromium with real WebGL rendering; not a physical-device performance measurement."
+}

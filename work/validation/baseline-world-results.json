@@ -1,0 +1,125 @@
+{
+  "passed": 19,
+  "results": [
+    {
+      "name": "Daily weather is stable on reload, varies by date, and changes exactly at scheduled minutes",
+      "passed": true
+    },
+    {
+      "name": "Night, noon and sunrise have different light levels",
+      "passed": true
+    },
+    {
+      "name": "Random encounters respect weather, avoid immediate repeats and have irregular delays",
+      "passed": true
+    },
+    {
+      "name": "Storage restores today, rolls over at midnight, clamps growth and survives corrupt / denied storage",
+      "passed": true
+    },
+    {
+      "nature": {
+        "grassBlades": 14967,
+        "grassTriangles": 89802,
+        "waterVertices": 10449
+      }
+    },
+    {
+      "name": "Meadow has broad instanced blades, dry anchored roots, no grass shadow pass and adjustable quality",
+      "passed": true
+    },
+    {
+      "name": "Wind travels in space and time; multi-wave water moves, damps at shore and reacts to stronger wind",
+      "passed": true
+    },
+    {
+      "name": "Ocean redesign keeps houses and the walking loop on dry land",
+      "passed": true
+    },
+    {
+      "name": "World has populated terrain, water basins, paths, residents and instanced plants",
+      "passed": false,
+      "error": "Expected values to be strictly equal:\n\n3 !== 4\n"
+    },
+    {
+      "landscape": {
+        "flowers": 1547,
+        "shrubs": 116,
+        "fencePosts": 33,
+        "rocks": 41
+      }
+    },
+    {
+      "name": "Landscape keeps continuous paths anchored and dense flower banks off the walking corridor",
+      "passed": true
+    },
+    {
+      "renderBudget": {
+        "triangles": 625204,
+        "shadowTriangles": 135976
+      }
+    },
+    {
+      "name": "Animation style stays inside the geometry and shadow budgets",
+      "passed": true
+    },
+    {
+      "name": "Residents walk on the surface with animated legs and valid normals",
+      "passed": true
+    },
+    {
+      "name": "Surf follows the shoreline, advances over time and the sailboat floats",
+      "passed": true
+    },
+    {
+      "name": "Rain enables particles, umbrellas and shelter behavior; snow and night update scene state",
+      "passed": true
+    },
+    {
+      "name": "All visible encounter effects can run; growth actually increases in the garden",
+      "passed": true
+    },
+    {
+      "name": "Construction reveals actual foundations, frames, walls and roofs in order",
+      "passed": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert.ok(sawCarry)\n"
+    },
+    {
+      "name": "Construction saves across dates, respects pause and speed, and migrates older saves safely",
+      "passed": true
+    },
+    {
+      "name": "Daily crew has one or two stable members, rotates shifts and keeps leisure villagers dry",
+      "passed": true
+    },
+    {
+      "coast": {
+        "reefPatches": 408,
+        "highestReef": 2.358438864179171
+      }
+    },
+    {
+      "name": "Transparent lagoon and instanced reef stay below the water with correct drawing order",
+      "passed": true
+    },
+    {
+      "sailing": {
+        "routes": 29,
+        "waypoints": 18,
+        "maxFrameStep": 0.007433609464761037
+      }
+    },
+    {
+      "name": "Sailboat chooses new routes, remains afloat and produces fading wake along its actual path",
+      "passed": true
+    },
+    {
+      "name": "Cottages reveal by stage, open for a visit, close afterward and keep detail batched",
+      "passed": true
+    },
+    {
+      "name": "Soft vegetation keeps rounded leaves attached to crowns and batches dense outlines",
+      "passed": true
+    }
+  ]
+}

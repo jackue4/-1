@@ -1,0 +1,86 @@
+{
+  "scope": "CPU geometry and animation validation; shader/browser verification is separate",
+  "passed": true,
+  "checks": [
+    "All initial geometry and instance transforms are finite; both modules meet combined budget.",
+    "Four light targets stay over actual sea, point downward, follow waves, move smoothly, switch off by day and freeze at unchanged time.",
+    "600-second checks cover every animal, animated fin/ray vertex and bubble; all stay underwater and above the seabed.",
+    "Unchanged time preserves poses; light quality mode reduces bubbles and restores full count.",
+    "Disposal detaches both complete modules."
+  ],
+  "beacons": {
+    "newLighthouses": 3,
+    "totalBeacons": 4,
+    "visibleCones": 4,
+    "drawCalls": 6,
+    "triangles": 2612,
+    "sites": [
+      {
+        "id": "old-reef",
+        "lat": -0.56,
+        "lon": -0.69,
+        "existing": true,
+        "baseRadius": 3.132,
+        "lampRadius": 3.5780000000000003,
+        "terrainRadius": 2.5771100875830912,
+        "railClearance": 0.6459894509250532
+      },
+      {
+        "id": "east-bay",
+        "lat": -0.22,
+        "lon": 0.7,
+        "existing": false,
+        "baseRadius": 3.134,
+        "lampRadius": 3.484,
+        "terrainRadius": 2.8373038104687756,
+        "railClearance": 0.358208278146953
+      },
+      {
+        "id": "enoshima",
+        "lat": -0.29,
+        "lon": 1.16,
+        "existing": false,
+        "baseRadius": 3.3239897572841732,
+        "lampRadius": 3.743989757284173,
+        "terrainRadius": 3.3159897572841732,
+        "railClearance": 0.3824858279965965
+      },
+      {
+        "id": "far-coast",
+        "lat": 0.04,
+        "lon": -2.27,
+        "existing": false,
+        "baseRadius": 3.134,
+        "lampRadius": 3.419,
+        "terrainRadius": 2.5562136350553826,
+        "railClearance": 0.10721667116338524
+      }
+    ]
+  },
+  "marine": {
+    "turtles": 3,
+    "rays": 2,
+    "scallopShells": 55,
+    "seaUrchins": 26,
+    "branchCorals": 26,
+    "bubbles": 24,
+    "drawCalls": 7,
+    "triangles": 56272
+  },
+  "totalTriangles": 58884,
+  "totalDrawCalls": 13,
+  "lightMetrics": {
+    "minTargetDepth": 0.21528495751502863,
+    "minRayDown": 0.3516224267113618,
+    "maxBeamStep": 0.04814560087619888,
+    "maxBeamWaveError": 8.881784197001252e-16
+  },
+  "marineMetrics": {
+    "minAnimalBed": 0.1155772435970821,
+    "maxAnimalRadius": 3.0771458795230404,
+    "maxStaticRadius": 2.9637569791576617,
+    "minStaticBed": 0.0005027558193502202,
+    "minBubbleBed": 0.03291980650108384,
+    "maxBubbleRadius": 3.1244900721812336
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "scope": "CPU perspective projection only; not browser or GPU rendering",
+  "checks": [
+    {
+      "name": "Coast landmarks and town geometry fit 390x700",
+      "passed": true,
+      "details": {
+        "fov": 70.522,
+        "landmarks": {
+          "minX": -0.795,
+          "maxX": 0.8438,
+          "minY": -0.1503,
+          "maxY": 0.5078
+        },
+        "town": {
+          "minX": -0.9261,
+          "maxX": 0.9229,
+          "minY": -0.2285,
+          "maxY": 0.5945
+        },
+        "vertices": 435594
+      }
+    },
+    {
+      "name": "Coast landmarks and town geometry fit 852x300",
+      "passed": true,
+      "details": {
+        "fov": 43,
+        "landmarks": {
+          "minX": -0.1602,
+          "maxX": 0.4168,
+          "minY": -0.5211,
+          "maxY": 0.6601
+        },
+        "town": {
+          "minX": -0.2064,
+          "maxX": 0.4447,
+          "minY": -0.6614,
+          "maxY": 0.8157
+        },
+        "vertices": 435594
+      }
+    },
+    {
+      "name": "Coast landmarks and town geometry fit 932x360",
+      "passed": true,
+      "details": {
+        "fov": 43,
+        "landmarks": {
+          "minX": -0.1758,
+          "maxX": 0.4573,
+          "minY": -0.5211,
+          "maxY": 0.6601
+        },
+        "town": {
+          "minX": -0.2264,
+          "maxX": 0.4878,
+          "minY": -0.6614,
+          "maxY": 0.8157
+        },
+        "vertices": 435594
+      }
+    },
+    {
+      "name": "Coast landmarks and town geometry fit 568x260",
+      "passed": true,
+      "details": {
+        "fov": 43,
+        "landmarks": {
+          "minX": -0.2083,
+          "maxX": 0.5419,
+          "minY": -0.5211,
+          "maxY": 0.6601
+        },
+        "town": {
+          "minX": -0.2683,
+          "maxX": 0.5781,
+          "minY": -0.6614,
+          "maxY": 0.8157
+        },
+        "vertices": 435594
+      }
+    },
+    {
+      "name": "Portrait to landscape and back restores projection without resetting the orbit",
+      "passed": true,
+      "details": {
+        "resizes": 4,
+        "orbitPreserved": true,
+        "projectionRestored": true
+      }
+    },
+    {
+      "name": "Hidden hosts keep their last valid lens; near-square rotation stays continuous",
+      "passed": true,
+      "details": {
+        "maxMatrixChange": 0.0036266398509487985
+      }
+    },
+    {
+      "name": "Detail, train, cruise and globe lenses keep aspect adaptation and have no coast offset",
+      "passed": true,
+      "details": {
+        "modes": 10,
+        "viewportPairs": 2
+      }
+    }
+  ]
+}

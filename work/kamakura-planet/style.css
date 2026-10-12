@@ -1,0 +1,114 @@
+:root{--ink:#f7f2d9;--muted:#dde4d3;--forest:#234f48;--paper:#faf5dd}*{box-sizing:border-box}html,body{margin:0;height:100%;width:100%;overflow:hidden}body{font-family:"Segoe UI","Microsoft YaHei",sans-serif;background:#a5cdd4;color:var(--ink)}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;border:0;cursor:pointer;background:none;color:inherit}button:focus-visible,a:focus-visible{outline:2px solid #e8bd6e;outline-offset:4px}a{color:inherit}#app{height:100dvh;position:relative;isolation:isolate;overflow:hidden}#scene{position:absolute;inset:0;touch-action:none}canvas{display:block;width:100%;height:100%;outline:none}.sky{position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 76% 14%,#fff7d480,transparent 50%),linear-gradient(#9bc9d6,#e0e8cb);transition:background 2s}.sky i{position:absolute;width:380px;height:35px;background:#fffcec99;border-radius:60%;filter:blur(15px);top:20%;left:28%;opacity:.6}.sky i:nth-child(2){width:250px;left:auto;right:4%;top:39%}.sun{position:absolute;right:14%;top:18%;width:58px;height:58px;background:#fff4cd;border-radius:50%;box-shadow:0 0 80px 32px #fff2b73b;opacity:.75;transition:2s}.moon{position:absolute;width:34px;height:34px;background:#fff1c9;border-radius:50%;top:22%;right:17%;box-shadow:0 0 45px #ffffcc36;opacity:0;transition:2s}.grain{position:absolute;inset:0;pointer-events:none;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23999' filter='url(%23n)' d='M0 0h150v150H0z'/%3E%3C/svg%3E");z-index:1}header{position:absolute;inset:24px 28px auto;display:flex;align-items:center;gap:20px;z-index:5;pointer-events:none}header>*{pointer-events:auto}.brand{display:flex;align-items:center;gap:12px;padding:12px 17px 11px 12px;background:#28594fde;border:1px solid #e0dec084;border-radius:15px;text-decoration:none;font-family:"SimSun",serif;font-size:24px;letter-spacing:3px;box-shadow:0 5px 26px #173f4314}.brand small{font:8px "Segoe UI",sans-serif;letter-spacing:2px;display:block;margin-top:7px;color:#e2debb}.mark{width:37px;height:39px;border:1px solid #d6d4a881;border-radius:50%;display:grid;place-items:center;color:#f2e7bd}.edition{font-size:10px;letter-spacing:2px;color:#355f57;opacity:.85}.edition span{margin:0 8px;opacity:.5}#about{margin-left:auto}.round{border:1px solid #fff8;border-radius:50%;width:34px;height:34px;background:#f7f1dce0;color:#41665b;font-size:13px}.phases{position:absolute;right:85px;top:41px;z-index:5;padding:4px;border-radius:22px;background:#fcf6dce8;border:1px solid #fff9;display:flex;gap:3px;box-shadow:0 3px 20px #2148420d}.phases button{border-radius:18px;padding:7px 14px;color:#658079;font-size:10px;letter-spacing:1px}.phases button[aria-pressed=true]{background:#517969;color:#fff4d4}.intro{position:absolute;left:35px;bottom:129px;z-index:3;pointer-events:none;text-shadow:0 1px 14px #17434480}.eyebrow{font-size:8px;letter-spacing:2.2px;color:#dfe5c8}h1{font:400 clamp(25px,2.5vw,37px)/1.65 "SimSun",serif;letter-spacing:3px;margin:12px 0}.intro p{font-size:10px;line-height:1.8;color:#e4e9d8;letter-spacing:.5px;max-width:290px}.live-note{position:absolute;right:34px;bottom:128px;z-index:3;display:flex;align-items:center;gap:11px;background:#244f47b3;padding:11px 15px;border-radius:15px;border:1px solid #e2e5bd40;pointer-events:none}.tiny-flower{color:#e3b3be;font-size:27px}.live-note strong{font-size:10px;letter-spacing:1px;font-weight:400}.live-note small{display:block;font-size:8px;color:#dce2c8;margin-top:6px}.live-note b{font-weight:400;font-variant-numeric:tabular-nums}.rail-status{position:absolute;bottom:112px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:1px;display:flex;align-items:center;gap:7px;z-index:3;padding:7px 12px;background:#234d42bf;border:1px solid #c7d3ad3d;border-radius:20px;white-space:nowrap}.rail-status i{width:4px;height:4px;background:#ecc994;border-radius:50%}.views{position:absolute;bottom:39px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:4px;border:1px solid #fff9;padding:6px;border-radius:30px;background:#faf5dfeF;box-shadow:0 6px 25px #123e4b1c;z-index:5;white-space:nowrap}.views button{padding:11px 16px;border-radius:23px;color:#56796c;font-size:11px}.views button span{font-size:17px;margin-right:7px;vertical-align:-1px}.views button[aria-pressed=true]{color:#fff2ce;background:#456e5e}.playback{position:absolute;left:34px;bottom:47px;z-index:5;display:flex;align-items:center;gap:10px;font-size:9px;background:#214c44b5;border:1px solid #c7d3ad3d;padding:3px 11px;border-radius:18px;color:#ece9d3}.playback button{padding:7px 0}.playback>span{opacity:.4}.hint{position:absolute;right:33px;bottom:59px;font-size:8px;color:#e7e7ce;letter-spacing:.6px;z-index:3;text-shadow:0 1px 7px #19454d}#loading{position:absolute;inset:0;background:#1e5b62;z-index:9;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:15px}#loading[hidden]{display:none}#loading span{font-size:34px;color:#e7c6b7;animation:turn 5s linear infinite}#loading p{font-size:12px;letter-spacing:2px;color:#f2e9c6}#toast{position:absolute;left:50%;transform:translate(-50%,8px);bottom:161px;padding:11px 18px;max-width:80%;border-radius:22px;background:#fff8dded;color:#557469;font-size:11px;line-height:1.8;opacity:0;transition:.3s;pointer-events:none;z-index:8}#toast.show{opacity:1;transform:translate(-50%,0)}dialog{border:1px solid #ffffe399;border-radius:23px;background:#f7f1da;color:#345e52;width:min(410px,calc(100vw - 32px));padding:35px;max-height:80vh;overflow:auto}dialog::backdrop{background:#183f4877;backdrop-filter:blur(4px)}dialog .eyebrow{color:#90a088}dialog h2{font:400 25px/1.6 "SimSun",serif;letter-spacing:2px}dialog p{font-size:12px;line-height:2;color:#758976}dialog .close{position:absolute;right:12px;top:12px}#quality{border:1px solid #9ab49c;border-radius:9px;padding:11px;width:100%;background:#e3ead1;color:#526e59;font-size:12px}.back{display:block;text-align:center;text-decoration:none;font-size:10px;margin-top:17px;color:#84917d}html[data-view=train] .intro,html[data-view=town] .intro,html[data-view=sea] .intro{display:none}html[data-view=globe] .intro{color:#305e58;text-shadow:none}html[data-view=globe] .intro p,html[data-view=globe] .intro .eyebrow{color:#5c8479}html[data-phase=dusk] .sky{background:linear-gradient(#c6c7dc,#efd3ae)}html[data-phase=dusk] .sun{top:30%;background:#ffe7a0}html[data-phase=night] .sky{background:linear-gradient(#203446,#486b75)}html[data-phase=night] .sun{opacity:0}html[data-phase=night] .moon{opacity:1}html[data-phase=night] .edition{color:#e4e2c9}html[data-phase=night][data-view=globe] .intro,html[data-phase=night][data-view=globe] .intro p,html[data-phase=night][data-view=globe] .intro .eyebrow{color:#dfdfc7}@keyframes turn{to{transform:rotate(360deg)}}
+@media(max-width:1150px){.edition{display:none}.hint{display:none}.playback{bottom:8px;left:50%;transform:translateX(-50%);background:none;border:0}.intro{bottom:151px;left:26px}.intro p{max-width:230px}.views{bottom:45px}.live-note{right:25px;bottom:155px}.rail-status{bottom:115px}.intro h1{font-size:28px}}
+@media(max-width:760px){header{inset:18px 19px auto;gap:10px}.brand{padding:9px 13px 9px 10px;font-size:20px;letter-spacing:2px;gap:10px}.brand small{font-size:6px;letter-spacing:1.5px;margin-top:5px}.mark{width:31px;height:33px}.mark svg{width:26px;height:26px}.phases{top:95px;right:auto;left:50%;transform:translateX(-50%)}.phases button{padding:8px 20px;font-size:10px}.intro{bottom:193px;left:22px}.intro .eyebrow{font-size:6px;letter-spacing:1.2px}.intro h1{font-size:23px;line-height:1.6;margin:9px 0 0}.intro p{display:none}.live-note{right:18px;bottom:196px;padding:9px 10px;gap:6px}.tiny-flower{font-size:23px}.live-note strong{font-size:8px;letter-spacing:0}.live-note small{font-size:6.5px}.views{bottom:calc(55px + env(safe-area-inset-bottom,0px));width:calc(100% - 22px);padding:5px;gap:0;border-radius:23px}.views button{padding:10px 2px;font-size:9px;flex:1;min-height:52px;letter-spacing:0}.views button span{display:block;font-size:16px;margin:0 0 4px}.rail-status{bottom:calc(132px + env(safe-area-inset-bottom,0px));font-size:8px}.playback{bottom:calc(12px + env(safe-area-inset-bottom,0px));font-size:10px;gap:15px;white-space:nowrap}.sky i{width:220px}.sun{width:43px;height:43px;right:10%}#toast{bottom:243px;font-size:10px;width:max-content}.round{width:32px;height:32px}html[data-view=sea] .live-note,html[data-view=town] .live-note,html[data-view=train] .live-note{bottom:188px}}
+@media(max-height:600px) and (orientation:landscape){header{inset:14px 20px auto}.brand{font-size:19px;padding:8px 12px}.phases{top:23px}.intro{bottom:100px}.intro h1{font-size:23px}.intro p,.live-note{display:none}.views{bottom:29px}.rail-status{bottom:89px}.playback{bottom:0}.sky .sun{top:20%}}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+@media(max-width:760px){.phases{width:max-content}.phases button{white-space:nowrap;flex-shrink:0}.playback{color:#385f52;background:#faf5dde8;border:1px solid #ffffff80;padding:3px 12px}}
+html[data-view=voyage] .intro{display:none}.views button{padding-left:13px;padding-right:13px}@media(max-width:760px){.views button{padding-left:1px;padding-right:1px;font-size:8px}}
+@media(min-width:761px){html[data-view=coast] .intro{top:143px;bottom:auto;left:28px;color:#355f56;text-shadow:0 1px 12px #e9f1da66}html[data-view=coast] .intro h1{font-size:25px;line-height:1.6}html[data-view=coast] .intro .eyebrow,html[data-view=coast] .intro p{color:#577e6f}html[data-view=coast] .intro p{max-width:180px}html[data-phase=night][data-view=coast] .intro,html[data-phase=night][data-view=coast] .intro p,html[data-phase=night][data-view=coast] .intro .eyebrow{color:#f0ead3}}
+@media(max-width:760px){html[data-view=coast] .intro{display:none}}
+.sky:after{content:"";position:absolute;left:8%;top:10%;width:2px;height:2px;border-radius:50%;background:#fff6d9;box-shadow:8vw 15vh 0 #fff9,17vw 2vh 1px #ffedc6,27vw 21vh 0 #fff9,35vw 6vh 1px #fff8df,48vw 18vh 0 #fff7,56vw 4vh 0 #ffe7b9,67vw 13vh 1px #fff8,79vw 2vh 0 #fff6,83vw 27vh 1px #fff8,12vw 33vh 0 #fff7,2vw 47vh 1px #fff9;opacity:0;transition:opacity 2s}html[data-phase=night] .sky:after{opacity:.8}
+html[data-view=cruise] .intro{display:none}@media(max-width:760px){.views button{font-size:7.5px}.views button span{font-size:16px}.views{width:calc(100% - 14px)}}
+html[data-view=cottage] .intro{display:none}
+.destinations{position:absolute;left:28px;top:110px;z-index:6;font-size:11px;color:#41685b;background:#faf5e3eb;border:1px solid #fff9;border-radius:16px;min-width:148px;box-shadow:0 5px 20px #2a514218}.destinations summary{padding:10px 14px;cursor:pointer;list-style:none}.destinations summary::-webkit-details-marker{display:none}.destinations summary span{float:right;margin-left:14px}.destinations nav{display:grid;padding:0 6px 6px;gap:2px}.destinations button{padding:11px 10px;text-align:left;border-radius:11px;font-size:11px}.destinations button:hover,.destinations button[aria-pressed=true]{background:#416d5d;color:#fff2d9}html[data-view=stream] .intro,html[data-view=beacon] .intro,html[data-view=telephone] .intro{display:none}@media(min-width:761px){html[data-view=coast] .intro{top:164px}}@media(max-width:760px){.destinations{top:143px;left:20px;font-size:10px;min-width:142px}.destinations summary{padding:9px 12px}}
+@media(max-width:900px){.views{display:grid;grid-template-columns:repeat(4,1fr);width:min(460px,calc(100% - 28px));padding:5px;gap:2px;border-radius:22px;bottom:calc(53px + env(safe-area-inset-bottom,0px))}.views button{padding:7px 8px;font-size:10px;min-height:36px}.views button span{display:inline;font-size:14px;margin-right:5px}.rail-status{bottom:calc(146px + env(safe-area-inset-bottom,0px))}.live-note{bottom:194px}.playback{bottom:calc(10px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);white-space:nowrap}}
+
+/* The planet selector has its own safe-area row outside this scene. */
+button,summary{touch-action:manipulation}
+.destinations summary:focus-visible{outline:2px solid #c49c56;outline-offset:2px;border-radius:15px}
+@media(max-width:900px),(pointer:coarse){
+ .round{width:44px;height:44px;flex-shrink:0}
+ .phases button,.destinations button{min-height:44px}
+ .destinations summary{min-height:44px;display:flex;align-items:center;justify-content:space-between}
+ .playback button{min-height:44px;padding:8px 4px}
+ .views button{min-height:44px;padding:8px 2px;font-size:10px;min-width:0}
+ .views button span{margin-right:3px}
+ .playback{bottom:env(safe-area-inset-bottom,0px);padding:0 10px}
+ .views{bottom:calc(52px + env(safe-area-inset-bottom,0px))}
+ .rail-status{bottom:calc(165px + env(safe-area-inset-bottom,0px))}
+ .live-note{bottom:calc(205px + env(safe-area-inset-bottom,0px))}
+}
+@media(max-width:760px) and (orientation:portrait){
+ header{inset:12px max(14px,env(safe-area-inset-right,0px)) auto max(14px,env(safe-area-inset-left,0px))}
+ .phases{top:82px}
+ .destinations{top:140px;left:max(14px,env(safe-area-inset-left,0px))}
+ .intro{display:none}
+}
+/* A single swipeable row leaves the island visible on short landscape screens. */
+@media(max-height:600px) and (orientation:landscape){
+ header{inset:4px max(12px,env(safe-area-inset-right,0px)) auto max(12px,env(safe-area-inset-left,0px));height:44px}
+ .brand{font-size:17px;padding:5px 9px;gap:6px;min-height:44px}
+ .brand small,.edition,.intro,.live-note,.rail-status,.hint{display:none!important}
+ .mark{width:28px;height:28px}.mark svg{width:24px;height:24px}
+ .phases{top:4px;left:50%;right:auto;transform:translateX(-50%);padding:2px;gap:2px;width:max-content}
+ .phases button{min-height:44px;min-width:58px;padding:7px 10px;font-size:10px}
+ .destinations{top:56px;left:max(12px,env(safe-area-inset-left,0px));min-width:142px}
+ .destinations summary{padding:8px 12px;font-size:10px}
+ .destinations nav{max-height:max(88px,calc(100dvh - 210px));overflow-y:auto;overscroll-behavior:contain}
+ .views{display:flex;left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));transform:none;width:auto;max-width:none;bottom:calc(6px + env(safe-area-inset-bottom,0px));padding:4px;gap:2px;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;touch-action:pan-x;scrollbar-width:none;scroll-snap-type:x proximity;border-radius:24px;justify-content:flex-start}
+ .views::-webkit-scrollbar{display:none}
+ .views button{flex:1 0 78px;min-width:78px;min-height:44px;padding:8px 5px;font-size:10px;scroll-snap-align:start}
+ .views button span{display:inline;font-size:14px;margin-right:3px}
+ .playback{bottom:calc(66px + env(safe-area-inset-bottom,0px));left:auto;right:max(12px,env(safe-area-inset-right,0px));transform:none;padding:0 10px;border:1px solid #ffffff80;background:#faf5dde8;color:#385f52}
+ .playback button{min-height:44px}
+ #toast{bottom:calc(120px + env(safe-area-inset-bottom,0px));font-size:10px;max-width:65%}
+ dialog{max-height:calc(100dvh - 82px - env(safe-area-inset-top,0px));padding:24px}
+}
+@media(max-width:700px) and (max-height:600px) and (orientation:landscape){.brand>span:last-child{display:none}.brand{padding:5px 7px}}
+
+/* Landscape opens onto the island; the shared Tools button restores the HUD. */
+@media(max-height:600px) and (orientation:landscape){
+ html[data-tools=false] :is(header,.phases,.destinations,.views,.playback,.intro,.live-note,.rail-status,.hint){display:none!important}
+ html[data-tools=true] header{top:calc(62px + var(--world-safe-top,0px))}
+ html[data-tools=true] header .brand{display:none}
+ html[data-tools=true] .phases{top:calc(62px + var(--world-safe-top,0px));left:max(12px,env(safe-area-inset-left,0px));transform:none}
+ html[data-tools=true] .destinations{top:calc(116px + var(--world-safe-top,0px))}
+ html[data-tools=true] .destinations nav{max-height:max(88px,calc(100dvh - 270px))}
+}
+html[data-immersive=true][data-tools=false] :is(header,.phases,.destinations,.views,.playback,.intro,.live-note,.rail-status,.hint,#toast){display:none!important}
+@media(orientation:portrait){
+ html[data-immersive=true][data-tools=true] header{top:calc(64px + var(--world-safe-top,0px))}
+ html[data-immersive=true][data-tools=true] .phases{top:calc(136px + var(--world-safe-top,0px))}
+ html[data-immersive=true][data-tools=true] .destinations{top:calc(194px + var(--world-safe-top,0px))}
+}
+
+/* Keep an open destination list above the view bar, using the actual scene
+   height rather than the browser's layout viewport. A short screen lifts the
+   popover enough to retain one complete 44px destination beneath its summary. */
+@media(max-width:900px) and (orientation:portrait){
+ .destinations{--destination-rest-top:140px;--destination-bottom:calc(162px + env(safe-area-inset-bottom,0px))}
+ html[data-immersive=true][data-tools=true] .destinations{--destination-rest-top:calc(194px + var(--world-safe-top,0px))}
+}
+@media(max-height:600px) and (orientation:landscape){
+ .destinations{--destination-rest-top:56px;--destination-bottom:calc(68px + env(safe-area-inset-bottom,0px))}
+ html[data-tools=true] .destinations{--destination-rest-top:calc(116px + var(--world-safe-top,0px))}
+}
+@media(max-width:900px) and (orientation:portrait),(max-height:600px) and (orientation:landscape){
+ .destinations[open],html[data-tools=true] .destinations[open],html[data-immersive=true][data-tools=true] .destinations[open]{
+  --destination-open-top:min(var(--destination-rest-top),max(0px,calc(100% - var(--destination-bottom) - 96px)));
+  top:var(--destination-open-top);height:min(188px,calc(100% - var(--destination-open-top) - var(--destination-bottom)));max-height:none;
+  display:block;background:#faf5e3;box-shadow:0 8px 24px #244f3d26;
+ }
+ .destinations[open] summary{height:44px;min-height:44px}
+ .destinations[open] nav,html[data-tools=true] .destinations[open] nav,html[data-immersive=true][data-tools=true] .destinations[open] nav{
+  position:absolute;inset:44px 0 0;min-height:0;max-height:none;overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y;-webkit-overflow-scrolling:touch;
+ }
+ .destinations[open] nav button{min-height:44px}
+}
+
+/* The canvas sky remains behind the transparent 3D world, with HUD above both. */
+#scene{z-index:1}
+.sky:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 24% 22%,#69518355,transparent 55%),linear-gradient(#242443,#4b5580);opacity:var(--storybook-night,0);pointer-events:none}
+html[data-phase=night] .sky{background:radial-gradient(ellipse at 76% 14%,#fff7d480,transparent 50%),linear-gradient(#9bc9d6,#e0e8cb)}
+html[data-phase=night] .moon,.sky:after{display:none}
+.sky i{opacity:calc(.6 * (1 - var(--storybook-night,0)))}
+
+/* Hand off the evening sky to the shared canvas without double suns or clouds. */
+#scene{z-index:1}
+#app .sky i{opacity:calc(.6 * (1 - var(--storybook-atmosphere,0)));transition:opacity 1.2s}
+#app .sky .sun{opacity:calc(.75 * (1 - var(--storybook-atmosphere,0)))}
+#app .sky .moon{opacity:0}
+.sky:before{background:radial-gradient(ellipse at 24% 65%,#467d9b55,transparent 65%),linear-gradient(#122a47,#385c7d)}
+
+/* Bare-sky captions need warm light ink against the violet evening. */
+html[data-phase=dusk] #app :is(.edition,.intro h1,.intro p,.intro .eyebrow,.hint){color:#fff2dc;text-shadow:0 1px 8px #38355366}

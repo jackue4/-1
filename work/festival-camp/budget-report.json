@@ -1,0 +1,303 @@
+{
+  "checkedAt": "2026-09-21T12:29:16.465Z",
+  "method": "Source geometry metrics. Potential draw calls include hidden branches and omit frustum/occlusion culling; GPU buffer bytes deduplicate BufferAttributes and include indices/instance matrices, not textures/render targets. Prior world uses saved before/world.js. Prior campsite batching is reconstructed by omitting only the newly added vertex-color consolidation block from current campsite.js.",
+  "variants": {
+    "before-camp": {
+      "modulesBeforeGlobalBatch": {
+        "world": {
+          "nodes": 6776,
+          "meshes": 5874,
+          "drawObjects": 5874,
+          "potentialDrawCalls": 5874,
+          "meshTrianglesIncludingInstances": 947752,
+          "uniqueGeometries": 2076,
+          "uniqueGeometryVertices": 1623229,
+          "uniqueMaterials": 87,
+          "geometryGpuBufferBytes": 70349696,
+          "geometryGpuBufferMiB": 67.0906982421875,
+          "points": 0,
+          "localLights": 0,
+          "shadowLights": 0
+        },
+        "rides": {
+          "nodes": 421,
+          "meshes": 353,
+          "drawObjects": 353,
+          "potentialDrawCalls": 353,
+          "meshTrianglesIncludingInstances": 289764,
+          "uniqueGeometries": 353,
+          "uniqueGeometryVertices": 741633,
+          "uniqueMaterials": 36,
+          "geometryGpuBufferBytes": 26253120,
+          "geometryGpuBufferMiB": 25.03692626953125,
+          "points": 0,
+          "localLights": 0,
+          "shadowLights": 0
+        },
+        "effects": {
+          "nodes": 103,
+          "meshes": 32,
+          "drawObjects": 65,
+          "potentialDrawCalls": 65,
+          "meshTrianglesIncludingInstances": 7684,
+          "uniqueGeometries": 65,
+          "uniqueGeometryVertices": 26764,
+          "uniqueMaterials": 5,
+          "geometryGpuBufferBytes": 939792,
+          "geometryGpuBufferMiB": 0.8962554931640625,
+          "points": 3684,
+          "localLights": 1,
+          "shadowLights": 0
+        },
+        "animals": {
+          "nodes": 66,
+          "meshes": 49,
+          "drawObjects": 49,
+          "potentialDrawCalls": 49,
+          "meshTrianglesIncludingInstances": 84736,
+          "uniqueGeometries": 49,
+          "uniqueGeometryVertices": 254208,
+          "uniqueMaterials": 1,
+          "geometryGpuBufferBytes": 9151488,
+          "geometryGpuBufferMiB": 8.7275390625,
+          "points": 0,
+          "localLights": 0,
+          "shadowLights": 0
+        },
+        "food": {
+          "nodes": 98,
+          "meshes": 68,
+          "drawObjects": 68,
+          "potentialDrawCalls": 68,
+          "meshTrianglesIncludingInstances": 116946,
+          "uniqueGeometries": 67,
+          "uniqueGeometryVertices": 251765,
+          "uniqueMaterials": 27,
+          "geometryGpuBufferBytes": 9191324,
+          "geometryGpuBufferMiB": 8.76552963256836,
+          "points": 0,
+          "localLights": 0,
+          "shadowLights": 0
+        },
+        "candy": {
+          "nodes": 37,
+          "meshes": 27,
+          "drawObjects": 27,
+          "potentialDrawCalls": 27,
+          "meshTrianglesIncludingInstances": 147906,
+          "uniqueGeometries": 27,
+          "uniqueGeometryVertices": 99783,
+          "uniqueMaterials": 3,
+          "geometryGpuBufferBytes": 4422024,
+          "geometryGpuBufferMiB": 4.217170715332031,
+          "points": 0,
+          "localLights": 0,
+          "shadowLights": 0
+        }
+      },
+      "wholeScene": {
+        "nodes": 1117,
+        "meshes": 580,
+        "drawObjects": 613,
+        "potentialDrawCalls": 613,
+        "meshTrianglesIncludingInstances": 1594788,
+        "uniqueGeometries": 593,
+        "uniqueGeometryVertices": 3164830,
+        "uniqueMaterials": 157,
+        "geometryGpuBufferBytes": 126895052,
+        "geometryGpuBufferMiB": 121.01655197143555,
+        "points": 3684,
+        "localLights": 1,
+        "shadowLights": 0
+      },
+      "globalBatching": {
+        "before": 6368,
+        "batched": 5823,
+        "remainingStatic": 545,
+        "prunedGroups": 562,
+        "sourceVertices": 286028,
+        "mergedVertices": 286028
+      }
+    },
+    "camp-material-batches": {
+      "camp": {
+        "nodes": 93,
+        "meshes": 79,
+        "drawObjects": 80,
+        "potentialDrawCalls": 80,
+        "meshTrianglesIncludingInstances": 107910,
+        "uniqueGeometries": 70,
+        "uniqueGeometryVertices": 218729,
+        "uniqueMaterials": 52,
+        "geometryGpuBufferBytes": 8108792,
+        "geometryGpuBufferMiB": 7.733146667480469,
+        "points": 32,
+        "localLights": 2,
+        "shadowLights": 0
+      },
+      "campStats": {
+        "before": 387,
+        "batched": 316,
+        "remainingStatic": 71,
+        "prunedGroups": 0,
+        "sourceVertices": 69657,
+        "mergedVertices": 69657
+      }
+    },
+    "current": {
+      "modulesBeforeGlobalBatch": {
+        "world": {
+          "nodes": 6838,
+          "meshes": 5924,
+          "drawObjects": 5924,
+          "potentialDrawCalls": 5924,
+          "meshTrianglesIncludingInstances": 969535,
+          "uniqueGeometries": 2084,
+          "uniqueGeometryVertices": 1681038,
+          "uniqueMaterials": 87,
+          "geometryGpuBufferBytes": 72902784,
+          "geometryGpuBufferMiB": 69.5255126953125,
+          "points": 0,
+          "localLights": 0,
+          "shadowLights": 0
+        },
+        "rides": {
+          "nodes": 421,
+          "meshes": 353,
+          "drawObjects": 353,
+          "potentialDrawCalls": 353,
+          "meshTrianglesIncludingInstances": 289764,
+          "uniqueGeometries": 353,
+          "uniqueGeometryVertices": 741633,
+          "uniqueMaterials": 36,
+          "geometryGpuBufferBytes": 26253120,
+          "geometryGpuBufferMiB": 25.03692626953125,
+          "points": 0,
+          "localLights": 0,
+          "shadowLights": 0
+        },
+        "effects": {
+          "nodes": 103,
+          "meshes": 32,
+          "drawObjects": 65,
+          "potentialDrawCalls": 65,
+          "meshTrianglesIncludingInstances": 7684,
+          "uniqueGeometries": 65,
+          "uniqueGeometryVertices": 26764,
+          "uniqueMaterials": 5,
+          "geometryGpuBufferBytes": 939792,
+          "geometryGpuBufferMiB": 0.8962554931640625,
+          "points": 3684,
+          "localLights": 1,
+          "shadowLights": 0
+        },
+        "animals": {
+          "nodes": 66,
+          "meshes": 49,
+          "drawObjects": 49,
+          "potentialDrawCalls": 49,
+          "meshTrianglesIncludingInstances": 84736,
+          "uniqueGeometries": 49,
+          "uniqueGeometryVertices": 254208,
+          "uniqueMaterials": 1,
+          "geometryGpuBufferBytes": 9151488,
+          "geometryGpuBufferMiB": 8.7275390625,
+          "points": 0,
+          "localLights": 0,
+          "shadowLights": 0
+        },
+        "food": {
+          "nodes": 98,
+          "meshes": 68,
+          "drawObjects": 68,
+          "potentialDrawCalls": 68,
+          "meshTrianglesIncludingInstances": 116946,
+          "uniqueGeometries": 67,
+          "uniqueGeometryVertices": 251765,
+          "uniqueMaterials": 27,
+          "geometryGpuBufferBytes": 9191324,
+          "geometryGpuBufferMiB": 8.76552963256836,
+          "points": 0,
+          "localLights": 0,
+          "shadowLights": 0
+        },
+        "candy": {
+          "nodes": 37,
+          "meshes": 27,
+          "drawObjects": 27,
+          "potentialDrawCalls": 27,
+          "meshTrianglesIncludingInstances": 147906,
+          "uniqueGeometries": 27,
+          "uniqueGeometryVertices": 99783,
+          "uniqueMaterials": 3,
+          "geometryGpuBufferBytes": 4422024,
+          "geometryGpuBufferMiB": 4.217170715332031,
+          "points": 0,
+          "localLights": 0,
+          "shadowLights": 0
+        },
+        "camp": {
+          "nodes": 55,
+          "meshes": 41,
+          "drawObjects": 42,
+          "potentialDrawCalls": 42,
+          "meshTrianglesIncludingInstances": 107910,
+          "uniqueGeometries": 36,
+          "uniqueGeometryVertices": 220025,
+          "uniqueMaterials": 14,
+          "geometryGpuBufferBytes": 9178916,
+          "geometryGpuBufferMiB": 8.75369644165039,
+          "points": 32,
+          "localLights": 2,
+          "shadowLights": 0
+        }
+      },
+      "wholeScene": {
+        "nodes": 1179,
+        "meshes": 622,
+        "drawObjects": 656,
+        "potentialDrawCalls": 656,
+        "meshTrianglesIncludingInstances": 1724481,
+        "uniqueGeometries": 630,
+        "uniqueGeometryVertices": 3444134,
+        "uniqueMaterials": 170,
+        "geometryGpuBufferBytes": 138682160,
+        "geometryGpuBufferMiB": 132.2576141357422,
+        "points": 3716,
+        "localLights": 3,
+        "shadowLights": 0
+      },
+      "globalBatching": {
+        "before": 6451,
+        "batched": 5872,
+        "remainingStatic": 579,
+        "prunedGroups": 568,
+        "sourceVertices": 287487,
+        "mergedVertices": 287487
+      },
+      "campStats": {
+        "before": 387,
+        "batched": 354,
+        "remainingStatic": 33,
+        "prunedGroups": 0,
+        "sourceVertices": 71528,
+        "mergedVertices": 71528
+      }
+    }
+  },
+  "comparison": {
+    "campConsolidation": {
+      "potentialDrawCalls": -38,
+      "triangleDelta": 0,
+      "geometryGpuBufferBytes": 1070124,
+      "geometryGpuBufferPercent": 13.197082870050192
+    },
+    "fullSceneAddition": {
+      "potentialDrawCalls": 43,
+      "triangleDelta": 129693,
+      "geometryGpuBufferBytes": 11787108,
+      "geometryGpuBufferPercent": 9.288863367186284
+    }
+  },
+  "passed": true
+}

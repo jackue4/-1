@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-09-20T12:57:36.366Z",
+  "scope": "Actual planet-transitions.js executed with controllable Web Animations promises, computed styles, cancellation and preference mocks. Visual smoothness and browser rendering require separate QA.",
+  "sourceSha256": "1952d7dc1e032e84e085c5eb4167d9ef5d3eb0a0607b5ec22c7cc186f7ebdd4f",
+  "passed": true,
+  "total": 5,
+  "checks": [
+    {
+      "name": "Departure holds both layers at zero opacity until incoming frames are ready",
+      "passed": true,
+      "leaveDurations": [
+        310,
+        200
+      ],
+      "entryDurations": [
+        740,
+        500
+      ],
+      "descriptionDelay": 80
+    },
+    {
+      "name": "Superseding a transition samples its live pose and cannot clear the newer animation",
+      "passed": true,
+      "sampledOpacity": 0.43,
+      "cancelledGenerationResult": false,
+      "latestGenerationResult": true
+    },
+    {
+      "name": "Rapid leave-enter-leave replacement finishes idle with no opacity or transform residue",
+      "passed": true,
+      "animationCount": 10,
+      "finalState": {
+        "phase": "idle",
+        "generation": 5
+      }
+    },
+    {
+      "name": "Explicit cancellation during either phase settles pending callers and restores the layout",
+      "passed": true,
+      "phases": [
+        "leave",
+        "enter"
+      ]
+    },
+    {
+      "name": "System reduced-motion preference uses 90 ms opacity fades with no displacement or delay",
+      "passed": true,
+      "duration": 90,
+      "delay": 0,
+      "displacement": false
+    }
+  ]
+}

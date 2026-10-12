@@ -1,0 +1,30 @@
+import {build} from 'file:///C:/Users/chenyahan/Documents/Codex/2026-09-15/neng/work/node_modules/esbuild/lib/main.js';
+import fs from 'node:fs/promises';import path from 'node:path';import {pathToFileURL} from 'node:url';
+const dir=import.meta.dirname,bundle=path.join(dir,'.placement-check.bundle.mjs');
+await build({stdin:{contents:"export {THREE,R,normal,createPalette} from './core.js';export {surface} from './surface.js';export {createFestivalCamp} from './campsite.js';export {CAMP} from './camp-layout.js';export {createCoasterCurve} from './coaster.js';export {FOOD_COURT,CANDY_SPOTS} from './snack-layout.js';",resolveDir:path.resolve(dir,'../festival-planet')},bundle:true,format:'esm',platform:'node',outfile:bundle,nodePaths:['C:/Users/chenyahan/Documents/Codex/2026-09-15/neng/work/node_modules'],logLevel:'silent'});
+try{
+ const {THREE,R,normal,createPalette,surface,createFestivalCamp,CAMP,createCoasterCurve,FOOD_COURT,CANDY_SPOTS}=await import(pathToFileURL(bundle));
+ globalThis.document={createElement:()=>({width:1,height:1,getContext:()=>new Proxy({},{get:()=>()=>{}})})};
+ const palette=createPalette(),planet=new THREE.Group(),camp=createFestivalCamp({planet,palette,surface}),checks=[];
+ const check=(name,passed,details={})=>checks.push({name,passed,...details});
+ // Authored attraction keepouts from world.js/rides.js plus the snack layout.
+ // These are projected footprint bounds, not an assertion about every decorative leaf.
+ const fixtures=[[-.41,2.84,.60,'picnic'],[-.57,-1.83,.36,'flower shop'],[.51,-2.57,.38,'post office'],[.15,2.72,.4,'tea shop'],[.15,2.2,.8,'swings'],[.68,2.78,.4,'observatory'],[.28,-.28,.78,'carousel'],[.5,1.1,.78,'ferris'],[-.13,1.02,.78,'teacups'],[.78,.05,1.02,'castle'],[.405,.075,.32,'fountain'],[.49,.57,.53,'rose garden'],[.66,.57,.44,'pergola'],[.55,.28,.30,'ribbon garden'],[.1,-.4,.4,'sweet shop'],[.02,-.63,.4,'flower shop east'],[-.37,-.36,.4,'tea shop east'],[.47,1.67,.4,'sweet shop north'],[-.26,1.76,.4,'post office east'],[-.76,.21,.4,'sweet shop south'],[-.58,1.18,.45,'ticket gate'],[.32,.66,.20,'balloon cart'],[FOOD_COURT.lat,FOOD_COURT.lon,FOOD_COURT.radius,'food court'],...CANDY_SPOTS.map((s,i)=>[s.lat,s.lon,.24*s.scale,`candy ${i+1}`])];
+ const n=normal(CAMP.lat,CAMP.lon),arc=other=>Math.acos(THREE.MathUtils.clamp(n.dot(other),-1,1))*R;
+ const clearances=fixtures.map(([lat,lon,radius,name])=>({name,edgeDistanceFromCampCenter:arc(normal(lat,lon))-radius})).sort((a,b)=>a.edgeDistanceFromCampCenter-b.edgeDistanceFromCampCenter);
+ const railDistance=Math.min(...createCoasterCurve().getSpacedPoints(2400).map(p=>arc(p.normalize())));
+ check('The campsite reservation clears every authored attraction footprint and the coaster corridor',clearances[0].edgeDistanceFromCampCenter>CAMP.radius&&railDistance>CAMP.radius+.22,{campRadius:CAMP.radius,minimumFixtureClearance:clearances[0],railDistance,fixtures:clearances});
+ let attributes=0,vertices=0,finite=true;camp.root.updateMatrixWorld(true);camp.root.traverse(o=>{for(const a of Object.values(o.geometry?.attributes||{})){attributes++;for(const x of a.array)if(!Number.isFinite(x))finite=false;}if(o.geometry?.attributes.position)vertices+=o.geometry.attributes.position.count;finite&&=o.matrixWorld.elements.every(Number.isFinite);});
+ const ground=camp.root.getObjectByName('苔石围合的手绘草台'),groundPositions=ground.geometry.attributes.position;let minY=Infinity,maxY=-Infinity;for(let i=0;i<groundPositions.count;i++){minY=Math.min(minY,groundPositions.getY(i));maxY=Math.max(maxY,groundPositions.getY(i));}
+ check('All campsite geometry attributes and transforms are finite, including the spherical shoreline of the terrace',finite&&groundPositions.count>1000&&minY<0&&maxY<.001,{attributes,vertices,groundVertices:groundPositions.count,terraceLocalY:[minY,maxY]});
+ const views=[];for(const [width,height]of [[900,680],[390,844],[844,390],[320,568]]){
+  const aspect=width/height,camera=new THREE.PerspectiveCamera(aspect<.8?48:38,aspect,.06,100),pose=camp.getPose(aspect);camera.position.copy(pose.position);camera.up.copy(pose.up);camera.lookAt(pose.target);camera.updateMatrixWorld(true);
+  const bounds={minX:Infinity,maxX:-Infinity,minY:Infinity,maxY:-Infinity,minZ:Infinity,maxZ:-Infinity};const p=new THREE.Vector3();
+  camp.root.traverse(o=>{const a=o.geometry?.attributes.position;if(!a)return;for(let i=0;i<a.count;i++){p.fromBufferAttribute(a,i).applyMatrix4(o.matrixWorld).project(camera);bounds.minX=Math.min(bounds.minX,p.x);bounds.maxX=Math.max(bounds.maxX,p.x);bounds.minY=Math.min(bounds.minY,p.y);bounds.maxY=Math.max(bounds.maxY,p.y);bounds.minZ=Math.min(bounds.minZ,p.z);bounds.maxZ=Math.max(bounds.maxZ,p.z);}});
+  views.push({width,height,...bounds,inside:Math.max(Math.abs(bounds.minX),Math.abs(bounds.maxX),Math.abs(bounds.minY),Math.abs(bounds.maxY))<.97&&bounds.minZ>-1&&bounds.maxZ<1});
+ }
+ check('The camp terrace, camper, dinner companions and lanterns fit the actual desktop and mobile camera frusta',views.every(v=>v.inside),{views,note:'Projects every geometry vertex in the campsite. Added woodland trees are part of world.js and require the browser composition review.'});
+ const resources=new Map();camp.root.traverse(o=>{if(o.geometry)resources.set(o.geometry,0);for(const m of o.material?(Array.isArray(o.material)?o.material:[o.material]):[]){resources.set(m,0);for(const v of Object.values(m))if(v?.isTexture)resources.set(v,0);}});for(const r of resources.keys())r.addEventListener('dispose',()=>resources.set(r,resources.get(r)+1));camp.dispose();camp.dispose();palette.dispose();
+ const counts=[...new Set(resources.values())];check('Standalone camp disposal and palette disposal release every retained resource exactly once',counts.length===1&&counts[0]===1&&camp.root.parent===null,{retainedResources:resources.size,disposeCounts:counts});
+ const report={checkedAt:new Date().toISOString(),passed:checks.every(c=>c.passed),checks};await fs.writeFile(path.join(dir,'placement-report.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));if(!report.passed)process.exitCode=1;
+}finally{await fs.unlink(bundle).catch(()=>{});}

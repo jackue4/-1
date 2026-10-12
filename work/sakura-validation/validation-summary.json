@@ -1,0 +1,220 @@
+{
+  "passed": true,
+  "totalGroups": 39,
+  "reports": [
+    {
+      "name": "final-shader-results.json",
+      "passed": 19,
+      "checks": [
+        {
+          "name": "water",
+          "passed": true
+        },
+        {
+          "name": "cottage-paint",
+          "passed": true
+        },
+        {
+          "name": "reef",
+          "passed": true
+        },
+        {
+          "name": "sea-grass",
+          "passed": true
+        },
+        {
+          "name": "boat-wake",
+          "passed": true
+        },
+        {
+          "name": "grass",
+          "passed": true
+        },
+        {
+          "name": "shore-foam",
+          "passed": true
+        },
+        {
+          "name": "ground",
+          "passed": true
+        },
+        {
+          "name": "plush-fur",
+          "passed": true
+        },
+        {
+          "name": "shrub",
+          "passed": true
+        },
+        {
+          "name": "canopy",
+          "passed": true
+        },
+        {
+          "name": "canopy-leaves",
+          "passed": true
+        },
+        {
+          "name": "farm-crop-leaves",
+          "passed": true
+        },
+        {
+          "name": "canopy-leaves-depth",
+          "passed": true
+        },
+        {
+          "name": "shrub-sprays",
+          "passed": true
+        },
+        {
+          "name": "canopy-depth",
+          "passed": true
+        },
+        {
+          "name": "wildflower-petals",
+          "passed": true
+        },
+        {
+          "name": "shrub-depth",
+          "passed": true
+        },
+        {
+          "name": "sunlit-meadow-pollen",
+          "passed": true
+        }
+      ],
+      "snippets": "water sky glints before opaque output; ground washes plus caustics; grass uniform declarations unique"
+    },
+    {
+      "name": "geometry-state-results.json",
+      "passed": 9,
+      "checks": [
+        "Every geometry attribute and object/instance transform is finite",
+        "153 live tree crown clusters feed the 5-batch spring garden",
+        "Petal-edge foliage uses matching cutout and depth masks",
+        "All 570 ground petals sit above dry terrain",
+        "Continuous petals move across time",
+        "Wish rises to 660 petals and returns to 380 after eleven seconds",
+        "Night, rain and snow reduce falling petals; snow hides ground petals and clear weather restores them",
+        "Petals respond to the shared world wind uniform",
+        "World animation remains finite at 60, 180 and 360 seconds"
+      ],
+      "meshes": 709,
+      "instanced": 29,
+      "instances": 40185,
+      "attributes": 2165,
+      "allTriangles": 674385,
+      "visibleTriangles": 648438,
+      "visibleMeshBatches": 505,
+      "treeCrownClusters": 153,
+      "leafInstances": 1836,
+      "garden": {
+        "decks": 1,
+        "lanterns": 4,
+        "groundPetals": 570,
+        "baseFlying": 380,
+        "maxFlying": 660,
+        "sourceClusters": 153,
+        "drawCalls": 5,
+        "triangles": 19646
+      },
+      "weatherCounts": {
+        "day": 380,
+        "night": 251,
+        "rain": 99,
+        "snow": 34,
+        "storm": 6
+      },
+      "lowestGroundPetalClearance": 0.002399888224859925,
+      "lowestDryGroundHeight": 0.05584682807211383,
+      "note": "CPU scene and geometry checks. Triangle and mesh-batch totals include no GPU culling, shadows or driver timing."
+    },
+    {
+      "name": "storage-results.json",
+      "passed": 4,
+      "checks": [
+        "Original planet save is ignored and unchanged",
+        "Sakura growth, travel and construction restore from its own save",
+        "Malformed JSON starts safely",
+        "Blocked storage returns a safe unsaved state"
+      ],
+      "key": "little-bloom.sakura.ecosystem.v1",
+      "note": "In-memory storage adapter exercises actual ecology restore/persist functions."
+    },
+    {
+      "name": "app-smoke-results.json",
+      "passed": 7,
+      "checks": [
+        "Scenic sakura page boots, exposes three residents and opens the globe camera",
+        "Application reads and writes only its independent sakura storage key",
+        "Globe and close forest cameras switch",
+        "Wish button triggers 660 petals and restores 380 after the short flourish",
+        "All five weather buttons update the scene with finite pollen and reduced petals in rain/snow",
+        "Night dims the spring effects and morning restores them",
+        "Quality mode reduces and restores the grass population"
+      ],
+      "weatherCounts": {
+        "clear": 660,
+        "cloudy": 660,
+        "rain": 132,
+        "mist": 378,
+        "snow": 37
+      },
+      "storageKeys": [
+        "little-bloom.sakura.ecosystem.v1"
+      ],
+      "shadowResolution": 2048,
+      "residents": 3,
+      "garden": {
+        "decks": 1,
+        "lanterns": 4,
+        "groundPetals": 570,
+        "baseFlying": 380,
+        "maxFlying": 660,
+        "sourceClusters": 153,
+        "drawCalls": 5,
+        "triangles": 19646
+      },
+      "note": "Headless DOM and CPU scene integration. Renderer stub does not validate WebGL visual output or frame rate."
+    }
+  ],
+  "sourceHashes": {
+    "world.js": {
+      "sha256": "56910cdbeecb9b12ab512a5d2f6df44eb2765fa6452a3f146d7c012e734ea551",
+      "modified": "2026-09-18T07:39:25.228Z"
+    },
+    "app.js": {
+      "sha256": "8a4e4ed8088f618c9f9e365731183155fcea12d9e42ad32231144709f9f0e63e",
+      "modified": "2026-09-18T07:41:16.305Z"
+    },
+    "tree-asset.js": {
+      "sha256": "8fe1a568058883a47c5fb8fe37173840f144b84212cfd306e1195b6b920f65dc",
+      "modified": "2026-09-18T07:31:04.164Z"
+    },
+    "sakura-garden.js": {
+      "sha256": "29c09a0837009f1018468f0586593a9eea28433180e41a1d5441172171443fcf",
+      "modified": "2026-09-18T07:33:59.510Z"
+    },
+    "ecology.js": {
+      "sha256": "76d15a34ea60168d964603da957aa934cf642c47e893e8f7cca65c3157555153",
+      "modified": "2026-09-18T07:30:34.308Z"
+    },
+    "page.html": {
+      "sha256": "f99805ed288ce30426239077a14cf473ee890da6fe01ac737b6eb8d0d14a617e",
+      "modified": "2026-09-18T07:31:53.483Z"
+    },
+    "nature.js": {
+      "sha256": "6fec0367431a3874bc8d7a6467bae00657fdcb790ac70c85e2aeed1d79ee1768",
+      "modified": "2026-09-18T07:26:18.584Z"
+    },
+    "vegetation.js": {
+      "sha256": "9baab3c934063b710a7ebcec2ba52e66ae6478508ea5f698533118c92375890d",
+      "modified": "2026-09-18T07:26:18.598Z"
+    },
+    "painterly-environment.js": {
+      "sha256": "fb3431719d7640bab35b1b5f12cf7f4eea3a66efefcca87eb60e0e3b51b6b371",
+      "modified": "2026-09-18T07:26:18.592Z"
+    }
+  },
+  "note": "19 shader compile/link + 9 CPU geometry/animation + 4 storage + 7 DOM integration groups. Browser visual review and GPU frame sample are independently owned by the main task."
+}

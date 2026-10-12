@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-09-21T06:43:08.832Z",
+  "passed": true,
+  "samples": 2561,
+  "seconds": 128,
+  "method": "Per-part world-space bounding boxes of the actual transformed static meshes against all real animated guest parts including head, ears, paws and held food. Disjoint boxes prove geometry separation; any overlapping boxes are conservatively reported for inspection. No renderer or image claim.",
+  "staticParts": 362,
+  "guestParts": 32,
+  "overlaps": [],
+  "minimumBoxDistance": 0.0843625038739753,
+  "nearPairs": [],
+  "minimumGuestCenterDistance": 0.20703142652851095,
+  "maxStepPer50ms": 0.006320687842399116,
+  "actualLowestFootVertexRange": [
+    0.013999829254766519,
+    0.014008677867406196
+  ],
+  "floorY": 0.014,
+  "exactTimeRestore": true,
+  "pauseStable": true,
+  "exactlyOnceDisposal": true
+}

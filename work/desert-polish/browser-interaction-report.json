@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checkedAt": "2026-09-22T02:22:12.212Z",
+  "checks": [
+    "Real rendered camel and follow camera move together",
+    "Dragging stops follow camera",
+    "Selecting tour again resumes follow",
+    "Moonlight entry turns on night and shows two to four visitors",
+    "Pause stops rendered tour and simulation",
+    "Selector preview restores paused night actors, following, and camera exactly",
+    "Daylight hides all night visitors",
+    "Selector entry and moonlight camera accessible at 390x844",
+    "Selector entry and moonlight camera accessible at 844x390",
+    "No runtime or shader errors"
+  ],
+  "errors": [],
+  "physicalPhoneVerified": false
+}

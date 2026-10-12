@@ -1,0 +1,288 @@
+{
+  "scope": "CPU integration; no rendered-image or GPU proof",
+  "checks": [
+    {
+      "name": "Closed railway sampling and carriage placement",
+      "passed": true,
+      "trackLength": 20.31555616589546,
+      "minTrackBedClearance": 0.02479601019226596,
+      "landSamples": 405,
+      "waterSamples": 595
+    },
+    {
+      "name": "Station departure, complete lap, dwell and crossing protection",
+      "passed": true,
+      "firstDeparture": 5.033333333333325,
+      "firstReturn": 66.76666666666544,
+      "secondDeparture": 71.79999999999849,
+      "firstStationDwell": 5.033333333333047,
+      "crossingWarning": {
+        "time": 6.233333333333321,
+        "ahead": 0.9470507173676914,
+        "open": 0.8928529928432785
+      },
+      "firstClosed": 7.36666666666665,
+      "firstOccupied": 8.533333333333314,
+      "lastOccupied": 11.433333333333303,
+      "firstReopen": 12.633333333333299,
+      "occupiedFrames": 88,
+      "maxOpenWhileOccupied": 0.00035858912148173177,
+      "violations": []
+    },
+    {
+      "name": "Application pause (dt=0 and unchanged elapsed time) freezes train and gate",
+      "passed": true,
+      "pausedAt": 72.99999999999842,
+      "crossingActive": true,
+      "gateOpen": 0.892852992843278
+    },
+    {
+      "name": "Petals fall into water and stay on the exact shared ocean wave",
+      "passed": true,
+      "total": 1500,
+      "airborne": 425,
+      "floating": 529,
+      "landed": 546,
+      "waterLandings": 684,
+      "totalLandings": 1436,
+      "time": 30,
+      "maxWaveError": 1.6556973925219154e-7,
+      "waterChecks": 19112
+    },
+    {
+      "name": "Ocean dominates surface area and mainland rises inland",
+      "passed": true,
+      "sampleMethod": "equal-area Fibonacci sphere, 40000 directions",
+      "landFraction": 0.21265,
+      "waterFraction": 0.78735,
+      "minHeight": 2.4665382929496182,
+      "maxHeight": 3.555068657080386,
+      "mainlandProfile": [
+        {
+          "lat": -0.25,
+          "coast": -0.10256919206295159,
+          "altitude": -0.2452393386033873
+        },
+        {
+          "lat": -0.15,
+          "coast": -0.011507588408952524,
+          "altitude": -0.04450833519183828
+        },
+        {
+          "lat": -0.05,
+          "coast": 0.09842924195283705,
+          "altitude": 0.0467727619570284
+        },
+        {
+          "lat": 0.05,
+          "coast": 0.1933882283220709,
+          "altitude": 0.10408341561220213
+        },
+        {
+          "lat": 0.15,
+          "coast": 0.28943121467314037,
+          "altitude": 0.15263228739533563
+        },
+        {
+          "lat": 0.3,
+          "coast": 0.4493201385079888,
+          "altitude": 0.16388879001545975
+        },
+        {
+          "lat": 0.45,
+          "coast": 0.5920033361757638,
+          "altitude": 0.22414426813590893
+        },
+        {
+          "lat": 0.6,
+          "coast": 0.4708089759945715,
+          "altitude": 0.31504445740020337
+        },
+        {
+          "lat": 0.75,
+          "coast": 0.3177897374789793,
+          "altitude": 0.3714388759181566
+        },
+        {
+          "lat": 0.9,
+          "coast": 0.16966259048528667,
+          "altitude": 0.1574564850143605
+        }
+      ]
+    },
+    {
+      "name": "Marine integration advances ten seconds below surface",
+      "passed": true,
+      "patches": 116,
+      "vegetation": 691,
+      "seagrass": 396,
+      "kelp": 218,
+      "featherAlgae": 77,
+      "rocks": 116,
+      "coral": 58,
+      "anemones": 70,
+      "seaStars": 58,
+      "fish": 80,
+      "schools": 5,
+      "drawCalls": 9,
+      "triangles": 111712,
+      "visibleFish": 80,
+      "minFishSeabedClearance": 0.09201789562876872,
+      "highestFishRadius": 3.0749999993047727,
+      "waterRadius": 3.15,
+      "time": 10,
+      "lowQuality": false
+    },
+    {
+      "name": "Hillside town geometry, coastal placement and open street axis",
+      "passed": true,
+      "houses": 29,
+      "mainIslandHouses": 29,
+      "shops": 8,
+      "cherryTrees": 11,
+      "evergreenTrees": 25,
+      "gardenPatches": 58,
+      "courtyardPlantings": 40,
+      "groundWashes": 40,
+      "steppingStones": 87,
+      "gardenFences": 9,
+      "retainingWalls": 45,
+      "schoolBuildings": 2,
+      "powerPoles": 7,
+      "stations": 1,
+      "drawCalls": 35,
+      "triangles": 145442,
+      "vertices": 436326,
+      "placements": 125,
+      "blossomSources": 33,
+      "minLandClearance": 0.04818659242139445,
+      "minHouseTrackDistance": 0.0985965995519976,
+      "minHouseAxisDistance": 0.10187775578674929
+    }
+  ],
+  "findings": [],
+  "railway": {
+    "firstDeparture": 5.033333333333325,
+    "firstReturn": 66.76666666666544,
+    "secondDeparture": 71.79999999999849,
+    "firstStationDwell": 5.033333333333047,
+    "crossingWarning": {
+      "time": 6.233333333333321,
+      "ahead": 0.9470507173676914,
+      "open": 0.8928529928432785
+    },
+    "firstClosed": 7.36666666666665,
+    "firstOccupied": 8.533333333333314,
+    "lastOccupied": 11.433333333333303,
+    "firstReopen": 12.633333333333299,
+    "occupiedFrames": 88,
+    "maxOpenWhileOccupied": 0.00035858912148173177,
+    "violations": []
+  },
+  "surface": {
+    "sampleMethod": "equal-area Fibonacci sphere, 40000 directions",
+    "landFraction": 0.21265,
+    "waterFraction": 0.78735,
+    "minHeight": 2.4665382929496182,
+    "maxHeight": 3.555068657080386,
+    "mainlandProfile": [
+      {
+        "lat": -0.25,
+        "coast": -0.10256919206295159,
+        "altitude": -0.2452393386033873
+      },
+      {
+        "lat": -0.15,
+        "coast": -0.011507588408952524,
+        "altitude": -0.04450833519183828
+      },
+      {
+        "lat": -0.05,
+        "coast": 0.09842924195283705,
+        "altitude": 0.0467727619570284
+      },
+      {
+        "lat": 0.05,
+        "coast": 0.1933882283220709,
+        "altitude": 0.10408341561220213
+      },
+      {
+        "lat": 0.15,
+        "coast": 0.28943121467314037,
+        "altitude": 0.15263228739533563
+      },
+      {
+        "lat": 0.3,
+        "coast": 0.4493201385079888,
+        "altitude": 0.16388879001545975
+      },
+      {
+        "lat": 0.45,
+        "coast": 0.5920033361757638,
+        "altitude": 0.22414426813590893
+      },
+      {
+        "lat": 0.6,
+        "coast": 0.4708089759945715,
+        "altitude": 0.31504445740020337
+      },
+      {
+        "lat": 0.75,
+        "coast": 0.3177897374789793,
+        "altitude": 0.3714388759181566
+      },
+      {
+        "lat": 0.9,
+        "coast": 0.16966259048528667,
+        "altitude": 0.1574564850143605
+      }
+    ]
+  },
+  "town": {
+    "houses": 29,
+    "mainIslandHouses": 29,
+    "shops": 8,
+    "cherryTrees": 11,
+    "evergreenTrees": 25,
+    "gardenPatches": 58,
+    "courtyardPlantings": 40,
+    "groundWashes": 40,
+    "steppingStones": 87,
+    "gardenFences": 9,
+    "retainingWalls": 45,
+    "schoolBuildings": 2,
+    "powerPoles": 7,
+    "stations": 1,
+    "drawCalls": 35,
+    "triangles": 145442
+  },
+  "passed": true,
+  "stats": {
+    "marine": {
+      "patches": 116,
+      "vegetation": 691,
+      "seagrass": 396,
+      "kelp": 218,
+      "featherAlgae": 77,
+      "rocks": 116,
+      "coral": 58,
+      "anemones": 70,
+      "seaStars": 58,
+      "fish": 80,
+      "schools": 5,
+      "drawCalls": 9,
+      "triangles": 111712
+    },
+    "railway": {
+      "trackLength": 20.31555616589546,
+      "trackSegments": 768,
+      "sleepers": 261,
+      "piers": 80,
+      "carriages": 3,
+      "trainLength": 0.672,
+      "drawCalls": 18,
+      "triangles": 35276,
+      "stationLongitude": -0.52
+    }
+  }
+}

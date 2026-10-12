@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "passengers": 15,
+  "counts": {
+    "carousel": 3,
+    "ferris": 3,
+    "teacups": 3,
+    "swings": 2,
+    "coaster": 4
+  },
+  "checks": [
+    "finite rider attachment matrices through moving rides",
+    "all five facilities move their riders",
+    "exact preview transform restoration",
+    "pause freezes passenger parents",
+    "front coaster carriage is empty",
+    "seated-model envelope clears gondola roofs and mountain tunnel",
+    "gondola floor clears wheel platform"
+  ],
+  "minimumFerrisRoofClearance": 0.011679999999999996,
+  "minimumCoasterRoofClearance": 0.05840000000000001,
+  "ferrisPlatformClearance": 0.004500000000000032
+}

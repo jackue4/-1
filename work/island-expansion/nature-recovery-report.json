@@ -1,0 +1,39 @@
+{
+  "scope": "CPU geometry, rendered-mesh raycasts and uniform state only; no GPU appearance proof",
+  "passed": true,
+  "checks": [
+    {
+      "name": "New foliage builds alongside all current placement reservations with finite geometry",
+      "passed": true,
+      "details": {
+        "triangles": 43840,
+        "drawCalls": 3,
+        "placements": 35
+      }
+    },
+    {
+      "name": "Exposed banyan roots contact the rendered curved land mesh",
+      "passed": true,
+      "details": {
+        "samples": 117,
+        "minGap": 0.001671647073946847,
+        "maxGap": 0.006269417862674764
+      }
+    },
+    {
+      "name": "Time and explicit pause keep breeze uniforms stable",
+      "passed": true,
+      "details": {
+        "frozenTime": 21
+      }
+    },
+    {
+      "name": "Owned geometry and materials are released",
+      "passed": true,
+      "details": {
+        "geometries": 3,
+        "materials": 3
+      }
+    }
+  ]
+}

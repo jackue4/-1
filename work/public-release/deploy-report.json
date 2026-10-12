@@ -1,0 +1,46 @@
+{
+  "publishedAt": "2026-09-18T10:36:49.956Z",
+  "project": "little-bloom-island",
+  "url": "https://little-bloom-island.vercel.app/#coast",
+  "deploymentUrl": "https://little-bloom-island-6s6kzv1m0-jackx0715-4494s-projects.vercel.app",
+  "publishedFiles": [
+    "index.html",
+    "vercel.json"
+  ],
+  "checks": [
+    {
+      "url": "https://little-bloom-island.vercel.app/",
+      "resolvedUrl": "https://little-bloom-island.vercel.app/",
+      "status": 200,
+      "bytes": 977719,
+      "sha256": "ee0ffe70a8276842f8fcd47352ab3eee078f3bbb929784f53c1ee73aac64bc24",
+      "exactMatch": true,
+      "contentType": "text/html; charset=utf-8",
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "anonymousRequest": true
+    },
+    {
+      "url": "https://little-bloom-island.vercel.app/sakura-season.html",
+      "resolvedUrl": "https://little-bloom-island.vercel.app/sakura-season.html",
+      "status": 200,
+      "bytes": 977719,
+      "sha256": "ee0ffe70a8276842f8fcd47352ab3eee078f3bbb929784f53c1ee73aac64bc24",
+      "exactMatch": true,
+      "contentType": "text/html; charset=utf-8",
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "anonymousRequest": true
+    },
+    {
+      "url": "https://little-bloom-island.vercel.app/little-bloom.html",
+      "resolvedUrl": "https://little-bloom-island.vercel.app/little-bloom.html",
+      "status": 200,
+      "bytes": 977719,
+      "sha256": "ee0ffe70a8276842f8fcd47352ab3eee078f3bbb929784f53c1ee73aac64bc24",
+      "exactMatch": true,
+      "contentType": "text/html; charset=utf-8",
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "anonymousRequest": true
+    }
+  ],
+  "passed": true
+}

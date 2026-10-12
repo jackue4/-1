@@ -1,0 +1,23 @@
+{
+  "reviewedAt": "2026-09-21",
+  "htmlSha256": "3eef6e8571149daa0ae460f1ac002cb19c6560e1ab9b1d651695840f6f040639",
+  "browser": "Chromium in-app browser",
+  "sceneRendered": true,
+  "reviewedViews": ["globe", "cove", "treasury", "oasis", "kasbah", "arch", "caravan"],
+  "reviewedLighting": ["day", "dusk", "night"],
+  "selectorViewportSizes": ["1030x920", "390x844", "844x390", "568x320"],
+  "gameViewportSizes": ["1030x920", "390x844", "844x390"],
+  "mobileEntryAndLandscapeToolsWorked": true,
+  "existingFestivalPreviewWorked": true,
+  "consoleWarningsOrErrorsObserved": [],
+  "physicalPhoneVerified": false,
+  "screenshot": "cove-night.png",
+  "observations": [
+    "Beach view shows separated cliffs, tent, canoe, animal campers, transparent shallow water, visible fish and coral.",
+    "Caravan camera shows three camels, patterned baggage, feeding troughs and striped shelter.",
+    "Oasis foreground palms were thinned so pool, fish, bridge and raised pavilion remain visible.",
+    "Day, pink sunset clouds, and starry night with warm campfire rendered.",
+    "All five planet choices and the enter button fit the reviewed portrait and landscape selector sizes.",
+    "Camera controls scroll horizontally on narrow screens; landscape tools can be expanded from the top bar."
+  ]
+}

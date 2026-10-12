@@ -1,0 +1,2 @@
+const fs=require('fs'),p='work/planet-v2/';let s=fs.readFileSync(p+'app.js','utf8');s=s.replace("function save(){saved=persist(storage,state);", "function save(){saved=persist(storage,state);if($('farm-save')){$('farm-save').textContent=saved?'进度已保存在当前浏览器':'暂时无法保存，关闭页面会丢失进度';$('farm-save').style.color=saved?'':'#b66b54';}");fs.writeFileSync(p+'app.js',s);
+let doc=fs.readFileSync('outputs/晴日菜园说明.md','utf8').replace('可在「遇见惊喜」关联的手记中查看保存说明','可在菜园底部查看保存状态，点击「小岛手记」查看事件记录');fs.writeFileSync('outputs/晴日菜园说明.md',doc);

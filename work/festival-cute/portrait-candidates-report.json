@@ -1,0 +1,380 @@
+{
+  "samples": 25,
+  "seconds": 120,
+  "step": 5,
+  "views": [
+    {
+      "name": "desktop+landscape",
+      "aspect": 1.7777777777777777,
+      "fov": 38
+    },
+    {
+      "name": "portrait",
+      "aspect": 0.49744897959183676,
+      "fov": 48
+    }
+  ],
+  "candidates": [
+    {
+      "name": "baseline",
+      "up": 0.17,
+      "front": 0.62,
+      "right": 0.19,
+      "blocked": [
+        {
+          "time": 5,
+          "view": "desktop+landscape",
+          "mesh": "SphereGeometry",
+          "color": "ffe4a7",
+          "anchorLatitude": 0.308,
+          "anchorLongitude": 0.928,
+          "hitDistance": 0.02184084619058325
+        },
+        {
+          "time": 5,
+          "view": "portrait",
+          "mesh": "SphereGeometry",
+          "color": "ffe4a7",
+          "anchorLatitude": 0.308,
+          "anchorLongitude": 0.928,
+          "hitDistance": 0.3767448173950165
+        },
+        {
+          "time": 35,
+          "view": "desktop+landscape",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.3398650290500751
+        },
+        {
+          "time": 35,
+          "view": "portrait",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.7024121048691617
+        },
+        {
+          "time": 45,
+          "view": "portrait",
+          "mesh": "CylinderGeometry",
+          "color": "405f6b",
+          "anchorLatitude": 0.308,
+          "anchorLongitude": 0.928,
+          "hitDistance": 0.3142347639924283
+        },
+        {
+          "time": 75,
+          "view": "desktop+landscape",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.33699778181124074
+        },
+        {
+          "time": 75,
+          "view": "portrait",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.6990641431508451
+        },
+        {
+          "time": 80,
+          "view": "desktop+landscape",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.4057547727228154
+        },
+        {
+          "time": 80,
+          "view": "portrait",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.7619436834820503
+        },
+        {
+          "time": 90,
+          "view": "desktop+landscape",
+          "mesh": "SphereGeometry",
+          "color": "ffe4a7",
+          "anchorLatitude": 0.308,
+          "anchorLongitude": 0.928,
+          "hitDistance": 0.03407026045937636
+        },
+        {
+          "time": 90,
+          "view": "portrait",
+          "mesh": "SphereGeometry",
+          "color": "ffe4a7",
+          "anchorLatitude": 0.308,
+          "anchorLongitude": 0.928,
+          "hitDistance": 0.38732505336054585
+        },
+        {
+          "time": 120,
+          "view": "desktop+landscape",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.3443943691076662
+        },
+        {
+          "time": 120,
+          "view": "portrait",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.7085430377674569
+        }
+      ],
+      "maxBoundingBoxNdc": 0.5203999970467382,
+      "minGroundClearance": 0.3284926305512257,
+      "blockedCount": 13
+    },
+    {
+      "name": "opposite side",
+      "up": 0.17,
+      "front": 0.62,
+      "right": -0.19,
+      "blocked": [
+        {
+          "time": 15,
+          "view": "desktop+landscape",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.33324478046008077
+        },
+        {
+          "time": 15,
+          "view": "portrait",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.6956025543030125
+        },
+        {
+          "time": 55,
+          "view": "desktop+landscape",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.33008679320779194
+        },
+        {
+          "time": 55,
+          "view": "portrait",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.6918153257553726
+        },
+        {
+          "time": 100,
+          "view": "desktop+landscape",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.35112441100374964
+        },
+        {
+          "time": 100,
+          "view": "portrait",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.7076187874035788
+        }
+      ],
+      "maxBoundingBoxNdc": 0.5204029987582562,
+      "minGroundClearance": 0.32543758854958904,
+      "blockedCount": 6
+    },
+    {
+      "name": "raised opposite",
+      "up": 0.24,
+      "front": 0.52,
+      "right": -0.2,
+      "blocked": [
+        {
+          "time": 15,
+          "view": "desktop+landscape",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.3554158122007275
+        },
+        {
+          "time": 15,
+          "view": "portrait",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.6785443000855819
+        },
+        {
+          "time": 55,
+          "view": "portrait",
+          "mesh": "Fine ribbon and star tassel",
+          "color": "ffffff",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.6244537309000585
+        },
+        {
+          "time": 100,
+          "view": "desktop+landscape",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.36063506855841426
+        },
+        {
+          "time": 100,
+          "view": "portrait",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.6843888689130574
+        }
+      ],
+      "maxBoundingBoxNdc": 0.5544140718579809,
+      "minGroundClearance": 0.3767815553825353,
+      "blockedCount": 5
+    },
+    {
+      "name": "high frontal",
+      "up": 0.29,
+      "front": 0.54,
+      "right": -0.1,
+      "blocked": [
+        {
+          "time": 15,
+          "view": "desktop+landscape",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.39070368767264985
+        },
+        {
+          "time": 15,
+          "view": "portrait",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.7200844545434915
+        },
+        {
+          "time": 80,
+          "view": "desktop+landscape",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.42289395064661406
+        },
+        {
+          "time": 80,
+          "view": "portrait",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.7507579106025359
+        },
+        {
+          "time": 100,
+          "view": "desktop+landscape",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.3960772757992206
+        },
+        {
+          "time": 100,
+          "view": "portrait",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.7258995039689747
+        }
+      ],
+      "maxBoundingBoxNdc": 0.5121534547955228,
+      "minGroundClearance": 0.42281684559112875,
+      "blockedCount": 6
+    },
+    {
+      "name": "raised original",
+      "up": 0.26,
+      "front": 0.54,
+      "right": 0.19,
+      "blocked": [
+        {
+          "time": 80,
+          "view": "desktop+landscape",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.38689978141572173
+        },
+        {
+          "time": 80,
+          "view": "portrait",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.7217501864782683
+        },
+        {
+          "time": 120,
+          "view": "desktop+landscape",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.3903983841912147
+        },
+        {
+          "time": 120,
+          "view": "portrait",
+          "mesh": "BoxGeometry",
+          "color": "e9bc69",
+          "anchorLatitude": 0.26,
+          "anchorLongitude": 0.66,
+          "hitDistance": 0.7254116399141353
+        }
+      ],
+      "maxBoundingBoxNdc": 0.5299587985868095,
+      "minGroundClearance": 0.3990191005840873,
+      "blockedCount": 4
+    }
+  ]
+}

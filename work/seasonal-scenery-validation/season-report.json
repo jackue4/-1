@@ -1,0 +1,101 @@
+{
+  "passed": 10,
+  "checks": [
+    {
+      "name": "spring: uniform weights, finite leaf transforms and unchanged construction",
+      "passed": true
+    },
+    {
+      "name": "summer: uniform weights, finite leaf transforms and unchanged construction",
+      "passed": true
+    },
+    {
+      "name": "autumn: uniform weights, finite leaf transforms and unchanged construction",
+      "passed": true
+    },
+    {
+      "name": "winter: uniform weights, finite leaf transforms and unchanged construction",
+      "passed": true
+    },
+    {
+      "name": "Spring petals, summer quiet, autumn falling and settled leaves, winter snow remain distinct",
+      "passed": true
+    },
+    {
+      "name": "Flower parts keep their authored one/two/five/one ratios during seasonal thinning",
+      "passed": true
+    },
+    {
+      "name": "Half-season blend and snow after precipitation are independent of falling snow",
+      "passed": true
+    },
+    {
+      "name": "No tint mutation leaks into crops, residents or construction paint base colours",
+      "passed": true
+    },
+    {
+      "name": "Concurrent rain and snow use independent fall rates, no abrupt accelerated snow",
+      "passed": true
+    },
+    {
+      "name": "Only two extra seasonal instance batches and at most two draw calls",
+      "passed": true
+    }
+  ],
+  "snapshots": {
+    "spring": {
+      "spring": 1,
+      "summer": 0,
+      "autumn": 0,
+      "winter": 0,
+      "snowCover": 0,
+      "wetness": 0,
+      "flowerDensity": 1,
+      "fallingLeaves": 118,
+      "settledLeaves": 0,
+      "seasonalMaterials": 13,
+      "extraDrawCalls": 1
+    },
+    "summer": {
+      "spring": 0,
+      "summer": 1,
+      "autumn": 0,
+      "winter": 0,
+      "snowCover": 0,
+      "wetness": 0,
+      "flowerDensity": 0.82,
+      "fallingLeaves": 0,
+      "settledLeaves": 0,
+      "seasonalMaterials": 13,
+      "extraDrawCalls": 0
+    },
+    "autumn": {
+      "spring": 0,
+      "summer": 0,
+      "autumn": 1,
+      "winter": 0,
+      "snowCover": 0,
+      "wetness": 0,
+      "flowerDensity": 0.35,
+      "fallingLeaves": 168,
+      "settledLeaves": 168,
+      "seasonalMaterials": 13,
+      "extraDrawCalls": 2
+    },
+    "winter": {
+      "spring": 0,
+      "summer": 0,
+      "autumn": 0,
+      "winter": 1,
+      "snowCover": 0.82,
+      "wetness": 0,
+      "flowerDensity": 0.045,
+      "fallingLeaves": 0,
+      "settledLeaves": 0,
+      "seasonalMaterials": 13,
+      "extraDrawCalls": 0
+    }
+  },
+  "shaderProgramsCompiledAndLinked": 16,
+  "browserRenderingVerified": false
+}

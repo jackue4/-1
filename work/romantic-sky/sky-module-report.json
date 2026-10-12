@@ -1,0 +1,265 @@
+{
+  "checkedAt": "2026-09-21T11:42:28.297Z",
+  "passed": true,
+  "method": "Production storybook-sky.js and cloud atlas execute against a command-recording Canvas2D/DOM stub. Tests verify timing, caching, finite commands, lifecycle and interface contracts. No pixels are rasterized; composition, perceived quality and browser performance require the parent browser review.",
+  "checks": [
+    {
+      "name": "Public sky interface and accessible noninteractive canvas remain compatible",
+      "passed": true
+    },
+    {
+      "name": "Non-lobby daylight stays completely transparent",
+      "passed": true,
+      "state": {
+        "variant": "night",
+        "active": true,
+        "reducedMotion": false,
+        "width": 1000,
+        "height": 720,
+        "dpr": 1.35,
+        "stars": 34,
+        "dust": 1650,
+        "moon": true,
+        "clouds": 14,
+        "visibility": 0,
+        "nightVisibility": 0,
+        "duskVisibility": 0,
+        "weatherDim": 1,
+        "meteors": 0,
+        "renderedFrames": 1,
+        "elapsed": 1.9999999999999978,
+        "cachedCloudSprites": 6
+      }
+    },
+    {
+      "name": "A clear night converges to a visible sky with stars and moon",
+      "passed": true,
+      "state": {
+        "variant": "night",
+        "active": true,
+        "reducedMotion": false,
+        "width": 1000,
+        "height": 720,
+        "dpr": 1.35,
+        "stars": 34,
+        "dust": 1650,
+        "moon": true,
+        "clouds": 14,
+        "visibility": 1,
+        "nightVisibility": 1,
+        "duskVisibility": 0,
+        "weatherDim": 1,
+        "meteors": 0,
+        "renderedFrames": 241,
+        "elapsed": 10.000000000000076,
+        "cachedCloudSprites": 6
+      }
+    },
+    {
+      "name": "Steady animation reuses cached canvas assets and owns no RAF",
+      "passed": true,
+      "canvases": 43,
+      "autonomousFrames": 0
+    },
+    {
+      "name": "dt=0 freezes particle state and performs no repeated sky drawing",
+      "passed": true,
+      "drawDelta": 0
+    },
+    {
+      "name": "Inactive preview or hidden world does no drawing or resize asset work",
+      "passed": true
+    },
+    {
+      "name": "Reactivation adopts the latest mobile viewport once and bounds pixel density",
+      "passed": true,
+      "state": {
+        "variant": "night",
+        "active": true,
+        "reducedMotion": false,
+        "width": 390,
+        "height": 844,
+        "dpr": 1.35,
+        "stars": 19,
+        "dust": 810,
+        "moon": true,
+        "clouds": 14,
+        "visibility": 1,
+        "nightVisibility": 1,
+        "duskVisibility": 0,
+        "weatherDim": 1,
+        "meteors": 0,
+        "renderedFrames": 362,
+        "elapsed": 14.000000000000275,
+        "cachedCloudSprites": 6
+      }
+    },
+    {
+      "name": "Unchanged resize does not reconstruct sky assets",
+      "passed": true
+    },
+    {
+      "name": "Landscape rotation updates canvas size with finite drawing coordinates",
+      "passed": true
+    },
+    {
+      "name": "A zero-sized canvas does not draw or emit invalid coordinates",
+      "passed": true
+    },
+    {
+      "name": "Sunny sunset and other-world dusk aliases both produce the same visible twilight",
+      "passed": true,
+      "sunset": {
+        "variant": "night",
+        "active": true,
+        "reducedMotion": false,
+        "width": 1000,
+        "height": 720,
+        "dpr": 1.35,
+        "stars": 34,
+        "dust": 1650,
+        "moon": true,
+        "clouds": 14,
+        "visibility": 1,
+        "nightVisibility": 0,
+        "duskVisibility": 1,
+        "weatherDim": 1,
+        "meteors": 0,
+        "renderedFrames": 240,
+        "elapsed": 7.999999999999977,
+        "cachedCloudSprites": 6
+      },
+      "dusk": {
+        "variant": "night",
+        "active": true,
+        "reducedMotion": false,
+        "width": 1000,
+        "height": 720,
+        "dpr": 1.35,
+        "stars": 34,
+        "dust": 1650,
+        "moon": true,
+        "clouds": 14,
+        "visibility": 1,
+        "nightVisibility": 0,
+        "duskVisibility": 1,
+        "weatherDim": 1,
+        "meteors": 0,
+        "renderedFrames": 240,
+        "elapsed": 7.999999999999977,
+        "cachedCloudSprites": 6
+      }
+    },
+    {
+      "name": "Explicit sunset zero takes precedence over a stale dusk alias",
+      "passed": true
+    },
+    {
+      "name": "Explicit preview immediately clears the actual canvas even with dt=0 just after a draw",
+      "passed": true,
+      "clearDelta": 1,
+      "state": {
+        "variant": "night",
+        "active": true,
+        "reducedMotion": false,
+        "width": 1000,
+        "height": 720,
+        "dpr": 1.35,
+        "stars": 34,
+        "dust": 1650,
+        "moon": true,
+        "clouds": 14,
+        "visibility": 0,
+        "nightVisibility": 0,
+        "duskVisibility": 0,
+        "weatherDim": 1,
+        "meteors": 0,
+        "renderedFrames": 242,
+        "elapsed": 8.249999999999977,
+        "cachedCloudSprites": 6
+      }
+    },
+    {
+      "name": "An immediate daylight environment clears a paused night canvas without waiting for a frame budget",
+      "passed": true,
+      "clearDelta": 1
+    },
+    {
+      "name": "Heavy weather dims the sky and suppresses incidental meteors",
+      "passed": true,
+      "clearDim": 1,
+      "stormState": {
+        "variant": "night",
+        "active": true,
+        "reducedMotion": false,
+        "width": 1000,
+        "height": 720,
+        "dpr": 1.35,
+        "stars": 34,
+        "dust": 1650,
+        "moon": true,
+        "clouds": 14,
+        "visibility": 1,
+        "nightVisibility": 1,
+        "duskVisibility": 0,
+        "weatherDim": 0.29,
+        "meteors": 0,
+        "renderedFrames": 480,
+        "elapsed": 16.000000000000373,
+        "cachedCloudSprites": 6
+      }
+    },
+    {
+      "name": "Reduced motion has no meteors or continuous redrawing after lighting settles",
+      "passed": true,
+      "drawDelta": 0
+    },
+    {
+      "name": "Changing reduced-motion preference re-enables animated sky drawing",
+      "passed": true
+    },
+    {
+      "name": "Changing reduced-motion preference back settles to a static sky",
+      "passed": true
+    },
+    {
+      "name": "Equal seed, viewport and host time produce deterministic drawing commands",
+      "passed": true,
+      "sameSeedHashes": [
+        918709780,
+        918709780
+      ],
+      "differentSeedHash": 1619508755
+    },
+    {
+      "name": "The lobby retains its night sky even with day environment input",
+      "passed": true
+    },
+    {
+      "name": "Resize event fallback works without ResizeObserver",
+      "passed": true
+    },
+    {
+      "name": "A document shares exactly six cached night/dusk cloud plates across instances",
+      "passed": true,
+      "cloudCanvases": 6
+    },
+    {
+      "name": "Disposing one sky does not release cloud plates still used by another",
+      "passed": true
+    },
+    {
+      "name": "Last sky disposal releases the shared cloud plate backing canvases",
+      "passed": true
+    },
+    {
+      "name": "Disposal is idempotent and removes canvas, resize and motion resources",
+      "passed": true
+    },
+    {
+      "name": "All exercised Canvas2D commands have finite coordinates and balanced save/restore",
+      "passed": true,
+      "invalid": []
+    }
+  ]
+}

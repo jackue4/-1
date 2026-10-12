@@ -1,0 +1,14 @@
+import * as THREE from 'three';
+import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
+import {createPainterlyTree,createPainterlyForest} from './tree-asset.js';
+const scene=new THREE.Scene();scene.background=new THREE.Color('#edf0e2');
+const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.15;renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;document.querySelector('main').append(renderer.domElement);
+const camera=new THREE.PerspectiveCamera(36,1,.05,60),controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.enablePan=false;controls.minDistance=1.2;controls.maxDistance=25;controls.maxPolarAngle=Math.PI*.48;
+scene.add(new THREE.HemisphereLight('#f4f4de','#6a8b6b',2.0));const sun=new THREE.DirectionalLight('#fff0d2',2.3);sun.position.set(-3,6,4);sun.castShadow=true;sun.shadow.mapSize.set(1024,1024);Object.assign(sun.shadow.camera,{left:-6,right:6,top:6,bottom:-6,near:.5,far:20});sun.shadow.normalBias=.01;scene.add(sun);
+const tree=createPainterlyTree({seed:1004}),forest=createPainterlyForest(Array.from({length:40},(_,i)=>({position:[(i%8-3.5)*1.02,0,(Math.floor(i/8)-2)*1.12],seed:i+5,scale:.72+(i%4)*.07,pink:i%13===0})));forest.group.visible=false;scene.add(tree.group,forest.group);
+const ground=new THREE.Mesh(new THREE.CircleGeometry(12,80),new THREE.MeshToonMaterial({color:'#dae2be'}));ground.rotation.x=-Math.PI/2;ground.position.y=-.008;ground.receiveShadow=true;scene.add(ground);
+function mode(grove){tree.group.visible=!grove;forest.group.visible=grove;controls.target.set(0,.42,0);camera.position.set(...(grove?[6.5,7.1,10]:[1.25,1.07,2.04]));controls.update();document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.mode==='grove')===grove)));document.querySelector('#detail').textContent=grove?'40 trees · 202,880 triangles · 3 tree batches':'1 tree · 5,072 triangles · 3 tree batches';}
+document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>mode(b.dataset.mode==='grove'));let wind=true,t=0;document.querySelector('#wind').onclick=e=>{wind=!wind;e.target.textContent=wind?'Wind: on':'Wind: paused';e.target.setAttribute('aria-pressed',String(wind));};
+const clock=new THREE.Clock();function resize(){camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);}addEventListener('resize',resize);resize();mode(false);
+renderer.setAnimationLoop(()=>{const dt=Math.min(clock.getDelta(),.05);if(wind)t+=dt;tree.update(t,.45);forest.update(t,.45);controls.update();renderer.render(scene,camera);});
+addEventListener('pagehide',()=>{renderer.setAnimationLoop(null);tree.dispose();forest.dispose();controls.dispose();renderer.dispose();},{once:true});

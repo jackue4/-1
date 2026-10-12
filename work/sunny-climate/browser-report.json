@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-09-20T13:22:29.019987+00:00",
+  "sha256": "93cacbb682daf12905cd10dc968abc65f35e09df9c7d06aa1f8b5617948caef4",
+  "browser": "Chromium with WebGL",
+  "viewports": [
+    [
+      1280,
+      720
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      844,
+      390
+    ]
+  ],
+  "checks": {
+    "autumnGoldenFoliage": true,
+    "winterSnowAndSnowfall": true,
+    "summerGreenery": true,
+    "springAndSaturatedRainbow": true,
+    "visibleTornadoLeavesAndFunnel": true,
+    "meteorShowerAtNight": true,
+    "heavyRainAndWaterRipples": true,
+    "snowPersistsWhenChoosingMorning": true,
+    "portraitPanelFitsWithoutHorizontalOverflow": true,
+    "landscapePanelScrollableAndToolsAccessible": true,
+    "previewFreezesClimateAndEffectClocks": true,
+    "returnRestoresSeasonWeatherAndCamera": true,
+    "browserWarnings": 0,
+    "browserErrors": 0
+  },
+  "unitChecks": {
+    "climate": 10,
+    "weatherEffects": 10,
+    "seasonalScenery": 10,
+    "gameplayRegression": 8,
+    "shaderProgramsCompiled": 16
+  },
+  "physicalPhoneVerified": false
+}

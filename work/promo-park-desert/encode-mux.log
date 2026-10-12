@@ -1,0 +1,62 @@
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e76ef2c0] Auto-inserting h264_mp4toannexb bitstream filter
+Input #0, concat, from 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\work\promo-park-desert\edit-concat.txt':
+  Duration: 00:01:00.00, start: 0.000000, bitrate: 0 kb/s
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuvj420p(pc, bt470bg/unknown/unknown, progressive), 1080x1920 [SAR 1:1 DAR 9:16], 12244 kb/s, 30 fps, 30 tbr, 90k tbn
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        ICC Profile
+[aist#1:0/pcm_s16le @ 000001e0e7727cc0] Guessed Channel Layout: stereo
+Input #1, wav, from 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\work\promo-park-desert\music.wav':
+  Duration: 00:01:00.00, bitrate: 1536 kb/s
+  Stream #1:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #1:0 -> #0:1 (pcm_s16le (native) -> aac (native))
+Output #0, mp4, to 'C:\Users\chenyahan\Documents\Codex\2026-09-18\file-c-users-chenyahan-documents-codex\outputs\promo\little-bloom-park-desert-60s.encoding.mp4':
+  Metadata:
+    title           : Little Bloom - A Carousel of Wishes and Dunes by the Sea
+    comment         : Deterministic capture of actual interactive Three.js scenes; original instrumental score
+    encoder         : Lavf61.7.100
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuvj420p(pc, bt470bg/unknown/unknown, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 12244 kb/s, 30 fps, 30 tbr, 90k tbn
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        ICC Profile
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s
+      Metadata:
+        encoder         : Lavc61.19.100 aac
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e79a3180] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798ae00] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798c400] Auto-inserting h264_mp4toannexb bitstream filter
+frame=  222 fps=0.0 q=-1.0 size=   10752KiB time=00:00:07.33 bitrate=12011.0kbits/s speed=14.1x    [mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798bbc0] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798c400] Auto-inserting h264_mp4toannexb bitstream filter
+    Last message repeated 1 times
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798b380] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798ae00] Auto-inserting h264_mp4toannexb bitstream filter
+frame=  517 fps=497 q=-1.0 size=   24320KiB time=00:00:17.04 bitrate=11688.2kbits/s speed=16.4x    [mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798c400] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798ae00] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798b0c0] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798ae00] Auto-inserting h264_mp4toannexb bitstream filter
+frame=  789 fps=509 q=-1.0 size=   33024KiB time=00:00:26.11 bitrate=10360.5kbits/s speed=16.8x    [mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798ae00] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798ab40] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798b900] Auto-inserting h264_mp4toannexb bitstream filter
+frame= 1092 fps=529 q=-1.0 size=   44544KiB time=00:00:36.33 bitrate=10043.3kbits/s speed=17.6x    [mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798c6c0] Auto-inserting h264_mp4toannexb bitstream filter
+    Last message repeated 1 times
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798c400] Auto-inserting h264_mp4toannexb bitstream filter
+frame= 1339 fps=518 q=-1.0 size=   50688KiB time=00:00:44.45 bitrate=9339.8kbits/s speed=17.2x    [mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798be80] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e798b900] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e7c1b400] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e7c1abc0] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e7c1b6c0] Auto-inserting h264_mp4toannexb bitstream filter
+frame= 1572 fps=507 q=-1.0 size=   57856KiB time=00:00:52.33 bitrate=9056.5kbits/s speed=16.9x    [mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e7727800] Auto-inserting h264_mp4toannexb bitstream filter
+[mov,mp4,m4a,3gp,3g2,mj2 @ 000001e0e7726fc0] Auto-inserting h264_mp4toannexb bitstream filter
+    Last message repeated 1 times
+[mp4 @ 000001e0e7fce040] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001e0e7758280] video:62689KiB audio:1435KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.103619%
+frame= 1800 fps=492 q=-1.0 Lsize=   64190KiB time=00:00:59.93 bitrate=8773.8kbits/s speed=16.4x    
+[aac @ 000001e0e7bd0b00] Qavg: 819.197

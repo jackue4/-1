@@ -1,0 +1,65 @@
+{
+  "tests": [
+    {
+      "name": "All kite and balloon rigs are mounted; particle counts start empty",
+      "passed": true
+    },
+    {
+      "name": "Daylight never launches fireworks",
+      "passed": true
+    },
+    {
+      "name": "An entire 84 second score and repeat remain finite within budget",
+      "passed": true
+    },
+    {
+      "name": "Replaying returns to the opening cue without stale sparks",
+      "passed": true
+    },
+    {
+      "name": "A paused launch freezes its particle buffers and cannot fill the pool",
+      "passed": true
+    },
+    {
+      "name": "Rigid baking preserves color attributes and removes redundant draw calls",
+      "passed": true
+    },
+    {
+      "name": "Paused chapter two survives daylight preview and returns to the exact frozen frame",
+      "passed": true
+    },
+    {
+      "name": "Night to day clears all particle buffers and active rockets",
+      "passed": true
+    },
+    {
+      "name": "Dispose releases only owned resources and is idempotent",
+      "passed": true
+    },
+    {
+      "name": "Phone mode budgets 2400 particles; reduced motion slows and thins the score",
+      "passed": true
+    },
+    {
+      "name": "The full show fits the lowered desktop and portrait show camera",
+      "passed": true
+    }
+  ],
+  "peakParticles": 2659,
+  "bursts": 34,
+  "rigidDrawCallsSaved": 107,
+  "cameraBounds": [
+    {
+      "name": "desktop",
+      "minY": 0.20794210202604144,
+      "maxY": 0.9465231847706287,
+      "maxAbsX": 0.31882833922661025
+    },
+    {
+      "name": "portrait",
+      "minY": 0.0967052604090754,
+      "maxY": 0.4293404904992915,
+      "maxAbsX": 0.5693903343004983
+    }
+  ]
+}

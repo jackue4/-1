@@ -1,0 +1,385 @@
+{
+  "scope": "Offline CPU glslang ES 3.00 vertex/fragment compilation and linkage using current Three.js chunks, ACES/sRGB and shadow-on/off variants. No browser/GPU/render validation.",
+  "threeRevision": "160",
+  "passed": 46,
+  "total": 46,
+  "sources": {
+    "surface.js": "401960dc0ed15c2db5f35e5d8b36195c0734e9d6cd61e039179e256eef37c701",
+    "island-stream.js": "0bd4ab27fd02face9aeceaeefacc5b681b7e2a4ca98305d3ca56fd9096d62f3f",
+    "coastal-nature.js": "967bc0ac0e25c9995e53350504957d26cdb95e10cddeb7361b192bb0d54538bd",
+    "island-trails.js": "7343831f4d3253ea689a0ab6f85a2bac93cf96f0de3779f1c91eb0476ea57cde",
+    "shore-life.js": "3403576a80589cd520a54b16c56a7af6596a47200db5a2fb7c8d76295fc953f2",
+    "ocean.js": "98b2118a349b581160a5ca2aaaae200b119738d4a0d5a21d9f83167cff0787b8",
+    "beacons.js": "9ff9a57e94210a54ceb0e3f69a3ff9e7853257fbbab095f6c71d65fa4d3980f0"
+  },
+  "checks": [
+    {
+      "name": "land-0-shadows",
+      "owner": "land",
+      "mesh": "Sculpted coast, sandy shelf and deep seabed",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "land-0-lightweight",
+      "owner": "land",
+      "mesh": "Sculpted coast, sandy shelf and deep seabed",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "stream-0-shadows",
+      "owner": "stream",
+      "mesh": "Transparent flowing spring water and quiet lagoon",
+      "material": "ShaderMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "stream-0-lightweight",
+      "owner": "stream",
+      "mesh": "Transparent flowing spring water and quiet lagoon",
+      "material": "ShaderMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "stream-1-shadows",
+      "owner": "stream",
+      "mesh": "Cedar footbridge and two culvert abutments",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "stream-1-lightweight",
+      "owner": "stream",
+      "mesh": "Cedar footbridge and two culvert abutments",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "stream-2-shadows",
+      "owner": "stream",
+      "mesh": "Moss, reed leaves and small water lilies",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "stream-2-lightweight",
+      "owner": "stream",
+      "mesh": "Moss, reed leaves and small water lilies",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "stream-3-shadows",
+      "owner": "stream",
+      "mesh": "Spring boulders and riverbank pebbles",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "stream-3-lightweight",
+      "owner": "stream",
+      "mesh": "Spring boulders and riverbank pebbles",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "stream-4-shadows",
+      "owner": "stream",
+      "mesh": "Twelve minnows swimming below the brook surface",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "stream-4-lightweight",
+      "owner": "stream",
+      "mesh": "Twelve minnows swimming below the brook surface",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "stream-5-shadows",
+      "owner": "stream",
+      "mesh": "Fallen leaves drifting downstream",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "stream-5-lightweight",
+      "owner": "stream",
+      "mesh": "Fallen leaves drifting downstream",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "nature-0-shadows",
+      "owner": "nature",
+      "mesh": "Coastal bark, roots and mossy stone",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "nature-0-lightweight",
+      "owner": "nature",
+      "mesh": "Coastal bark, roots and mossy stone",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "nature-1-shadows",
+      "owner": "nature",
+      "mesh": "Breeze and warm light through leaf edges",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "nature-1-lightweight",
+      "owner": "nature",
+      "mesh": "Breeze and warm light through leaf edges",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "nature-2-shadows",
+      "owner": "nature",
+      "mesh": "Coral, white and purple petals",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "nature-2-lightweight",
+      "owner": "nature",
+      "mesh": "Coral, white and purple petals",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "trails-0-shadows",
+      "owner": "trails",
+      "mesh": "Weathered Japanese lighthouse sign",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "trails-0-lightweight",
+      "owner": "trails",
+      "mesh": "Weathered Japanese lighthouse sign",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "trails-1-shadows",
+      "owner": "trails",
+      "mesh": "Individual slate slabs, timber sections and moss",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "trails-1-lightweight",
+      "owner": "trails",
+      "mesh": "Individual slate slabs, timber sections and moss",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "trails-2-shadows",
+      "owner": "trails",
+      "mesh": "Wind-cut grasses, ferns and lighthouse flag",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "trails-2-lightweight",
+      "owner": "trails",
+      "mesh": "Wind-cut grasses, ferns and lighthouse flag",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "shore-0-shadows",
+      "owner": "shore",
+      "mesh": "Batched cottage keepsakes, telephone, birds and beach finds",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "shore-0-lightweight",
+      "owner": "shore",
+      "mesh": "Batched cottage keepsakes, telephone, birds and beach finds",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "shore-1-shadows",
+      "owner": "shore",
+      "mesh": "Thin sea-green telephone glazing",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "shore-1-lightweight",
+      "owner": "shore",
+      "mesh": "Thin sea-green telephone glazing",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "shore-2-shadows",
+      "owner": "shore",
+      "mesh": "Three pinned cotton garments",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "shore-2-lightweight",
+      "owner": "shore",
+      "mesh": "Three pinned cotton garments",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "ocean-0-shadows",
+      "owner": "ocean",
+      "mesh": "Translucent turquoise sea over living seabed",
+      "material": "ShaderMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "ocean-0-lightweight",
+      "owner": "ocean",
+      "mesh": "Translucent turquoise sea over living seabed",
+      "material": "ShaderMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "beacons-0-shadows",
+      "owner": "beacons",
+      "mesh": "Three distinct coastal watchtowers",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "beacons-0-lightweight",
+      "owner": "beacons",
+      "mesh": "Three distinct coastal watchtowers",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "beacons-1-shadows",
+      "owner": "beacons",
+      "mesh": "Three amber lighthouse lantern rooms",
+      "material": "MeshToonMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "beacons-1-lightweight",
+      "owner": "beacons",
+      "mesh": "Three amber lighthouse lantern rooms",
+      "material": "MeshToonMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "beacons-2-shadows",
+      "owner": "beacons",
+      "mesh": "Soft finite beam · old-reef",
+      "material": "ShaderMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "beacons-2-lightweight",
+      "owner": "beacons",
+      "mesh": "Soft finite beam · old-reef",
+      "material": "ShaderMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "beacons-3-shadows",
+      "owner": "beacons",
+      "mesh": "Soft finite beam · east-bay",
+      "material": "ShaderMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "beacons-3-lightweight",
+      "owner": "beacons",
+      "mesh": "Soft finite beam · east-bay",
+      "material": "ShaderMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "beacons-4-shadows",
+      "owner": "beacons",
+      "mesh": "Soft finite beam · west-cape",
+      "material": "ShaderMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "beacons-4-lightweight",
+      "owner": "beacons",
+      "mesh": "Soft finite beam · west-cape",
+      "material": "ShaderMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    },
+    {
+      "name": "beacons-5-shadows",
+      "owner": "beacons",
+      "mesh": "Soft finite beam · far-coast",
+      "material": "ShaderMaterial",
+      "mode": "PCF soft shadows",
+      "passed": true
+    },
+    {
+      "name": "beacons-5-lightweight",
+      "owner": "beacons",
+      "mesh": "Soft finite beam · far-coast",
+      "material": "ShaderMaterial",
+      "mode": "shadows disabled",
+      "passed": true
+    }
+  ]
+}

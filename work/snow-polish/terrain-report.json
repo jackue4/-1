@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-09-21T06:19:18.426Z",
+  "verification": "Actual terrain geometry and shoreline convergence in Node. No GPU or visual quality claim.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Spherical terrain stays finite, outward-facing and continuous across longitude seam",
+      "passed": true,
+      "vertices": 98945,
+      "minRadialNormal": 0.544858771965441,
+      "minHeight": -0.13000016907935974,
+      "maxHeight": 0.10598769642911376,
+      "nonFinite": 0,
+      "seamError": 4.718447854656915e-16
+    },
+    {
+      "name": "Snow-to-water shoreline no longer has the old abrupt height step",
+      "passed": true,
+      "sampledShoreCrossings": 352,
+      "maxBoundaryJump": 0.000007663307301120081,
+      "previousJump": 0.032
+    },
+    {
+      "name": "Powder shading attaches to the actual installed Standard shader with all required values",
+      "passed": true,
+      "note": "Shader injection only; GPU compilation is verified in the browser"
+    },
+    {
+      "name": "Scenery batching preserves the custom snow mask and terrain shader mesh",
+      "passed": true,
+      "batching": {
+        "before": 1,
+        "batched": 0,
+        "remainingStatic": 1
+      }
+    }
+  ]
+}

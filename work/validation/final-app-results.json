@@ -1,0 +1,13 @@
+{
+  "passed": 5,
+  "checks": [
+    "Meadow and globe cameras switch with safe zoom bounds",
+    "DOM boot, scene construction, animation loop",
+    "Sunny coast shortcut opens bright morning preview",
+    "All weather states update with finite pollen data; rain and snow hide pollen",
+    "Night hides pollen; daylight restores pollen; quality toggle reduces and restores grass"
+  ],
+  "shadowResolution": 2048,
+  "residents": 3,
+  "note": "Headless DOM and CPU scene integration only; renderer is a stub."
+}

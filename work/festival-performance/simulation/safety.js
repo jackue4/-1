@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {THREE,createPalette} from '../../festival-planet/core.js';
+import {createFestivalEffects} from '../../festival-planet/festival-effects.js';
+import {createFestivalRides} from '../../festival-planet/rides.js';
+globalThis.matchMedia=()=>({matches:false,addEventListener(){},removeEventListener(){}});
+const palette=createPalette(),planet=new THREE.Group(),rides=createFestivalRides({planet,palette}),effects=createFestivalEffects({planet,palette});
+const checks=[];function check(name,fn){fn();checks.push({name,passed:true});}
+const attributes=[];planet.traverse(o=>{for(const a of Object.values(o.geometry?.attributes||{}))if(a.usage===THREE.DynamicDrawUsage)attributes.push(a);if(o.instanceMatrix)attributes.push(o.instanceMatrix);});
+const mirrors=attributes.map(a=>({source:a,array:a.array.slice(),version:a.version}));
+function consume(){for(const m of mirrors){const a=m.source;if(a.version!==m.version){if(a.updateRanges.length){for(const {start,count} of a.updateRanges)m.array.set(a.array.subarray(start,start+count),start);}else m.array.set(a.array);m.version=a.version;a.clearUpdateRanges();}assert.deepEqual(m.array,a.array);}}
+check('Partial buffer uploads exactly reproduce every live buffer across a full firework score, including three updates between renders',()=>{for(let i=0;i<5400;i++){rides.update(1/60,i/60,{night:1});effects.update(1/60,i/60,{night:1});if(i%3===2)consume();}consume();});
+check('Paused rides, particles and cloth request no redundant buffer uploads',()=>{const versions=attributes.map(a=>a.version);for(let i=0;i<120;i++){rides.update(0,5399/60,{night:1});effects.update(0,5399/60,{night:1});}assert.deepEqual(attributes.map(a=>a.version),versions);});
+check('Optional reused telemetry and ride pose objects preserve existing snapshot values',()=>{const rideState={},effectState={},pose={position:new THREE.Vector3(),up:new THREE.Vector3(),tangent:new THREE.Vector3(),lookAhead:new THREE.Vector3()};assert.equal(rides.getState(rideState),rideState);assert.deepEqual(rideState,rides.getState());assert.equal(effects.getState(effectState),effectState);assert.deepEqual(effectState,effects.getState());assert.equal(rides.getRidePose(pose),pose);assert.deepEqual(pose,rides.getRidePose());});
+check('Preview does not alter the paused show or its particle buffers and restores its rendered state',()=>{const before=effects.getState(),points=effects.root.getObjectByName('Choreographed fireworks'),positions=points.geometry.attributes.position.array.slice();for(let i=0;i<60;i++)effects.update(1/60,100+i/60,{night:0,preview:true});effects.update(0,5399/60,{night:1});assert.deepEqual(effects.getState(),before);assert.deepEqual(points.geometry.attributes.position.array,positions);consume();});
+check('Coaster restore places every train carriage back on its saved track frame',()=>{const before=rides.captureState(),cars=[];rides.root.traverse(o=>{if(/^星愿车厢/.test(o.name))cars.push(o);});const poses=cars.map(o=>({p:o.position.clone(),q:o.quaternion.clone()}));for(let i=0;i<100;i++)rides.update(1/60,100+i/60,{night:0,preview:true});assert.equal(rides.restoreState(before),true);cars.forEach((o,i)=>{assert.ok(o.position.distanceTo(poses[i].p)<1e-10);assert.ok(1-Math.abs(o.quaternion.dot(poses[i].q))<1e-10);});consume();});
+fs.writeFileSync(new URL('./simulation-safety-report.json',import.meta.url),JSON.stringify({passed:true,checks},null,2));console.log(JSON.stringify({passed:true,checks},null,2));

@@ -1,0 +1,174 @@
+#version 300 es
+precision highp float;precision highp int;
+#define HIGH_PRECISION
+#define average threeAverage
+#define SHADER_TYPE OfflineIslandCheck
+#define SHADER_NAME OfflineIslandCheck
+#define NUM_DIR_LIGHTS 2
+#define NUM_POINT_LIGHTS 0
+#define NUM_SPOT_LIGHTS 0
+#define NUM_SPOT_LIGHT_MAPS 0
+#define NUM_SPOT_LIGHT_COORDS 0
+#define NUM_LIGHT_PROBES 0
+#define NUM_RECT_AREA_LIGHTS 0
+#define NUM_HEMI_LIGHTS 1
+#define NUM_DIR_LIGHT_SHADOWS 1
+#define NUM_POINT_LIGHT_SHADOWS 0
+#define NUM_SPOT_LIGHT_SHADOWS 0
+#define NUM_SPOT_LIGHT_SHADOWS_WITH_MAPS 0
+#define NUM_CLIPPING_PLANES 0
+#define UNION_CLIPPING_PLANES 0
+#define texture2D texture
+#define textureCube texture
+#define texture2DLodEXT textureLod
+#define texture2DGradEXT textureGrad
+#define textureCubeLodEXT textureLod
+uniform mat4 viewMatrix;uniform vec3 cameraPosition;uniform bool isOrthographic;
+#define TONE_MAPPING
+#define varying in
+out vec4 pc_fragColor;
+#define gl_FragColor pc_fragColor
+#ifndef saturate
+#define saturate( a ) clamp( a, 0.0, 1.0 )
+#endif
+uniform float toneMappingExposure;
+vec3 LinearToneMapping( vec3 color ) {
+	return saturate( toneMappingExposure * color );
+}
+vec3 ReinhardToneMapping( vec3 color ) {
+	color *= toneMappingExposure;
+	return saturate( color / ( vec3( 1.0 ) + color ) );
+}
+vec3 OptimizedCineonToneMapping( vec3 color ) {
+	color *= toneMappingExposure;
+	color = max( vec3( 0.0 ), color - 0.004 );
+	return pow( ( color * ( 6.2 * color + 0.5 ) ) / ( color * ( 6.2 * color + 1.7 ) + 0.06 ), vec3( 2.2 ) );
+}
+vec3 RRTAndODTFit( vec3 v ) {
+	vec3 a = v * ( v + 0.0245786 ) - 0.000090537;
+	vec3 b = v * ( 0.983729 * v + 0.4329510 ) + 0.238081;
+	return a / b;
+}
+vec3 ACESFilmicToneMapping( vec3 color ) {
+	const mat3 ACESInputMat = mat3(
+		vec3( 0.59719, 0.07600, 0.02840 ),		vec3( 0.35458, 0.90834, 0.13383 ),
+		vec3( 0.04823, 0.01566, 0.83777 )
+	);
+	const mat3 ACESOutputMat = mat3(
+		vec3(  1.60475, -0.10208, -0.00327 ),		vec3( -0.53108,  1.10813, -0.07276 ),
+		vec3( -0.07367, -0.00605,  1.07602 )
+	);
+	color *= toneMappingExposure / 0.6;
+	color = ACESInputMat * color;
+	color = RRTAndODTFit( color );
+	color = ACESOutputMat * color;
+	return saturate( color );
+}
+const mat3 LINEAR_REC2020_TO_LINEAR_SRGB = mat3(
+	vec3( 1.6605, - 0.1246, - 0.0182 ),
+	vec3( - 0.5876, 1.1329, - 0.1006 ),
+	vec3( - 0.0728, - 0.0083, 1.1187 )
+);
+const mat3 LINEAR_SRGB_TO_LINEAR_REC2020 = mat3(
+	vec3( 0.6274, 0.0691, 0.0164 ),
+	vec3( 0.3293, 0.9195, 0.0880 ),
+	vec3( 0.0433, 0.0113, 0.8956 )
+);
+vec3 agxDefaultContrastApprox( vec3 x ) {
+	vec3 x2 = x * x;
+	vec3 x4 = x2 * x2;
+	return + 15.5 * x4 * x2
+		- 40.14 * x4 * x
+		+ 31.96 * x4
+		- 6.868 * x2 * x
+		+ 0.4298 * x2
+		+ 0.1191 * x
+		- 0.00232;
+}
+vec3 AgXToneMapping( vec3 color ) {
+	const mat3 AgXInsetMatrix = mat3(
+		vec3( 0.856627153315983, 0.137318972929847, 0.11189821299995 ),
+		vec3( 0.0951212405381588, 0.761241990602591, 0.0767994186031903 ),
+		vec3( 0.0482516061458583, 0.101439036467562, 0.811302368396859 )
+	);
+	const mat3 AgXOutsetMatrix = mat3(
+		vec3( 1.1271005818144368, - 0.1413297634984383, - 0.14132976349843826 ),
+		vec3( - 0.11060664309660323, 1.157823702216272, - 0.11060664309660294 ),
+		vec3( - 0.016493938717834573, - 0.016493938717834257, 1.2519364065950405 )
+	);
+	const float AgxMinEv = - 12.47393;	const float AgxMaxEv = 4.026069;
+	color = LINEAR_SRGB_TO_LINEAR_REC2020 * color;
+	color *= toneMappingExposure;
+	color = AgXInsetMatrix * color;
+	color = max( color, 1e-10 );	color = log2( color );
+	color = ( color - AgxMinEv ) / ( AgxMaxEv - AgxMinEv );
+	color = clamp( color, 0.0, 1.0 );
+	color = agxDefaultContrastApprox( color );
+	color = AgXOutsetMatrix * color;
+	color = pow( max( vec3( 0.0 ), color ), vec3( 2.2 ) );
+	color = LINEAR_REC2020_TO_LINEAR_SRGB * color;
+	return color;
+}
+vec3 CustomToneMapping( vec3 color ) { return color; }
+vec3 toneMapping(vec3 color){return ACESFilmicToneMapping(color);}
+
+const mat3 LINEAR_SRGB_TO_LINEAR_DISPLAY_P3 = mat3(
+	vec3( 0.8224621, 0.177538, 0.0 ),
+	vec3( 0.0331941, 0.9668058, 0.0 ),
+	vec3( 0.0170827, 0.0723974, 0.9105199 )
+);
+const mat3 LINEAR_DISPLAY_P3_TO_LINEAR_SRGB = mat3(
+	vec3( 1.2249401, - 0.2249404, 0.0 ),
+	vec3( - 0.0420569, 1.0420571, 0.0 ),
+	vec3( - 0.0196376, - 0.0786361, 1.0982735 )
+);
+vec4 LinearSRGBToLinearDisplayP3( in vec4 value ) {
+	return vec4( value.rgb * LINEAR_SRGB_TO_LINEAR_DISPLAY_P3, value.a );
+}
+vec4 LinearDisplayP3ToLinearSRGB( in vec4 value ) {
+	return vec4( value.rgb * LINEAR_DISPLAY_P3_TO_LINEAR_SRGB, value.a );
+}
+vec4 LinearTransferOETF( in vec4 value ) {
+	return value;
+}
+vec4 sRGBTransferOETF( in vec4 value ) {
+	return vec4( mix( pow( value.rgb, vec3( 0.41666 ) ) * 1.055 - vec3( 0.055 ), value.rgb * 12.92, vec3( lessThanEqual( value.rgb, vec3( 0.0031308 ) ) ) ), value.a );
+}
+vec4 LinearToLinear( in vec4 value ) {
+	return value;
+}
+vec4 LinearTosRGB( in vec4 value ) {
+	return sRGBTransferOETF( value );
+}
+vec4 linearToOutputTexel(vec4 color){return sRGBTransferOETF(color);}
+uniform float uTime;uniform float uDay;uniform float uDusk;uniform vec3 uSun;uniform vec3 uBeamSource[4];uniform vec3 uBeamTarget[4];uniform vec3 uBeamConfig[4];varying vec3 vSea;varying vec3 vWorld;varying vec3 vNormal;varying float vDepth;
+ void main(){
+  vec3 N=normalize(vNormal),V=normalize(cameraPosition-vWorld);float d=max(0.,vDepth),fresnel=pow(1.-max(0.,dot(N,V)),3.);
+  vec3 shallow=vec3(.105,.48,.40),middle=vec3(.014,.25,.29),deep=vec3(.004,.085,.19);
+  vec3 color=mix(shallow,middle,smoothstep(.03,.36,d));color=mix(color,deep,smoothstep(.33,.67,d));
+  float wash=sin(vSea.x*5.+sin(vSea.z*4.))*sin(vSea.y*6.+vSea.z*3.);color*=.96+wash*.035;
+  color*=.67+.33*smoothstep(-.7,.65,dot(N,normalize(uSun)));
+  color=mix(color*.46*vec3(.58,.76,1.1),color,uDay);color=mix(color,color*vec3(1.14,.93,.84),uDusk*.5);
+  color=mix(color,vec3(.44,.70,.69)*(.35+.65*uDay),fresnel*.28);
+  float ripple=sin(vSea.x*68.+vSea.z*41.+sin(vSea.y*23.+uTime*.3)-uTime*.8);
+  float broken=smoothstep(.65,.94,sin(vSea.z*51.-vSea.y*17.));
+  float shine=smoothstep(.982,.999,ripple)*broken*smoothstep(.65,.94,sin(vSea.y*94.+vSea.x*47.));
+  vec3 H=normalize(V+normalize(uSun));float glint=pow(max(0.,dot(N,H)),90.);
+  color+=vec3(.4,.52,.40)*shine*.038*(.4+.6*uDay);color+=vec3(.38,.33,.20)*glint*.2;
+  float shimmer=pow(max(0.,dot(N,H)),24.)*smoothstep(.65,.98,ripple);
+  color+=mix(vec3(.18,.30,.34),vec3(.72,.36,.16),uDusk)*shimmer*(.05+uDusk*.19);
+  for(int i=0;i<4;i++){if(uBeamConfig[i].x>.001){vec3 delta=vWorld-uBeamSource[i];vec3 axis=normalize(uBeamTarget[i]-uBeamSource[i]);float dist=length(delta);float focus=smoothstep(uBeamConfig[i].z,uBeamConfig[i].y,dot(normalize(delta),axis));float incidence=max(.12,dot(N,-normalize(delta)));float illumination=focus*uBeamConfig[i].x*incidence/(1.+dist*dist*.4);color+=vec3(.94,.63,.27)*illumination*1.4;}}
+  float washOut=.010+.008*sin(vSea.x*33.+vSea.z*29.+uTime*.8);float foam=(1.-smoothstep(.013+washOut,.042+washOut,d))*smoothstep(-.02,.009,vDepth);
+  foam*=.6+.4*smoothstep(-.5,.8,sin(vSea.y*90.+vSea.x*51.+uTime*.7));
+  color=mix(color,vec3(.83,.87,.69),foam*.74*uDay);
+  float shelf=smoothstep(.10,.19,d)*(1.-smoothstep(.40,.53,d));
+  float crest=smoothstep(.965,.997,sin(d*64.+uTime*.27+wash*.11));
+  float stroke=smoothstep(-.12,.42,sin(vSea.x*13.+vSea.z*8.+sin(vSea.y*7.)));
+  color=mix(color,vec3(.61,.79,.70),crest*stroke*shelf*.095*uDay);
+  float opacity=.18+.24*smoothstep(.025,.42,d)+.56*smoothstep(.36,.68,d);opacity=min(.985,opacity+fresnel*.18+foam*.27);opacity*=smoothstep(-.013,.004,vDepth);
+  gl_FragColor=vec4(color,opacity);
+  #if defined( TONE_MAPPING )
+	gl_FragColor.rgb = toneMapping( gl_FragColor.rgb );
+#endif
+  gl_FragColor = linearToOutputTexel( gl_FragColor );
+ }

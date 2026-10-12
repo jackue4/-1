@@ -1,0 +1,63 @@
+{
+  "shots": [
+    {
+      "index": 0,
+      "name": "01.webm",
+      "world": "sunny",
+      "view": "sunny-view",
+      "duration": 5.0574000000003725,
+      "framesDrawn": 300,
+      "averageDrawFps": 59.3,
+      "maxFrameGapMs": 33.29999999999927,
+      "bytes": 4496314
+    },
+    {
+      "index": 1,
+      "name": "02.webm",
+      "world": "coast",
+      "view": "train",
+      "duration": 6.038700000000186,
+      "framesDrawn": 360,
+      "averageDrawFps": 59.6,
+      "maxFrameGapMs": 16.89999999999418,
+      "bytes": 5687856
+    },
+    {
+      "index": 2,
+      "name": "03.webm",
+      "world": "coast",
+      "view": "cruise",
+      "duration": 6.046899999999441,
+      "framesDrawn": 360,
+      "averageDrawFps": 59.5,
+      "maxFrameGapMs": 16.80000000000291,
+      "bytes": 5566418
+    },
+    {
+      "index": 3,
+      "name": "04.webm",
+      "world": "sunny",
+      "view": "meadow-view",
+      "duration": 6.043,
+      "framesDrawn": 360,
+      "averageDrawFps": 59.6,
+      "maxFrameGapMs": 16.90000000000873,
+      "bytes": 5932550
+    },
+    {
+      "index": 4,
+      "name": "05.webm",
+      "world": "coast",
+      "view": "coast",
+      "duration": 6.037900000000373,
+      "framesDrawn": 360,
+      "averageDrawFps": 59.6,
+      "maxFrameGapMs": 16.89999999999418,
+      "bytes": 5974211
+    }
+  ],
+  "width": 1080,
+  "height": 1920,
+  "requestedFps": 30,
+  "source": "Live WebGL canvas capture with promotional typography; no city weather data"
+}

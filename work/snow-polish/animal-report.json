@@ -1,0 +1,135 @@
+{
+  "checkedAt": "2026-09-21T06:24:52.509Z",
+  "verification": "Actual Three.js animal geometry, animation, spherical terrain and camera poses in Node. Architecture overlap and visual quality require browser inspection.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Two distinct umbrella animals have finite poses and remain entirely over dry ground for four circuits",
+      "passed": true,
+      "seconds": 384,
+      "samplesPerAnimal": 1537,
+      "animals": [
+        {
+          "id": "rabbit",
+          "minLand": 0.3001299139168384,
+          "minFootLand": 0.29123940899600653,
+          "minFootHeight": 0.0011748945205614092,
+          "maxFootHeight": 0.007941268414302982,
+          "maxTurn": 0.039927543296057334,
+          "movingSamples": 1240,
+          "restingSamples": 297,
+          "nonFinite": 0
+        },
+        {
+          "id": "bear",
+          "minLand": 0.26072516215964303,
+          "minFootLand": 0.24585243982361557,
+          "minFootHeight": 0.00030544425277589937,
+          "maxFootHeight": 0.009662442713330499,
+          "maxTurn": 0.043649568899174575,
+          "movingSamples": 1265,
+          "restingSamples": 272,
+          "nonFinite": 0
+        }
+      ]
+    },
+    {
+      "name": "Walking includes gentle stops with continuous orientation",
+      "passed": true,
+      "note": "Geometric orientation and scheduled rests; perceived pace requires visual review"
+    },
+    {
+      "name": "Feet remain near the actual spherical snow surface",
+      "passed": true,
+      "note": "Animated sole contact points, not full physical collision simulation",
+      "contactRanges": [
+        {
+          "id": "rabbit",
+          "min": 0.0011748945205614092,
+          "max": 0.007941268414302982
+        },
+        {
+          "id": "bear",
+          "min": 0.00030544425277589937,
+          "max": 0.009662442713330499
+        }
+      ]
+    },
+    {
+      "name": "Pause freezes every animal limb, umbrella, blink and footprint",
+      "passed": true
+    },
+    {
+      "name": "Preview return restores exact character poses and fading footprints",
+      "passed": true
+    },
+    {
+      "name": "Detailed umbrellas, faces, accessories and footprints contain no invalid geometry",
+      "passed": true,
+      "geometries": 23,
+      "nonFinite": 0
+    },
+    {
+      "name": "Both close-up cameras fit supported portrait and landscape aspects",
+      "passed": true,
+      "poses": [
+        {
+          "id": "rabbit",
+          "aspect": 0.46208530805687204,
+          "distance": 1.3551537854510174,
+          "valid": true
+        },
+        {
+          "id": "rabbit",
+          "aspect": 2.164102564102564,
+          "distance": 0.9633794683301072,
+          "valid": true
+        },
+        {
+          "id": "rabbit",
+          "aspect": 0.5633802816901409,
+          "distance": 1.1114990615858613,
+          "valid": true
+        },
+        {
+          "id": "rabbit",
+          "aspect": 1.6,
+          "distance": 0.9633794683301072,
+          "valid": true
+        },
+        {
+          "id": "bear",
+          "aspect": 0.46208530805687204,
+          "distance": 1.3551537854510178,
+          "valid": true
+        },
+        {
+          "id": "bear",
+          "aspect": 2.164102564102564,
+          "distance": 0.9633794683301072,
+          "valid": true
+        },
+        {
+          "id": "bear",
+          "aspect": 0.5633802816901409,
+          "distance": 1.1114990615858613,
+          "valid": true
+        },
+        {
+          "id": "bear",
+          "aspect": 1.6,
+          "distance": 0.9633794683301072,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "name": "Animal disposal is idempotent and leaves no scene objects",
+      "passed": true,
+      "remaining": 0,
+      "geometryDisposals": 23,
+      "uniqueDisposed": 23,
+      "doubleDisposed": 0
+    }
+  ]
+}

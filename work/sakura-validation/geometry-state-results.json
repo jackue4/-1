@@ -1,0 +1,43 @@
+{
+  "passed": 9,
+  "checks": [
+    "Every geometry attribute and object/instance transform is finite",
+    "153 live tree crown clusters feed the 5-batch spring garden",
+    "Petal-edge foliage uses matching cutout and depth masks",
+    "All 570 ground petals sit above dry terrain",
+    "Continuous petals move across time",
+    "Wish rises to 660 petals and returns to 380 after eleven seconds",
+    "Night, rain and snow reduce falling petals; snow hides ground petals and clear weather restores them",
+    "Petals respond to the shared world wind uniform",
+    "World animation remains finite at 60, 180 and 360 seconds"
+  ],
+  "meshes": 709,
+  "instanced": 29,
+  "instances": 40185,
+  "attributes": 2165,
+  "allTriangles": 674385,
+  "visibleTriangles": 648438,
+  "visibleMeshBatches": 505,
+  "treeCrownClusters": 153,
+  "leafInstances": 1836,
+  "garden": {
+    "decks": 1,
+    "lanterns": 4,
+    "groundPetals": 570,
+    "baseFlying": 380,
+    "maxFlying": 660,
+    "sourceClusters": 153,
+    "drawCalls": 5,
+    "triangles": 19646
+  },
+  "weatherCounts": {
+    "day": 380,
+    "night": 251,
+    "rain": 99,
+    "snow": 34,
+    "storm": 6
+  },
+  "lowestGroundPetalClearance": 0.002399888224859925,
+  "lowestDryGroundHeight": 0.05584682807211383,
+  "note": "CPU scene and geometry checks. Triangle and mesh-batch totals include no GPU culling, shadows or driver timing."
+}

@@ -1,0 +1,149 @@
+{
+  "scope": "CPU geometry and behavior; no GPU or rendered-image proof",
+  "passed": true,
+  "stats": {
+    "focalScenes": 3,
+    "jettyPlanks": 28,
+    "benches": 2,
+    "jettyLamps": 2,
+    "sailboats": 2,
+    "lighthouses": 1,
+    "waterLanterns": 11,
+    "seabirds": 12,
+    "drawCalls": 8,
+    "triangles": 7360,
+    "placements": [
+      {
+        "type": "jetty landing",
+        "lat": -0.28400000000000003,
+        "lon": -0.67,
+        "seabedDepth": 0.34859553375863683,
+        "railAngularClearance": 0.37014944384162324
+      },
+      {
+        "type": "lighthouse reef",
+        "lat": -0.56,
+        "lon": -0.69,
+        "seabedDepth": 0.5728899124169087,
+        "railAngularClearance": 0.6459894509250532
+      },
+      {
+        "type": "sailboat route centre",
+        "lat": -0.36,
+        "lon": -0.28,
+        "seabedDepth": 0.4014911541456856,
+        "railAngularClearance": 0.4649367207436709
+      },
+      {
+        "type": "sailboat route centre",
+        "lat": -0.41,
+        "lon": 0.16,
+        "seabedDepth": 0.47599994820804836,
+        "railAngularClearance": 0.577684675521102
+      },
+      {
+        "type": "water lantern",
+        "lat": -0.39459319619247973,
+        "lon": -0.6536338668322947,
+        "seabedDepth": 0.45942395322599827,
+        "railAngularClearance": 0.48087209009140885
+      },
+      {
+        "type": "water lantern",
+        "lat": -0.4078026642648585,
+        "lon": -0.5919649298124569,
+        "seabedDepth": 0.46768906559378554,
+        "railAngularClearance": 0.49470192022976883
+      },
+      {
+        "type": "water lantern",
+        "lat": -0.4190402737891614,
+        "lon": -0.5290485472035412,
+        "seabedDepth": 0.46595842900255624,
+        "railAngularClearance": 0.5071240460235817
+      },
+      {
+        "type": "water lantern",
+        "lat": -0.42805365228232123,
+        "lon": -0.4649665767347848,
+        "seabedDepth": 0.46517462406920984,
+        "railAngularClearance": 0.5183466660958472
+      },
+      {
+        "type": "water lantern",
+        "lat": -0.4346403786950727,
+        "lon": -0.3999049946275305,
+        "seabedDepth": 0.47089421032897505,
+        "railAngularClearance": 0.5285706598476126
+      },
+      {
+        "type": "water lantern",
+        "lat": -0.43865252935232507,
+        "lon": -0.3341372828932588,
+        "seabedDepth": 0.47746366730121004,
+        "railAngularClearance": 0.5379140875475231
+      },
+      {
+        "type": "water lantern",
+        "lat": -0.44,
+        "lon": -0.268,
+        "seabedDepth": 0.486214689879342,
+        "railAngularClearance": 0.5463460728465147
+      },
+      {
+        "type": "water lantern",
+        "lat": -0.43865252935232507,
+        "lon": -0.20186271710674125,
+        "seabedDepth": 0.4817953609744605,
+        "railAngularClearance": 0.5536522318095956
+      },
+      {
+        "type": "water lantern",
+        "lat": -0.4346403786950727,
+        "lon": -0.13609500537246952,
+        "seabedDepth": 0.4666783199674649,
+        "railAngularClearance": 0.5594462660710925
+      },
+      {
+        "type": "water lantern",
+        "lat": -0.42805365228232123,
+        "lon": -0.0710334232652152,
+        "seabedDepth": 0.45918449686731,
+        "railAngularClearance": 0.5632275633113786
+      },
+      {
+        "type": "water lantern",
+        "lat": -0.4190402737891614,
+        "lon": -0.006951452796458849,
+        "seabedDepth": 0.45741504300457514,
+        "railAngularClearance": 0.5644690618766928
+      }
+    ]
+  },
+  "checks": [
+    "All initial geometry attributes, bounds and instance transforms are finite; mesh and triangle budgets pass.",
+    "Jetty endpoint, lighthouse reef, boat route centres and lantern centres clear land and rail.",
+    "All boat body, sail, rigging and deck vertices remain above seabed over a one-hour route sample.",
+    "Boats and drifting lanterns remain offshore and clear railway; boats stay separated and exactly follow the shared ocean wave.",
+    "Bird body scale is correct; warm lights brighten at night; unchanged elapsed time freezes dynamic transforms.",
+    "Disposal detaches the complete module."
+  ],
+  "samplingSeconds": 3600,
+  "samplingStepSeconds": 5,
+  "birdGeometrySize": [
+    0.12800000607967377,
+    0.029119016602635384,
+    0.06262958236038685
+  ],
+  "lamps": {
+    "dayEmission": 0.22,
+    "nightEmission": 2.62
+  },
+  "metrics": {
+    "minWaterDepth": 0.37608626495768416,
+    "minRailClearance": 0.4467105823499611,
+    "minHullSeabedClearance": 0.28577097524760564,
+    "maxOceanFollowError": 1.2934694604282981e-7,
+    "minBoatSeparation": 1.1478783119064384
+  }
+}

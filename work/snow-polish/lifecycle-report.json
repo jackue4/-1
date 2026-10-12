@@ -1,0 +1,297 @@
+{
+  "checkedAt": "2026-09-21T11:05:25.506Z",
+  "verification": "Real snow app, geometry, simulation and batching; mock DOM, RAF, WebGL boundary, controls and background sky. GPU rendering and physical devices not tested.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Mount completes with one renderer and marks ready only after a render",
+      "passed": true,
+      "time": 0.4833333333333351,
+      "renders": 30
+    },
+    {
+      "name": "Pause freezes simulation clock and the complete dynamic trees including animal limbs and umbrellas",
+      "passed": true,
+      "pausedTime": 0.4833333333333351
+    },
+    {
+      "name": "Preview advances its own visible simulation without advancing paused play time",
+      "passed": true,
+      "playTime": 0.4833333333333351,
+      "previewSnowTime": 1.9666666666666202
+    },
+    {
+      "name": "Leaving preview restores play view, phase, camera, simulation and paused state",
+      "passed": true,
+      "mode": "canal",
+      "phase": "night"
+    },
+    {
+      "name": "Inactive worlds advance neither simulation nor render calls",
+      "passed": true,
+      "inactiveFrames": 180,
+      "renderDelta": 0
+    },
+    {
+      "name": "Reactivation resets the delta clock without jumping across hidden time",
+      "passed": true,
+      "resumedDelta": 0.033333333333332105
+    },
+    {
+      "name": "Context loss stops rendering and restoration resumes with a fresh shadow",
+      "passed": true,
+      "stoppedRenderCalls": 3,
+      "resumed": true
+    },
+    {
+      "name": "Light quality disables shadow rendering while preserving the live world",
+      "passed": true
+    },
+    {
+      "name": "Detailed quality restores manual shadow rendering",
+      "passed": true
+    },
+    {
+      "name": "Choosing the bear enters its tracking camera and reveals the friend controls",
+      "passed": true
+    },
+    {
+      "name": "Dragging disables character follow and selector return preserves the chosen animal and manual camera",
+      "passed": true
+    },
+    {
+      "name": "Choosing a different friend re-enables tracking",
+      "passed": true
+    },
+    {
+      "name": "Every snow viewpoint has a finite camera and exact viewport aspect after portrait and landscape rotation",
+      "passed": true,
+      "views": [
+        {
+          "width": 390,
+          "height": 844,
+          "view": "globe",
+          "aspect": 0.46208530805687204,
+          "distance": 22.235339155930134,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "view": "garden",
+          "aspect": 0.46208530805687204,
+          "distance": 5.666215489758939,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "view": "canal",
+          "aspect": 0.46208530805687204,
+          "distance": 3.8617470208682243,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "view": "bridge",
+          "aspect": 0.46208530805687204,
+          "distance": 3.7314176940758843,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "view": "plum",
+          "aspect": 0.46208530805687204,
+          "distance": 4.169451290745023,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "view": "boat",
+          "aspect": 0.46208530805687204,
+          "distance": 1.5005298412194281,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "view": "animals",
+          "aspect": 0.46208530805687204,
+          "distance": 1.3551536980631713,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "view": "pagoda",
+          "aspect": 0.46208530805687204,
+          "distance": 4.914506215397027,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "view": "globe",
+          "aspect": 2.164102564102564,
+          "distance": 17.3334991749328,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "view": "garden",
+          "aspect": 2.164102564102564,
+          "distance": 2.9753124205703156,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "view": "canal",
+          "aspect": 2.164102564102564,
+          "distance": 2.0277915474722743,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "view": "bridge",
+          "aspect": 2.164102564102564,
+          "distance": 1.9593560166544517,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "view": "plum",
+          "aspect": 2.164102564102564,
+          "distance": 2.1893661183091333,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "view": "boat",
+          "aspect": 2.164102564102564,
+          "distance": 0.8455766328024396,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "view": "animals",
+          "aspect": 2.164102564102564,
+          "distance": 0.9633794683301072,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "view": "pagoda",
+          "aspect": 2.164102564102564,
+          "distance": 2.5805921801013034,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "view": "globe",
+          "aspect": 0.5633802816901409,
+          "distance": 18.408783273464525,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "view": "garden",
+          "aspect": 0.5633802816901409,
+          "distance": 4.647438000930833,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "view": "canal",
+          "aspect": 0.5633802816901409,
+          "distance": 3.1674103971516914,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "view": "bridge",
+          "aspect": 0.5633802816901409,
+          "distance": 3.0605140980142544,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "view": "plum",
+          "aspect": 0.5633802816901409,
+          "distance": 3.4197898767988653,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "view": "boat",
+          "aspect": 0.5633802816901409,
+          "distance": 1.2307364165146437,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "view": "animals",
+          "aspect": 0.5633802816901409,
+          "distance": 1.1114990388133201,
+          "finite": true,
+          "correctAspect": true
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "view": "pagoda",
+          "aspect": 0.5633802816901409,
+          "distance": 4.030884985318236,
+          "finite": true,
+          "correctAspect": true
+        }
+      ],
+      "note": "Camera math only; CSS visibility and GPU visuals require the browser pass"
+    },
+    {
+      "name": "Dispose is idempotent and clears frame, observer and page lifecycle resources",
+      "passed": true,
+      "queuedFrames": 0,
+      "rendererDisposals": 1,
+      "skyDisposals": 1
+    }
+  ]
+}

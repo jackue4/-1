@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-09-22T02:26:12.560Z",
+  "stats": {
+    "clusters": 26,
+    "cacti": 45,
+    "flowers": 30,
+    "drawCalls": 1,
+    "triangles": 56144
+  },
+  "actual": {
+    "draws": 1,
+    "triangles": 56144,
+    "vertices": 49975,
+    "measuredVertices": 49975
+  },
+  "finite": true,
+  "validIndices": true,
+  "placements": 26,
+  "minDry": 0.06180908006308883,
+  "minLandField": 0.11060972235439259,
+  "bodyCount": 45,
+  "groundClearanceRange": [
+    -0.019114396129090938,
+    -0.003687119266986727
+  ],
+  "floatingBodies": [],
+  "deepBodies": [],
+  "nearRoute": [],
+  "disposedOwned": [
+    1,
+    1
+  ],
+  "disposedSharedBeforePalette": [
+    0,
+    0
+  ],
+  "detached": true
+}

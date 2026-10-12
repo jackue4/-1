@@ -1,0 +1,133 @@
+{
+  "index": 13,
+  "name": "14.mp4",
+  "world": "desert",
+  "view": "globe",
+  "phase": "night",
+  "frames": 102,
+  "duration": 3.4,
+  "samples": [
+    {
+      "frame": 0,
+      "time": 46,
+      "camera": [
+        3.7334013602451397,
+        4.9518561058134685,
+        16.311940235667123
+      ],
+      "target": [
+        0,
+        0.14,
+        0
+      ],
+      "night": 1,
+      "daylight": 0.18,
+      "dusk": 0,
+      "render": {
+        "calls": 68,
+        "triangles": 628640,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      }
+    },
+    {
+      "frame": 30,
+      "time": 47,
+      "camera": [
+        4.802278671146919,
+        4.916124501067329,
+        15.900080558148392
+      ],
+      "target": [
+        0,
+        0.14,
+        0
+      ],
+      "night": 1,
+      "daylight": 0.18,
+      "dusk": 0,
+      "render": {
+        "calls": 68,
+        "triangles": 628640,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      }
+    },
+    {
+      "frame": 60,
+      "time": 48,
+      "camera": [
+        5.832511178671149,
+        4.880392896321189,
+        15.418946106634644
+      ],
+      "target": [
+        0,
+        0.14,
+        0
+      ],
+      "night": 1,
+      "daylight": 0.18,
+      "dusk": 0,
+      "render": {
+        "calls": 68,
+        "triangles": 628640,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      }
+    },
+    {
+      "frame": 90,
+      "time": 49,
+      "camera": [
+        6.8196651833780235,
+        4.84466129157505,
+        14.871878739697861
+      ],
+      "target": [
+        0,
+        0.14,
+        0
+      ],
+      "night": 1,
+      "daylight": 0.18,
+      "dusk": 0,
+      "render": {
+        "calls": 68,
+        "triangles": 628640,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      }
+    },
+    {
+      "frame": 101,
+      "time": 49.36666666666667,
+      "camera": [
+        7.16999710295645,
+        4.831559703168132,
+        14.655475037125203
+      ],
+      "target": [
+        0,
+        0.14,
+        0
+      ],
+      "night": 1,
+      "daylight": 0.18,
+      "dusk": 0,
+      "render": {
+        "calls": 68,
+        "triangles": 628640,
+        "width": 1080,
+        "height": 1920,
+        "samples": 2
+      }
+    }
+  ],
+  "bytes": 4101404,
+  "secondsToRender": 11.177
+}
